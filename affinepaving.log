@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  5 OCT 2021 20:25
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  5 OCT 2021 21:18
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -474,12 +474,16 @@ Package xypdf Info: Line width: 0.43799pt on input line 78.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(affinepaving.bbl) [1] (affinepaving.aux) ) 
+(affinepaving.toc)
+\tf@toc=\write4
+\openout4 = `affinepaving.toc'.
+
+ (affinepaving.bbl) [1] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 5552 strings out of 427748
- 66762 string characters out of 3150981
- 190859 words of memory out of 3000000
- 9312 multiletter control sequences out of 15000+200000
+ 5556 strings out of 427748
+ 66804 string characters out of 3150981
+ 192859 words of memory out of 3000000
+ 9313 multiletter control sequences out of 15000+200000
  17429 words of font info for 79 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  34i,4n,32p,3261b,192s stack positions out of 5000i,500n,10000p,200000b,50000s

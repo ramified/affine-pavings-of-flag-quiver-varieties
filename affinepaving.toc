@@ -1,0 +1,5 @@
+\contentsline {section}{\tocsection {}{1}{Introduction}}{1}% 
+\contentsline {section}{\tocsection {}{2}{Main Theorem}}{1}% 
+\contentsline {section}{\tocsection {}{3}{Application: Dynkin Case}}{1}% 
+\contentsline {section}{\tocsection {}{4}{Application: Affine Case}}{1}% 
+\contentsline {section}{\tocsection {}{}{References}}{1}% 
