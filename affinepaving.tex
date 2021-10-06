@@ -16,7 +16,7 @@
 \usepackage{multicol}
 \usepackage[all,pdf]{xy}
 \usepackage[a4paper,left=3cm,right=3cm]{geometry}
-
+\usepackage{xcolor}
 %\usepackage[notcite,notref]{showkeys}
 
 % showkeys  make label explicit on the paper
@@ -66,7 +66,7 @@
 		}%
 	}%
 }
-\renewcommand\thefootnote{\fnsymbol{footnote}}
+%\renewcommand\thefootnote{\fnsymbol{footnote}}
 %dont use number as footnote symbol, use this command to change
 
 \DeclareMathOperator{\supp}{supp}
@@ -74,7 +74,11 @@
 \DeclareMathOperator{\vol}{vol}
 \DeclareMathOperator{\diag}{diag}
 \DeclareMathOperator{\tr}{tr}
-
+\DeclareMathOperator{\Rep}{\operatorname{Rep}}
+\DeclareMathOperator{\Grq}{\operatorname{Gr}^{KQ}}
+\DeclareMathOperator{\Flagd}{\operatorname{Flag}_{\mathbf{d}}}
+\DeclareMathOperator{\Flagdstr}{\operatorname{Flag}_{\mathbf{d},str}}
+\newcommand{\Flag}[1]{\operatorname{Flag}_{\mathbf{#1}}}
 \begin{document}
 \date{}
 
@@ -103,6 +107,26 @@ In this article, we establish an affine paving for partial flag quiver varieties
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+Let $Q$ be a quiver of Dynkin or affine type(without loops), $X\in \Rep(Q)$ be an quiver representation.\footnote{We fix the base field $K=\mathbb{C}$ for convinience.} We are interested in three objects related to $X \in \Rep(Q)$:
+\begin{equation*}
+\begin{aligned}
+&	\text{quiver Grassmannian} && \Grq(X)\colon = \left\{ M_1 \mid M_1 \subseteq X \right\}\\
+&	\text{partial flag variety \textcolor{gray}{$d\geqslant 1$}} && \Flagd(X)\colon =\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}\\
+&	\text{strict partial flag variety \textcolor{gray}{$d\geqslant 2$}} && \Flagdstr(X)\colon =\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X  \mid x.M_{i+1} \subseteq M_i\right\}\footnotemark\\
+\end{aligned}
+\end{equation*}
+\footnotetext{for any $x \in Q_1, i \in \{2,\ldots ,d \} $.}
+
+It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zarisky) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the ???.
+
+???Here is one table
+
+The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section ???, accordingly.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Preliminary Facts}
+
+\subsection{Ext-vanishing properties}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
