@@ -74,11 +74,15 @@
 \DeclareMathOperator{\vol}{vol}
 \DeclareMathOperator{\diag}{diag}
 \DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Id}{\operatorname{Id}}
 \DeclareMathOperator{\Rep}{\operatorname{Rep}}
+\DeclareMathOperator{\Mod}{\operatorname{Mod}}
 \DeclareMathOperator{\Grq}{\operatorname{Gr}^{KQ}}
+\DeclareMathOperator{\Grr}{\operatorname{Gr}^{R}}
 \DeclareMathOperator{\Flagd}{\operatorname{Flag}_{\mathbf{d}}}
 \DeclareMathOperator{\Flagdstr}{\operatorname{Flag}_{\mathbf{d},str}}
 \newcommand{\Flag}[1]{\operatorname{Flag}_{\mathbf{#1}}}
+\newcommand{\Flagstr}[1]{\operatorname{Flag}_{\mathbf{#1},str}}
 \begin{document}
 \date{}
 
@@ -122,10 +126,56 @@ It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be di
 ???Here is one table
 
 The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section ???, accordingly.
+
+Before the end of this section, let us see in one example how partial flag variety is viewed as quiver Grassmannian.
+
+\begin{eg}
+Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a quiver representation, then $\Flag{3}(X),\Flagstr{3}$ can be viewed as quiver Grassmannian in ???:
+
+???[pictures here]
+
+
+\end{eg}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Preliminary Facts}
+Fix the quiver $Q$ ant the integer $d \geqslant 2$, we define the new bigger quiver $Q_{d},Q_{d,str}$ as follows:
 
+\begin{itemize}
+	\item The vertex set of $Q_d$(resp. $Q_{d,str}$) is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
+	$$v(Q_d)=v(Q_{d,str})=v(Q) \times \{1,\ldots,d\}$$
+	\item  The arrows of $Q_d$(resp. $Q_{d,str}$) is defined as follows:
+	\begin{itemize}
+		\item for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$;
+		\item for each arrow $i \longrightarrow j$ in quiver $Q$:
+		\begin{itemize}
+			\item $Q_d$ case: there is one arrow from $(i,r)$ to $(j,r)$; \textcolor{gray}{(for any $r \in \{1,\ldots,d\}$)}
+			\item $Q_{d,str}$ case: there is one arrow from $(i,r)$ to $(j,r-1)$; \textcolor{gray}{(for any $r \in \{1,\ldots,d-1\}$)}			
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\begin{eg}
+Here is the picture of new quiver:
+
+???[pictures here]
+\end{eg}
+
+We define the ring 
+$$R=??? or ???$$
+and define the canonical map $\Phi:\Rep(Q) \longrightarrow \Mod(R) \textcolor{gray}{\subseteq \Rep(Q_d \text{ or } Q_{d,str})}$ as follows:
+\begin{itemize}
+\item $\left(\Phi(X)\right)_{(i,r)}:=X_i$;
+\item $\left(\Phi(X)\right)_{(i,r) \rightarrow (i,r+1)}:=\Id_{X_i}$;
+\item $\left(\Phi(X)\right)_{(i,r) \rightarrow (j,-)}:=X_{i \rightarrow j} \textcolor{gray}{ \quad(i \rightarrow j)}$;
+\end{itemize}
+For the module $T \in \Mod(R)$, we define $\Grr(T)\colon=\{T' \subseteq T \text{ as the submodule}  \}$.
+\begin{proposition}
+Fix the representation $X\in \Rep(Q)$, we have the isomorphism
+$$\Flag{}(X)\cong \Grr(\Phi(X)).$$
+\begin{proof}
+The two side give us same amount of informations. Or, you can easily construct the bijection from $\Flag{}(X)$ to $\Grr(\Phi(X))$.
+\end{proof}
+\end{proposition}
 \subsection{Ext-vanishing properties}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
