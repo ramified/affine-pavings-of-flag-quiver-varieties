@@ -190,7 +190,7 @@ The two side give us same amount of informations. Or, you can easily construct t
 \subsection{Ext-vanishing properties}
 We would like to show some higher rank Extension group to be 0, which would be a key ingredient in the proof of the next section.
 
-\begin{lemma}
+\begin{lemma}\label{lm:Extvan}
 Let $M,N,X,S \in \Rep(Q)$, $V,W,T \in \Mod(R)$.
 \begin{enumerate}[(1)]
 	\item $\gldim R \leqslant 2$;\label{lm:gldim}
@@ -198,7 +198,7 @@ Let $M,N,X,S \in \Rep(Q)$, $V,W,T \in \Mod(R)$.
 	\item $\Phi$ maps projective module to projective module;\label{lm:toproj}
 	\item $\Hom_{KQ}(M,N) \cong \Hom_{R}(\Phi(M),\Phi(N)),\quad\Ext^i_{KQ}(M,N) \cong \Ext^i_{R}(\Phi(M),\Phi(N))$;
 	\item $\projdim \Phi(M) \leqslant 1, \injdim \Phi(M) \leqslant 1$;
-	\item Suppose $V \subseteq \Phi(X), W \subseteq \Phi(S),$ then $\Ext^2_{R}(W,T)=0, \Ext^2_{R}(T,\Phi(X)/V)=0$.
+	\item Suppose $V \subseteq \Phi(X), W \subseteq \Phi(S),$ then $\Ext^2_{R}(W,T)=0, \Ext^2_{R}(T,\Phi(X)/V)=0$.\label{lm:Ext2van}
 \end{enumerate}
 \end{lemma}
 \begin{proof}
@@ -221,7 +221,8 @@ We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section 
 We use 
 \begin{equation*}
 \begin{aligned}[]
-	[T,T']^i:&=\dim_K \Ext^i_R (T,T'),\qquad [T,T']:=\dim_K \Hom_R (T,T')\\
+	[M,N]^i:&=\dim_K \Ext^i_{KQ} (M,N),\qquad [M,N]:=\dim_K \Hom_{KQ} (M,N)\\
+	[T,T']^i:&=\dim_K \Ext^i_R (T,T'),\qquad\hspace{0.5cm} [T,T']:=\dim_K \Hom_R (T,T')\\
 	\left< T,T'\right>_R:&= \sum_{i=0}^{\infty} (-1)^i [T,T']^i \quad=[T,T']-[T,T']^1+[T,T']^2\\
 	\left< \dimvec{f},\dimvec{g}\right>_R:&= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}
 \end{aligned}
@@ -245,11 +246,73 @@ The goal of this section is to prove the following theorems:
 \begin{theorem}
 	When $\eta$ splits, $\Psi$ is surjective. Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$.
 \end{theorem}
-\begin{theorem}
+\begin{theorem}[follows {\cite[Theorem 32]{irelli2019cell}}]
 	When $\eta$ does not split and $[S,X]^1=1$, 
 	$$\Img \Psi_{\dimvec{f},\dimvec{g}} = \bigg(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) \bigg) \setminus \bigg(\Grr_{\dimvec{f}}(\Phi(X_S)) \times \Grr_{\dimvec{g}-\dimv \Phi(S^X)}\left(\Phi(S/S^X)\right) \bigg)$$
-	Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$ over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
+	where 
+	\begin{equation*}
+	\begin{aligned}
+	X_S:&= \max \left\{ M \subseteq X \,\middle|\; [S,X/M ]^1=1 \right\} \subseteq X\\
+	S^X:&= \max \left\{ M \subseteq S \,\middle|\; [M,X]^1=1 \right\} \subseteq S
+	\end{aligned}
+	\end{equation*}
+Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$ over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
 \end{theorem}
+
+We will spend the rest of the section proving this theorem. We decide the image as well as the fiber of $\Psi$ respectively.
+\begin{lemma}[follows {\cite[Lemma 21]{irelli2019cell}}]
+The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $/\Psi$ iff the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
+\end{lemma}
+\begin{proof}
+	This follows from the definition of the canonical map.
+	
+	[??? Picture $\pi'$]
+\end{proof}
+\begin{corollary}
+	When $\eta$ splits, $\Psi$ is surjective.
+\end{corollary}
+\begin{lemma}
+	the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ is surjective.
+\end{lemma}
+\begin{proof}
+	By using the LES of Extension groups and the Lemma \ref{lm:Extvan}(\ref{lm:Ext2van}), the maps
+	$$\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X))\qquad \Ext^1(W,\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$$
+	are both surjective. Thus the composition is also surjective.
+\end{proof}
+\begin{corollary}[]\label{cor:0or1}
+	When $[S,X]^1=1$, then $[W,\Phi(X)/V]^1=0 \text{ or }1$.
+	
+	Suppose $\eta$ generates $\Ext^1(S,X)$, then 
+	$$(V,W) \in \Img \Psi \iff [W,\Phi(X)/V]^1=0.$$
+\end{corollary}
+
+In the case where $\eta$ generates $\Ext^1(S,X)$, we want to describe $\Img \Psi$ more precisely. For this reason we need to introduce two new $R$-modules:
+	\begin{equation*}
+	\begin{aligned}
+	\widetilde{X_S}:&= \max \left\{ V \subseteq \Phi(X) \,\middle|\; [\Phi(S),\Phi(X)/V ]^1=1 \right\} \subseteq \Phi(X)\\
+	\widetilde{S^X}:&= \max \left\{ W \subseteq \Phi(S) \,\middle|\; [W,\Phi(X)]^1=1 \right\} \subseteq \Phi(S)
+	\end{aligned}
+	\end{equation*}
+$\widetilde{X_S}$ and $\widetilde{S^X}$ are well-defined because of the following lemma:
+\begin{lemma}[follows {\cite[Lemma 27]{irelli2019cell}}]
+
+\begin{enumerate}[(i)]
+	\item[] 
+	\item Let $V,V' \subset \Phi(X)$ such that $[\Phi(S),\Phi(X)/V ]^1=[\Phi(S),\Phi(X)/V']^1=1 .$ Then $[\Phi(S),\Phi(X)/V+V' ]^1=1$.
+	\item  Let $W,W' \subset \Phi(S)$ such that $[W,\Phi(X)]^1=[W',\Phi(X)]^1=1 .$ Then $[W\cap W',\Phi(X)]^1=1$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+We only prove (i). (ii) is similar.
+
+From the SES 
+$$0 \longrightarrow \Phi(X)/V\cap V' \longrightarrow \Phi(X)/V \oplus \Phi(X)/V' \longrightarrow \Phi(X)/V+V' \longrightarrow 0,$$
+we get the LES
+???change the way of format
+$$\cdots\longrightarrow \Ext^1(\Phi(S),\Phi(X)/V\cap V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V) \oplus \Ext^1(\Phi(S),\Phi(X)/V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V+V') \longrightarrow\cdots$$
+By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/V\cap V']^1\leqslant 1, \; [\Phi(S),\Phi(X)/V+V']^1\leqslant 1$, and this forces that $[\Phi(S),\Phi(X)/V+V']^1= 1$.
+\end{proof}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application: Dynkin Case}
@@ -261,6 +324,12 @@ The goal of this section is to prove the following theorems:
 \section{Application: Affine Case}
 
 
+
+Task:
+fillin the ???
+change ind rep to indecomposable representations
+change iff to if and only if
+change SES LES
 
 \bibliographystyle{plain}
 \bibliography{reference}
