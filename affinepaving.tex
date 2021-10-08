@@ -312,7 +312,30 @@ we get the LES
 $$\cdots\longrightarrow \Ext^1(\Phi(S),\Phi(X)/V\cap V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V) \oplus \Ext^1(\Phi(S),\Phi(X)/V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V+V') \longrightarrow\cdots$$
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/V\cap V']^1\leqslant 1, \; [\Phi(S),\Phi(X)/V+V']^1\leqslant 1$, and this forces that $[\Phi(S),\Phi(X)/V+V']^1= 1$.
 \end{proof}
+\begin{lemma}[follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, and the proof is same]
 
+Let $f:X \longrightarrow \tau S$ be a non-zero morphism, then $X_S=\ker (f)$; also, $\Phi(f): \Phi(X) \longrightarrow \Phi(\tau S)$ is a non-zero morphism, $\widetilde{X_S}=\ker (\Phi(f))$.
+\end{lemma}
+\begin{corollary}
+	$\widetilde{X_S}=\Phi(X_S)$.\textcolor{gray}{(since $\widetilde{X_S}=\ker (\Phi(f))=\Phi(\ker(f))=\Phi(X_S)$)}
+\end{corollary}
+By the similar argument, one can show that $\widetilde{S^X}=\Phi(S^X)$.
+\begin{lemma}[follows {\cite[Lemma 31(6)]{irelli2019cell}}]
+Given $V \subseteq \Phi(X)$ and $W \subseteq \Phi(S)$, we have 
+$$[W,\Phi(X)/V]^1=0 \iff V \nsubseteq \Phi(X_S) \text{ or }W \nsupseteq \Phi(S^X).$$
+\end{lemma}
+\begin{proof}
+$\Leftarrow$: without lose of generation suppose $V \nsubseteq \Phi(X_S)$, then
+$$V \nsubseteq \Phi(X_S) \iff [\Phi(S),\Phi(X)/V ]^1=0 \Rightarrow  [W,\Phi(X)/V ]^1=0.$$
+
+\hspace{0.8cm}$\Rightarrow$: If not, then $V \subseteq \Phi(X_S) \text{ and }W \supseteq \Phi(S^X)$, and\footnote{$[S^X,X/X_S]^1=1$ follows from \cite[Lemma 31(5)]{irelli2019cell}} 
+$$[W,\Phi(X)/V]^1 \geqslant [\Phi(S^X),\Phi(X)/\Phi(X_S)]^1 =[S^X,X/X_S]^1=1.$$
+We get the contradiction!
+\end{proof}
+\begin{corollary}
+When $\eta$ generates $\Ext^1(S,X)$, we have 
+	$$\Img \Psi_{\dimvec{f},\dimvec{g}} = \bigg(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) \bigg) \setminus \bigg(\Grr_{\dimvec{f}}(\Phi(X_S)) \times \Grr_{\dimvec{g}-\dimv \Phi(S^X)}\left(\Phi(S/S^X)\right) \bigg)$$
+\end{corollary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application: Dynkin Case}
@@ -326,9 +349,14 @@ By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/V\cap V']^1\leqslant 1, \; [\Phi(
 
 
 Task:
+
+
 fillin the ???
+
 change ind rep to indecomposable representations
+
 change iff to if and only if
+
 change SES LES
 
 \bibliographystyle{plain}

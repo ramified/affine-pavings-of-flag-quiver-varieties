@@ -3,6 +3,6 @@
 \contentsline {subsection}{\tocsubsection {}{2.1}{Ext-vanishing properties}}{3}% 
 \contentsline {subsection}{\tocsubsection {}{2.2}{How much do we understand the quiver representation?}}{3}% 
 \contentsline {section}{\tocsection {}{3}{Main Theorem}}{3}% 
-\contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{5}% 
-\contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{5}% 
-\contentsline {section}{\tocsection {}{}{References}}{5}% 
+\contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{6}% 
+\contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{6}% 
+\contentsline {section}{\tocsection {}{}{References}}{6}% 
