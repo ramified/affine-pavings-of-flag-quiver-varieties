@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  8 OCT 2021 23:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  10 OCT 2021 17:59
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -533,12 +533,23 @@ n/10.95 ) [][]\OMS/cmsy/m/n/10.95 ! [][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/1
 ML/cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 ) [][]\OMS/cmsy/m/n/10.95 ! [] 
  []
 
+
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 341--342
+[]\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
+\OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
+m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
+m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
+\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W; \OT1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it
+/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V\OT1/cmr/m/n/10.95 )$\TU/lmr/
+m/it/10.95 .
+ []
+
 [5] (affinepaving.bbl) [6] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 6063 strings out of 427748
- 72482 string characters out of 3150981
- 210245 words of memory out of 3000000
- 9807 multiletter control sequences out of 15000+200000
+ 6067 strings out of 427748
+ 72524 string characters out of 3150981
+ 210286 words of memory out of 3000000
+ 9811 multiletter control sequences out of 15000+200000
  17461 words of font info for 83 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  34i,12n,35p,3261b,337s stack positions out of 5000i,500n,10000p,200000b,50000s

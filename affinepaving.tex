@@ -243,10 +243,10 @@ $$\Psi: \Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \qquad 
 and  $\Psi_{\dimvec{f},\dimvec{g}}$ is the map $\Psi$ restricted to the preimage of $\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S))$.
 
 The goal of this section is to prove the following theorems:
-\begin{theorem}
+\begin{theorem}\label{thm:main1}
 	When $\eta$ splits, $\Psi$ is surjective. Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$.
 \end{theorem}
-\begin{theorem}[follows {\cite[Theorem 32]{irelli2019cell}}]
+\begin{theorem}[follows {\cite[Theorem 32]{irelli2019cell}}]\label{thm:main2}
 	When $\eta$ does not split and $[S,X]^1=1$, 
 	$$\Img \Psi_{\dimvec{f},\dimvec{g}} = \bigg(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) \bigg) \setminus \bigg(\Grr_{\dimvec{f}}(\Phi(X_S)) \times \Grr_{\dimvec{g}-\dimv \Phi(S^X)}\left(\Phi(S/S^X)\right) \bigg)$$
 	where 
@@ -268,7 +268,7 @@ The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of 
 	
 	[??? Picture $\pi'$]
 \end{proof}
-\begin{corollary}
+\begin{corollary}\label{cor:img1}
 	When $\eta$ splits, $\Psi$ is surjective.
 \end{corollary}
 \begin{lemma}
@@ -332,10 +332,42 @@ $$V \nsubseteq \Phi(X_S) \iff [\Phi(S),\Phi(X)/V ]^1=0 \Rightarrow  [W,\Phi(X)/V
 $$[W,\Phi(X)/V]^1 \geqslant [\Phi(S^X),\Phi(X)/\Phi(X_S)]^1 =[S^X,X/X_S]^1=1.$$
 We get the contradiction!
 \end{proof}
-\begin{corollary}
+\begin{corollary}\label{cor:img2}
 When $\eta$ generates $\Ext^1(S,X)$, we have 
 	$$\Img \Psi_{\dimvec{f},\dimvec{g}} = \bigg(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) \bigg) \setminus \bigg(\Grr_{\dimvec{f}}(\Phi(X_S)) \times \Grr_{\dimvec{g}-\dimv \Phi(S^X)}\left(\Phi(S/S^X)\right) \bigg)$$
 \end{corollary}
+
+\begin{lemma}
+	For $(V,W) \in \Img \Psi$, the preimage of $(V,W)$ is a torsor of $\,\Hom_{R}(W,\Phi(X)/V)$. Or we could say, there is one non-canonical isomorphism
+	$$\Psi^{-1}((V,W)) \cong \Hom_{R}(W,\Phi(X)/V).$$
+\end{lemma}
+\begin{proof}
+???[pictures]
+
+When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{gray}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
+$$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism } \} \cong \Hom_{R}(W,\Phi(X)/V).$$
+\end{proof}
+\begin{lemma}
+	For two $R$-modules $T,T'$, we have
+	$$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
+\end{lemma}
+\begin{proof}
+We construct one canonical resolution of $T$,
+
+[??? Pictures]
+
+by applying the functor $\Hom_R(-,T')$ to this resolution, we get
+$$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
+\end{proof}
+\begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]
+We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:img2}. For the rank of the affine bundle, we have 
+\begin{equation*}
+\begin{aligned}
+(V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}} &\Longrightarrow [W,\Phi(X)/V]^1=0\\
+& \Longrightarrow [W,\Phi(X)/V]=\left< W,\Phi(X)/V\right>_R=\left< \dimvec{f},\dimv \Phi(X)-\dimvec{g}\right>_R
+\end{aligned}
+\end{equation*}
+\end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application: Dynkin Case}
