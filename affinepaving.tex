@@ -93,7 +93,8 @@
 \newcommand{\Flag}[1]{\operatorname{Flag}_{\mathbf{#1}}}
 \newcommand{\Flagstr}[1]{\operatorname{Flag}_{\mathbf{#1},str}}
 \newcommand{\dimvec}[1]{\mathbf{#1}}
-
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\orde}{\operatorname{ord}_e }
 \begin{document}
 \date{}
 
@@ -212,7 +213,8 @@ We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section 
 
 \section{Main Theorem}
    
-   In the following sections, we always suppose that 
+   The following notations will be used throughout this article:
+   %In the following sections, we always suppose that 
    \begin{itemize}
    		\item $X,Y,S,M,N \in \Rep(Q), V,U,W,T,T' \in \Mod(R)$;
    		\item we have the short exact sequence $\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$, and $V \subseteq \Phi(X), U \subseteq \Phi(Y), W \subseteq \Phi(S)$;
@@ -371,8 +373,13 @@ We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:im
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application: Dynkin Case}
+Before discussing the affine paving property, let me introduce some new numerical concepts, which can be seen as the measure of the "complexity" of the representation.
 
-
+Fix an \textbf{indecomposable} quiver representation $M \in \Rep(\mathbb{Q})$, we define the order of $M$ by
+$$\ord(M):= \max_{i \in v(Q)} \dim_K M_i.$$
+When the quiver $Q$ is of type $E$, we denote by $e \in v(Q)$ the unique vertex which is connected to three other vertices, and the number 
+$$\orde(M):=\dim_K M_e=[P(e),M]$$
+is equal to $\ord(M)$ unless $\orde(M)=0$.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
