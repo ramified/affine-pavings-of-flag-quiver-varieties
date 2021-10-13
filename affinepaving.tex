@@ -381,7 +381,49 @@ When the quiver $Q$ is of type $E$, we denote by $e \in v(Q)$ the unique vertex 
 $$\orde(M):=\dim_K M_e=[P(e),M]$$
 is equal to $\ord(M)$ unless $\orde(M)=0$.
 
+By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable modules. The next lemma tells us, for the "easy representation", we can prove the affine paving property easily.
 
+\begin{lemma}[{follows \cite[Lemma 2.22]{maksimau2019flag}}]
+	For the representation $M \in \Rep(Q)$ satisfying $\ord(M) \leqslant 2$ and the dimension vector $\dimvec{f}$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or is a singleton or is a direct product of some copies of $\mathbb{P}^1$.
+\end{lemma}
+\begin{proof}
+	For each vertex $i$ of the bigger quiver, the dimension of $V_i$ is 0,1,2; then the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is naturally included to a direct product of $\mathbb{P}^1$, and the information of arrows just reduce the number of $\mathbb{P}^1$(maybe to singleton or empty).
+\end{proof}
+\begin{corollary}[{\cite[Theorem 2.20]{maksimau2019flag}}]
+	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
+\end{corollary}
+\begin{corollary}
+	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the \textbf{regular quasi-simple} representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
+\end{corollary}
+%We use rep 2 Cor 18.8.
+
+\textbf{In the rest of this section we focus on the "difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In ??? the Figure ??? is called the starting functions.}
+
+???[Pictures]
+
+\begin{lemma}
+	For every ind rep $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
+\end{lemma}
+\begin{proof}
+	Just observe the Auslander-Reiten sequence. The chosen minimal section monos are represented in Figure ???. Notice that for the most time $\orde(-)$ is enough to guarantee the map to be a mono.
+\end{proof}
+\begin{remark}
+	The condition $\ord(Y)>2$ in the lemma can not be removed.
+\end{remark}
+\begin{lemma}
+Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotient. Then we have the SES 
+$$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
+and the following values:
+
+???[Table]
+
+In particular, $S$ is indecomposable and rigid; $[S,X]^1 =1$, so $X_S$ and $S^X$ are well-defined.
+\end{lemma}
+\begin{proof}
+We know that $[X,X]=[Y,Y]=1$ and $[X,X]^1=[Y,Y]^1=0$. By the definition of minimal section mono, we get
+$[X,Y]=1, [Y,X]=0$ and $[X,Y]^1=[Y,X]^1=0$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-Y]$ to the SES $\eta$ we get the results. 
+\end{proof}
+In the following two lemmas we will describe the representations $S^X$ and $X_S$ more clearly.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Application: Affine Case}
 

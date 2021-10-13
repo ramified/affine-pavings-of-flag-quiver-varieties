@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  13 OCT 2021 11:22
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  13 OCT 2021 13:49
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -544,14 +544,14 @@ m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
 m/it/10.95 .
  []
 
-[5] (affinepaving.bbl [6]) [7] (affinepaving.aux) ) 
+[5] [6] (affinepaving.bbl [7]) [8] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 6069 strings out of 427748
- 72531 string characters out of 3150981
+ 6072 strings out of 427748
+ 72629 string characters out of 3150981
  210305 words of memory out of 3000000
- 9813 multiletter control sequences out of 15000+200000
- 17461 words of font info for 83 fonts, out of 3000000 for 9000
+ 9814 multiletter control sequences out of 15000+200000
+ 17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 34i,12n,35p,3261b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,12n,35p,3261b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (7 pages).
+Output written on affinepaving.pdf (8 pages).
