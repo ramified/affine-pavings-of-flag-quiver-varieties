@@ -88,6 +88,7 @@
 
 \DeclareMathOperator{\Flagd}{\operatorname{Flag}_{\mathbf{d}}}
 \DeclareMathOperator{\Flagdstr}{\operatorname{Flag}_{\mathbf{d},str}}
+\newcommand{\Gr}{\operatorname{Gr}}
 \newcommand{\Grr}{\operatorname{Gr}^{R}}
 \newcommand{\Grq}{\operatorname{Gr}^{KQ}}
 \newcommand{\Flag}[1]{\operatorname{Flag}_{\mathbf{#1}}}
@@ -347,7 +348,7 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 ???[pictures]
 
 When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{gray}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
-$$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism } \} \cong \Hom_{R}(W,\Phi(X)/V).$$
+$$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
 \begin{lemma}
 	For two $R$-modules $T,T'$, we have
@@ -392,8 +393,8 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \begin{corollary}[{\cite[Theorem 2.20]{maksimau2019flag}}]
 	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
 \end{corollary}
-\begin{corollary}
-	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the \textbf{regular quasi-simple} representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
+\begin{corollary}\label{cor:affineADcase}
+	Assume that $Q$ is a affine quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the \textbf{regular quasi-simple} representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
 \end{corollary}
 %We use rep 2 Cor 18.8.
 
@@ -410,7 +411,7 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \begin{remark}
 	The condition $\ord(Y)>2$ in the lemma can not be removed.
 \end{remark}
-\begin{lemma}
+\begin{lemma}\label{lem:value}
 Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotient. Then we have the SES 
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 and the following values:
@@ -424,9 +425,26 @@ We know that $[X,X]=[Y,Y]=1$ and $[X,X]^1=[Y,Y]^1=0$. By the definition of minim
 $[X,Y]=1, [Y,X]=0$ and $[X,Y]^1=[Y,X]^1=0$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-Y]$ to the SES $\eta$ we get the results. 
 \end{proof}
 In the following two lemmas we will describe the representations $S^X$ and $X_S$ more clearly.
+\begin{lemma} Take the same notations as in Lemma \ref{lem:value}. Then $S^X=S$.
+\end{lemma}
+\begin{proof}
+	Let $\iota:N \longrightarrow S$ be a proper non-zero subrepresentation of $S$, we need to prove that $\iota^* \eta: 0\longrightarrow X \longrightarrow Y' \longrightarrow N \longrightarrow 0$ splits.
+	
+	[???Comm diag]
+	
+	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of ind rep. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
+	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
+\end{proof}
+\begin{remark}
+	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a good mono.
+	
+	For example, take the quiver ???, take???, then ???, the map $T \longrightarrow X/F$ is not a good mono.
+	
+	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure ???. In appendix we will write down the induction process in detail, especially for the five exceptions.
+\end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Application: Affine Case}
-
+For the affine case, we just need to follow \cite[Section 6]{irelli2019cell}, and change everything from $\Gr(-)$ to $\Grr(\Phi(-))$. There is no difference except the Proposition 48, in which the authors proved the affine paving properties of quasi-simple regular representations. So we reduced the question to the case of quasi-simple regular representation. Combined with Corollary \ref{cor:affineADcase}, we've proved the affine paving properties for $\tilde{A},\tilde{D}$ cases.
 
 
 Task:
