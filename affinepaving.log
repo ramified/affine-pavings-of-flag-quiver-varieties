@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  14 OCT 2021 20:18
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  15 OCT 2021 00:27
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -898,7 +898,7 @@ Overfull \hbox (55.5988pt too wide) detected at line 378
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
  []
 
-
+[6]
 Overfull \hbox (9.76743pt too wide) in paragraph at lines 407--408
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
@@ -909,27 +909,32 @@ m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
 m/it/10.95 .
  []
 
-[6]
 File: figures/torsor.png Graphic file (type bmp)
 <figures/torsor.png>
 File: figures/resolution.png Graphic file (type bmp)
 <figures/resolution.png>
- [7]
+[7]
 File: figures/startingfunction.png Graphic file (type bmp)
 <figures/startingfunction.png>
+ [8]
 File: figures/minisecmono.png Graphic file (type bmp)
 <figures/minisecmono.png>
- [8]
+ [9]
 File: figures/table.png Graphic file (type bmp)
 <figures/table.png>
- [9] [10] (affinepaving.bbl) [11] (affinepaving.aux) ) 
+ [10]
+Overfull \hbox (5.91887pt too wide) detected at line 585
+[][]
+ []
+
+(affinepaving.bbl [11]) [12] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 17076 strings out of 427748
- 319633 string characters out of 3150981
- 437410 words of memory out of 3000000
- 20586 multiletter control sequences out of 15000+200000
+ 17077 strings out of 427748
+ 319650 string characters out of 3150981
+ 429065 words of memory out of 3000000
+ 20587 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,13n,82p,3261b,1008s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (11 pages).
+Output written on affinepaving.pdf (12 pages).

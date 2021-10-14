@@ -459,7 +459,7 @@ is equal to $\ord(M)$ unless $\orde(M)=0$.
 
 By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable modules. The next lemma tells us, for the "easy representation", we can prove the affine paving property easily.
 
-\begin{lemma}[{follows \cite[Lemma 2.22]{maksimau2019flag}}]
+\begin{lemma}[{follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
 	For the representation $M \in \Rep(Q)$ satisfying $\ord(M) \leqslant 2$ and the dimension vector $\dimvec{f}$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or is a singleton or is a direct product of some copies of $\mathbb{P}^1$.
 \end{lemma}
 \begin{proof}
@@ -543,6 +543,12 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
+\begin{lemma}[{follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]
+	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
+\end{lemma}
+\begin{corollary}
+	When $X \longrightarrow Y$ is irreducible monomorphism, the representation $X_S$ is either $0$ or an indecomposable representation with property that $X_S \longrightarrow X$ is also an irreducible monomorphism.
+\end{corollary}
 \begin{remark}
 	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a good mono.
 	
@@ -553,14 +559,33 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	\end{tikzcd}\\
 	 take $Y=\representation{122321}{1}$, $X=\representation{112321}{1}$, then $X_S=\representation{111210}{1}\oplus \representation{000111}{0}=F \oplus T$, $X/F =\representation{001111}{0}$, the map $T \longrightarrow X/F$ is not a good mono.
 	
-	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail, especially for the seven exceptions.
+	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail for some examples.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Application: Affine Case}\label{sec:affine}
 For the affine case, we just need to follow \cite[Section 6]{irelli2019cell}, and change everything from $\Gr(-)$ to $\Grr(\Phi(-))$. There is no difference except the Proposition 48, in which the authors proved the affine paving properties of quasi-simple regular representations. So we reduced the question to the case of quasi-simple regular representation. Combined with Corollary \ref{cor:affineADcase}, we've proved the affine paving properties for $\tilde{A},\tilde{D}$ cases.
 
+For an regular quasi-simple representation $Y$ of type $\tilde{E}$, it's possible that there's no short exact sequence
+$$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
+such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main1} or \ref{thm:main2}. We leave this small tail for interested readers.
+\appendix
+\setcounter{secnumdepth}{0}
+\section{Appendix}
 
+In this appendix we solve every case in Figure \ref{fig:minisecmono}. 
 
+When the minimal section mono $X \longrightarrow Y$ is irreducible, we use Theorem \ref{thm:main2} to get morphism
+$$\Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \text{ or } \Grr(\Phi(X)) \setminus \Grr(\Phi(X_S))$$ 
+By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\orde(S)$ has the affine paving property. Let $Y_1:=X$, $X_1:=X_S$, $S_1:=Y_1/X_1$, we again use Theorem \ref{thm:main2} to get morphism
+\begin{equation*}
+\begin{aligned}
+\Grr(\Phi(X)) &\longrightarrow \Grr(\Phi(X_1)) \times \Grr(\Phi(S_1)) \text{ or } \Grr(\Phi(X_1)) \setminus \Grr(\Phi(X_{1S_1}))\\
+\Grr(\Phi(X))\setminus \Grr(\Phi(X_S))&\longrightarrow \Grr(\Phi(X_1)) \times \Grr(\Phi(S_1))
+\end{aligned}
+\end{equation*}
+Luckily $\orde(S_1)$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
+
+In the exception cases the game is similar, but we need to discuss a little more complicated. Let us look at some examples.
 \bibliographystyle{plain}
 \bibliography{reference}
 
