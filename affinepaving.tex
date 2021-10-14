@@ -14,9 +14,12 @@
 \usepackage{float}
 \usepackage{mathrsfs}
 \usepackage{multicol}
+\usepackage{multirow}
 \usepackage[all,pdf]{xy}
 \usepackage[a4paper,left=3cm,right=3cm]{geometry}
-\usepackage{xcolor}
+\usepackage[table,xcdraw]{xcolor} % before tikz-cd
+\usepackage{tikz-cd}
+
 %\usepackage[notcite,notref]{showkeys}
 
 % showkeys  make label explicit on the paper
@@ -134,24 +137,63 @@ Let $Q$ be a quiver of Dynkin or affine type(without loops), $X\in \Rep(Q)$ be a
 \end{equation*}
 \footnotetext{for any $x \in Q_1, i \in \{2,\ldots ,d \} $.}
 
-It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zarisky) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the ???.
+It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zarisky) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the Table \ref{table:result}.
 
-???Here is one table
 
-The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section ???, accordingly.
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+%\begin{table}[]
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%            & $\Grq(X)$                                           & $\Flagd(X)$                    & $\Flagdstr(X)$                 \\ \hline
+%$A$         & \cellcolor[HTML]{CFFFCF}                            & \cellcolor[HTML]{CFFFCF}       & \cellcolor[HTML]{E9F2FF}       \\ \cline{1-1}
+%$D$         & \cellcolor[HTML]{CFFFCF}                            & \multirow{-2}{*}{\cellcolor[HTML]{CFFFCF}Theorem 2.20} & \multirow{-2}{*}{\cellcolor[HTML]{E9F2FF}} \\ \cline{1-1} \cline{3-4} 
+%$E$         & \multirow{-3}{*}{\cellcolor[HTML]{CFFFCF}Section 5} & \multicolumn{2}{c|}{\cellcolor[HTML]{E9F2FF}}                   \\ \hline
+%$\tilde{A}$ & \cellcolor[HTML]{CFFFCF}                            & \multicolumn{2}{c|}{\cellcolor[HTML]{E9F2FF}}                   \\ \cline{1-1}
+%$\tilde{D}$ & \cellcolor[HTML]{CFFFCF}                            & \multicolumn{2}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{E9F2FF}}} \\ \cline{1-1} \cline{3-4} 
+%$\tilde{E}$ & \multirow{-3}{*}{\cellcolor[HTML]{CFFFCF}Section 6} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFDC7}reduced to the regular quasi-finite case.}              \\ \hline
+%\end{tabular}
+%\end{table}
+
+%The nocolor version 
+\begin{table}\label{table:result}
+\begin{tabular}{|c|c|c|c|}
+\hline
+            & $\Grq(X)$                  & $\Flagd(X)$                          & $\Flagdstr(X)$          \\ \hline
+$A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 2.20]{maksimau2019flag}}        & \multirow{2}{*}{Corollary \ref{cor:affinepavingofAD}}       \\ \cline{1-1}
+$D$         &                            &                                      &                         \\ \cline{1-1} \cline{3-4} 
+$E$         &                            & \multicolumn{2}{c|}{Section \ref{sec:Dynkin}}                                          \\ \hline
+$\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{2}{*}{Section \ref{sec:affine}}}                         \\ \cline{1-1}
+$\tilde{D}$ &                            & \multicolumn{2}{c|}{}                                          \\ \cline{1-1} \cline{3-4} 
+$\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the regular quasi-finite case.} \\ \hline
+\end{tabular}
+\caption{Until now, except the $\tilde{E}$ case we've proved the affine paving properties for these varieties.}
+\end{table}
+
+The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section \ref{sec:flag=gr},\ref{sec:mainthm},\ref{sec:Dynkin}, accordingly.
 
 Before the end of this section, let us see in one example how partial flag variety is viewed as quiver Grassmannian.
 
 \begin{eg}
-Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a quiver representation, then $\Flag{3}(X),\Flagstr{3}$ can be viewed as quiver Grassmannian in ???:
+Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a quiver representation, then the varieties $\Flag{3}(X),\Flagstr{3}(X)$ can be viewed as quiver Grassmannian in Figure \ref{fig:flagasgr}:
 
-???[pictures here]
+\begin{center}
+	\begin{figure}[ht]\label{fig:flagasgr}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/flagasgr.png}
+%		\captionsetup{labelformat=empty}
+		\caption{}
+	\end{figure}
+\end{center}
 
 
 \end{eg}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Preliminary Facts}
+\section{Preliminary Facts}\label{sec:flag=gr}
 Fix the quiver $Q$ ant the integer $d \geqslant 2$, we define the new bigger quiver $Q_{d},Q_{d,str}$ as follows:
 
 \begin{itemize}
@@ -169,12 +211,24 @@ Fix the quiver $Q$ ant the integer $d \geqslant 2$, we define the new bigger qui
 \end{itemize}
 \begin{eg}
 Here is the picture of new quiver:
-
-???[pictures here]
+\begin{center}
+	\begin{figure}[ht]\label{fig:newquiver}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/newquiver.png}
+%		\captionsetup{labelformat=empty}
+		\caption{}
+	\end{figure}
+\end{center}
 \end{eg}
-
 We define the ring 
-$$R=??? or ???$$
+\begin{center}
+	\begin{figure}[ht]\label{fig:newring}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/newring.png}
+	\end{figure}
+\end{center}
 and define the canonical map $\Phi:\Rep(Q) \longrightarrow \Mod(R) \textcolor{gray}{\subseteq \Rep(Q_d \text{ or } Q_{d,str})}$ as follows:
 \begin{itemize}
 \item $\left(\Phi(X)\right)_{(i,r)}:=X_i$;
@@ -209,10 +263,10 @@ For (\ref{lm:gldim}), we just need to check minimal projective resolution of $S(
 \subsection{How much do we understand the quiver representation?}
 To understand the category $\Rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander-Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite ind rep(up to isomorphism) and each ind rep corresponds to the positive root of Dynkin diagram. One can compute the Auslander-Reiten quiver by knitting algorithm and get the structure of ind rep. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$\footnote{These paths may be linear dependent, so it's not too easy.}.
 
-We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section ???. For more informations about Auslander-Reiten theory, one can see ???.
+We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander-Reiten theory, one can see ???.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Main Theorem}
+\section{Main Theorem}\label{sec:mainthm}
    
    The following notations will be used throughout this article:
    %In the following sections, we always suppose that 
@@ -239,7 +293,15 @@ for the shorthand notation, where
 \end{aligned}
 \end{equation*}
 
-???[pictures with caption "virtual arrow: can ne thought as the "face" of the quiver"]
+\begin{center}
+	\begin{figure}[ht]\label{fig:virtualarrow}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/virtualarrow.png}
+%		\captionsetup{labelformat=empty}
+		\caption{virtual arrow: can be thought as the "face" of the quiver}
+	\end{figure}
+\end{center}
 
 Let $\eta: 0\longrightarrow X \stackrel{\iota}{\longrightarrow} Y \stackrel{\pi}{\longrightarrow} S \longrightarrow 0$ be a short exact sequence in $Rep(Q)$. Consider the canonical \textbf{non-continuous} map
 $$\Psi: \Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \qquad U \longmapsto \left([\Phi(\iota)]^{-1}(U),[\Phi(\pi)](U)   \right)$$
@@ -264,12 +326,20 @@ Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bun
 
 We will spend the rest of the section proving this theorem. We decide the image as well as the fiber of $\Psi$ respectively.
 \begin{lemma}[follows {\cite[Lemma 21]{irelli2019cell}}]
-The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $/\Psi$ iff the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
+The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $\Psi$ iff the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
 \end{lemma}
 \begin{proof}
 	This follows from the definition of the canonical map.
 	
-	[??? Picture $\pi'$]
+\begin{center}
+	\begin{figure}[ht]\label{fig:extensiongroup}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/extensiongroup.png}
+%		\captionsetup{labelformat=empty}
+		\caption{the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$}
+	\end{figure}
+\end{center}
 \end{proof}
 \begin{corollary}\label{cor:img1}
 	When $\eta$ splits, $\Psi$ is surjective.
@@ -311,7 +381,9 @@ We only prove (i). (ii) is similar.
 From the SES 
 $$0 \longrightarrow \Phi(X)/V\cap V' \longrightarrow \Phi(X)/V \oplus \Phi(X)/V' \longrightarrow \Phi(X)/V+V' \longrightarrow 0,$$
 we get the LES
+
 ???change the way of format
+
 $$\cdots\longrightarrow \Ext^1(\Phi(S),\Phi(X)/V\cap V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V) \oplus \Ext^1(\Phi(S),\Phi(X)/V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V+V') \longrightarrow\cdots$$
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/V\cap V']^1\leqslant 1, \; [\Phi(S),\Phi(X)/V+V']^1\leqslant 1$, and this forces that $[\Phi(S),\Phi(X)/V+V']^1= 1$.
 \end{proof}
@@ -344,9 +416,15 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 	For $(V,W) \in \Img \Psi$, the preimage of $(V,W)$ is a torsor of $\,\Hom_{R}(W,\Phi(X)/V)$. Or we could say, there is one non-canonical isomorphism
 	$$\Psi^{-1}((V,W)) \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{lemma}
-\begin{proof}
-???[pictures]
-
+\begin{proof}Recall the commutative diagram
+\vspace{0cm}
+\begin{center}
+	\begin{figure}[ht]\label{fig:torsor}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/torsor.png}
+	\end{figure}
+\end{center}
 When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{gray}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
@@ -357,7 +435,13 @@ $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\
 \begin{proof}
 We construct one canonical resolution of $T$,
 
-[??? Pictures]
+\begin{center}
+	\begin{figure}[ht]\label{fig:resolution}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/resolution.png}
+	\end{figure}
+\end{center}
 
 by applying the functor $\Hom_R(-,T')$ to this resolution, we get
 $$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
@@ -373,7 +457,7 @@ We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:im
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Application: Dynkin Case}
+\section{Application: Dynkin Case}\label{sec:Dynkin}
 Before discussing the affine paving property, let me introduce some new numerical concepts, which can be seen as the measure of the "complexity" of the representation.
 
 Fix an \textbf{indecomposable} quiver representation $M \in \Rep(\mathbb{Q})$, we define the order of $M$ by
@@ -390,7 +474,7 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \begin{proof}
 	For each vertex $i$ of the bigger quiver, the dimension of $V_i$ is 0,1,2; then the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is naturally included to a direct product of $\mathbb{P}^1$, and the information of arrows just reduce the number of $\mathbb{P}^1$(maybe to singleton or empty).
 \end{proof}
-\begin{corollary}[{\cite[Theorem 2.20]{maksimau2019flag}}]
+\begin{corollary}[{\cite[Theorem 2.20]{maksimau2019flag}}]\label{cor:affinepavingofAD}
 	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
 \end{corollary}
 \begin{corollary}\label{cor:affineADcase}
@@ -398,15 +482,32 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \end{corollary}
 %We use rep 2 Cor 18.8.
 
-\textbf{In the rest of this section we focus on the "difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In ??? the Figure ??? is called the starting functions.}
+\textbf{In the rest of this section we focus on the "difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In ??? the Figure \ref{fig:startingfunction} is called the starting functions.}
 
-???[Pictures]
+\begin{center}
+	\begin{figure}[ht]\label{fig:startingfunction}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=6cm]{figures/startingfunction.png}
+%		\captionsetup{labelformat=empty}
+		\caption{central imformation of Auslander-Reiten quiver}
+	\end{figure}
+\end{center}
 
 \begin{lemma}
 	For every ind rep $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
 \end{lemma}
 \begin{proof}
-	Just observe the Auslander-Reiten sequence. The chosen minimal section monos are represented in Figure ???. Notice that for the most time $\orde(-)$ is enough to guarantee the map to be a mono.
+	Just observe the Auslander-Reiten sequence. The chosen minimal section monos are represented in Figure \ref{fig:minisecmono}. Notice that for the most time $\orde(-)$ is enough to guarantee the map to be a mono.
+	\begin{center}
+		\begin{figure}[ht]\label{fig:minisecmono}
+			\vspace{0cm}
+			\centering
+			\includegraphics[width=7.5cm]{figures/minisecmono.png}
+	%		\captionsetup{labelformat=empty}
+			\caption{minimal section monos}
+		\end{figure}
+	\end{center}
 \end{proof}
 \begin{remark}
 	The condition $\ord(Y)>2$ in the lemma can not be removed.
@@ -416,7 +517,13 @@ Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotie
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 and the following values:
 
-???[Table]
+\begin{center}
+	\begin{figure}[ht]\label{fig:table}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=5cm]{figures/table.png}
+	\end{figure}
+\end{center}
 
 In particular, $S$ is indecomposable and rigid; $[S,X]^1 =1$, so $X_S$ and $S^X$ are well-defined.
 \end{lemma}
@@ -430,7 +537,13 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 \begin{proof}
 	Let $\iota:N \longrightarrow S$ be a proper non-zero subrepresentation of $S$, we need to prove that $\iota^* \eta: 0\longrightarrow X \longrightarrow Y' \longrightarrow N \longrightarrow 0$ splits.
 	
-	[???Comm diag]
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZARgBoAGAXVJADcBDAGwFcYkRyQBfU9TXfIRQAmCtTpNW7ABrdeIDNjwEiAZjE0GLNohABNAORy+SwUQAsGidvYA5Ywv7KhyUcXFapu2TxMCVKOrumpI6+g6K-i6WwdZeIADKEU5mKACspLGeYZy+jqYByBlUITa6ufKRzkRkWaHsFX7VKORW2ewAOh34OPQAegBUXTC9unlVqcitdWUgw6Pc4jBQAObwRKAAZgBOEAC2SK0gOBBIxHk7+2c0J0iix-RYjOwAFhAQANZMOA6XB4j3W6IdQPJ7sSBgNgXXb-EFAgAc0KuwJup0QADYbo9nro3p9viBSvEuj16L8YXdUUgMqCcSA8V9GD8iWF5mSkf8yMc0ZYQIwsJD2FAIMwAEaMNg0F4wehQcEESW0+WCjlIACcVMQ5lVWs1aR1NKB6J1mO5SAA7FxKFwgA
+\begin{center}
+\begin{tikzcd}
+\iota^*\eta: & 0 \arrow[r] & X \arrow[r, hook'] \arrow[d, no head, Rightarrow] & Y' \arrow[r] \arrow[d, "\eta", hook'] & N \arrow[r] \arrow[d, "\iota", hook'] & 0 \\
+\eta:        & 0 \arrow[r] & X \arrow[r]                                       & Y \arrow[r]                           & S \arrow[r]                           & 0
+\end{tikzcd}
+\end{center}
 	
 	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of ind rep. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
@@ -440,10 +553,10 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	
 	For example, take the quiver ???, take???, then ???, the map $T \longrightarrow X/F$ is not a good mono.
 	
-	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure ???. In appendix we will write down the induction process in detail, especially for the five exceptions.
+	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail, especially for the five exceptions.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Application: Affine Case}
+\section{Application: Affine Case}\label{sec:affine}
 For the affine case, we just need to follow \cite[Section 6]{irelli2019cell}, and change everything from $\Gr(-)$ to $\Grr(\Phi(-))$. There is no difference except the Proposition 48, in which the authors proved the affine paving properties of quasi-simple regular representations. So we reduced the question to the case of quasi-simple regular representation. Combined with Corollary \ref{cor:affineADcase}, we've proved the affine paving properties for $\tilde{A},\tilde{D}$ cases.
 
 
