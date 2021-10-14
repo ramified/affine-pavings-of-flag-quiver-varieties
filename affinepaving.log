@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  14 OCT 2021 12:19
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  14 OCT 2021 20:18
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -788,39 +788,39 @@ File: pgflibraryarrows.meta.code.tex 2019/01/05 v3.1 (3.1)
  (affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Try loading font information for U+msa on input line 94.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 102.
+LaTeX Font Info:    Try loading font information for U+msb on input line 94.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 102.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 94.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\u
 rsfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.43799pt on input line 102.
+Package xypdf Info: Line width: 0.43799pt on input line 94.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -860,7 +860,7 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (5.8603pt too wide) detected at line 137
+Overfull \hbox (5.8603pt too wide) detected at line 129
 [][]
  []
 
@@ -879,7 +879,7 @@ File: figures/virtualarrow.png Graphic file (type bmp)
 File: figures/extensiongroup.png Graphic file (type bmp)
 <figures/extensiongroup.png>
  [5]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 374--375
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 368--369
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -894,24 +894,12 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
  []
 
 
-Overfull \hbox (146.0574pt too wide) detected at line 387
-[] [][]\OMS/cmsy/m/n/10.95 ! [][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\
-OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/1
-0.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V \OMS/cmsy/m/n/10.95 \ \OML/cmm
-/m/it/10.95 V[]\OT1/cmr/m/n/10.95 ) [][]\OMS/cmsy/m/n/10.95 ! [][]\OT1/cmr/m/n/
-10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/
-cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 
-=V\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^H [][]\OT1/cmr/m/n/10.95 (^^H(\OML
-/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^
-^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V[]\OT1/cmr/m/
-n/10.95 ) [][]\OMS/cmsy/m/n/10.95 ! [][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/1
-0.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(\OML/cmm
-/m/it/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V \OT1/cmr/m/n/10.95 + \O
-ML/cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 ) [][]\OMS/cmsy/m/n/10.95 ! [] 
+Overfull \hbox (55.5988pt too wide) detected at line 378
+ [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
  []
 
-[6]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 416--417
+
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 407--408
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -921,23 +909,25 @@ m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
 m/it/10.95 .
  []
 
+[6]
 File: figures/torsor.png Graphic file (type bmp)
 <figures/torsor.png>
 File: figures/resolution.png Graphic file (type bmp)
 <figures/resolution.png>
-[7] [8]
+ [7]
 File: figures/startingfunction.png Graphic file (type bmp)
 <figures/startingfunction.png>
 File: figures/minisecmono.png Graphic file (type bmp)
 <figures/minisecmono.png>
+ [8]
 File: figures/table.png Graphic file (type bmp)
 <figures/table.png>
  [9] [10] (affinepaving.bbl) [11] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 17019 strings out of 427748
- 318181 string characters out of 3150981
- 426836 words of memory out of 3000000
- 20529 multiletter control sequences out of 15000+200000
+ 17076 strings out of 427748
+ 319633 string characters out of 3150981
+ 437410 words of memory out of 3000000
+ 20586 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,13n,82p,3261b,1008s stack positions out of 5000i,500n,10000p,200000b,50000s

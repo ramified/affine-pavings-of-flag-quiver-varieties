@@ -56,19 +56,7 @@
 
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{remarks}{Remarks}
-\newcommand*\widebar[1]{%
-	\hbox{%
-		\vbox{%
-			\hrule height 0.5pt % The actual bar
-			\kern0.6ex%         % Distance between bar and symbol
-			\hbox{%
-				\kern 0em%      % Shortening on the left side
-				\ensuremath{#1}%
-				\kern 0em%      % Shortening on the right side
-			}%
-		}%
-	}%
-}
+
 %\renewcommand\thefootnote{\fnsymbol{footnote}}
 %dont use number as footnote symbol, use this command to change
 
@@ -99,6 +87,10 @@
 \newcommand{\dimvec}[1]{\mathbf{#1}}
 \newcommand{\ord}{\operatorname{ord}}
 \newcommand{\orde}{\operatorname{ord}_e }
+\newcommand{\representation}[2]{\genfrac{}{}{0pt}{3}{\phantom{000}#2\phantom{00}}{#1}}
+
+\setlength\intextsep{0cm}
+\setlength\textfloatsep{0cm}
 \begin{document}
 \date{}
 
@@ -178,14 +170,14 @@ Before the end of this section, let us see in one example how partial flag varie
 
 \begin{eg}
 Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a quiver representation, then the varieties $\Flag{3}(X),\Flagstr{3}(X)$ can be viewed as quiver Grassmannian in Figure \ref{fig:flagasgr}:
-
 \begin{center}
-	\begin{figure}[ht]\label{fig:flagasgr}
+	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
 		\includegraphics[width=15cm]{figures/flagasgr.png}
 %		\captionsetup{labelformat=empty}
 		\caption{}
+		\label{fig:flagasgr}
 	\end{figure}
 \end{center}
 
@@ -212,12 +204,13 @@ Fix the quiver $Q$ ant the integer $d \geqslant 2$, we define the new bigger qui
 \begin{eg}
 Here is the picture of new quiver:
 \begin{center}
-	\begin{figure}[ht]\label{fig:newquiver}
+	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
 		\includegraphics[width=15cm]{figures/newquiver.png}
 %		\captionsetup{labelformat=empty}
 		\caption{}
+		\label{fig:newquiver}
 	\end{figure}
 \end{center}
 \end{eg}
@@ -261,9 +254,9 @@ Let $M,N,X,S \in \Rep(Q)$, $V,W,T \in \Mod(R)$.
 For (\ref{lm:gldim}), we just need to check minimal projective resolution of $S(i)$ in $\Mod(R)$; for (\ref{lm:toproj}), we reduced to the case of indecomposable projective modules. The rests are easy exercises of homological algebra.
 \end{proof}
 \subsection{How much do we understand the quiver representation?}
-To understand the category $\Rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander-Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite ind rep(up to isomorphism) and each ind rep corresponds to the positive root of Dynkin diagram. One can compute the Auslander-Reiten quiver by knitting algorithm and get the structure of ind rep. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$\footnote{These paths may be linear dependent, so it's not too easy.}.
+To understand the category $\Rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander-Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite indecomposable representations(up to isomorphism) and each indecomposable representation corresponds to the positive root of Dynkin diagram. One can compute the Auslander-Reiten quiver by knitting algorithm and get the structure of indecomposable representations. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$\footnote{These paths may be linear dependent, so it's not too easy.}.
 
-We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander-Reiten theory, one can see ???.
+We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander-Reiten theory, one can see \cite{crawley1992lectures}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Main Theorem}\label{sec:mainthm}
@@ -294,12 +287,13 @@ for the shorthand notation, where
 \end{equation*}
 
 \begin{center}
-	\begin{figure}[ht]\label{fig:virtualarrow}
+	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
 		\includegraphics[width=15cm]{figures/virtualarrow.png}
 %		\captionsetup{labelformat=empty}
 		\caption{virtual arrow: can be thought as the "face" of the quiver}
+		\label{fig:virtualarrow}
 	\end{figure}
 \end{center}
 
@@ -326,21 +320,21 @@ Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bun
 
 We will spend the rest of the section proving this theorem. We decide the image as well as the fiber of $\Psi$ respectively.
 \begin{lemma}[follows {\cite[Lemma 21]{irelli2019cell}}]
-The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $\Psi$ iff the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
+The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $\Psi$ if and only if the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
 \end{lemma}
 \begin{proof}
-	This follows from the definition of the canonical map.
-	
+	This follows from the definition of the canonical map, see Figure \ref{fig:extensiongroup}.
+\end{proof}
 \begin{center}
-	\begin{figure}[ht]\label{fig:extensiongroup}
+	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
 		\includegraphics[width=15cm]{figures/extensiongroup.png}
 %		\captionsetup{labelformat=empty}
 		\caption{the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$}
+		\label{fig:extensiongroup}
 	\end{figure}
 \end{center}
-\end{proof}
 \begin{corollary}\label{cor:img1}
 	When $\eta$ splits, $\Psi$ is surjective.
 \end{corollary}
@@ -348,7 +342,7 @@ The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of 
 	the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ is surjective.
 \end{lemma}
 \begin{proof}
-	By using the LES of Extension groups and the Lemma \ref{lm:Extvan}(\ref{lm:Ext2van}), the maps
+	By using the long exact sequence of Extension groups and the Lemma \ref{lm:Extvan}(\ref{lm:Ext2van}), the maps
 	$$\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X))\qquad \Ext^1(W,\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$$
 	are both surjective. Thus the composition is also surjective.
 \end{proof}
@@ -378,13 +372,10 @@ $\widetilde{X_S}$ and $\widetilde{S^X}$ are well-defined because of the followin
 \begin{proof}
 We only prove (i). (ii) is similar.
 
-From the SES 
+From the short exact sequence 
 $$0 \longrightarrow \Phi(X)/V\cap V' \longrightarrow \Phi(X)/V \oplus \Phi(X)/V' \longrightarrow \Phi(X)/V+V' \longrightarrow 0,$$
-we get the LES
-
-???change the way of format
-
-$$\cdots\longrightarrow \Ext^1(\Phi(S),\Phi(X)/V\cap V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V) \oplus \Ext^1(\Phi(S),\Phi(X)/V') \longrightarrow \Ext^1(\Phi(S),\Phi(X)/V+V') \longrightarrow\cdots$$
+we get the long exact sequence
+$$\hspace{-0.8cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V\cap V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V}\right) \bigoplus \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V+ V'}\right) \rightarrow\cdots$$
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/V\cap V']^1\leqslant 1, \; [\Phi(S),\Phi(X)/V+V']^1\leqslant 1$, and this forces that $[\Phi(S),\Phi(X)/V+V']^1= 1$.
 \end{proof}
 \begin{lemma}[follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, and the proof is same]
@@ -482,38 +473,42 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \end{corollary}
 %We use rep 2 Cor 18.8.
 
-\textbf{In the rest of this section we focus on the "difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In ??? the Figure \ref{fig:startingfunction} is called the starting functions.}
+\textbf{In the rest of this section we focus on the "difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
 
 \begin{center}
-	\begin{figure}[ht]\label{fig:startingfunction}
+	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
 		\includegraphics[width=6cm]{figures/startingfunction.png}
 %		\captionsetup{labelformat=empty}
 		\caption{central imformation of Auslander-Reiten quiver}
+		\label{fig:startingfunction}
 	\end{figure}
 \end{center}
 
 \begin{lemma}
-	For every ind rep $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
+	For every indecomposable representation $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
 \end{lemma}
 \begin{proof}
 	Just observe the Auslander-Reiten sequence. The chosen minimal section monos are represented in Figure \ref{fig:minisecmono}. Notice that for the most time $\orde(-)$ is enough to guarantee the map to be a mono.
+\end{proof}
 	\begin{center}
-		\begin{figure}[ht]\label{fig:minisecmono}
+		\begin{figure}[ht]
 			\vspace{0cm}
 			\centering
 			\includegraphics[width=7.5cm]{figures/minisecmono.png}
 	%		\captionsetup{labelformat=empty}
 			\caption{minimal section monos}
+			\label{fig:minisecmono}
+			\vspace{0.2cm}
 		\end{figure}
 	\end{center}
-\end{proof}
+	
 \begin{remark}
 	The condition $\ord(Y)>2$ in the lemma can not be removed.
 \end{remark}
 \begin{lemma}\label{lem:value}
-Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotient. Then we have the SES 
+Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotient. Then we have the short exact sequence 
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 and the following values:
 
@@ -529,7 +524,7 @@ In particular, $S$ is indecomposable and rigid; $[S,X]^1 =1$, so $X_S$ and $S^X$
 \end{lemma}
 \begin{proof}
 We know that $[X,X]=[Y,Y]=1$ and $[X,X]^1=[Y,Y]^1=0$. By the definition of minimal section mono, we get
-$[X,Y]=1, [Y,X]=0$ and $[X,Y]^1=[Y,X]^1=0$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-Y]$ to the SES $\eta$ we get the results. 
+$[X,Y]=1, [Y,X]=0$ and $[X,Y]^1=[Y,X]^1=0$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-Y]$ to the short exact sequence $\eta$ we get the results. 
 \end{proof}
 In the following two lemmas we will describe the representations $S^X$ and $X_S$ more clearly.
 \begin{lemma} Take the same notations as in Lemma \ref{lem:value}. Then $S^X=S$.
@@ -537,44 +532,38 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 \begin{proof}
 	Let $\iota:N \longrightarrow S$ be a proper non-zero subrepresentation of $S$, we need to prove that $\iota^* \eta: 0\longrightarrow X \longrightarrow Y' \longrightarrow N \longrightarrow 0$ splits.
 	
-% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZARgBoAGAXVJADcBDAGwFcYkRyQBfU9TXfIRQAmCtTpNW7ABrdeIDNjwEiAZjE0GLNohABNAORy+SwUQAsGidvYA5Ywv7KhyUcXFapu2TxMCVKOrumpI6+g6K-i6WwdZeIADKEU5mKACspLGeYZy+jqYByBlUITa6ufKRzkRkWaHsFX7VKORW2ewAOh34OPQAegBUXTC9unlVqcitdWUgw6Pc4jBQAObwRKAAZgBOEAC2SK0gOBBIxHk7+2c0J0iix-RYjOwAFhAQANZMOA6XB4j3W6IdQPJ7sSBgNgXXb-EFAgAc0KuwJup0QADYbo9nro3p9viBSvEuj16L8YXdUUgMqCcSA8V9GD8iWF5mSkf8yMc0ZYQIwsJD2FAIMwAEaMNg0F4wehQcEESW0+WCjlIACcVMQ5lVWs1aR1NKB6J1mO5SAA7FxKFwgA
+
 \begin{center}
 \begin{tikzcd}
-\iota^*\eta: & 0 \arrow[r] & X \arrow[r, hook'] \arrow[d, no head, Rightarrow] & Y' \arrow[r] \arrow[d, "\eta", hook'] & N \arrow[r] \arrow[d, "\iota", hook'] & 0 \\
+\iota^*\eta: & 0 \arrow[r] & X \arrow[r, hook'] \arrow[d, equal] & Y' \arrow[r] \arrow[d, "\eta", hook'] & N \arrow[r] \arrow[d, "\iota", hook'] & 0 \\
 \eta:        & 0 \arrow[r] & X \arrow[r]                                       & Y \arrow[r]                           & S \arrow[r]                           & 0
 \end{tikzcd}
 \end{center}
 	
-	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of ind rep. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
+	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
 \begin{remark}
 	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a good mono.
 	
-	For example, take the quiver ???, take???, then ???, the map $T \longrightarrow X/F$ is not a good mono.
+	For example, take the quiver of type $E_7$: 
+	\begin{tikzcd}[row sep=3mm, column sep=5mm]
+	                &                 &                 & \bullet \arrow[d] &                 &                 \\
+	\bullet \arrow[r] & \bullet \arrow[r] & \bullet \arrow[r] & \bullet           & \bullet \arrow[l] & \bullet \arrow[l]
+	\end{tikzcd}\\
+	 take $Y=\representation{122321}{1}$, $X=\representation{112321}{1}$, then $X_S=\representation{111210}{1}\oplus \representation{000111}{0}=F \oplus T$, $X/F =\representation{001111}{0}$, the map $T \longrightarrow X/F$ is not a good mono.
 	
-	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail, especially for the five exceptions.
+	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail, especially for the seven exceptions.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Application: Affine Case}\label{sec:affine}
 For the affine case, we just need to follow \cite[Section 6]{irelli2019cell}, and change everything from $\Gr(-)$ to $\Grr(\Phi(-))$. There is no difference except the Proposition 48, in which the authors proved the affine paving properties of quasi-simple regular representations. So we reduced the question to the case of quasi-simple regular representation. Combined with Corollary \ref{cor:affineADcase}, we've proved the affine paving properties for $\tilde{A},\tilde{D}$ cases.
 
 
-Task:
-
-
-fillin the ???
-
-change ind rep to indecomposable representations
-
-change iff to if and only if
-
-change SES LES
 
 \bibliographystyle{plain}
 \bibliography{reference}
-\nocite{irelli2019cell}
-\nocite{maksimau2019flag}
+
 
 
 
