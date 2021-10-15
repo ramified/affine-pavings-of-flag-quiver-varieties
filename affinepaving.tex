@@ -117,7 +117,10 @@ In this article, we establish an affine paving for partial flag quiver varieties
 \maketitle
 \tableofcontents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\section*{Acknowledgement}
+%\addcontentsline{toc}{section}{Acknowledgement}
+First, I would like to thank my supervisor, Professor Jens Niklas Eberhardt, for introducing me this specific problem of partial flag quiver variety and giving some advises. I would also like to thank Hans Franzen for answering some questions I had for understanding the article \cite{irelli2019cell}.
+%My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this tome
 \section{Introduction}
 Let $Q$ be a quiver of Dynkin or affine type(without loops), $X\in \Rep(Q)$ be an quiver representation.\footnote{We fix the base field $K=\mathbb{C}$ for convinience.} We are interested in three objects related to $X \in \Rep(Q)$:
 \begin{equation*}
@@ -543,7 +546,7 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
-\begin{lemma}[{follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]
+\begin{lemma}[{follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]\label{lem:descriptionofX_S}
 	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
 \begin{corollary}
@@ -569,8 +572,9 @@ For an regular quasi-simple representation $Y$ of type $\tilde{E}$, it's possibl
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main1} or \ref{thm:main2}. We leave this small tail for interested readers.
 \appendix
-\setcounter{secnumdepth}{0}
-\section{Appendix}
+%\setcounter{secnumdepth}{0}
+%\section{Appendix}
+\section{}
 
 In this appendix we solve every case in Figure \ref{fig:minisecmono}. 
 
@@ -585,7 +589,109 @@ By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is
 \end{equation*}
 Luckily $\orde(S_1)$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
 
-In the exception cases the game is similar, but we need to discuss a little more complicated. Let us look at some examples.
+In the exception cases the game is similar, but we need to discuss a little more complicated. Let us look at some examples. (We simplify the notations: $\Gr(M)$ as $\Grr_{\dimvec{f}}(\Phi(M))$, $U(M,N)$ as $\Grr_{\dimvec{f}}(\Phi(M)) \setminus \Grr_{\dimvec{f}}(\Phi(M))$, and we also ignore the dimension vectors.)
+	\begin{center}
+		\begin{figure}[ht]
+			\vspace{0cm}
+			\centering
+			\includegraphics[width=7.5cm]{figures/specialcases.png}
+	%		\captionsetup{labelformat=empty}
+			\caption{special cases}
+			\label{fig:specialcases}
+			\vspace{0.2cm}
+		\end{figure}
+	\end{center}
+\begin{eg}
+In the case of Figure \ref{fig:specialcases}(a), if $X_1 \longrightarrow Y$ is injective, then
+\begin{equation*}
+\begin{aligned}
+\Gr(Y) &\longrightarrow \Gr(X_1) \times \Gr(Y/X_1) \text{ or } U(X_1,X)\\
+\Gr(X_1) &\longrightarrow \Gr(X) \times \Gr(X_1/X) \text{ or } U(X,X_S)\\
+U(X_1,X) &\longrightarrow \Gr(X) \times \Gr(X_1/X) \\
+U(X,X_S) &\longrightarrow \Gr(X_S) \times \Gr(X/X_S). \\
+\end{aligned}
+\end{equation*}
+
+When $X_1 \longrightarrow Y$ is not injective, we get
+$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S).$$
+Since the map $\tau X_1 \longrightarrow \tau Y$ is injective, from Lemma \ref{lem:descriptionofX_S} we get $X_S\longrightarrow X$ is irreducible monomorphism. Thus
+$$U(X,X_S) \longrightarrow \Gr(X_S) \times \Gr(X/X_S).$$
+These maps give the variety $\Gr(Y)$ an affine paving from bottom to top.
+\end{eg}
+\begin{eg}
+In Figure \ref{fig:specialcases}(b), we would like to prove that  $\Gr(Y)$ has the affine paving property. We have
+$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S).$$
+When the map $M \longrightarrow X$ is not monomorphism, we get
+$$U(X,X_S) \longrightarrow \Gr(X_S) \times \Gr(X/X_S);$$
+when the map $M \longrightarrow X$ is monomorphism, we get
+\begin{equation*}
+\begin{aligned}
+U(X,X_S)&=U(X,M) \bigsqcup U(M,X_S)\\
+U(X,M) &\longrightarrow \Gr(M) \times \Gr(X/M)\\
+U(M,X_S) &\longrightarrow \Gr(X_S) \times \Gr(M/X_S).
+\end{aligned}
+\end{equation*}
+Since the order of $X$, $Y/X$, $X_S$, $X/X_S$, $M$, $X/M$, $M/X_S$ are small or equal to $2$, the induction process stops, we get $\Gr(Y)$ has the affine paving property.
+\end{eg}
+\begin{eg}
+In the case of Figure \ref{fig:specialcases}(c), we have 
+$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S)$$
+where $X_S=\ker(\tau X_1 \longrightarrow \tau Y)$. When $X_S=0$ we're done; if not, then $A \neq 0$ and $X_S=A$, we decompose $X_S \longrightarrow Y$ as compositions of minimal section monos:
+
+Case 1: $M\longrightarrow X$ is not injective, then
+ \begin{equation*}
+ \begin{aligned}
+ U(X,X_S)&=U(X,N) \bigsqcup U(N,X_S)\\
+ U(X,N) &\longrightarrow \Gr(N) \times \Gr(X/N)\\
+ U(N,X_S) &\longrightarrow \Gr(X_S) \times \Gr(N/X_S).
+ \end{aligned}
+ \end{equation*}
+ 
+ Case 2: $M\longrightarrow X$ is injective, then
+  \begin{equation*}
+  \begin{aligned}
+  U(X,X_S)&=U(X,M) \bigsqcup U(M,N) \bigsqcup U(N,X_S)\\
+  U(X,M) &\longrightarrow \Gr(M) \times \Gr(X/M)\\
+  U(M,N) &\longrightarrow \Gr(N) \times \Gr(M/N)\\
+  U(N,X_S) &\longrightarrow \Gr(X_S) \times \Gr(N/X_S).
+  \end{aligned}
+  \end{equation*}
+  
+  Since $\Gr(X)$, $\Gr(Y/X)$, $\Gr(N)$, $\ldots$ have affine paving property, we conclude that $\Gr(Y)$ has also the affine paving property.
+\end{eg}
+\begin{eg}
+Finally we begin to handle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
+$$\Gr(Y) \longrightarrow \Gr(F) \times \Gr(Y/F) \text{ or } U(F,?)$$
+then we get the result \footnote{$\Gr(F)$ is empty or a singleton, so is $U(F,?)$.}.
+
+When $X \longrightarrow Y$ is injective, we have
+$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S)$$
+where $X_S=F\oplus \ker(\tau X_1 \longrightarrow \tau Y)=F \oplus T$ by Lemma \ref{lem:descriptionofX_S}. Since $X \longrightarrow Y$ is injective, we get $A=0$, thus $B=0$ also, and then the sectional map $T \longrightarrow X/F$ in injective. We thus get two short exact sequence satisfying the conditions in \ref{thm:main2}:
+\begin{center}
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZARgBoAGAXVJADcBDAGwFcYkRyQBfU9TXfIRQAmCtTpNW7AGLdeIDNjwEiAZjE0GLNohAANOXyWCiAFg0Tt7PQHpZPIwJUoArBa1TdnBwv7KhJKTE4h46HIa+xs7IbsGakmHe8opOAaJxlp4gACoRKf5qQSEJ1nZ5fiYo5hmhpXoA+gDK5VEB5O4lugA6XTA49Lo++ZXI7TWdID0AHliD4jBQAObwRKAAZgBOEAC2SG4gOBBIAOw+mzsnNIdIABxnW7uIN1dHiACc8VbdXWhYAOQRc6PD4HV4ANnuF0Q6lBSFMkMeolh0M+WR6v0BDyQZGRwgRSHayOIXEoXCAA
+\begin{tikzcd}[row sep=0mm]
+\eta: & 0 \arrow[r] & F \arrow[r] & X \arrow[r, "\pi"]    & X/F \arrow[r]   & 0 \\
+\xi:  & 0 \arrow[r] & T \arrow[r] & X/F \arrow[r, "\pi'"] & X/X_S \arrow[r] & 0
+\end{tikzcd}
+\end{center}
+Let $N \in \Gr(X)$ be a subrepresentation, it's obvious that $N \in \Gr(X_S) \iff \pi'\circ \pi(N)=0$, so 
+  \begin{equation*}
+  \begin{aligned}
+  N\in U(X,X_S) & \iff \pi'\circ \pi(N) \neq 0\\
+  & \iff \pi(N) \notin \Gr(T)\\
+  & \iff \pi(N) \in U(X/F,T)\\
+  & \iff \Psi_{\eta}(N) \in \Gr(F) \times U(X/F,T)
+  \end{aligned}
+  \end{equation*}
+\end{eg}
+Thus the Zarisky-locally trivial affine bundle map
+$$U(X,F) \longrightarrow \Gr(F) \times \Gr(X/F)$$
+restricted to the Zarisky-locally trivial affine bundle map
+$$U(X,X_S) \longrightarrow \Gr(F) \times U(X/F,T).$$
+
+Finally, by applying the short exact sequence $\xi$ to Theorem \ref{thm:main2} we get the map
+$$U(X/F,T) \longrightarrow \Gr(X/F) \times \Gr(T).$$
+Since all the Grassmannians $\Gr(X)$, $\Gr(Y/X)$, $\Gr(F)$, $\Gr(X/F)$, $\Gr(T)$ have the affine paving property, we conclude that $\Gr(Y)$ has the affine paving property.
 \bibliographystyle{plain}
 \bibliography{reference}
 

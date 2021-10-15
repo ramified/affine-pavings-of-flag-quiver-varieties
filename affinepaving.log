@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  15 OCT 2021 00:27
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  15 OCT 2021 22:37
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -860,7 +860,7 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (5.8603pt too wide) detected at line 129
+Overfull \hbox (5.8603pt too wide) detected at line 132
 [][]
  []
 
@@ -879,7 +879,7 @@ File: figures/virtualarrow.png Graphic file (type bmp)
 File: figures/extensiongroup.png Graphic file (type bmp)
 <figures/extensiongroup.png>
  [5]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 368--369
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 371--372
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -894,12 +894,12 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
  []
 
 
-Overfull \hbox (55.5988pt too wide) detected at line 378
+Overfull \hbox (55.5988pt too wide) detected at line 381
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
  []
 
 [6]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 407--408
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 410--411
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -913,28 +913,29 @@ File: figures/torsor.png Graphic file (type bmp)
 <figures/torsor.png>
 File: figures/resolution.png Graphic file (type bmp)
 <figures/resolution.png>
-[7]
+[7] [8]
 File: figures/startingfunction.png Graphic file (type bmp)
 <figures/startingfunction.png>
- [8]
 File: figures/minisecmono.png Graphic file (type bmp)
 <figures/minisecmono.png>
- [9]
 File: figures/table.png Graphic file (type bmp)
 <figures/table.png>
- [10]
-Overfull \hbox (5.91887pt too wide) detected at line 585
+ [9] [10]
+Overfull \hbox (5.91887pt too wide) detected at line 589
 [][]
  []
 
-(affinepaving.bbl [11]) [12] (affinepaving.aux) ) 
+[11]
+File: figures/specialcases.png Graphic file (type bmp)
+<figures/specialcases.png>
+ [12] [13] (affinepaving.bbl) [14] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 17077 strings out of 427748
- 319650 string characters out of 3150981
- 429065 words of memory out of 3000000
- 20587 multiletter control sequences out of 15000+200000
+ 17185 strings out of 427748
+ 322359 string characters out of 3150981
+ 430594 words of memory out of 3000000
+ 20694 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,13n,82p,3261b,1008s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,13n,82p,3261b,1033s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (12 pages).
+Output written on affinepaving.pdf (14 pages).
