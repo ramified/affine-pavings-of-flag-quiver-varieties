@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  15 OCT 2021 22:37
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  16 OCT 2021 16:26
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -860,7 +860,7 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (5.8603pt too wide) detected at line 132
+Overfull \hbox (5.8603pt too wide) detected at line 129
 [][]
  []
 
@@ -932,7 +932,7 @@ File: figures/specialcases.png Graphic file (type bmp)
 Here is how much of TeX's memory you used:
  17185 strings out of 427748
  322359 string characters out of 3150981
- 430594 words of memory out of 3000000
+ 430598 words of memory out of 3000000
  20694 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
