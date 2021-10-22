@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  16 OCT 2021 16:34
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  22 OCT 2021 23:43
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -781,11 +781,37 @@ File: pgflibraryarrows.meta.code.tex 2019/01/05 v3.1 (3.1)
 \pgfarrowlength=\dimen274
 \pgfarrowwidth=\dimen275
 \pgfarrowlinewidth=\dimen276
-)))
-\c@theorem=\count146
-\c@thmsub=\count147
-\c@remarks=\count148
- (affinepaving.aux)
+))) (quiver.sty
+Package: quiver 2021/01/11 quiver
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
+tendlayer/tikz/libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
+tendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
+tendlayer/tikz/libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modu
+les\pgfmoduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen277
+\pgfdecoratedremainingdistance=\dimen278
+\pgfdecoratedinputsegmentcompleteddistance=\dimen279
+\pgfdecoratedinputsegmentremainingdistance=\dimen280
+\pgf@decorate@distancetomove=\dimen281
+\pgf@decorate@repeatstate=\count146
+\pgfdecorationsegmentamplitude=\dimen282
+\pgfdecorationsegmentlength=\dimen283
+)
+\tikz@lib@dec@box=\box75
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
+aries/decorations\pgflibrarydecorations.pathmorphing.code.tex")))
+\c@theorem=\count147
+\c@thmsub=\count148
+\c@remarks=\count149
+
+(affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
@@ -868,18 +894,10 @@ Overfull \hbox (5.8603pt too wide) detected at line 129
 File: figures/flagasgr.png Graphic file (type bmp)
 <figures/flagasgr.png>
  [2]
-File: figures/newquiver.png Graphic file (type bmp)
-<figures/newquiver.png>
 File: figures/newring.png Graphic file (type bmp)
 <figures/newring.png>
- [3]
-File: figures/virtualarrow.png Graphic file (type bmp)
-<figures/virtualarrow.png>
- [4]
-File: figures/extensiongroup.png Graphic file (type bmp)
-<figures/extensiongroup.png>
- [5]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 371--372
+ [3] [4] [5]
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 469--470
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -894,12 +912,12 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
  []
 
 
-Overfull \hbox (55.5988pt too wide) detected at line 381
+Overfull \hbox (55.5988pt too wide) detected at line 479
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
  []
 
 [6]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 410--411
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 508--509
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -909,33 +927,27 @@ m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
 m/it/10.95 .
  []
 
-File: figures/torsor.png Graphic file (type bmp)
-<figures/torsor.png>
 File: figures/resolution.png Graphic file (type bmp)
 <figures/resolution.png>
-[7] [8]
+[7]
 File: figures/startingfunction.png Graphic file (type bmp)
 <figures/startingfunction.png>
 File: figures/minisecmono.png Graphic file (type bmp)
 <figures/minisecmono.png>
+ [8]
 File: figures/table.png Graphic file (type bmp)
 <figures/table.png>
  [9] [10]
-Overfull \hbox (5.91887pt too wide) detected at line 589
-[][]
- []
-
-[11]
 File: figures/specialcases.png Graphic file (type bmp)
 <figures/specialcases.png>
- [12] [13] (affinepaving.bbl) [14] (affinepaving.aux) ) 
+ [11] [12] (affinepaving.bbl [13]) [14] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 17185 strings out of 427748
- 322359 string characters out of 3150981
- 430598 words of memory out of 3000000
- 20694 multiletter control sequences out of 15000+200000
+ 18700 strings out of 427748
+ 364347 string characters out of 3150981
+ 507295 words of memory out of 3000000
+ 22195 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,13n,82p,3261b,1033s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,17n,82p,3261b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on affinepaving.pdf (14 pages).

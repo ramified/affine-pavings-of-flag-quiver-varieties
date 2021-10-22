@@ -19,7 +19,7 @@
 \usepackage[a4paper,left=3cm,right=3cm]{geometry}
 \usepackage[table,xcdraw]{xcolor} % before tikz-cd
 \usepackage{tikz-cd}
-
+\usepackage{quiver} 
 %\usepackage[notcite,notref]{showkeys}
 
 % showkeys  make label explicit on the paper
@@ -80,7 +80,7 @@
 \DeclareMathOperator{\Flagd}{\operatorname{Flag}_{\mathbf{d}}}
 \DeclareMathOperator{\Flagdstr}{\operatorname{Flag}_{\mathbf{d},str}}
 \newcommand{\Gr}{\operatorname{Gr}}
-\newcommand{\Grr}{\operatorname{Gr}^{R}}
+\newcommand{\Grr}{\operatorname{Gr}}
 \newcommand{\Grq}{\operatorname{Gr}^{KQ}}
 \newcommand{\Flag}[1]{\operatorname{Flag}_{\mathbf{#1}}}
 \newcommand{\Flagstr}[1]{\operatorname{Flag}_{\mathbf{#1},str}}
@@ -206,16 +206,47 @@ Fix the quiver $Q$ and the integer $d \geqslant 2$, we define the new bigger qui
 \end{itemize}
 \begin{eg}
 Here is the picture of new quiver:
-\begin{center}
-	\begin{figure}[ht]
-		\vspace{0cm}
-		\centering
-		\includegraphics[width=15cm]{figures/newquiver.png}
-%		\captionsetup{labelformat=empty}
-		\caption{}
-		\label{fig:newquiver}
-	\end{figure}
-\end{center}
+% https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XV0=
+\[\begin{tikzcd}[column sep=3mm, row sep=5mm]
+	&&&&&&&[5mm] \bullet && \bullet && \bullet && \bullet &[5mm] \bullet && \bullet && \bullet && \bullet \\
+	&&&&&&& \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\
+	\bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\[-5mm]
+	&&& {\hspace{-1cm}Q\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_3\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_{3,str}\hspace{-1cm}}
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-5, to=3-3]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=3-8, to=3-10]
+	\arrow[from=3-12, to=3-10]
+	\arrow[from=3-12, to=3-14]
+	\arrow[from=2-8, to=2-10]
+	\arrow[from=2-12, to=2-10]
+	\arrow[from=2-12, to=2-14]
+	\arrow[from=1-8, to=1-10]
+	\arrow[from=1-12, to=1-10]
+	\arrow[from=1-12, to=1-14]
+	\arrow[from=2-8, to=1-8]
+	\arrow[from=3-8, to=2-8]
+	\arrow[from=3-10, to=2-10]
+	\arrow[from=2-10, to=1-10]
+	\arrow[from=2-12, to=1-12]
+	\arrow[from=3-12, to=2-12]
+	\arrow[from=3-14, to=2-14]
+	\arrow[from=2-14, to=1-14]
+	\arrow[from=2-15, to=3-17]
+	\arrow[from=1-15, to=2-17]
+	\arrow[from=2-19, to=3-17]
+	\arrow[from=1-19, to=2-17]
+	\arrow[from=1-19, to=2-21]
+	\arrow[from=2-19, to=3-21]
+	\arrow[from=2-21, to=1-21]
+	\arrow[from=3-21, to=2-21]
+	\arrow[from=3-19, to=2-19]
+	\arrow[from=2-19, to=1-19]
+	\arrow[from=3-17, to=2-17]
+	\arrow[from=2-17, to=1-17]
+	\arrow[from=2-15, to=1-15]
+	\arrow[from=3-15, to=2-15]
+\end{tikzcd}\]
 \end{eg}
 We define the ring 
 \begin{center}
@@ -293,8 +324,56 @@ for the shorthand notation, where
 	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
-		\includegraphics[width=15cm]{figures/virtualarrow.png}
-%		\captionsetup{labelformat=empty}
+% https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XSxbOCwxMywiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzQsOSwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzEwLDEzLCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbNiw5LCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbNiwxMSwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzEwLDE1LCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbMTgsMjAsIiIsMSx7ImNvbG91ciI6WzAsMTAwLDYwXX1dLFsyMSwyMCwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzIxLDIzLCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XV0=
+\[\begin{tikzcd}[column sep=3mm, row sep=5mm]
+	&&&&&&&[5mm] \bullet && \bullet && \bullet && \bullet &[5mm] \bullet && \bullet && \bullet && \bullet \\
+	&&&&&&& \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\
+	\bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\[-5mm]
+	&&& {\hspace{-1cm}Q\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_3\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_{3,str}\hspace{-1cm}}
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-5, to=3-3]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=3-8, to=3-10]
+	\arrow[from=3-12, to=3-10]
+	\arrow[from=3-12, to=3-14]
+	\arrow[from=2-8, to=2-10]
+	\arrow[from=2-12, to=2-10]
+	\arrow[from=2-12, to=2-14]
+	\arrow[from=1-8, to=1-10]
+	\arrow[from=1-12, to=1-10]
+	\arrow[from=1-12, to=1-14]
+	\arrow[from=2-8, to=1-8]
+	\arrow[from=3-8, to=2-8]
+	\arrow[from=3-10, to=2-10]
+	\arrow[from=2-10, to=1-10]
+	\arrow[from=2-12, to=1-12]
+	\arrow[from=3-12, to=2-12]
+	\arrow[from=3-14, to=2-14]
+	\arrow[from=2-14, to=1-14]
+	\arrow[from=2-15, to=3-17]
+	\arrow[from=1-15, to=2-17]
+	\arrow[from=2-19, to=3-17]
+	\arrow[from=1-19, to=2-17]
+	\arrow[from=1-19, to=2-21]
+	\arrow[from=2-19, to=3-21]
+	\arrow[from=2-21, to=1-21]
+	\arrow[from=3-21, to=2-21]
+	\arrow[from=3-19, to=2-19]
+	\arrow[from=2-19, to=1-19]
+	\arrow[from=3-17, to=2-17]
+	\arrow[from=2-17, to=1-17]
+	\arrow[from=2-15, to=1-15]
+	\arrow[from=3-15, to=2-15]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-8, to=1-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-8, to=2-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-14]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-14]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-15, to=2-17]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-17]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-21]
+\end{tikzcd}\]
 		\caption{virtual arrow: can be thought as the "face" of the quiver}
 		\label{fig:virtualarrow}
 	\end{figure}
@@ -321,23 +400,42 @@ The goal of this section is to prove the following theorems:
 Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$ over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
 \end{theorem}
 
-We will spend the rest of the section proving this theorem. We decide the image as well as the fiber of $\Psi$ respectively.
+We will spend the rest of the section proving these theorems. We decide the image as well as the fiber of $\Psi$ respectively.
 \begin{lemma}[follows {\cite[Lemma 21]{irelli2019cell}}]
 The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $\Psi$ if and only if the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
 \end{lemma}
 \begin{proof}
-	This follows from the definition of the canonical map, see Figure \ref{fig:extensiongroup}.
+	The canonical map is defined as follows:
+% https://q.uiver.app/?q=WzAsMjIsWzQsMCwiXFxQaGkoWCkiXSxbNCwxLCJcXFBoaShYKSJdLFs0LDIsIlxcUGhpKFgpL1YiXSxbNSwxLCJcXHBpXnstMX0oVykiXSxbNSwwLCJcXFBoaShZKSJdLFs1LDIsIlxccGleey0xfShXKS9WIl0sWzYsMSwiVyJdLFs2LDIsIlciXSxbNiwwLCJcXFBoaShTKSJdLFszLDAsIjAiXSxbNywwLCIwIl0sWzMsMSwiMCJdLFs3LDEsIjAiXSxbMywyLCIwIl0sWzcsMiwiMCJdLFsyLDAsIlxcRXh0XjEoXFxQaGkoUyksXFxQaGkoWCkpIl0sWzIsMSwiXFxFeHReMShXLFxcUGhpKFgpKSJdLFsyLDIsIlxcRXh0XjEoVyxcXFBoaShYKS9WKSJdLFswLDAsIlxcZXRhIl0sWzAsMiwiXFxiYXJ7XFxldGF9Il0sWzEsMCwiXFxpbiJdLFsxLDIsIlxcaW4iXSxbMSwyXSxbMSwwLCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDRdLFszLDVdLFs2LDcsIiIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzYsOF0sWzksMF0sWzAsNF0sWzQsOCwiXFxwaSJdLFs4LDEwXSxbMTEsMV0sWzEsM10sWzMsNl0sWzYsMTJdLFsxMywyXSxbMiw1XSxbNSw3XSxbNywxNF0sWzE1LDE2XSxbMTYsMTddLFsxOCwxOSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dXQ==
+\[\begin{tikzcd}
+	\eta &[-30pt] \in &[-30pt] {\Ext^1(\Phi(S),\Phi(X))} & 0 & {\Phi(X)} & {\Phi(Y)} & {\Phi(S)} & 0 \\
+	&& {\Ext^1(W,\Phi(X))} & 0 & {\Phi(X)} & {\pi^{-1}(W)} & W & 0 \\
+	{\bar{\eta}} & \in & {\Ext^1(W,\Phi(X)/V)} & 0 & {\Phi(X)/V} & {\pi^{-1}(W)/V} & W & 0
+	\arrow[from=2-5, to=3-5]
+	\arrow[Rightarrow, no head, from=2-5, to=1-5]
+	\arrow[from=2-6, to=1-6]
+	\arrow[from=2-6, to=3-6]
+	\arrow[Rightarrow, no head, from=2-7, to=3-7]
+	\arrow[from=2-7, to=1-7]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=1-5, to=1-6]
+	\arrow["\pi", from=1-6, to=1-7]
+	\arrow[from=1-7, to=1-8]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-5, to=2-6]
+	\arrow[from=2-6, to=2-7]
+	\arrow[from=2-7, to=2-8]
+	\arrow[from=3-4, to=3-5]
+	\arrow[from=3-5, to=3-6]
+	\arrow[from=3-6, to=3-7]
+	\arrow[from=3-7, to=3-8]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=2-3, to=3-3]
+	\arrow[maps to, from=1-1, to=3-1]
+\end{tikzcd}\]
+so $\bar{\eta}=0$ if and only if the last SES splits, that means... 
 \end{proof}
-\begin{center}
-	\begin{figure}[ht]
-		\vspace{0cm}
-		\centering
-		\includegraphics[width=15cm]{figures/extensiongroup.png}
-%		\captionsetup{labelformat=empty}
-		\caption{the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$}
-		\label{fig:extensiongroup}
-	\end{figure}
-\end{center}
+
 \begin{corollary}\label{cor:img1}
 	When $\eta$ splits, $\Psi$ is surjective.
 \end{corollary}
@@ -411,14 +509,34 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 	$$\Psi^{-1}((V,W)) \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{lemma}
 \begin{proof}Recall the commutative diagram
-\vspace{0cm}
-\begin{center}
-	\begin{figure}[ht]\label{fig:torsor}
-		\vspace{0cm}
-		\centering
-		\includegraphics[width=15cm]{figures/torsor.png}
-	\end{figure}
-\end{center}
+% https://q.uiver.app/?q=WzAsMjIsWzQsMCwiXFxQaGkoWCkiXSxbNCwxLCJcXFBoaShYKSJdLFs0LDIsIlxcUGhpKFgpL1YiXSxbNSwxLCJcXHBpXnstMX0oVykiXSxbNSwwLCJcXFBoaShZKSJdLFs1LDIsIlxccGleey0xfShXKS9WIl0sWzYsMSwiVyJdLFs2LDIsIlciXSxbNiwwLCJcXFBoaShTKSJdLFszLDAsIjAiXSxbNywwLCIwIl0sWzMsMSwiMCJdLFs3LDEsIjAiXSxbMywyLCIwIl0sWzcsMiwiMCJdLFsyLDAsIlxcRXh0XjEoXFxQaGkoUyksXFxQaGkoWCkpIl0sWzIsMSwiXFxFeHReMShXLFxcUGhpKFgpKSJdLFsyLDIsIlxcRXh0XjEoVyxcXFBoaShYKS9WKSJdLFswLDAsIlxcZXRhIl0sWzAsMiwiXFxiYXJ7XFxldGF9Il0sWzEsMCwiXFxpbiJdLFsxLDIsIlxcaW4iXSxbMSwyXSxbMSwwLCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDRdLFszLDVdLFs2LDcsIiIsMCx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzYsOF0sWzksMF0sWzAsNF0sWzQsOCwiXFxwaSJdLFs4LDEwXSxbMTEsMV0sWzEsM10sWzMsNl0sWzYsMTJdLFsxMywyXSxbMiw1LCJcXGlvdGEiXSxbNSw3LCJcXHBpJyJdLFs3LDE0XSxbMTUsMTZdLFsxNiwxN10sWzE4LDE5LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzcsNSwiXFx0aGV0YSIsMix7ImN1cnZlIjotMywiY29sb3VyIjpbMzU4LDEwMCw2MF19LFszNTgsMTAwLDYwLDFdXV0=
+\[\begin{tikzcd}
+	\eta &[-30pt] \in & [-30pt]{\Ext^1(\Phi(S),\Phi(X))} & 0 & {\Phi(X)} & {\Phi(Y)} & {\Phi(S)} & 0 \\
+	&& {\Ext^1(W,\Phi(X))} & 0 & {\Phi(X)} & {\pi^{-1}(W)} & W & 0 \\
+	{\bar{\eta}} & \in & {\Ext^1(W,\Phi(X)/V)} & 0 & {\Phi(X)/V} & {\pi^{-1}(W)/V} & W & 0
+	\arrow[from=2-5, to=3-5]
+	\arrow[Rightarrow, no head, from=2-5, to=1-5]
+	\arrow[from=2-6, to=1-6]
+	\arrow[from=2-6, to=3-6]
+	\arrow[Rightarrow, no head, from=2-7, to=3-7]
+	\arrow[from=2-7, to=1-7]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=1-5, to=1-6]
+	\arrow["\pi", from=1-6, to=1-7]
+	\arrow[from=1-7, to=1-8]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-5, to=2-6]
+	\arrow[from=2-6, to=2-7]
+	\arrow[from=2-7, to=2-8]
+	\arrow[from=3-4, to=3-5]
+	\arrow["\iota", from=3-5, to=3-6]
+	\arrow["{\pi'}", from=3-6, to=3-7]
+	\arrow[from=3-7, to=3-8]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=2-3, to=3-3]
+	\arrow[maps to, from=1-1, to=3-1]
+	\arrow["\theta"', color={rgb,255:red,255;green,51;blue,58}, curve={height=-18pt}, from=3-7, to=3-6]
+\end{tikzcd}\]
 When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{gray}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
