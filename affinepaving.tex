@@ -123,8 +123,8 @@ Let $Q$ be a quiver of Dynkin or affine type(without loops), $X\in \Rep(Q)$ be a
 \begin{equation*}
 \begin{aligned}
 &	\text{quiver Grassmannian} && \Grq(X)\colon = \left\{ M_1 \mid M_1 \subseteq X \right\}\\
-&	\text{partial flag variety \textcolor{gray}{$d\geqslant 1$}} && \Flagd(X)\colon =\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}\\
-&	\text{strict partial flag variety \textcolor{gray}{$d\geqslant 2$}} && \Flagdstr(X)\colon =\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X  \mid x.M_{i+1} \subseteq M_i\right\}\footnotemark\\
+&	\text{partial flag variety \textcolor{black}{$d\geqslant 1$}} && \Flagd(X)\colon =\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}\\
+&	\text{strict partial flag variety \textcolor{black}{$d\geqslant 2$}} && \Flagdstr(X)\colon =\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X  \mid x.M_{i+1} \subseteq M_i\right\}\footnotemark\\
 \end{aligned}
 \end{equation*}
 \footnotetext{for any $x \in Q_1, i \in \{2,\ldots ,d \} $.}
@@ -199,8 +199,8 @@ Fix the quiver $Q$ and the integer $d \geqslant 2$, we define the new bigger qui
 		\item for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$;
 		\item for each arrow $i \longrightarrow j$ in quiver $Q$:
 		\begin{itemize}
-			\item $Q_d$ case: there is one arrow from $(i,r)$ to $(j,r)$; \textcolor{gray}{(for any $r \in \{1,\ldots,d\}$)}
-			\item $Q_{d,str}$ case: there is one arrow from $(i,r)$ to $(j,r-1)$; \textcolor{gray}{(for any $r \in \{1,\ldots,d-1\}$)}			
+			\item $Q_d$ case: there is one arrow from $(i,r)$ to $(j,r)$ \textcolor{black}{for any $r \in \{1,\ldots,d\}$;}
+			\item $Q_{d,str}$ case: there is one arrow from $(i,r)$ to $(j,r-1)$  \textcolor{black}{for any $r \in \{1,\ldots,d-1\}$;}			
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
@@ -256,11 +256,11 @@ We define the ring
 		\includegraphics[width=15cm]{figures/newring.png}
 	\end{figure}
 \end{center}
-and define the canonical map $\Phi:\Rep(Q) \longrightarrow \Mod(R) \textcolor{gray}{\subseteq \Rep(Q_d \text{ or } Q_{d,str})}$ as follows:
+and define the canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) \textcolor{black}{\subseteq \Rep(Q_d \text{ or } Q_{d,str})}$ as follows:
 \begin{itemize}
 \item $\left(\Phi(X)\right)_{(i,r)}:=X_i$;
 \item $\left(\Phi(X)\right)_{(i,r) \rightarrow (i,r+1)}:=\Id_{X_i}$;
-\item $\left(\Phi(X)\right)_{(i,r) \rightarrow (j,-)}:=X_{i \rightarrow j} \textcolor{gray}{ \quad(i \rightarrow j)}$;
+\item $\left(\Phi(X)\right)_{(i,r) \rightarrow (j,-)}:=X_{i \rightarrow j} \textcolor{black}{ \quad(i \rightarrow j)}$;
 \end{itemize}
 For the module $T \in \Mod(R)$, we define $\Grr(T)\colon=\{T' \subseteq T \text{ as the submodule}  \}$.
 \begin{proposition}
@@ -298,8 +298,6 @@ We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section 
    The following notations will be used throughout this article:
    %In the following sections, we always suppose that 
    \begin{itemize}
-   		\item $X,Y,S,M,N \in \Rep(Q), V,U,W,T,T' \in \Mod(R)$;
-   		\item we have the short exact sequence $\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$, and $V \subseteq \Phi(X), U \subseteq \Phi(Y), W \subseteq \Phi(S)$;
    		\item $\dimvec{f},\dimvec{g}$ are dimension vectors of quiver $Q_d$ or $Q_{d,str}$. $\Grr_{\dimvec{f}}(T):= \{ T' \subseteq T \mid \dimv T'=\dimvec{f} \}$ is defined as the set of subrepresentations with dimension vector $\dimvec{f}$.
    \end{itemize}
 We use 
@@ -401,7 +399,7 @@ Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bun
 \end{theorem}
 
 We will spend the rest of the section proving these theorems. We decide the image as well as the fiber of $\Psi$ respectively.
-\begin{lemma}[follows {\cite[Lemma 21]{irelli2019cell}}]
+\begin{lemma}[follows {\cite[Lemma 21]{irelli2019cell}}]\label{lm:split}
 The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $\Psi$ if and only if the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
 \end{lemma}
 \begin{proof}
@@ -433,11 +431,12 @@ The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of 
 	\arrow[from=2-3, to=3-3]
 	\arrow[maps to, from=1-1, to=3-1]
 \end{tikzcd}\]
-so $\bar{\eta}=0$ if and only if the last SES splits, that means... 
+so $\bar{\eta}=0$ if and only if the last short exact sequence splits, that means, there exist a submodule $U \subseteq \Phi(Y)$, such that $\pi(U)=W$ and $U \cap \Phi(X) =V$.
+
 \end{proof}
 
 \begin{corollary}\label{cor:img1}
-	When $\eta$ splits, $\Psi$ is surjective.
+	Resume the notations of Lemma \ref{lm:split} When $\eta$ splits, then $\Psi$ is surjective.
 \end{corollary}
 \begin{lemma}
 	the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ is surjective.
@@ -448,7 +447,7 @@ so $\bar{\eta}=0$ if and only if the last SES splits, that means...
 	are both surjective. Thus the composition is also surjective.
 \end{proof}
 \begin{corollary}[]\label{cor:0or1}
-	When $[S,X]^1=1$, then $[W,\Phi(X)/V]^1=0 \text{ or }1$.
+	Let $S,X$ be $KQ$-modules, and $W \subseteq \Phi(S), V \subseteq \Phi(X)$ be $R$-modules. When $[S,X]^1=1$, then $[W,\Phi(X)/V]^1=0 \text{ or }1$.
 	
 	Suppose $\eta$ generates $\Ext^1(S,X)$, then 
 	$$(V,W) \in \Img \Psi \iff [W,\Phi(X)/V]^1=0.$$
@@ -484,7 +483,7 @@ By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/V\cap V']^1\leqslant 1, \; [\Phi(
 Let $f:X \longrightarrow \tau S$ be a non-zero morphism, then $X_S=\ker (f)$; also, $\Phi(f): \Phi(X) \longrightarrow \Phi(\tau S)$ is a non-zero morphism, $\widetilde{X_S}=\ker (\Phi(f))$.
 \end{lemma}
 \begin{corollary}
-	$\widetilde{X_S}=\Phi(X_S)$.\textcolor{gray}{(since $\widetilde{X_S}=\ker (\Phi(f))=\Phi(\ker(f))=\Phi(X_S)$)}
+	$\widetilde{X_S}=\Phi(X_S)$.\textcolor{black}{(since $\widetilde{X_S}=\ker (\Phi(f))=\Phi(\ker(f))=\Phi(X_S)$)}
 \end{corollary}
 By the similar argument, one can show that $\widetilde{S^X}=\Phi(S^X)$.
 \begin{lemma}[follows {\cite[Lemma 31(6)]{irelli2019cell}}]
@@ -537,7 +536,7 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 	\arrow[maps to, from=1-1, to=3-1]
 	\arrow["\theta"', color={rgb,255:red,255;green,51;blue,58}, curve={height=-18pt}, from=3-7, to=3-6]
 \end{tikzcd}\]
-When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{gray}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
+When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{black}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
 \begin{lemma}

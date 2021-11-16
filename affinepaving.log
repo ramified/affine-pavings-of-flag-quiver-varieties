@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  22 OCT 2021 23:43
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  14 NOV 2021 11:42
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -897,7 +897,7 @@ File: figures/flagasgr.png Graphic file (type bmp)
 File: figures/newring.png Graphic file (type bmp)
 <figures/newring.png>
  [3] [4] [5]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 469--470
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 468--469
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -912,12 +912,12 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
  []
 
 
-Overfull \hbox (55.5988pt too wide) detected at line 479
+Overfull \hbox (55.5988pt too wide) detected at line 478
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
  []
 
 [6]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 508--509
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 507--508
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -942,10 +942,10 @@ File: figures/specialcases.png Graphic file (type bmp)
 <figures/specialcases.png>
  [11] [12] (affinepaving.bbl [13]) [14] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 18700 strings out of 427748
- 364347 string characters out of 3150981
- 507295 words of memory out of 3000000
- 22195 multiletter control sequences out of 15000+200000
+ 18701 strings out of 427748
+ 364357 string characters out of 3150981
+ 484288 words of memory out of 3000000
+ 22196 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,17n,82p,3261b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
