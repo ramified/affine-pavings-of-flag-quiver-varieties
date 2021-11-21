@@ -189,21 +189,31 @@ Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver
 First, I would like to thank my supervisor, Professor Jens Niklas Eberhardt, for introducing me this specific problem of partial flag quiver variety and giving some advises. I would also like to thank Hans Franzen for answering some questions I had for understanding the article \cite{irelli2019cell}.
 %My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this tome
 \section{Preliminary Facts}\label{sec:flag=gr}
-Fix the quiver $Q$ and the integer $d \geqslant 2$, we define the new bigger quiver $Q_{d},Q_{d,str}$ as follows:
+In this section, we will collect all the knowledges required in the later sections, and fix the notations.
+\subsection{Extended quiver}
+We follow \cite[2.2,2.3]{maksimau2019flag} in this subsection, but we will have some small variations and different notations.
 
+\begin{defn}[extended quiver]
+Fix the quiver $Q$ and the integer $d \geqslant 1$, the \textbf{extended quiver} $Q_{d}$ is defined as follows:
 \begin{itemize}
-	\item The vertex set of $Q_d$(resp. $Q_{d,str}$) is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
-	$$v(Q_d)=v(Q_{d,str})=v(Q) \times \{1,\ldots,d\}$$
-	\item  The arrows of $Q_d$(resp. $Q_{d,str}$) is defined as follows:
-	\begin{itemize}
-		\item for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$;
-		\item for each arrow $i \longrightarrow j$ in quiver $Q$:
-		\begin{itemize}
-			\item $Q_d$ case: there is one arrow from $(i,r)$ to $(j,r)$ \textcolor{black}{for any $r \in \{1,\ldots,d\}$;}
-			\item $Q_{d,str}$ case: there is one arrow from $(i,r)$ to $(j,r-1)$  \textcolor{black}{for any $r \in \{1,\ldots,d-1\}$;}			
-		\end{itemize}
-	\end{itemize}
+	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
+	$$v(Q_d)=v(Q) \times \{1,\ldots,d\}$$
+	\item  We have two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for every arrow $i \longrightarrow j$ in quiver $Q$ and $r \in \{1,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r)$.
 \end{itemize}
+\end{defn}
+
+The extended quiver $Q_d$ is exactly the same quiver as $\hat{\Gamma}_d$ in \cite[Definition 2.2]{maksimau2019flag}. The next definition is a small variation of it:
+
+\begin{defn}[strict extended quiver]
+Fix the quiver $Q$ and the integer $d \geqslant 2$, the \textbf{strict extended quiver} $Q_{d,str}$ is defined as follows:
+\begin{itemize}
+	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
+	$$v(Q_{d,str})=v(Q) \times \{1,\ldots,d\}$$
+	\item  We have two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for every arrow $i \longrightarrow j$ in quiver $Q$ and $r \in \{2,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r-1)$.
+\end{itemize}
+\end{defn}
+
+
 \begin{eg}
 Here is the picture of new quiver:
 % https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XV0=
@@ -256,7 +266,7 @@ We define the ring
 		\includegraphics[width=15cm]{figures/newring.png}
 	\end{figure}
 \end{center}
-and define the canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) \textcolor{black}{\subseteq \Rep(Q_d \text{ or } Q_{d,str})}$ as follows:
+and define the canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) $ as follows:
 \begin{itemize}
 \item $\left(\Phi(X)\right)_{(i,r)}:=X_i$;
 \item $\left(\Phi(X)\right)_{(i,r) \rightarrow (i,r+1)}:=\Id_{X_i}$;
@@ -277,15 +287,55 @@ We would like to show some higher rank Extension group to be 0, which would be a
 Let $M,N,X,S \in \Rep(Q)$, $V,W,T \in \Mod(R)$.
 \begin{enumerate}[(1)]
 	\item $\gldim R \leqslant 2$;\label{lm:gldim}
-	\item The functor $\Phi:\Rep(Q) \longrightarrow \Mod(R)$ is exact;
-	\item $\Phi$ maps projective module to projective module;\label{lm:toproj}
-	\item $\Hom_{KQ}(M,N) \cong \Hom_{R}(\Phi(M),\Phi(N)),\quad\Ext^i_{KQ}(M,N) \cong \Ext^i_{R}(\Phi(M),\Phi(N))$;
-	\item $\projdim \Phi(M) \leqslant 1, \injdim \Phi(M) \leqslant 1$;
+	\item The functor $\Phi:\Rep(Q) \longrightarrow \Mod(R)$ is exact;\label{lm:functorisexact}
+	\item $\Phi$ maps projective module to projective module, and maps injective module to injective module;\label{lm:toproj}
+	\item $\Hom_{KQ}(M,N) \cong \Hom_{R}(\Phi(M),\Phi(N)),\quad\Ext^i_{KQ}(M,N) \cong \Ext^i_{R}(\Phi(M),\Phi(N))$;\label{lm:isoofext}
+	\item $\projdim \Phi(M) \leqslant 1, \injdim \Phi(M) \leqslant 1$;\label{lm:projdim}
 	\item Suppose $V \subseteq \Phi(X), W \subseteq \Phi(S),$ then $\Ext^2_{R}(W,T)=0, \Ext^2_{R}(T,\Phi(X)/V)=0$.\label{lm:Ext2van}
 \end{enumerate}
 \end{lemma}
-\begin{proof}
-For (\ref{lm:gldim}), we just need to check minimal projective resolution of $S(i)$ in $\Mod(R)$; for (\ref{lm:toproj}), we reduced to the case of indecomposable projective modules. The rests are easy exercises of homological algebra.
+\begin{proof}$\,$
+
+For (\ref{lm:gldim}), we just need to check minimal projective resolution of $S(i)$ in $\Mod(R)$.
+
+For (\ref{lm:functorisexact}), if we have the short exact sequence in $\Rep(Q)$:
+$$0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
+then for each vector $i\in v(Q)$, we have the short exact sequence 
+$$0\longrightarrow X_i \longrightarrow Y_i \longrightarrow S_i \longrightarrow 0,$$
+so the complex
+$$0\longrightarrow \Phi(X) \longrightarrow \Phi(Y) \longrightarrow \Phi(S) \longrightarrow 0$$
+is exact.
+
+For (\ref{lm:toproj}), we reduced to the case of indecomposable projective modules, and observe that $$\Phi(P(i))=P\big((i,1)\big),\qquad\Phi(I(i))=I\big((i,d)\big).$$
+
+For (\ref{lm:isoofext}), the surjection of map
+$$\Hom_{KQ}(M,N) \cong \Hom_{R}(\Phi(M),\Phi(N))$$
+follows by the commutative diagram:
+
+\begin{center}
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAFkB9LEAX1PSZc+QijIBGKrUYs2XHv0HY8BIuPJT6zVohAA5bnwEgMykWtKTqW2boMKpMKAHN4RUADMAThAC2SdRAcCCQAZmsZHRAAHWi0AAssTmAACixSLwBKXiNPH39EQOCkMmltNliASShckG8-MOpixAAmCPLdKprFOvySppDW9tsYuMTktIyAanFsvgpeIA
+\begin{tikzcd}
+M_i \arrow[r, "{\phi_{(i,r+1)}}"]                & N_i                  \\
+M_i \arrow[r, "{\phi_{(i,r)}}"] \arrow[u, "\Id"] & N_i \arrow[u, "\Id"]
+\end{tikzcd}
+\end{center}
+and the isomorphism 
+$$\Ext^i_{KQ}(M,N) \cong \Ext^i_{R}(\Phi(M),\Phi(N))$$
+follows by the projective resolution of $M$.
+
+For (\ref{lm:projdim}), Notice that the minimal projective resolution of $M$ is of length 1, and $\Phi(-)$ sends projective resolution of $M$ to projective resolution of $\Phi(M)$ by  (\ref{lm:toproj}), thus we get $\projdim \Phi(M) \leqslant 1$. The injective dimension of $\Phi(M)$ is computed in the similar way.
+
+For (\ref{lm:Ext2van}), the short exact sequence 
+$$0 \longrightarrow W \longrightarrow \Phi(S) \longrightarrow \Phi(S)/W \longrightarrow 0$$
+induces the long exact sequence 
+$$\cdots \longrightarrow \Ext^2_{R}(\Phi(S),T) \longrightarrow \Ext^2_{R}(W,T) \longrightarrow \Ext^3_{R}(\Phi(S)/W,T) \longrightarrow \cdots$$
+By (\ref{lm:gldim}) and (\ref{lm:projdim}), $\Ext^3_{R}(\Phi(S)/W,T)$ and $\Ext^2_{R}(\Phi(S),T)$ are both $0$, so $\Ext^2_{R}(W,T)=0$.
+
+Similarly, from the short exact sequence
+$$0 \longrightarrow V \longrightarrow \Phi(X) \longrightarrow \Phi(X)/V \longrightarrow 0$$
+we get the induced long exact sequence
+$$\cdots \longrightarrow \Ext^2_{R}(T,\Phi(X)) \longrightarrow \Ext^2_{R}(T,\Phi(X)/V) \longrightarrow \Ext^3_{R}(T,V) \longrightarrow \cdots$$
+so $\Ext^2_{R}(T,\Phi(X)/V)=0$.
 \end{proof}
 \subsection{How much do we understand the quiver representation?}
 To understand the category $\Rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander-Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite indecomposable representations(up to isomorphism) and each indecomposable representation corresponds to the positive root of Dynkin diagram. One can compute the Auslander-Reiten quiver by knitting algorithm and get the structure of indecomposable representations. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$\footnote{These paths may be linear dependent, so it's not too easy.}.
