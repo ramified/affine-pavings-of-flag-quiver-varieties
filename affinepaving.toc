@@ -4,7 +4,7 @@
 \contentsline {subsection}{\tocsubsection {}{2.1}{Extended quiver}}{3}% 
 \contentsline {subsection}{\tocsubsection {}{2.2}{canonical functor $\Phi $}}{4}% 
 \contentsline {subsection}{\tocsubsection {}{2.3}{Ext-vanishing properties}}{4}% 
-\contentsline {subsection}{\tocsubsection {}{2.4}{How much do we understand the quiver representation?}}{5}% 
+\contentsline {subsection}{\tocsubsection {}{2.4}{How much do we understand the quiver representation?}}{6}% 
 \contentsline {section}{\tocsection {}{3}{Main Theorem}}{6}% 
 \contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{10}% 
 \contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{13}% 

@@ -194,7 +194,7 @@ In this section, we will collect all the knowledges required in the later sectio
 We follow \cite[2.2,2.3]{maksimau2019flag} in this subsection, but we will have some small variations and different notations. We want to view partial flag variety as the quiver Grassmannian. Intuitively, the partial flag variety contains more information than the quiver Grassmannian. So we need to use bigger quiver, and encode these informations in the extra arrows.
 
 \begin{defn}[extended quiver]
-Fix the quiver $Q$ and the integer $d \geqslant 1$, the \textbf{extended quiver} $Q_{d}$ is defined as follows:
+Fix a quiver $Q$ and an integer $d \geqslant 1$, the \textbf{extended quiver} $Q_{d}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
 	$$v(Q_d)=v(Q) \times \{1,\ldots,d\}$$
@@ -205,7 +205,7 @@ Fix the quiver $Q$ and the integer $d \geqslant 1$, the \textbf{extended quiver}
 The extended quiver $Q_d$ is exactly the same quiver as $\hat{\Gamma}_d$ in \cite[Definition 2.2]{maksimau2019flag}. The next definition is a small variation of it:
 
 \begin{defn}[strict extended quiver]
-Fix the quiver $Q$ and the integer $d \geqslant 2$, the \textbf{strict extended quiver} $Q_{d,str}$ is defined as follows:
+Fix a quiver $Q$ and an integer $d \geqslant 2$, the \textbf{strict extended quiver} $Q_{d,str}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
 	$$v(Q_{d,str})=v(Q) \times \{1,\ldots,d\}$$
@@ -271,7 +271,20 @@ $$R_{d,str}:= KQ_{d,str}/I.$$
 \end{defn}
 By an aesthentically desirable abuse of notation, we abbreviate the notations $R_d$ and $R_{d,str}$ as $R$. %By doing so we may consider these two cases in the same time.
 \subsection{canonical functor $\Phi$}
-We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. The functor $\Phi$ realizes a partial flag as a quiver subrepresentation.
+We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. %The functor $\Phi$ realizes a partial flag as a quiver subrepresentation. Maybe it's wrong.
+\begin{defn}[partial flag]
+Fix a quiver representation $X \in \Rep(Q)$, a \textbf{partial flag} of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an interger $d \geqslant 1$, we denote
+$$\Flagd(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}$$
+as the collections of all partial flags of length $d$, and call it the \textbf{partial flag variety}. 
+\end{defn}
+\begin{defn}[strict partial flag]
+Fix a quiver representation $X \in \Rep(Q)$, a \textbf{strict partial flag} of $X$ is defined as an increasing sequence of subrepresentation $(M_i)_i$ of $X$ such that for any arrow $x \in v(Q)$ and any $i$, we have $x.M_{i+1} \subseteq M_{i}$. For an interger $d \geqslant 1$, we denote
+$$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{i+1} \subseteq M_i \right\}$$
+as the collections of all strict partial flags of length $d$, and call it the \textbf{strict partial flag variety}. 
+\end{defn}
+\begin{defn}[Grassmannian]
+Let $R$ be the bounded
+\end{defn}
 \begin{defn}[canonical functor $\Phi$]
 The canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) $ is defined as follows:
 \begin{itemize}
@@ -283,7 +296,7 @@ The canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) $ is defined as foll
 
 For the module $T \in \Mod(R)$, we define $\Grr(T)\colon=\{T' \subseteq T \text{ as the submodule}  \}$.
 \begin{proposition}
-Fix the representation $X\in \Rep(Q)$, we have the isomorphism
+Fix a representation $X\in \Rep(Q)$, we have the isomorphism
 $$\Flag{}(X)\cong \Grr(\Phi(X)).$$
 \begin{proof}
 The two side give us same amount of informations. Or, you can easily construct the bijection from $\Flag{}(X)$ to $\Grr(\Phi(X))$.

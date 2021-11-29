@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  21 NOV 2021 21:18
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  29 NOV 2021 10:58
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -893,8 +893,8 @@ Overfull \hbox (5.1381pt too wide) detected at line 129
 [1]
 File: figures/flagasgr.png Graphic file (type bmp)
 <figures/flagasgr.png>
- [2] [3] [4] [5] [6]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 527--528
+ [2] [3] [4] [5] [6] [7]
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 537--538
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -908,13 +908,13 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
 .95 +
  []
 
-[7]
-Overfull \hbox (55.5988pt too wide) detected at line 537
+
+Overfull \hbox (55.5988pt too wide) detected at line 547
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
  []
 
 
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 566--567
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 576--577
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -942,7 +942,7 @@ File: figures/specialcases.png Graphic file (type bmp)
 Here is how much of TeX's memory you used:
  18738 strings out of 427748
  365280 string characters out of 3150981
- 485873 words of memory out of 3000000
+ 483987 words of memory out of 3000000
  22234 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
