@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 NOV 2021 21:22
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 NOV 2021 23:32
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -893,11 +893,11 @@ Overfull \hbox (5.1381pt too wide) detected at line 130
 [1]
 File: figures/flagasgr.png Graphic file (type bmp)
 <figures/flagasgr.png>
- [2] [3] [4] [5]
+ [2] [3] [4] [5] [6]
 File: figures/resolution.png Graphic file (type bmp)
 <figures/resolution.png>
- [6] [7] [8]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 577--578
+ [7] [8]
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 581--582
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -912,12 +912,12 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
  []
 
 
-Overfull \hbox (55.5988pt too wide) detected at line 587
+Overfull \hbox (55.5988pt too wide) detected at line 591
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
  []
 
 [9]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 616--617
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 620--621
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -940,12 +940,12 @@ File: figures/specialcases.png Graphic file (type bmp)
 <figures/specialcases.png>
  [14] [15] (affinepaving.bbl) [16] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 18742 strings out of 427748
- 365316 string characters out of 3150981
- 483121 words of memory out of 3000000
- 22238 multiletter control sequences out of 15000+200000
+ 18744 strings out of 427748
+ 365337 string characters out of 3150981
+ 483237 words of memory out of 3000000
+ 22240 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,17n,82p,3261b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,17n,82p,3261b,1139s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on affinepaving.pdf (16 pages).

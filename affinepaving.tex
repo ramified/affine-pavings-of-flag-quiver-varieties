@@ -261,12 +261,12 @@ Here is the picture of new quiver:
 \end{eg}
 
 Now we define the special bound quiver algebras for later use.
-\begin{defn}[algebra of an extended quiver]
+\begin{defn}[algebra of an extended quiver]\label{def:bqa}
 For an extended quiver $Q_d$, let $KQ_d$ be the corresponding path algebra, and $I$ be the ideal of $KQ_d$ identifying all the paths with same sources and targets. The algebra of the extended quiver $Q_d$ is defined as
 $$R_d:= KQ_d/I.$$
 \end{defn}
 We also have the ``strict" version.
-\begin{defn}[algebra of a strict extended quiver]
+\begin{defn}[algebra of a strict extended quiver]\label{def:bqastr}
 For an extended quiver $Q_{d,str}$, let $KQ_{d,str}$ be the corresponding path algebra, and $I$ be the ideal of $KQ_{d,str}$ identifying all the paths with same sources and targets. The algebra of the strict extended quiver $Q_{d,str}$ is defined as
 $$R_{d,str}:= KQ_{d,str}/I.$$
 \end{defn}
@@ -285,7 +285,7 @@ as the collections of all strict partial flags of length $d$, and call it the \t
 \end{defn}
 \begin{defn}[Grassmannian]
 Let $R$ be the bounded quiver algebra defined in Definition \ref{def:pf} or \ref{def:spf}. Fix a module $T \in \Mod(R)$, the Grassmannian $\Gralg{R}(T)$ is defined as the set of all submodules of $T$, equivalently,
-$$\Gralg{R}(T):=\colon=\{T' \subseteq T \text{ as the submodule}  \}.$$
+$$\Gralg{R}(T):=\{T' \subseteq T \text{ as the submodule}  \}.$$
 \end{defn}
 \begin{defn}[canonical functor $\Phi$]
 The canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) $ is defined as follows:
@@ -323,10 +323,83 @@ Now we can write (strict) partial flag and Grassmannian as disjoint union of sev
 \end{equation*}
 then from the Proposition \ref{prop:flag=gr} we get 
 $$\Flagd_{,\dimvec{f}}(X) \cong \Gralg{R}_{\dimvec{f}}(\Phi(X)).$$
+
+Finally, we need to define the ``Euler form" of two dimension vectors.
+\begin{defn}[Euler form of $R$]
+Let $R$ be a bounded quiver algebra defined in Definition \ref{def:bqa} or \ref{def:bqastr}. We denote
+\begin{equation*}
+\begin{aligned}
+	v(R):&= \{\text{vertices in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
+	a(R):&= \{\text{arrows in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
+	va(R):&= \{\text{``virtual arrows" in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
+\end{aligned}
+\end{equation*}
+
+\begin{center}
+	\begin{figure}[ht]
+		\vspace{0cm}
+		\centering
+% https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XSxbOCwxMywiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzQsOSwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzEwLDEzLCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbNiw5LCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbNiwxMSwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzEwLDE1LCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbMTgsMjAsIiIsMSx7ImNvbG91ciI6WzAsMTAwLDYwXX1dLFsyMSwyMCwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzIxLDIzLCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XV0=
+\[\begin{tikzcd}[column sep=3mm, row sep=5mm]
+	&&&&&&&[5mm] \bullet && \bullet && \bullet && \bullet &[5mm] \bullet && \bullet && \bullet && \bullet \\
+	&&&&&&& \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\
+	\bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\[-5mm]
+	&&& {\hspace{-1cm}Q\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_3\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_{3,str}\hspace{-1cm}}
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-5, to=3-3]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=3-8, to=3-10]
+	\arrow[from=3-12, to=3-10]
+	\arrow[from=3-12, to=3-14]
+	\arrow[from=2-8, to=2-10]
+	\arrow[from=2-12, to=2-10]
+	\arrow[from=2-12, to=2-14]
+	\arrow[from=1-8, to=1-10]
+	\arrow[from=1-12, to=1-10]
+	\arrow[from=1-12, to=1-14]
+	\arrow[from=2-8, to=1-8]
+	\arrow[from=3-8, to=2-8]
+	\arrow[from=3-10, to=2-10]
+	\arrow[from=2-10, to=1-10]
+	\arrow[from=2-12, to=1-12]
+	\arrow[from=3-12, to=2-12]
+	\arrow[from=3-14, to=2-14]
+	\arrow[from=2-14, to=1-14]
+	\arrow[from=2-15, to=3-17]
+	\arrow[from=1-15, to=2-17]
+	\arrow[from=2-19, to=3-17]
+	\arrow[from=1-19, to=2-17]
+	\arrow[from=1-19, to=2-21]
+	\arrow[from=2-19, to=3-21]
+	\arrow[from=2-21, to=1-21]
+	\arrow[from=3-21, to=2-21]
+	\arrow[from=3-19, to=2-19]
+	\arrow[from=2-19, to=1-19]
+	\arrow[from=3-17, to=2-17]
+	\arrow[from=2-17, to=1-17]
+	\arrow[from=2-15, to=1-15]
+	\arrow[from=3-15, to=2-15]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-8, to=1-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-8, to=2-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-10]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-14]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-14]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-15, to=2-17]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-17]
+	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-21]
+\end{tikzcd}\]
+		\caption{virtual arrow(red): can be thought as the ``face" of the quiver}
+		\label{fig:virtualarrow}
+	\end{figure}
+\end{center}
+For two dimension vectors $\dimvec{f},\dimvec{g}$ of $R$, the Euler form $\left< \dimvec{f},\dimvec{g}\right>_R$ is defined by
+	$$\left< \dimvec{f},\dimvec{g}\right>_R:= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}$$
+\end{defn}
 \subsection{Ext-vanishing properties}
 We would like to show some higher rank extension group to be 0, which would be a key ingredient in the proof of the next section.
 
-Finally, we need to define the ``Euler form" of two dimension vectors.
+
 \begin{lemma}\label{lm:Extvan}
 Let $M,N,X,S \in \Rep(Q)$, $V,W,T \in \Mod(R)$.
 \begin{enumerate}[(1)]
@@ -411,86 +484,17 @@ $$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
 \subsection{How much do we understand the quiver representation?}
 To understand the category $\Rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander-Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite indecomposable representations(up to isomorphism) and each indecomposable representation corresponds to the positive root of Dynkin diagram. One can compute the Auslander-Reiten quiver by knitting algorithm and get the structure of indecomposable representations. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$\footnote{These paths may be linear dependent, so it's not too easy.}.
 
-We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander-Reiten theory, one can see \cite{crawley1992lectures}.
+We will use the Auslander-Reiten quiver to find ``good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander-Reiten theory, one can see \cite{crawley1992lectures}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Main Theorem}\label{sec:mainthm}
+In this section we state and prove the main theorems, which would be essentially used in the Section \ref{sec:Dynkin} and \ref{sec:affine}.
    
-
-	$$\left< \dimvec{f},\dimvec{g}\right>_R:= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}$$
-for the shorthand notation, where
-\begin{equation*}
-\begin{aligned}
-	v(R):&= \{\text{vertices in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
-	a(R):&= \{\text{arrows in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
-	va(R):&= \{\text{"virtual arrows" in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
-\end{aligned}
-\end{equation*}
-
-\begin{center}
-	\begin{figure}[ht]
-		\vspace{0cm}
-		\centering
-% https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XSxbOCwxMywiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzQsOSwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzEwLDEzLCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbNiw5LCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbNiwxMSwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzEwLDE1LCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XSxbMTgsMjAsIiIsMSx7ImNvbG91ciI6WzAsMTAwLDYwXX1dLFsyMSwyMCwiIiwxLHsiY29sb3VyIjpbMCwxMDAsNjBdfV0sWzIxLDIzLCIiLDEseyJjb2xvdXIiOlswLDEwMCw2MF19XV0=
-\[\begin{tikzcd}[column sep=3mm, row sep=5mm]
-	&&&&&&&[5mm] \bullet && \bullet && \bullet && \bullet &[5mm] \bullet && \bullet && \bullet && \bullet \\
-	&&&&&&& \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\
-	\bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet & \bullet && \bullet && \bullet && \bullet \\[-5mm]
-	&&& {\hspace{-1cm}Q\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_3\hspace{-1cm}} &&&&&&& {\hspace{-1cm}Q_{3,str}\hspace{-1cm}}
-	\arrow[from=3-1, to=3-3]
-	\arrow[from=3-5, to=3-3]
-	\arrow[from=3-5, to=3-7]
-	\arrow[from=3-8, to=3-10]
-	\arrow[from=3-12, to=3-10]
-	\arrow[from=3-12, to=3-14]
-	\arrow[from=2-8, to=2-10]
-	\arrow[from=2-12, to=2-10]
-	\arrow[from=2-12, to=2-14]
-	\arrow[from=1-8, to=1-10]
-	\arrow[from=1-12, to=1-10]
-	\arrow[from=1-12, to=1-14]
-	\arrow[from=2-8, to=1-8]
-	\arrow[from=3-8, to=2-8]
-	\arrow[from=3-10, to=2-10]
-	\arrow[from=2-10, to=1-10]
-	\arrow[from=2-12, to=1-12]
-	\arrow[from=3-12, to=2-12]
-	\arrow[from=3-14, to=2-14]
-	\arrow[from=2-14, to=1-14]
-	\arrow[from=2-15, to=3-17]
-	\arrow[from=1-15, to=2-17]
-	\arrow[from=2-19, to=3-17]
-	\arrow[from=1-19, to=2-17]
-	\arrow[from=1-19, to=2-21]
-	\arrow[from=2-19, to=3-21]
-	\arrow[from=2-21, to=1-21]
-	\arrow[from=3-21, to=2-21]
-	\arrow[from=3-19, to=2-19]
-	\arrow[from=2-19, to=1-19]
-	\arrow[from=3-17, to=2-17]
-	\arrow[from=2-17, to=1-17]
-	\arrow[from=2-15, to=1-15]
-	\arrow[from=3-15, to=2-15]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-8, to=1-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-8, to=2-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-14]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-14]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-15, to=2-17]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-17]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-21]
-\end{tikzcd}\]
-		\caption{virtual arrow: can be thought as the "face" of the quiver}
-		\label{fig:virtualarrow}
-	\end{figure}
-\end{center}
-
 Let $\eta: 0\longrightarrow X \stackrel{\iota}{\longrightarrow} Y \stackrel{\pi}{\longrightarrow} S \longrightarrow 0$ be a short exact sequence in $Rep(Q)$. Consider the canonical \textbf{non-continuous} map
 $$\Psi: \Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \qquad U \longmapsto \left([\Phi(\iota)]^{-1}(U),[\Phi(\pi)](U)   \right)$$
 and  $\Psi_{\dimvec{f},\dimvec{g}}$ is the map $\Psi$ restricted to the preimage of $\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S))$.
 
-The goal of this section is to prove the following theorems:
+%The goal of this section is to prove the following theorems:
 \begin{theorem}\label{thm:main1}
 	When $\eta$ splits, $\Psi$ is surjective. Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$.
 \end{theorem}
@@ -660,7 +664,7 @@ We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:im
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application: Dynkin Case}\label{sec:Dynkin}
-Before discussing the affine paving property, let me introduce some new numerical concepts, which can be seen as the measure of the "complexity" of the representation.
+Before discussing the affine paving property, let me introduce some new numerical concepts, which can be seen as the measure of the ``complexity" of the representation.
 
 Fix an \textbf{indecomposable} quiver representation $M \in \Rep(\mathbb{Q})$, we define the order of $M$ by
 $$\ord(M):= \max_{i \in v(Q)} \dim_K M_i.$$
@@ -668,7 +672,7 @@ When the quiver $Q$ is of type $E$, we denote by $e \in v(Q)$ the unique vertex 
 $$\orde(M):=\dim_K M_e=[P(e),M]$$
 is equal to $\ord(M)$ unless $\orde(M)=0$.
 
-By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable modules. The next lemma tells us, for the "easy representation", we can prove the affine paving property easily.
+By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable modules. The next lemma tells us, for the ``easy representation", we can prove the affine paving property easily.
 
 \begin{lemma}[{follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
 	For the representation $M \in \Rep(Q)$ satisfying $\ord(M) \leqslant 2$ and the dimension vector $\dimvec{f}$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or is a singleton or is a direct product of some copies of $\mathbb{P}^1$.
@@ -684,7 +688,7 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \end{corollary}
 %We use rep 2 Cor 18.8.
 
-\textbf{In the rest of this section we focus on the "difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
+\textbf{In the rest of this section we focus on the ``difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
 
 \begin{center}
 	\begin{figure}[ht]
