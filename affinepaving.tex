@@ -81,6 +81,7 @@
 \DeclareMathOperator{\Flagdstr}{\operatorname{Flag}_{d,str}}
 \newcommand{\Gr}{\operatorname{Gr}}
 \newcommand{\Grr}{\operatorname{Gr}}
+\newcommand{\Gralg}[1]{\operatorname{Gr}^{#1}}
 \newcommand{\Grq}{\operatorname{Gr}^{KQ}}
 \newcommand{\Flag}[1]{\operatorname{Flag}_{#1}}
 \newcommand{\Flagstr}[1]{\operatorname{Flag}_{#1,str}}
@@ -271,19 +272,20 @@ $$R_{d,str}:= KQ_{d,str}/I.$$
 \end{defn}
 By an aesthentically desirable abuse of notation, we abbreviate the notations $R_d$ and $R_{d,str}$ as $R$. %By doing so we may consider these two cases in the same time.
 \subsection{canonical functor $\Phi$}
-We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. %The functor $\Phi$ realizes a partial flag as a quiver subrepresentation. Maybe it's wrong.
-\begin{defn}[partial flag]
+We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. All the representation in this paper is supposed to be of \textbf{finite dimension}.
+\begin{defn}[partial flag]\label{def:pf}
 Fix a quiver representation $X \in \Rep(Q)$, a \textbf{partial flag} of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an interger $d \geqslant 1$, we denote
 $$\Flagd(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}$$
 as the collections of all partial flags of length $d$, and call it the \textbf{partial flag variety}. 
 \end{defn}
-\begin{defn}[strict partial flag]
+\begin{defn}[strict partial flag]\label{def:spf}
 Fix a quiver representation $X \in \Rep(Q)$, a \textbf{strict partial flag} of $X$ is defined as an increasing sequence of subrepresentation $(M_i)_i$ of $X$ such that for any arrow $x \in v(Q)$ and any $i$, we have $x.M_{i+1} \subseteq M_{i}$. For an interger $d \geqslant 1$, we denote
 $$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{i+1} \subseteq M_i \right\}$$
 as the collections of all strict partial flags of length $d$, and call it the \textbf{strict partial flag variety}. 
 \end{defn}
 \begin{defn}[Grassmannian]
-Let $R$ be the bounded
+Let $R$ be the bounded quiver algebra defined in Definition \ref{def:pf} or \ref{def:spf}. Fix a module $T \in \Mod(R)$, the Grassmannian $\Gralg{R}(T)$ is defined as the set of all submodules of $T$, equivalently,
+$$\Gralg{R}(T):=\colon=\{T' \subseteq T \text{ as the submodule}  \}.$$
 \end{defn}
 \begin{defn}[canonical functor $\Phi$]
 The canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) $ is defined as follows:
@@ -293,15 +295,18 @@ The canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) $ is defined as foll
 \item $\left(\Phi(X)\right)_{(i,r) \rightarrow (j,-)}:=X_{i \rightarrow j}$
 \end{itemize}
 \end{defn}
-
-For the module $T \in \Mod(R)$, we define $\Grr(T)\colon=\{T' \subseteq T \text{ as the submodule}  \}$.
-\begin{proposition}
+The functor $\Phi$ helps to realize a partial flag as a quiver subrepresentation. 
+\begin{proposition}\label{prop:flag=gr}
 Fix a representation $X\in \Rep(Q)$, we have the isomorphism
-$$\Flag{}(X)\cong \Grr(\Phi(X)).$$
-\begin{proof}
-The two side give us same amount of informations. Or, you can easily construct the bijection from $\Flag{}(X)$ to $\Grr(\Phi(X))$.
-\end{proof}
+$$\Flagd(X)\cong \Gralg{R_d}(\Phi(X)) \qquad \Flagdstr(X)\cong \Gralg{R_{d,str}}(\Phi(X)).$$
 \end{proposition}
+\begin{proof}
+The two side give us same amount of informations. %Or, you can easily construct the bijection from $\Flag{}(X)$ to $\Grr(\Phi(X))$.
+\end{proof}
+We can abbreviate the Proposition \ref{prop:flag=gr} as 
+$$\Flag{}(X)\cong \Gr(\Phi(X)).$$
+\subsection{dimension vector}
+
 \subsection{Ext-vanishing properties}
 We would like to show some higher rank Extension group to be 0, which would be a key ingredient in the proof of the next section.
 
