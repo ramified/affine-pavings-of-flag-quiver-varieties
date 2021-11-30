@@ -85,7 +85,7 @@
 \newcommand{\Grq}{\operatorname{Gr}^{KQ}}
 \newcommand{\Flag}[1]{\operatorname{Flag}_{#1}}
 \newcommand{\Flagstr}[1]{\operatorname{Flag}_{#1,str}}
-\newcommand{\dimvec}[1]{#1}
+\newcommand{\dimvec}[1]{\boldsymbol{#1}}
 \newcommand{\ord}{\operatorname{ord}}
 \newcommand{\orde}{\operatorname{ord}_e }
 \newcommand{\representation}[2]{\genfrac{}{}{0pt}{3}{\phantom{000}#2\phantom{00}}{#1}}
@@ -305,11 +305,28 @@ The two side give us same amount of informations. %Or, you can easily construct 
 \end{proof}
 We can abbreviate the Proposition \ref{prop:flag=gr} as 
 $$\Flag{}(X)\cong \Gr(\Phi(X)).$$
-\subsection{dimension vector}
-
+\subsection{dimension vector}In this subsection we recall some notations of dimension vectors.
+\begin{defn}[dimension vector]
+Fix a quiver $Q$ and a representation $M \in \Rep(Q)$, the dimension vector of $Q$ is defined as the element in the set
+$$\prod_{i \in v(Q)} \mathbb{Z}_{\geqslant 0}$$
+and the dimension vector of $M$ is defined as
+$$\dimv M:=(\dim_K M_i)_{i \in v(Q)}.$$
+Similarly, fix a bounded quiver algebra $R=KQ'/I$ and a module $T \in \Mod(R)$, the dimension vector of $R$ just means the dimension vector of $Q'$, and the dimension vector of $T$ is defined as
+$$\dimv T:=(\dim_K T_i)_{i \in v(Q')}.$$
+\end{defn}
+Now we can write (strict) partial flag and Grassmannian as disjoint union of several pieces. Take the nonstrict case as an example. Fix a dimension vector $\dimvec{f}$ of $R_d$, it can be viewed as $d$ dimension vectors $(\dimvec{f_1},\ldots,\dimvec{f_d})$. Define
+\begin{equation*}
+\begin{aligned}
+  \Flagd_{,\dimvec{f}}(X):=\;&\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \;\middle|\; \dimv M_k=\dimvec{f_k} \right\}  \\ 
+  \Gralg{R}_{\dimvec{f}}(T):=\;&\{T' \subseteq T \text{ with } \dimv T'=\dimvec{f}   \}
+\end{aligned}
+\end{equation*}
+then from the Proposition \ref{prop:flag=gr} we get 
+$$\Flagd_{,\dimvec{f}}(X) \cong \Gralg{R}_{\dimvec{f}}(\Phi(X)).$$
 \subsection{Ext-vanishing properties}
-We would like to show some higher rank Extension group to be 0, which would be a key ingredient in the proof of the next section.
+We would like to show some higher rank extension group to be 0, which would be a key ingredient in the proof of the next section.
 
+Finally, we need to define the ``Euler form" of two dimension vectors.
 \begin{lemma}\label{lm:Extvan}
 Let $M,N,X,S \in \Rep(Q)$, $V,W,T \in \Mod(R)$.
 \begin{enumerate}[(1)]
@@ -364,6 +381,33 @@ we get the induced long exact sequence
 $$\cdots \longrightarrow \Ext^2_{R}(T,\Phi(X)) \longrightarrow \Ext^2_{R}(T,\Phi(X)/V) \longrightarrow \Ext^3_{R}(T,V) \longrightarrow \cdots$$
 so $\Ext^2_{R}(T,\Phi(X)/V)=0$.
 \end{proof}
+We will frequently use extension groups as well as long exact sequences, so now it's time to shorten some notations. For the $Q$-representations $M,N$ and $R$-modules $T,T'$, we denote  
+\begin{equation*}
+\begin{aligned}[]
+	[M,N]^i:&=\dim_K \Ext^i_{KQ} (M,N),\qquad [M,N]:=\dim_K \Hom_{KQ} (M,N)\\
+	[T,T']^i:&=\dim_K \Ext^i_R (T,T'),\qquad\hspace{0.5cm} [T,T']:=\dim_K \Hom_R (T,T')
+\end{aligned}
+\end{equation*}
+and write the Euler form as
+$$\left< T,T'\right>_R:= \sum_{i=0}^{\infty} (-1)^i [T,T']^i \quad=[T,T']-[T,T']^1+[T,T']^2.$$
+\begin{lemma}
+	For two $R$-modules $T,T'$, we have
+	$$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
+\end{lemma}
+\begin{proof}
+We construct one canonical resolution of $T$,
+
+\begin{center}
+	\begin{figure}[ht]\label{fig:resolution}
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=15cm]{figures/resolution.png}
+	\end{figure}
+\end{center}
+
+by applying the functor $\Hom_R(-,T')$ to this resolution, we get
+$$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
+\end{proof}
 \subsection{How much do we understand the quiver representation?}
 To understand the category $\Rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander-Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite indecomposable representations(up to isomorphism) and each indecomposable representation corresponds to the positive root of Dynkin diagram. One can compute the Auslander-Reiten quiver by knitting algorithm and get the structure of indecomposable representations. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$\footnote{These paths may be linear dependent, so it's not too easy.}.
 
@@ -372,20 +416,8 @@ We will use the Auslander-Reiten quiver to find "good monomorphisms" in Section 
 
 \section{Main Theorem}\label{sec:mainthm}
    
-   The following notations will be used throughout this article:
-   %In the following sections, we always suppose that 
-   \begin{itemize}
-   		\item $\dimvec{f},\dimvec{g}$ are dimension vectors of quiver $Q_d$ or $Q_{d,str}$. $\Grr_{\dimvec{f}}(T):= \{ T' \subseteq T \mid \dimv T'=\dimvec{f} \}$ is defined as the set of subrepresentations with dimension vector $\dimvec{f}$.
-   \end{itemize}
-We use 
-\begin{equation*}
-\begin{aligned}[]
-	[M,N]^i:&=\dim_K \Ext^i_{KQ} (M,N),\qquad [M,N]:=\dim_K \Hom_{KQ} (M,N)\\
-	[T,T']^i:&=\dim_K \Ext^i_R (T,T'),\qquad\hspace{0.5cm} [T,T']:=\dim_K \Hom_R (T,T')\\
-	\left< T,T'\right>_R:&= \sum_{i=0}^{\infty} (-1)^i [T,T']^i \quad=[T,T']-[T,T']^1+[T,T']^2\\
-	\left< \dimvec{f},\dimvec{g}\right>_R:&= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}
-\end{aligned}
-\end{equation*}
+
+	$$\left< \dimvec{f},\dimvec{g}\right>_R:= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}$$
 for the shorthand notation, where
 \begin{equation*}
 \begin{aligned}
@@ -615,24 +647,6 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 \end{tikzcd}\]
 When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{black}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
-\end{proof}
-\begin{lemma}
-	For two $R$-modules $T,T'$, we have
-	$$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
-\end{lemma}
-\begin{proof}
-We construct one canonical resolution of $T$,
-
-\begin{center}
-	\begin{figure}[ht]\label{fig:resolution}
-		\vspace{0cm}
-		\centering
-		\includegraphics[width=15cm]{figures/resolution.png}
-	\end{figure}
-\end{center}
-
-by applying the functor $\Hom_R(-,T')$ to this resolution, we get
-$$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$
 \end{proof}
 \begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]
 We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:img2}. For the rank of the affine bundle, we have 
