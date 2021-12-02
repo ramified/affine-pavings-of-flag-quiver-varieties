@@ -194,7 +194,7 @@ In this section, we will collect all the knowledges required in the later sectio
 \subsection{Extended quiver}
 We follow \cite[2.2,2.3]{maksimau2019flag} in this subsection, but we will have some small variations and different notations. We want to view partial flag variety as the quiver Grassmannian. Intuitively, the partial flag variety contains more information than the quiver Grassmannian. So we need to use bigger quiver, and encode these informations in the extra arrows.
 
-\begin{defn}[extended quiver]
+\begin{defn}[Extended quiver]
 Fix a quiver $Q$ and an integer $d \geqslant 1$, the \textbf{extended quiver} $Q_{d}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
@@ -205,7 +205,7 @@ Fix a quiver $Q$ and an integer $d \geqslant 1$, the \textbf{extended quiver} $Q
 
 The extended quiver $Q_d$ is exactly the same quiver as $\hat{\Gamma}_d$ in \cite[Definition 2.2]{maksimau2019flag}. The next definition is a small variation of it:
 
-\begin{defn}[strict extended quiver]
+\begin{defn}[Strict extended quiver]
 Fix a quiver $Q$ and an integer $d \geqslant 2$, the \textbf{strict extended quiver} $Q_{d,str}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
@@ -261,25 +261,25 @@ Here is the picture of new quiver:
 \end{eg}
 
 Now we define the special bound quiver algebras for later use.
-\begin{defn}[algebra of an extended quiver]\label{def:bqa}
+\begin{defn}[Algebra of an extended quiver]\label{def:bqa}
 For an extended quiver $Q_d$, let $KQ_d$ be the corresponding path algebra, and $I$ be the ideal of $KQ_d$ identifying all the paths with same sources and targets. The algebra of the extended quiver $Q_d$ is defined as
 $$R_d:= KQ_d/I.$$
 \end{defn}
 We also have the ``strict" version.
-\begin{defn}[algebra of a strict extended quiver]\label{def:bqastr}
+\begin{defn}[Algebra of a strict extended quiver]\label{def:bqastr}
 For an extended quiver $Q_{d,str}$, let $KQ_{d,str}$ be the corresponding path algebra, and $I$ be the ideal of $KQ_{d,str}$ identifying all the paths with same sources and targets. The algebra of the strict extended quiver $Q_{d,str}$ is defined as
 $$R_{d,str}:= KQ_{d,str}/I.$$
 \end{defn}
 By an aesthentically desirable abuse of notation, we abbreviate the notations $R_d$ and $R_{d,str}$ as $R$. %By doing so we may consider these two cases in the same time.
-\subsection{canonical functor $\Phi$}
+\subsection{Canonical functor $\Phi$}
 We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. All the representation in this paper is supposed to be of \textbf{finite dimension}.
-\begin{defn}[partial flag]\label{def:pf}
-Fix a quiver representation $X \in \Rep(Q)$, a \textbf{partial flag} of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an interger $d \geqslant 1$, we denote
+\begin{defn}[Partial flag]\label{def:pf}
+Fix a quiver representation $X \in \Rep(Q)$, a \textbf{partial flag} of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an integer $d \geqslant 1$, we denote
 $$\Flagd(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}$$
 as the collections of all partial flags of length $d$, and call it the \textbf{partial flag variety}. 
 \end{defn}
-\begin{defn}[strict partial flag]\label{def:spf}
-Fix a quiver representation $X \in \Rep(Q)$, a \textbf{strict partial flag} of $X$ is defined as an increasing sequence of subrepresentation $(M_i)_i$ of $X$ such that for any arrow $x \in v(Q)$ and any $i$, we have $x.M_{i+1} \subseteq M_{i}$. For an interger $d \geqslant 1$, we denote
+\begin{defn}[Strict partial flag]\label{def:spf}
+Fix a quiver representation $X \in \Rep(Q)$, a \textbf{strict partial flag} of $X$ is defined as an increasing sequence of subrepresentation $(M_i)_i$ of $X$ such that for any arrow $x \in v(Q)$ and any $i$, we have $x.M_{i+1} \subseteq M_{i}$. For an integer $d \geqslant 2$, we denote
 $$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{i+1} \subseteq M_i \right\}$$
 as the collections of all strict partial flags of length $d$, and call it the \textbf{strict partial flag variety}. 
 \end{defn}
@@ -287,7 +287,7 @@ as the collections of all strict partial flags of length $d$, and call it the \t
 Let $R$ be the bounded quiver algebra defined in Definition \ref{def:pf} or \ref{def:spf}. Fix a module $T \in \Mod(R)$, the Grassmannian $\Gralg{R}(T)$ is defined as the set of all submodules of $T$, equivalently,
 $$\Gralg{R}(T):=\{T' \subseteq T \text{ as the submodule}  \}.$$
 \end{defn}
-\begin{defn}[canonical functor $\Phi$]
+\begin{defn}[Canonical functor $\Phi$]
 The canonical functor $\Phi:\Rep(Q) \longrightarrow \Mod(R) $ is defined as follows:
 \begin{itemize}
 \item $\left(\Phi(X)\right)_{(i,r)}:=X_i$;
@@ -305,14 +305,12 @@ The two side give us same amount of informations. %Or, you can easily construct 
 \end{proof}
 We can abbreviate the Proposition \ref{prop:flag=gr} as 
 $$\Flag{}(X)\cong \Gr(\Phi(X)).$$
-\subsection{dimension vector}In this subsection we recall some notations of dimension vectors.
-\begin{defn}[dimension vector]
-Fix a quiver $Q$ and a representation $M \in \Rep(Q)$, the dimension vector of $Q$ is defined as the element in the set
-$$\prod_{i \in v(Q)} \mathbb{Z}_{\geqslant 0}$$
-and the dimension vector of $M$ is defined as
+\subsection{Dimension vector}In this subsection we recall some notations of dimension vectors.
+\begin{defn}[Dimension vector]
+For a quiver $Q$ and a representation $M \in \Rep(Q)$, the dimension vector of $Q$ is defined as the element in the set $\prod_{i \in v(Q)} \mathbb{Z}$, and the dimension vector of $M$ is defined as
 $$\dimv M:=(\dim_K M_i)_{i \in v(Q)}.$$
-Similarly, fix a bounded quiver algebra $R=KQ'/I$ and a module $T \in \Mod(R)$, the dimension vector of $R$ just means the dimension vector of $Q'$, and the dimension vector of $T$ is defined as
-$$\dimv T:=(\dim_K T_i)_{i \in v(Q')}.$$
+Similarly, for a bounded quiver algebra $R=KQ/I$ and a module $T \in \Mod(R)$, the dimension vector of $R$ just means the dimension vector of $Q$, and the dimension vector of $T$ is defined as
+$$\dimv T:=(\dim_K T_i)_{i \in v(Q)}.$$
 \end{defn}
 Now we can write (strict) partial flag and Grassmannian as disjoint union of several pieces. Take the nonstrict case as an example. Fix a dimension vector $\dimvec{f}$ of $R_d$, it can be viewed as $d$ dimension vectors $(\dimvec{f_1},\ldots,\dimvec{f_d})$. Define
 \begin{equation*}
@@ -329,9 +327,9 @@ Finally, we need to define the ``Euler form" of two dimension vectors.
 Let $R$ be a bounded quiver algebra defined in Definition \ref{def:bqa} or \ref{def:bqastr}. We denote
 \begin{equation*}
 \begin{aligned}
-	v(R):&= \{\text{vertices in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
-	a(R):&= \{\text{arrows in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
-	va(R):&= \{\text{``virtual arrows" in quiver $KQ_d$ or $KQ_{d,str}$}\} \\
+	v(R):&= \{\text{vertices in quiver $Q_d$ or $Q_{d,str}$}\} \\
+	a(R):&= \{\text{arrows in quiver $Q_d$ or $KQ_{d,str}$}\} \\
+	va(R):&= \{\text{``virtual arrows" in quiver $Q_d$ or $Q_{d,str}$}\} \\
 \end{aligned}
 \end{equation*}
 
@@ -426,7 +424,7 @@ is exact.
 For (\ref{lm:toproj}), we reduced to the case of indecomposable projective modules, and observe that $$\Phi(P(i))=P\big((i,1)\big),\qquad\Phi(I(i))=I\big((i,d)\big).$$
 
 For (\ref{lm:isoofext}), the surjection of map
-$$\Hom_{KQ}(M,N) \cong \Hom_{R}(\Phi(M),\Phi(N))$$
+$$\Hom_{KQ}(M,N) \longrightarrow \Hom_{R}(\Phi(M),\Phi(N))$$
 follows by the commutative diagram:
 
 \begin{center}
@@ -511,7 +509,7 @@ and  $\Psi_{\dimvec{f},\dimvec{g}}$ is the map $\Psi$ restricted to the preimage
 Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$ over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
 \end{theorem}
 
-We will spend the rest of the section proving these theorems. We decide the image as well as the fiber of $\Psi$ respectively.
+We will spend the rest of the section proving these theorems. We investigate the image as well as the fiber of $\Psi$ respectively.
 \begin{lemma}[follows {\cite[Lemma 21]{irelli2019cell}}]\label{lm:split}
 The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of $\Psi$ if and only if the canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ maps $\eta$ to 0.
 \end{lemma}
@@ -560,7 +558,9 @@ so $\bar{\eta}=0$ if and only if the last short exact sequence splits, that mean
 	are both surjective. Thus the composition is also surjective.
 \end{proof}
 \begin{corollary}[]\label{cor:0or1}
-	Let $S,X$ be $KQ$-modules, and $W \subseteq \Phi(S), V \subseteq \Phi(X)$ be $R$-modules. When $[S,X]^1=1$, then $[W,\Phi(X)/V]^1=0 \text{ or }1$.
+	Let $W \subseteq \Phi(S), V \subseteq \Phi(X)$ be $R$-submodules, then
+	$$[W,\Phi(X)/V]^1 \leqslant [\Phi(S),\Phi(X)]^1=[S,X]^1,$$
+	In particular, when $[S,X]^1=1$, we get $[W,\Phi(X)/V]^1=0 \text{ or }1$.
 	
 	Suppose $\eta$ generates $\Ext^1(S,X)$, then 
 	$$(V,W) \in \Img \Psi \iff [W,\Phi(X)/V]^1=0.$$
@@ -588,7 +588,7 @@ We only prove (i). (ii) is similar.
 From the short exact sequence 
 $$0 \longrightarrow \Phi(X)/V\cap V' \longrightarrow \Phi(X)/V \oplus \Phi(X)/V' \longrightarrow \Phi(X)/V+V' \longrightarrow 0,$$
 we get the long exact sequence
-$$\hspace{-0.8cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V\cap V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V}\right) \bigoplus \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\frac{\Phi(X)}{V+ V'}\right) \rightarrow\cdots$$
+$$\hspace{-0.4cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V\cap V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V}\right) \oplus \;\Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V+ V'}\right) \rightarrow\cdots$$
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/V\cap V']^1\leqslant 1, \; [\Phi(S),\Phi(X)/V+V']^1\leqslant 1$, and this forces that $[\Phi(S),\Phi(X)/V+V']^1= 1$.
 \end{proof}
 \begin{lemma}[follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, and the proof is same]

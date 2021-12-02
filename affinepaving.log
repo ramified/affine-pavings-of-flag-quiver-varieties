@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 NOV 2021 23:32
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  2 DEC 2021 11:40
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -912,8 +912,9 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
  []
 
 
-Overfull \hbox (55.5988pt too wide) detected at line 591
- [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] [] [][]   [] ! [][]   [] ! [] 
+Overfull \hbox (12.77255pt too wide) detected at line 591
+ [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
+ 
  []
 
 [9]
@@ -930,22 +931,21 @@ m/it/10.95 .
 [10]
 File: figures/startingfunction.png Graphic file (type bmp)
 <figures/startingfunction.png>
- [11]
 File: figures/minisecmono.png Graphic file (type bmp)
 <figures/minisecmono.png>
 File: figures/table.png Graphic file (type bmp)
 <figures/table.png>
- [12] [13]
+ [11] [12] [13]
 File: figures/specialcases.png Graphic file (type bmp)
 <figures/specialcases.png>
- [14] [15] (affinepaving.bbl) [16] (affinepaving.aux) ) 
+ [14] [15] (affinepaving.bbl [16]) [17] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
  18744 strings out of 427748
  365337 string characters out of 3150981
- 483237 words of memory out of 3000000
+ 484227 words of memory out of 3000000
  22240 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,17n,82p,3261b,1139s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (16 pages).
+Output written on affinepaving.pdf (17 pages).
