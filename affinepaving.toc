@@ -1,13 +1,13 @@
 \contentsline {section}{\tocsection {}{1}{Introduction}}{1}% 
-\contentsline {section}{\tocsection {}{}{Acknowledgement}}{3}% 
-\contentsline {section}{\tocsection {}{2}{Preliminary Facts}}{3}% 
-\contentsline {subsection}{\tocsubsection {}{2.1}{Extended quiver}}{4}% 
-\contentsline {subsection}{\tocsubsection {}{2.2}{Canonical functor $\Phi $}}{5}% 
+\contentsline {section}{\tocsection {}{}{Acknowledgement}}{2}% 
+\contentsline {section}{\tocsection {}{2}{Preliminary Facts}}{2}% 
+\contentsline {subsection}{\tocsubsection {}{2.1}{Extended quiver}}{2}% 
+\contentsline {subsection}{\tocsubsection {}{2.2}{Canonical functor $\Phi $}}{4}% 
 \contentsline {subsection}{\tocsubsection {}{2.3}{Dimension vector}}{5}% 
 \contentsline {subsection}{\tocsubsection {}{2.4}{Ext-vanishing properties}}{6}% 
 \contentsline {subsection}{\tocsubsection {}{2.5}{How much do we understand the quiver representation?}}{8}% 
 \contentsline {section}{\tocsection {}{3}{Main Theorem}}{8}% 
 \contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{11}% 
 \contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{14}% 
-\contentsline {section}{\tocsection {Appendix}{A}{}}{15}% 
+\contentsline {section}{\tocsection {Appendix}{A}{}}{14}% 
 \contentsline {section}{\tocsection {Appendix}{}{References}}{17}% 

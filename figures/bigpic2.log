@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  3 DEC 2021 20:48
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  3 DEC 2021 20:52
 entering extended mode
-**./bigpic.tex
-(bigpic.tex
+**./bigpic2.tex
+(bigpic2.tex
 LaTeX2e <2018-12-01>
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone
@@ -598,8 +598,8 @@ File: tikzlibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
 aries\pgflibrarypatterns.code.tex"
 File: pgflibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
-)) (bigpic.aux)
-\openout1 = `bigpic.aux'.
+)) (bigpic2.aux)
+\openout1 = `bigpic2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -617,25 +617,25 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 
 ABD: EveryShipout initializing macros
-Overfull \hbox (84.1146pt too wide) detected at line 94
+Overfull \hbox (138.60335pt too wide) detected at line 90
 [] [] []
  []
 
 
-Overfull \hbox (84.1146pt too wide) detected at line 96
+Overfull \hbox (138.60335pt too wide) detected at line 92
 [] [] []
  []
 
 [1
 
-] (bigpic.aux) ) 
+] (bigpic2.aux) ) 
 Here is how much of TeX's memory you used:
- 15453 strings out of 427748
- 337906 string characters out of 3150981
- 441893 words of memory out of 3000000
- 19229 multiletter control sequences out of 15000+200000
+ 15454 strings out of 427748
+ 337927 string characters out of 3150981
+ 438667 words of memory out of 3000000
+ 19230 multiletter control sequences out of 15000+200000
  7522 words of font info for 30 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 61i,19n,84p,956b,1097s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,19n,84p,901b,1097s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on bigpic.pdf (1 page).
+Output written on bigpic2.pdf (1 page).

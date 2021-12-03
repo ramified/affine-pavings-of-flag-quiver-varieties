@@ -129,16 +129,6 @@ In this article, we establish an affine paving for partial flag quiver varieties
 \section{Introduction}
 Let $Q$ be a quiver of Dynkin or affine type(without loops), $X\in \Rep(Q)$ be an quiver representation.\footnote{We fix the base field $K=\mathbb{C}$ for convinience.} We are interested in three objects related to $X \in \Rep(Q)$:
 
-\resizebox{\textwidth}{!}{
-	$v(Q_d)=v(Q) \times \{1,\ldots,d\}$
-}
-\hrule % show text width
-\begin{gather}\label{model3_coef}
-  y_{t}^{3} = -145.071 - 0.003*x_{t-1}^{7} +
-  0.459*x_{t}^{6} +
-  0.001*x_{t-1}^{8} -5.071*x_{t-1}^{9} + 7.322*x_{t-1}^{5} -
-  0.235*x_{t-1}^{1}
-\end{gather}
 \begin{equation*}
 \begin{aligned}
 &	\text{quiver Grassmannian} && \Grq(X)\colon = \left\{ M_1 \mid M_1 \subseteq X \right\}\\
@@ -193,153 +183,13 @@ Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver
 	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
-
-$$
-\left\{
-% https://q.uiver.app/?q=WzAsMjAsWzEsMSwiWF97M3h9Il0sWzIsMSwiWF97M3l9Il0sWzEsMiwiWF97Mnh9Il0sWzIsMiwiWF97Mnl9Il0sWzEsMywiWF97MXh9Il0sWzIsMywiWF97MXl9Il0sWzMsMywiWF97MXp9Il0sWzMsMiwiWF97Mnp9Il0sWzMsMSwiWF97M3p9Il0sWzQsMSwiWF97M3d9Il0sWzQsMiwiWF97Mnd9Il0sWzQsMywiWF97MXd9Il0sWzAsMiwiWF8yOiJdLFsyLDAsIlhfeSJdLFsxLDAsIlhfeCJdLFszLDAsIlhfeiJdLFs0LDAsIlhfdyJdLFswLDMsIlhfMToiXSxbMCwxLCJYXzM6Il0sWzAsMCwiWDoiXSxbMCwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNywzXSxbOCwxXSxbOCw5XSxbNywxMF0sWzYsMTFdLFsxLDEzLCJcXHN1YnNldGVxIiwxLHsib2Zmc2V0Ijo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTQsMTNdLFsxNSwxM10sWzE1LDE2XSxbMywxLCJcXHN1YnNldGVxIiwxLHsib2Zmc2V0Ijo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSwzLCJcXHN1YnNldGVxIiwxLHsib2Zmc2V0Ijo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=
-\begin{tikzcd}[row sep={13mm,between origins},column sep={14mm,between origins},labl/.style={rotate=90,pos=0.5}]
-	{X\!\!:} &[-7mm] {X_x} & {X_y} & {X_z} & {X_w} \\
-	{X_3\!:} & {X_{3x}} & {X_{3y}} & {X_{3z}} & {X_{3w}} \\
-	{X_2\!:} & {X_{2x}} & {X_{2y}} & {X_{2z}} & {X_{2w}} \\
-	{X_1\!:} & {X_{1x}} & {X_{1y}} & {X_{1z}} & {X_{1w}}
-	\arrow[from=2-2, to=2-3]
-	\arrow[from=3-2, to=3-3]
-	\arrow[from=4-2, to=4-3]
-	\arrow[from=4-4, to=4-3]
-	\arrow[from=3-4, to=3-3]
-	\arrow[from=2-4, to=2-3]
-	\arrow[from=2-4, to=2-5]
-	\arrow[from=3-4, to=3-5]
-	\arrow[from=4-4, to=4-5]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=2-3, to=1-3]
-	\arrow[from=1-2, to=1-3]
-	\arrow[from=1-4, to=1-3]
-	\arrow[from=1-4, to=1-5]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=3-3, to=2-3]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=4-3, to=3-3]
-\end{tikzcd}
-\right\}
-\xleftrightarrow{\hspace{1.4cm}}\left\{
-% https://q.uiver.app/?q=WzAsMjYsWzEsMywiWF97M3h9Il0sWzIsMywiWF97M3l9Il0sWzEsNCwiWF97Mnh9Il0sWzIsNCwiWF97Mnl9Il0sWzEsNSwiWF97MXh9Il0sWzIsNSwiWF97MXl9Il0sWzMsNSwiWF97MXp9Il0sWzMsNCwiWF97Mnp9Il0sWzMsMywiWF97M3p9Il0sWzQsMywiWF97M3d9Il0sWzQsNCwiWF97Mnd9Il0sWzQsNSwiWF97MXd9Il0sWzAsNF0sWzIsMiwiWF95Il0sWzEsMiwiWF94Il0sWzEsMCwiWF94Il0sWzEsMSwiWF94Il0sWzIsMCwiWF95Il0sWzIsMSwiWF95Il0sWzMsMCwiWF96Il0sWzMsMSwiWF96Il0sWzMsMiwiWF96Il0sWzQsMiwiWF93Il0sWzQsMSwiWF93Il0sWzQsMCwiWF93Il0sWzAsMSwiXFxQaGkoWCkiXSxbMCwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNywzXSxbOCwxXSxbOCw5XSxbNywxMF0sWzYsMTFdLFsxMSwxMF0sWzEwLDldLFs3LDhdLFs2LDddLFs1LDNdLFszLDFdLFsyLDBdLFs0LDJdLFsxLDEzLCJcXHN1YnNldGVxIiwxLHsib2Zmc2V0Ijo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTQsMTZdLFsxNiwxNV0sWzE1LDE3XSxbMTYsMThdLFsxNCwxM10sWzEzLDE4XSxbMTgsMTddLFsyMCwxOV0sWzIxLDIwXSxbMjIsMjNdLFsyMywyNF0sWzIxLDEzXSxbMjEsMjJdLFsyMCwxOF0sWzIwLDIzXSxbMTksMTddLFsxOSwyNF1d
-\begin{tikzcd}[row sep={12mm,between origins},column sep={14mm,between origins},labl/.style={rotate=90,pos=0.5}]
-	&[-6mm] {X_x} & {X_y} & {X_z} & {X_w} \\
-	{\Phi(X)\!:} & {X_x} & {X_y} & {X_z} & {X_w} \\
-	& {X_x} & {X_y} & {X_z} & {X_w} \\[0.5cm]
-	& {X_{3x}} & {X_{3y}} & {X_{3z}} & {X_{3w}} \\
-	{} & {X_{2x}} & {X_{2y}} & {X_{2z}} & {X_{2w}} \\
-	& {X_{1x}} & {X_{1y}} & {X_{1z}} & {X_{1w}}
-	\arrow[from=4-2, to=4-3]
-	\arrow[from=5-2, to=5-3]
-	\arrow[from=6-2, to=6-3]
-	\arrow[from=6-4, to=6-3]
-	\arrow[from=5-4, to=5-3]
-	\arrow[from=4-4, to=4-3]
-	\arrow[from=4-4, to=4-5]
-	\arrow[from=5-4, to=5-5]
-	\arrow[from=6-4, to=6-5]
-	\arrow[from=6-5, to=5-5]
-	\arrow[from=5-5, to=4-5]
-	\arrow[from=5-4, to=4-4]
-	\arrow[from=6-4, to=5-4]
-	\arrow[from=6-3, to=5-3]
-	\arrow[from=5-3, to=4-3]
-	\arrow[from=5-2, to=4-2]
-	\arrow[from=6-2, to=5-2]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=4-3, to=3-3]
-	\arrow[from=3-2, to=2-2]
-	\arrow[from=2-2, to=1-2]
-	\arrow[from=1-2, to=1-3]
-	\arrow[from=2-2, to=2-3]
-	\arrow[from=3-2, to=3-3]
-	\arrow[from=3-3, to=2-3]
-	\arrow[from=2-3, to=1-3]
-	\arrow[from=2-4, to=1-4]
-	\arrow[from=3-4, to=2-4]
-	\arrow[from=3-5, to=2-5]
-	\arrow[from=2-5, to=1-5]
-	\arrow[from=3-4, to=3-3]
-	\arrow[from=3-4, to=3-5]
-	\arrow[from=2-4, to=2-3]
-	\arrow[from=2-4, to=2-5]
-	\arrow[from=1-4, to=1-3]
-	\arrow[from=1-4, to=1-5]
-\end{tikzcd}
-\right\}
-$$
+		\includegraphics[width=0.9\linewidth]{figures/bigpic.pdf}
+		\includegraphics[width=\linewidth]{figures/bigpic2.pdf}
 %		\captionsetup{labelformat=empty}
 		\caption{}
 		\label{fig:flagasgr}
 	\end{figure}
 \end{center}
-
-$$
-\left\{
-% https://q.uiver.app/?q=WzAsMjAsWzEsMSwiWF97M3h9Il0sWzIsMSwiWF97M3l9Il0sWzEsMiwiWF97Mnh9Il0sWzIsMiwiWF97Mnl9Il0sWzEsMywiWF97MXh9Il0sWzIsMywiWF97MXl9Il0sWzMsMywiWF97MXp9Il0sWzMsMiwiWF97Mnp9Il0sWzMsMSwiWF97M3p9Il0sWzQsMSwiWF97M3d9Il0sWzQsMiwiWF97Mnd9Il0sWzQsMywiWF97MXd9Il0sWzAsMiwiWF8yOiJdLFsyLDAsIlhfeSJdLFsxLDAsIlhfeCJdLFszLDAsIlhfeiJdLFs0LDAsIlhfdyJdLFswLDMsIlhfMToiXSxbMCwxLCJYXzM6Il0sWzAsMCwiWDoiXSxbMCwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNywzXSxbOCwxXSxbOCw5XSxbNywxMF0sWzYsMTFdLFsxLDEzLCJcXHN1YnNldGVxIiwxLHsib2Zmc2V0Ijo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTQsMTNdLFsxNSwxM10sWzE1LDE2XSxbMywxLCJcXHN1YnNldGVxIiwxLHsib2Zmc2V0Ijo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSwzLCJcXHN1YnNldGVxIiwxLHsib2Zmc2V0Ijo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=
-\begin{tikzcd}[row sep={15mm,between origins},column sep={13mm,between origins},labl/.style={rotate=90,pos=0.5}]
-	{X\!\!:} &[-6mm] {X_x} & {X_y} & {X_z} & {X_w} \\
-	{X_3\!:} & {X_{3x}} & {X_{3y}} & {X_{3z}} & {X_{3w}} \\
-	{X_2\!:} & {X_{2x}} & {X_{2y}} & {X_{2z}} & {X_{2w}} \\
-	{X_1\!:} & {X_{1x}} & {X_{1y}} & {X_{1z}} & {X_{1w}}
-	\arrow[from=2-2, to=2-3]
-	\arrow[from=3-2, to=3-3]
-	\arrow[from=4-2, to=4-3]
-	\arrow[from=4-4, to=4-3]
-	\arrow[from=3-4, to=3-3]
-	\arrow[from=2-4, to=2-3]
-	\arrow[from=2-4, to=2-5]
-	\arrow[from=3-4, to=3-5]
-	\arrow[from=4-4, to=4-5]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=2-3, to=1-3]
-	\arrow[from=1-2, to=1-3]
-	\arrow[from=1-4, to=1-3]
-	\arrow[from=1-4, to=1-5]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=3-3, to=2-3]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=4-3, to=3-3]
-\end{tikzcd}
-\middle|
-\,x.X_{i+1} \subseteq X_i
-\right\}
-\xleftrightarrow{\hspace{1.4cm}}\left\{
-% https://q.uiver.app/?q=WzAsMjYsWzEsMywiWF97M3h9Il0sWzIsMywiWF97M3l9Il0sWzEsNCwiWF97Mnh9Il0sWzIsNCwiWF97Mnl9Il0sWzEsNSwiWF97MXh9Il0sWzIsNSwiWF97MXl9Il0sWzMsNSwiWF97MXp9Il0sWzMsNCwiWF97Mnp9Il0sWzMsMywiWF97M3p9Il0sWzQsMywiWF97M3d9Il0sWzQsNCwiWF97Mnd9Il0sWzQsNSwiWF97MXd9Il0sWzAsNF0sWzIsMiwiWF95Il0sWzEsMiwiWF94Il0sWzEsMCwiWF94Il0sWzEsMSwiWF94Il0sWzIsMCwiWF95Il0sWzIsMSwiWF95Il0sWzMsMCwiWF96Il0sWzMsMSwiWF96Il0sWzMsMiwiWF96Il0sWzQsMiwiWF93Il0sWzQsMSwiWF93Il0sWzQsMCwiWF93Il0sWzAsMSwiXFxQaGkoWCkiXSxbMTEsMTBdLFsxMCw5XSxbNyw4XSxbNiw3XSxbNSwzXSxbMywxXSxbMiwwXSxbNCwyXSxbMSwxMywiXFxzdWJzZXRlcSIsMSx7Im9mZnNldCI6NSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzE0LDE2XSxbMTYsMTVdLFsxMywxOF0sWzE4LDE3XSxbMjAsMTldLFsyMSwyMF0sWzIyLDIzXSxbMjMsMjRdLFsxNiwxM10sWzE1LDE4XSxbMTksMThdLFsyMCwxM10sWzIwLDIyXSxbMTksMjNdLFswLDNdLFsyLDVdLFs4LDNdLFs3LDVdLFs4LDEwXSxbNywxMV1d
-\begin{tikzcd}[row sep={12mm,between origins},column sep={14mm,between origins},labl/.style={rotate=90,pos=0.5}]
-	&[-5mm] {X_x} & {X_y} & {X_z} & {X_w} \\
-	{\Phi(X)\!:} & {X_x} & {X_y} & {X_z} & {X_w} \\
-	& {X_x} & {X_y} & {X_z} & {X_w} \\
-	& {X_{3x}} & {X_{3y}} & {X_{3z}} & {X_{3w}} \\
-	{} & {X_{2x}} & {X_{2y}} & {X_{2z}} & {X_{2w}} \\
-	& {X_{1x}} & {X_{1y}} & {X_{1z}} & {X_{1w}}
-	\arrow[from=6-5, to=5-5]
-	\arrow[from=5-5, to=4-5]
-	\arrow[from=5-4, to=4-4]
-	\arrow[from=6-4, to=5-4]
-	\arrow[from=6-3, to=5-3]
-	\arrow[from=5-3, to=4-3]
-	\arrow[from=5-2, to=4-2]
-	\arrow[from=6-2, to=5-2]
-	\arrow["\mbox{\huge$\subseteq$}"{description,labl}, shift right=5, draw=none, from=4-3, to=3-3]
-	\arrow[from=3-2, to=2-2]
-	\arrow[from=2-2, to=1-2]
-	\arrow[from=3-3, to=2-3]
-	\arrow[from=2-3, to=1-3]
-	\arrow[from=2-4, to=1-4]
-	\arrow[from=3-4, to=2-4]
-	\arrow[from=3-5, to=2-5]
-	\arrow[from=2-5, to=1-5]
-	\arrow[from=2-2, to=3-3]
-	\arrow[from=1-2, to=2-3]
-	\arrow[from=1-4, to=2-3]
-	\arrow[from=2-4, to=3-3]
-	\arrow[from=2-4, to=3-5]
-	\arrow[from=1-4, to=2-5]
-	\arrow[from=4-2, to=5-3]
-	\arrow[from=5-2, to=6-3]
-	\arrow[from=4-4, to=5-3]
-	\arrow[from=5-4, to=6-3]
-	\arrow[from=4-4, to=5-5]
-	\arrow[from=5-4, to=6-5]
-\end{tikzcd}
-\right\}
-$$
 \end{eg}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgement}
@@ -624,14 +474,20 @@ $$\left< T,T'\right>_R:= \sum_{i=0}^{\infty} (-1)^i [T,T']^i \quad=[T,T']-[T,T']
 \end{lemma}
 \begin{proof}
 We construct one canonical resolution of $T$,
-
-\begin{center}
-	\begin{figure}[ht]\label{fig:resolution}
-		\vspace{0cm}
-		\centering
-		\includegraphics[width=15cm]{figures/resolution.png}
-	\end{figure}
-\end{center}
+% https://q.uiver.app/?q=WzAsMTIsWzAsMCwiMCJdLFsxLDAsIlxcYmlnb3BsdXNfe1xcc3Vic3RhY2t7YyBcXGluIHZhKFEpXFxcXGM9Yl8xY18xPWJfMmNfMn19IFJlX3t0KGMpfSBcXG90aW1lc19LIGVfe3MoYyl9VCJdLFsyLDAsIlxcYmlnb3BsdXNfe2IgXFxpbiBhKFEpfSBSZV97dChiKX0gXFxvdGltZXNfSyBlX3tzKGIpfVQiXSxbMywwLCJcXGJpZ29wbHVzX3tpIFxcaW4gdihRKX0gUmVfe2l9IFxcb3RpbWVzX0sgZV97aX1UIl0sWzQsMCwiVCJdLFs1LDAsIjAiXSxbMSwxLCJyIFxcb3RpbWVzIHgiXSxbMiwxLCJcXHN1YnN0YWNre1xccGhhbnRvbXsrfXJjXzEgXFxvdGltZXMgeCArciBcXG90aW1lcyBiXzF4XFxcXC1yY18yIFxcb3RpbWVzIHggLXIgXFxvdGltZXMgYl8yeH0iXSxbMywxLCJyIFxcb3RpbWVzIHgiXSxbNCwxLCJyeCJdLFsyLDIsInIgXFxvdGltZXMgeCJdLFszLDIsInJiIFxcb3RpbWVzIHgtciBcXG90aW1lcyBieCJdLFswLDFdLFsxLDJdLFsyLDNdLFszLDRdLFs0LDVdLFs2LDcsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbOCw5LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzEwLDExLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV1d
+$$\begin{tikzcd}[row sep=0mm,column sep=3mm]
+	0 & {\displaystyle\bigoplus_{\substack{c \in va(Q)\\c=b_1c_1=b_2c_2}} \hspace{-5mm}Re_{t(c)} \otimes_K e_{s(c)}T} & {\displaystyle\bigoplus_{b \in a(Q)}\hspace{-2mm} Re_{t(b)} \otimes_K e_{s(b)}T} & {\displaystyle\bigoplus_{i \in v(Q)}\hspace{-2mm} Re_{i} \otimes_K e_{i}T} & T & 0 \\
+	& {\hspace{10mm} r \otimes x} & {\substack{\phantom{+}rc_1 \otimes x +r \otimes b_1x\\-rc_2 \otimes x -r \otimes b_2x}\hspace{-5mm}} & {\hspace{6mm}r \otimes x} & rx \\
+	&& {\hspace{6mm}r \otimes x} & {rb \otimes x-r \otimes bx\hspace{-3mm}}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=1-5, to=1-6]
+	\arrow[maps to, from=2-2, to=2-3]
+	\arrow[maps to, from=2-4, to=2-5]
+	\arrow[maps to, from=3-3, to=3-4]
+\end{tikzcd}$$
 
 by applying the functor $\Hom_R(-,T')$ to this resolution, we get
 $$	\left< T,T'\right>_R \cong 	\left< \dimv T,\dimv T'\right>_R.$$

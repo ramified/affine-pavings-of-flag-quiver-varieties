@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  3 DEC 2021 00:18
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  3 DEC 2021 21:55
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -914,38 +914,17 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (12.03545pt too wide) in paragraph at lines 132--135
-[][] 
- []
-
-
-Package resizegather Warning: Equation line 1 is too large by 49.18095pt
-(resizegather)                in environment `gather' on input line 141.
-
-
-Overfull \hbox (5.1381pt too wide) detected at line 148
+Overfull \hbox (5.1381pt too wide) detected at line 138
 [][]
  []
 
 [1]
-Overfull \hbox (11.60306pt too wide) detected at line 268
-[] [] []
- []
-
-
-Overfull \hbox (71.08pt too wide) detected at line 342
-[] [] []
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-[3] [4] [5] [6] [7]
-File: figures/resolution.png Graphic file (type bmp)
-<figures/resolution.png>
- [8] [9]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 738--739
+File: figures/bigpic.pdf Graphic file (type pdf)
+<use figures/bigpic.pdf>
+File: figures/bigpic2.pdf Graphic file (type pdf)
+<use figures/bigpic2.pdf>
+ [2] [3] [4] [5] [6] [7] [8]
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 594--595
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -959,14 +938,14 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
 .95 +
  []
 
-
-Overfull \hbox (12.77255pt too wide) detected at line 748
+[9]
+Overfull \hbox (12.77255pt too wide) detected at line 604
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
 
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 777--778
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 633--634
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -981,20 +960,23 @@ File: figures/startingfunction.png Graphic file (type bmp)
 <figures/startingfunction.png>
 File: figures/minisecmono.png Graphic file (type bmp)
 <figures/minisecmono.png>
- [12]
 File: figures/table.png Graphic file (type bmp)
 <figures/table.png>
- [13] [14]
+ [12] [13] [14]
 File: figures/specialcases.png Graphic file (type bmp)
 <figures/specialcases.png>
- [15] [16] (affinepaving.bbl) [17] (affinepaving.aux) ) 
+ [15]
+Overfull \vbox (1.21733pt too high) has occurred while \output is active []
+
+
+[16] (affinepaving.bbl) [17] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 20094 strings out of 427748
- 396076 string characters out of 3150981
- 567620 words of memory out of 3000000
- 23564 multiletter control sequences out of 15000+200000
- 25368 words of font info for 115 fonts, out of 3000000 for 9000
+ 19345 strings out of 427748
+ 377251 string characters out of 3150981
+ 495338 words of memory out of 3000000
+ 22820 multiletter control sequences out of 15000+200000
+ 17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,18n,82p,3261b,1166s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,23n,82p,3261b,1139s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on affinepaving.pdf (17 pages).
