@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  3 DEC 2021 21:55
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  10 DEC 2021 22:13
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -842,39 +842,39 @@ Package ifluatex Info: LuaTeX not detected.
  (affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Try loading font information for U+msa on input line 103.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 102.
+LaTeX Font Info:    Try loading font information for U+msb on input line 103.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 102.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 103.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\u
 rsfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.43799pt on input line 102.
+Package xypdf Info: Line width: 0.43799pt on input line 103.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -914,17 +914,17 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (5.1381pt too wide) detected at line 138
+Overfull \hbox (5.1381pt too wide) detected at line 139
 [][]
  []
 
-[1]
+[1] [2] [3] [4]
 File: figures/bigpic.pdf Graphic file (type pdf)
 <use figures/bigpic.pdf>
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
- [2] [3] [4] [5] [6] [7] [8]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 594--595
+ [5] [6] [7] [8] [9]
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 614--615
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -938,14 +938,14 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
 .95 +
  []
 
-[9]
-Overfull \hbox (12.77255pt too wide) detected at line 604
+
+Overfull \hbox (12.77255pt too wide) detected at line 624
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
-
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 633--634
+[10]
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 653--654
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -955,28 +955,26 @@ m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
 m/it/10.95 .
  []
 
-[10] [11]
+[11]
 File: figures/startingfunction.png Graphic file (type bmp)
 <figures/startingfunction.png>
+ [12]
 File: figures/minisecmono.png Graphic file (type bmp)
 <figures/minisecmono.png>
+ [13]
 File: figures/table.png Graphic file (type bmp)
 <figures/table.png>
- [12] [13] [14]
+ [14]
 File: figures/specialcases.png Graphic file (type bmp)
 <figures/specialcases.png>
- [15]
-Overfull \vbox (1.21733pt too high) has occurred while \output is active []
-
-
-[16] (affinepaving.bbl) [17] (affinepaving.aux) ) 
+ [15] [16] [17] (affinepaving.bbl) [18] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 19345 strings out of 427748
- 377251 string characters out of 3150981
- 495338 words of memory out of 3000000
- 22820 multiletter control sequences out of 15000+200000
+ 19348 strings out of 427748
+ 377281 string characters out of 3150981
+ 493588 words of memory out of 3000000
+ 22823 multiletter control sequences out of 15000+200000
  17469 words of font info for 84 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,23n,82p,3261b,1139s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,23n,82p,3261b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (17 pages).
+Output written on affinepaving.pdf (18 pages).

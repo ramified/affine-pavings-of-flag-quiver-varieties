@@ -42,6 +42,7 @@
 \newtheorem{ques}[theorem]{Question}
 \newtheorem*{fact}{Facts}
 \newtheorem{eg}[theorem]{Example}
+\newtheorem*{notation}{Conventions and Notations}
 
 \theoremstyle{plain}
 \newtheorem{thmsub}{Theorem}[subsection]
@@ -69,7 +70,7 @@
 \DeclareMathOperator{\Img}{\operatorname{Im}}
 \DeclareMathOperator{\Id}{\operatorname{Id}}
 \DeclareMathOperator{\Rep}{\operatorname{Rep}}
-\DeclareMathOperator{\Mod}{\operatorname{Mod}}
+\DeclareMathOperator{\Mod}{\operatorname{mod}}
 \DeclareMathOperator{\Hom}{\operatorname{Hom}}
 \DeclareMathOperator{\Ext}{\operatorname{Ext}}
 \DeclareMathOperator{\gldim}{\operatorname{gl.dim}}
@@ -174,23 +175,13 @@ $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the re
 \end{table}
 
 The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section \ref{sec:flag=gr},\ref{sec:mainthm},\ref{sec:Dynkin}, accordingly.
+\begin{notation}
+Throughout this article, we denote $K=\mathbb{C}$ as a field, $R$ as a commutative $K$-algebra with unit, and $\Mod(R)$ as the category of $R$-modules of finite dimension. Let $Q$ be a quiver equipped with the set of finite vertices $v(Q)$ and the set of finite edges $a(Q)$. For an
+arrow $b$, we call $s(b)$ the starting vertex and $t(b)$ the terminal vertex
+of $b$. Let $KQ$ be the path algebra, and $\Rep(Q):=\Mod(KQ)$ as the category of quiver representations of finite dimension. For an representation $X\in \Rep(Q)$, we denote $X_i:=e_iX$ as the $K$-linear space at the vertex $i\in v(Q)$. As usual, we denote $P(i)$, $I(i)$ and $S(i)$ as the indecomposable projective, injective, simple modules corresponding to the vertex $i$, accordingly.
+\end{notation}
 
-Before the end of this section, let us see in one example how partial flag variety is viewed as quiver Grassmannian.
-%https://tex.stackexchange.com/questions/495252/i-want-to-get-a-big-subset
-\begin{eg}
-Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a quiver representation, then the varieties $\Flag{3}(X),\Flagstr{3}(X)$ can be viewed as quiver Grassmannian in Figure \ref{fig:flagasgr}:
-\begin{center}
-	\begin{figure}[ht]
-		\vspace{0cm}
-		\centering
-		\includegraphics[width=0.9\linewidth]{figures/bigpic.pdf}
-		\includegraphics[width=\linewidth]{figures/bigpic2.pdf}
-%		\captionsetup{labelformat=empty}
-		\caption{}
-		\label{fig:flagasgr}
-	\end{figure}
-\end{center}
-\end{eg}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgement}
 %\addcontentsline{toc}{section}{Acknowledgement}
@@ -279,15 +270,15 @@ $$R_{d,str}:= KQ_{d,str}/I.$$
 \end{defn}
 By an aesthentically desirable abuse of notation, we abbreviate the notations $R_d$ and $R_{d,str}$ as $R$. %By doing so we may consider these two cases in the same time.
 \subsection{Canonical functor $\Phi$}
-We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. All the representation in this paper is supposed to be of \textbf{finite dimension}.
+We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. 
 \begin{defn}[Partial flag]\label{def:pf}
 Fix a quiver representation $X \in \Rep(Q)$, a \textbf{partial flag} of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an integer $d \geqslant 1$, we denote
 $$\Flagd(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}$$
 as the collections of all partial flags of length $d$, and call it the \textbf{partial flag variety}. 
 \end{defn}
 \begin{defn}[Strict partial flag]\label{def:spf}
-Fix a quiver representation $X \in \Rep(Q)$, a \textbf{strict partial flag} of $X$ is defined as an increasing sequence of subrepresentation $(M_i)_i$ of $X$ such that for any arrow $x \in v(Q)$ and any $i$, we have $x.M_{i+1} \subseteq M_{i}$. For an integer $d \geqslant 2$, we denote
-$$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{i+1} \subseteq M_i \right\}$$
+Fix a quiver representation $X \in \Rep(Q)$, a \textbf{strict partial flag} of $X$ is defined as an increasing sequence of subrepresentation $(M_k)_k$ of $X$ such that for any arrow $x \in v(Q)$ and any $i$, we have $x.M_{k+1} \subseteq M_{k}$. For an integer $d \geqslant 2$, we denote
+$$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{k+1} \subseteq M_k \right\}$$
 as the collections of all strict partial flags of length $d$, and call it the \textbf{strict partial flag variety}. 
 \end{defn}
 \begin{defn}[Grassmannian]
@@ -308,9 +299,26 @@ Fix a representation $X\in \Rep(Q)$, we have the isomorphism
 $$\Flagd(X)\cong \Gralg{R_d}(\Phi(X)) \qquad \Flagdstr(X)\cong \Gralg{R_{d,str}}(\Phi(X)).$$
 \end{proposition}
 \begin{proof}
-The two side give us same amount of informations. %Or, you can easily construct the bijection from $\Flag{}(X)$ to $\Grr(\Phi(X))$.
+This is obvious. The first case is mentioned in \cite[page 4]{maksimau2019flag} without further elaboration, and the explicit construction of special case is showed in Example \ref{eg:bigpic}.
+%The two side give us same amount of informations. %Or, you can easily construct the bijection from $\Flag{}(X)$ to $\Grr(\Phi(X))$.
 \end{proof}
-We can abbreviate the Proposition \ref{prop:flag=gr} as 
+%https://tex.stackexchange.com/questions/495252/i-want-to-get-a-big-subset
+\begin{eg}\label{eg:bigpic}
+Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a quiver representation, then the varieties $\Flag{3}(X),\Flagstr{3}(X)$ can be viewed as quiver Grassmannian in Figure \ref{fig:flagasgr}:
+\newpage
+\begin{center}
+	\begin{figure}[ht]
+		\vspace{0cm}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figures/bigpic.pdf}
+		\includegraphics[width=\linewidth]{figures/bigpic2.pdf}
+%		\captionsetup{labelformat=empty}
+		\caption{}
+		\label{fig:flagasgr}
+	\end{figure}
+\end{center}
+\end{eg}
+In many cases, the proof of the strict case and the non-strict case is the same, so we often treat them in the same way. For example, we may abbreviate the formula in Proposition \ref{prop:flag=gr} as 
 $$\Flag{}(X)\cong \Gr(\Phi(X)).$$
 \subsection{Dimension vector}In this subsection we recall some notations of dimension vectors.
 \begin{defn}[Dimension vector]
@@ -319,7 +327,7 @@ $$\dimv M:=(\dim_K M_i)_{i \in v(Q)}.$$
 Similarly, for a bounded quiver algebra $R=KQ/I$ and a module $T \in \Mod(R)$, the dimension vector of $R$ just means the dimension vector of $Q$, and the dimension vector of $T$ is defined as
 $$\dimv T:=(\dim_K T_i)_{i \in v(Q)}.$$
 \end{defn}
-Now we can write (strict) partial flag and Grassmannian as disjoint union of several pieces. Take the nonstrict case as an example. Fix a dimension vector $\dimvec{f}$ of $R_d$, it can be viewed as $d$ dimension vectors $(\dimvec{f_1},\ldots,\dimvec{f_d})$. Define
+Now we can write (strict) partial flag and Grassmannian as disjoint union of several pieces. Take the nonstrict case as an example. Fix a dimension vector $\dimvec{f}$ of $R_d$, since $v(Q_d)=v(Q) \times \{1,\ldots,d\}$ it can be viewed as $d$ dimension vectors $(\dimvec{f_1},\ldots,\dimvec{f_d})$. Define
 \begin{equation*}
 \begin{aligned}
   \Flagd_{,\dimvec{f}}(X):=\;&\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \;\middle|\; \dimv M_k=\dimvec{f_k} \right\}  \\ 
@@ -329,17 +337,19 @@ Now we can write (strict) partial flag and Grassmannian as disjoint union of sev
 then from the Proposition \ref{prop:flag=gr} we get 
 $$\Flagd_{,\dimvec{f}}(X) \cong \Gralg{R}_{\dimvec{f}}(\Phi(X)).$$
 
-Finally, we need to define the ``Euler form" of two dimension vectors.
-\begin{defn}[Euler form of $R$]
-Let $R$ be a bounded quiver algebra defined in Definition \ref{def:bqa} or \ref{def:bqastr}. We denote
-\begin{equation*}
-\begin{aligned}
-	v(R):&= \{\text{vertices in quiver $Q_d$ or $Q_{d,str}$}\} \\
-	a(R):&= \{\text{arrows in quiver $Q_d$ or $KQ_{d,str}$}\} \\
-	va(R):&= \{\text{``virtual arrows" in quiver $Q_d$ or $Q_{d,str}$}\} \\
-\end{aligned}
-\end{equation*}
-
+Finally, we need to define the ``Euler form" of two dimension vectors, for this we need to define the set of virtual arrows of quiver $Q_d$ and $Q_{d,str}$.
+\begin{defn}[Virtual arrows of quiver $Q_d$]
+For $d \geqslant 1$, the virtual arrows of quiver $Q_d$ is defined as a triple $\big(va(Q_d),s,t\big)$, where
+$$va(Q_d):=a(Q) \times \{1,\ldots, d-1 \}$$
+is a finite set, and $s,t: va(Q_d) \longrightarrow v(Q_d)$ are maps defined by
+$$s\big((i\rightarrow j,r)\big)=(i,r) \qquad t \big((i\rightarrow j,r)\big)=(j,r+1).$$
+\end{defn}
+\begin{defn}[Virtual arrows of quiver $Q_{d,str}$]
+For $d \geqslant 2$, the virtual arrows of quiver $Q_{d,str}$ is defined as a triple $\big(va(Q_{d,str}),s,t\big)$, where
+$$va(Q_{d,str}):=a(Q) \times \{2,\ldots, d-1 \}$$
+is a finite set, and $s,t: va(Q_{d,str}) \longrightarrow v(Q_{d,str})$ are maps defined by
+$$s\big((i\rightarrow j,r)\big)=(i,r) \qquad t \big((i\rightarrow j,r)\big)=(j,r).$$
+\end{defn}
 \begin{center}
 	\begin{figure}[ht]
 		\vspace{0cm}
@@ -398,6 +408,16 @@ Let $R$ be a bounded quiver algebra defined in Definition \ref{def:bqa} or \ref{
 		\label{fig:virtualarrow}
 	\end{figure}
 \end{center}
+\begin{defn}[Euler form of $R$]
+Let $R$ be a bounded quiver algebra defined in Definition \ref{def:bqa} or \ref{def:bqastr}. We denote
+\begin{equation*}
+\begin{aligned}
+	v(R):&= \{\text{vertices in quiver $Q_d$ or $Q_{d,str}$}\} \\
+	a(R):&= \{\text{arrows in quiver $Q_d$ or $KQ_{d,str}$}\} \\
+	va(R):&= \{\text{virtual arrows in quiver $Q_d$ or $Q_{d,str}$}\} \\
+\end{aligned}
+\end{equation*}
+
 For two dimension vectors $\dimvec{f},\dimvec{g}$ of $R$, the Euler form $\left< \dimvec{f},\dimvec{g}\right>_R$ is defined by
 	$$\left< \dimvec{f},\dimvec{g}\right>_R:= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}$$
 \end{defn}

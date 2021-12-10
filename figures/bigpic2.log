@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  3 DEC 2021 20:52
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  10 DEC 2021 20:51
 entering extended mode
 **./bigpic2.tex
 (bigpic2.tex
@@ -617,12 +617,12 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 
 ABD: EveryShipout initializing macros
-Overfull \hbox (138.60335pt too wide) detected at line 90
+Overfull \hbox (141.78511pt too wide) detected at line 90
 [] [] []
  []
 
 
-Overfull \hbox (138.60335pt too wide) detected at line 92
+Overfull \hbox (141.78511pt too wide) detected at line 92
 [] [] []
  []
 
