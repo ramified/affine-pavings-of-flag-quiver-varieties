@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  11 DEC 2021 15:39
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 DEC 2021 22:53
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -126,15 +126,43 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\g
-raphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\ca
+ption.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\ca
+ption3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\k
 eyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
 )
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+Package caption Info: AMS or SMF document class detected.
+)
+Package caption Info: AMS or SMF document class.
+\c@caption@flags=\count100
+\c@continuedfloat=\count101
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\su
+bcaption.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count102
+\c@subtable=\count103
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\g
+raphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\g
 raphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -153,8 +181,8 @@ Package graphics Info: Driver file: xetex.def on input line 99.
 ef\xetex.def"
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen114
-\Gin@req@width=\dimen115
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\enum
 erate.sty"
@@ -170,7 +198,7 @@ LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\floa
 t.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count100
+\c@float@type=\count104
 \float@exts=\toks27
 \float@box=\box30
 \@float@everytoks=\toks28
@@ -184,23 +212,23 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\mult
 icol.sty"
 Package: multicol 2018/11/09 v1.8u multicolumn formatting (FMi)
-\c@tracingmulticols=\count101
+\c@tracingmulticols=\count105
 \mult@box=\box32
-\multicol@leftmargin=\dimen116
-\c@unbalance=\count102
-\c@collectmore=\count103
-\doublecol@number=\count104
-\multicoltolerance=\count105
-\multicolpretolerance=\count106
-\full@width=\dimen117
-\page@free=\dimen118
-\premulticols=\dimen119
-\postmulticols=\dimen120
+\multicol@leftmargin=\dimen123
+\c@unbalance=\count106
+\c@collectmore=\count107
+\doublecol@number=\count108
+\multicoltolerance=\count109
+\multicolpretolerance=\count110
+\full@width=\dimen124
+\page@free=\dimen125
+\premulticols=\dimen126
+\postmulticols=\dimen127
 \multicolsep=\skip51
 \multicolbaselineskip=\skip52
 \partial@page=\box33
 \last@line=\box34
-\maxbalancingoverflow=\dimen121
+\maxbalancingoverflow=\dimen128
 \mult@rightbox=\box35
 \mult@grightbox=\box36
 \mult@gfirstbox=\box37
@@ -222,22 +250,22 @@ Package: multicol 2018/11/09 v1.8u multicolumn formatting (FMi)
 \@tempa=\box53
 \@tempa=\box54
 \@tempa=\box55
-\c@columnbadness=\count107
-\c@finalcolumnbadness=\count108
-\last@try=\dimen122
-\multicolovershoot=\dimen123
-\multicolundershoot=\dimen124
+\c@columnbadness=\count111
+\c@finalcolumnbadness=\count112
+\last@try=\dimen129
+\multicolovershoot=\dimen130
+\multicolundershoot=\dimen131
 \mult@nat@firstbox=\box56
 \colbreak@box=\box57
-\mc@col@check@num=\count109
+\mc@col@check@num=\count113
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\m
 ultirow.sty"
 Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip53
-\multirow@cntb=\count110
+\multirow@cntb=\count114
 \multirow@dima=\skip54
-\bigstrutjot=\dimen125
+\bigstrutjot=\dimen132
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xypic\xy
 .sty"
@@ -253,45 +281,45 @@ idioms.tex")
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen126
-\Y@c=\dimen127
-\U@c=\dimen128
-\D@c=\dimen129
-\L@c=\dimen130
-\R@c=\dimen131
+\X@c=\dimen133
+\Y@c=\dimen134
+\U@c=\dimen135
+\D@c=\dimen136
+\L@c=\dimen137
+\R@c=\dimen138
 \Edge@c=\toks29
-\X@p=\dimen132
-\Y@p=\dimen133
-\U@p=\dimen134
-\D@p=\dimen135
-\L@p=\dimen136
-\R@p=\dimen137
+\X@p=\dimen139
+\Y@p=\dimen140
+\U@p=\dimen141
+\D@p=\dimen142
+\L@p=\dimen143
+\R@p=\dimen144
 \Edge@p=\toks30
-\X@origin=\dimen138
-\Y@origin=\dimen139
-\X@xbase=\dimen140
-\Y@xbase=\dimen141
-\X@ybase=\dimen142
-\Y@ybase=\dimen143
-\X@min=\dimen144
-\Y@min=\dimen145
-\X@max=\dimen146
-\Y@max=\dimen147
+\X@origin=\dimen145
+\Y@origin=\dimen146
+\X@xbase=\dimen147
+\Y@xbase=\dimen148
+\X@ybase=\dimen149
+\Y@ybase=\dimen150
+\X@min=\dimen151
+\Y@min=\dimen152
+\X@max=\dimen153
+\Y@max=\dimen154
 \lastobjectbox@=\box58
 \zerodotbox@=\box59
-\almostz@=\dimen148
+\almostz@=\dimen155
  direction,
-\d@X=\dimen149
-\d@Y=\dimen150
-\K@=\count111
-\KK@=\count112
-\Direction=\count113
-\K@dXdY=\dimen151
-\K@dYdX=\dimen152
+\d@X=\dimen156
+\d@Y=\dimen157
+\K@=\count115
+\KK@=\count116
+\Direction=\count117
+\K@dXdY=\dimen158
+\K@dYdX=\dimen159
 \xyread@=\read1
 \xywrite@=\write3
-\csp@=\count114
-\quotPTK@=\dimen153
+\csp@=\count118
+\quotPTK@=\dimen160
 
 utility macros; pictures: \xy, positions,
 \swaptoks@@=\toks31
@@ -311,15 +339,15 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 all.tex"  Xy-pic option: All features v.3.8
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xypic\xy
 curve.tex"  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count115
+\crv@cnt@=\count119
 \crvpts@=\toks33
 \splinebox@=\box61
-\splineval@=\dimen154
-\splinedepth@=\dimen155
-\splinetol@=\dimen156
-\splinelength@=\dimen157
+\splineval@=\dimen161
+\splinedepth@=\dimen162
+\splinetol@=\dimen163
+\splinelength@=\dimen164
  circles,
-\L@=\dimen158
+\L@=\dimen165
 
 loaded)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xypic\xy
@@ -330,7 +358,7 @@ cmtip.tex"  Xy-pic option: Computer Modern tip extension v.3.7
 tips.tex"  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xypic\xy
 line.tex"  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen159
+\xylinethick@=\dimen166
  loaded)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xypic\xy
 rotate.tex"  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
@@ -338,13 +366,13 @@ rotate.tex"  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
 color.tex"  Xy-pic option: Colour extension v.3.11 loaded)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xypic\xy
 matrix.tex"  Xy-pic option: Matrix feature v.3.14
-\Row=\count116
-\Col=\count117
+\Row=\count120
+\Col=\count121
 \queue@=\toks34
 \queue@@=\toks35
-\qcount@=\count118
-\qcount@@=\count119
-\matrixsize@=\count120
+\qcount@=\count122
+\qcount@@=\count123
+\matrixsize@=\count124
  loaded)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xypic\xy
 arrow.tex"  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
@@ -394,17 +422,17 @@ Package ifvtex Info: VTeX not detected.
 ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count121
-\Gm@cntv=\count122
-\c@Gm@tempcnt=\count123
-\Gm@bindingoffset=\dimen160
-\Gm@wd@mp=\dimen161
-\Gm@odd@mp=\dimen162
-\Gm@even@mp=\dimen163
-\Gm@layoutwidth=\dimen164
-\Gm@layoutheight=\dimen165
-\Gm@layouthoffset=\dimen166
-\Gm@layoutvoffset=\dimen167
+\Gm@cnth=\count125
+\Gm@cntv=\count126
+\c@Gm@tempcnt=\count127
+\Gm@bindingoffset=\dimen167
+\Gm@wd@mp=\dimen168
+\Gm@odd@mp=\dimen169
+\Gm@even@mp=\dimen170
+\Gm@layoutwidth=\dimen171
+\Gm@layoutheight=\dimen172
+\Gm@layouthoffset=\dimen173
+\Gm@layoutvoffset=\dimen174
 \Gm@dimlist=\toks36
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/xelatex/xetexcon
@@ -426,9 +454,9 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\arra
 y.sty"
 Package: array 2018/11/13 v2.4j Tabular extension package (FMi)
-\col@sep=\dimen168
+\col@sep=\dimen175
 \ar@mcellbox=\box62
-\extrarowheight=\dimen169
+\extrarowheight=\dimen176
 \NC@list=\toks37
 \extratabsurround=\skip55
 \backup@length=\skip56
@@ -437,7 +465,7 @@ Package: array 2018/11/13 v2.4j Tabular extension package (FMi)
 \everycr=\toks38
 \minrowclearance=\skip57
 )
-\rownum=\count124
+\rownum=\count128
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
@@ -460,8 +488,8 @@ ies\pgfrcs.sty"
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/util
 ities\pgfutil-common.tex"
 \pgfutil@everybye=\toks39
-\pgfutil@tempdima=\dimen170
-\pgfutil@tempdimb=\dimen171
+\pgfutil@tempdima=\dimen177
+\pgfutil@tempdimb=\dimen178
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/util
 ities\pgfutil-common-lists.tex"))
@@ -498,24 +526,24 @@ ities\pgfkeys.code.tex"
 ities\pgfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks42
 ))
-\pgf@x=\dimen172
-\pgf@y=\dimen173
-\pgf@xa=\dimen174
-\pgf@ya=\dimen175
-\pgf@xb=\dimen176
-\pgf@yb=\dimen177
-\pgf@xc=\dimen178
-\pgf@yc=\dimen179
+\pgf@x=\dimen179
+\pgf@y=\dimen180
+\pgf@xa=\dimen181
+\pgf@ya=\dimen182
+\pgf@xb=\dimen183
+\pgf@yb=\dimen184
+\pgf@xc=\dimen185
+\pgf@yc=\dimen186
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count125
-\c@pgf@countb=\count126
-\c@pgf@countc=\count127
-\c@pgf@countd=\count128
+\c@pgf@counta=\count129
+\c@pgf@countb=\count130
+\c@pgf@countc=\count131
+\c@pgf@countd=\count132
 \t@pgf@toka=\toks43
 \t@pgf@tokb=\toks44
 \t@pgf@tokc=\toks45
-\pgf@sys@id@count=\count129
+\pgf@sys@id@count=\count133
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syst
 emlayer\pgf.cfg"
@@ -535,13 +563,13 @@ File: pgfsys-dvipdfmx.def 2019/01/05 v3.1 (3.1)
 emlayer\pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2019/01/05 v3.1 (3.1)
 )
-\pgfsys@objnum=\count130
+\pgfsys@objnum=\count134
 )))
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syst
 emlayer\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2019/01/05 v3.1 (3.1)
-\pgfsyssoftpath@smallbuffer@items=\count131
-\pgfsyssoftpath@bigbuffer@items=\count132
+\pgfsyssoftpath@smallbuffer@items=\count135
+\pgfsyssoftpath@bigbuffer@items=\count136
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syst
 emlayer\pgfsysprotocol.code.tex"
@@ -559,8 +587,8 @@ Package: pgfcore 2019/01/05 v3.1 (3.1)
 \pgfmathutil.code.tex")
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math
 \pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen180
-\pgfmath@count=\count133
+\pgfmath@dimen=\dimen187
+\pgfmath@count=\count137
 \pgfmath@box=\box65
 \pgfmath@toks=\toks46
 \pgfmath@stack@operand=\toks47
@@ -586,37 +614,37 @@ Package: pgfcore 2019/01/05 v3.1 (3.1)
 \pgfmathfunctions.integerarithmetics.code.tex")))
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math
 \pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count134
+\c@pgfmathroundto@lastzeros=\count138
 ))
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2019/01/05 v3.1 (3.1)
-\pgf@picminx=\dimen181
-\pgf@picmaxx=\dimen182
-\pgf@picminy=\dimen183
-\pgf@picmaxy=\dimen184
-\pgf@pathminx=\dimen185
-\pgf@pathmaxx=\dimen186
-\pgf@pathminy=\dimen187
-\pgf@pathmaxy=\dimen188
-\pgf@xx=\dimen189
-\pgf@xy=\dimen190
-\pgf@yx=\dimen191
-\pgf@yy=\dimen192
-\pgf@zx=\dimen193
-\pgf@zy=\dimen194
+\pgf@picminx=\dimen188
+\pgf@picmaxx=\dimen189
+\pgf@picminy=\dimen190
+\pgf@picmaxy=\dimen191
+\pgf@pathminx=\dimen192
+\pgf@pathmaxx=\dimen193
+\pgf@pathminy=\dimen194
+\pgf@pathmaxy=\dimen195
+\pgf@xx=\dimen196
+\pgf@xy=\dimen197
+\pgf@yx=\dimen198
+\pgf@yy=\dimen256
+\pgf@zx=\dimen257
+\pgf@zy=\dimen258
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2019/01/05 v3.1 (3.1)
-\pgf@path@lastx=\dimen195
-\pgf@path@lasty=\dimen196
+\pgf@path@lastx=\dimen259
+\pgf@path@lasty=\dimen260
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2019/01/05 v3.1 (3.1)
-\pgf@shorten@end@additional=\dimen197
-\pgf@shorten@start@additional=\dimen198
+\pgf@shorten@end@additional=\dimen261
+\pgf@shorten@start@additional=\dimen262
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcorescopes.code.tex"
@@ -624,19 +652,19 @@ File: pgfcorescopes.code.tex 2019/01/05 v3.1 (3.1)
 \pgfpic=\box66
 \pgf@hbox=\box67
 \pgf@layerbox@main=\box68
-\pgf@picture@serial@count=\count135
+\pgf@picture@serial@count=\count139
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2019/01/05 v3.1 (3.1)
-\pgflinewidth=\dimen256
+\pgflinewidth=\dimen263
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2019/01/05 v3.1 (3.1)
-\pgf@pt@x=\dimen257
-\pgf@pt@y=\dimen258
-\pgf@pt@temp=\dimen259
+\pgf@pt@x=\dimen264
+\pgf@pt@y=\dimen265
+\pgf@pt@temp=\dimen266
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcorequick.code.tex"
@@ -653,13 +681,13 @@ File: pgfcorepathprocessing.code.tex 2019/01/05 v3.1 (3.1)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2019/01/05 v3.1 (3.1)
-\pgfarrowsep=\dimen260
+\pgfarrowsep=\dimen267
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2019/01/05 v3.1 (3.1)
-\pgf@max=\dimen261
-\pgf@sys@shading@range@num=\count136
+\pgf@max=\dimen268
+\pgf@sys@shading@range@num=\count140
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basi
 clayer\pgfcoreimage.code.tex"
@@ -698,8 +726,8 @@ File: pgfmoduleplot.code.tex 2019/01/05 v3.1 (3.1)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compat
 ibility\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2019/01/05 v3.1 (3.1)
-\pgf@nodesepstart=\dimen262
-\pgf@nodesepend=\dimen263
+\pgf@nodesepstart=\dimen269
+\pgf@nodesepend=\dimen270
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compat
 ibility\pgfcomp-version-1-18.sty"
@@ -721,8 +749,8 @@ Package: pgffor 2019/01/05 v3.1 (3.1)
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math
 \pgfmath.code.tex")
-\pgffor@iter=\dimen264
-\pgffor@skip=\dimen265
+\pgffor@iter=\dimen271
+\pgffor@skip=\dimen272
 \pgffor@stack=\toks49
 \pgffor@toks=\toks50
 ))
@@ -733,32 +761,32 @@ Package: tikz 2019/01/05 v3.1 (3.1)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
 aries\pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2019/01/05 v3.1 (3.1)
-\pgf@plot@mark@count=\count137
-\pgfplotmarksize=\dimen266
+\pgf@plot@mark@count=\count141
+\pgfplotmarksize=\dimen273
 )
-\tikz@lastx=\dimen267
-\tikz@lasty=\dimen268
-\tikz@lastxsaved=\dimen269
-\tikz@lastysaved=\dimen270
-\tikzleveldistance=\dimen271
-\tikzsiblingdistance=\dimen272
+\tikz@lastx=\dimen274
+\tikz@lasty=\dimen275
+\tikz@lastxsaved=\dimen276
+\tikz@lastysaved=\dimen277
+\tikzleveldistance=\dimen278
+\tikzsiblingdistance=\dimen279
 \tikz@figbox=\box71
 \tikz@figbox@bg=\box72
 \tikz@tempbox=\box73
 \tikz@tempbox@bg=\box74
-\tikztreelevel=\count138
-\tikznumberofchildren=\count139
-\tikznumberofcurrentchild=\count140
-\tikz@fig@count=\count141
+\tikztreelevel=\count142
+\tikznumberofchildren=\count143
+\tikznumberofcurrentchild=\count144
+\tikz@fig@count=\count145
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modu
 les\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2019/01/05 v3.1 (3.1)
-\pgfmatrixcurrentrow=\count142
-\pgfmatrixcurrentcolumn=\count143
-\pgf@matrix@numberofcolumns=\count144
+\pgfmatrixcurrentrow=\count146
+\pgfmatrixcurrentcolumn=\count147
+\pgf@matrix@numberofcolumns=\count148
 )
-\tikz@expandcount=\count145
+\tikz@expandcount=\count149
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
 tendlayer/tikz/libraries\tikzlibrarytopaths.code.tex"
@@ -777,10 +805,10 @@ File: tikzlibraryquotes.code.tex 2019/01/05 v3.1 (3.1)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
 aries\pgflibraryarrows.meta.code.tex"
 File: pgflibraryarrows.meta.code.tex 2019/01/05 v3.1 (3.1)
-\pgfarrowinset=\dimen273
-\pgfarrowlength=\dimen274
-\pgfarrowwidth=\dimen275
-\pgfarrowlinewidth=\dimen276
+\pgfarrowinset=\dimen280
+\pgfarrowlength=\dimen281
+\pgfarrowwidth=\dimen282
+\pgfarrowlinewidth=\dimen283
 ))) (quiver.sty
 Package: quiver 2021/01/11 quiver
 
@@ -794,14 +822,14 @@ tendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex"
 tendlayer/tikz/libraries\tikzlibrarydecorations.code.tex"
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modu
 les\pgfmoduledecorations.code.tex"
-\pgfdecoratedcompleteddistance=\dimen277
-\pgfdecoratedremainingdistance=\dimen278
-\pgfdecoratedinputsegmentcompleteddistance=\dimen279
-\pgfdecoratedinputsegmentremainingdistance=\dimen280
-\pgf@decorate@distancetomove=\dimen281
-\pgf@decorate@repeatstate=\count146
-\pgfdecorationsegmentamplitude=\dimen282
-\pgfdecorationsegmentlength=\dimen283
+\pgfdecoratedcompleteddistance=\dimen284
+\pgfdecoratedremainingdistance=\dimen285
+\pgfdecoratedinputsegmentcompleteddistance=\dimen286
+\pgfdecoratedinputsegmentremainingdistance=\dimen287
+\pgf@decorate@distancetomove=\dimen288
+\pgf@decorate@repeatstate=\count150
+\pgfdecorationsegmentamplitude=\dimen289
+\pgfdecorationsegmentlength=\dimen290
 )
 \tikz@lib@dec@box=\box75
 )
@@ -836,45 +864,154 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )))))
-\c@theorem=\count147
-\c@thmsub=\count148
-\c@remarks=\count149
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/diagbox\di
+agbox.sty"
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pict2e\pic
+t2e.sty"
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pict2e\pic
+t2e.cfg"
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: xetex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-xetex.def on input line 121.
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pict2e\p2e
+-xetex.def"
+File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks51
+\@arclen=\dimen291
+\@arcrad=\dimen292
+\@tempdimd=\dimen293
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc
+.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count151
+\calc@Bcount=\count152
+\calc@Adimen=\dimen294
+\calc@Bdimen=\dimen295
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count153
+\calc@Cskip=\skip60
+)
+\diagbox@boxa=\box76
+\diagbox@boxb=\box77
+\diagbox@boxm=\box78
+\diagbox@wd=\dimen296
+\diagbox@ht=\dimen297
+\diagbox@insepl=\dimen298
+\diagbox@insepr=\dimen299
+\diagbox@outsepl=\dimen300
+\diagbox@outsepr=\dimen301
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp.sty"
+Package: fp 1995/04/02
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\defpatt
+ern.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count154
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-basi
+c.sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count155
+\FP@xia=\count156
+\FP@xib=\count157
+\FP@xfa=\count158
+\FP@xfb=\count159
+\FP@rega=\count160
+\FP@regb=\count161
+\FP@regs=\count162
+\FP@times=\count163
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-addo
+ns.sty"
+Package: fp-addons 1995/03/15
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-snap
+.sty"
+Package: fp-snap 1995/04/05
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-exp.
+sty"
+Package: fp-exp 1995/04/03
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-trig
+o.sty"
+Package: fp-trigo 1995/04/14
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-pas.
+sty"
+Package: fp-pas 1994/08/29
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-rand
+om.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count164
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eqn.
+sty"
+Package: fp-eqn 1995/04/03
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-upn.
+sty"
+Package: fp-upn 1996/10/21
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eval
+.sty"
+Package: fp-eval 1995/04/03
+)))
+\c@theorem=\count165
+\c@thmsub=\count166
+\c@remarks=\count167
  (affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for U+msa on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Try loading font information for U+msa on input line 105.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 103.
+LaTeX Font Info:    Try loading font information for U+msb on input line 105.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 103.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 105.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\u
 rsfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.43799pt on input line 103.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package xypdf Info: Line width: 0.43799pt on input line 105.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -914,9 +1051,16 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (5.1381pt too wide) detected at line 139
+Overfull \hbox (5.1381pt too wide) detected at line 141
 [][]
  []
+
+
+Package caption Warning: \label without proper reference on input line 165.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:result' on page 1 undefined on input line 144.
 
 [1] [2] [3] [4]
 File: figures/bigpic.pdf Graphic file (type pdf)
@@ -924,7 +1068,7 @@ File: figures/bigpic.pdf Graphic file (type pdf)
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
  [5] [6] [7]
-Overfull \hbox (17.0955pt too wide) in paragraph at lines 497--499
+Overfull \hbox (17.0955pt too wide) in paragraph at lines 499--501
 \TU/lmr/m/n/10.95 By Lemma 2.16[] (1[]) and (5[]), $[][]\OT1/cmr/m/n/10.95 (^^H
 (\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =W; T\OT1/cmr/m/n
 /10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.9
@@ -934,7 +1078,7 @@ Overfull \hbox (17.0955pt too wide) in paragraph at lines 497--499
  []
 
 [8] [9]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 621--622
+Overfull \hbox (39.72507pt too wide) in paragraph at lines 623--624
 []\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
 T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
 .95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
@@ -949,13 +1093,13 @@ m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
  []
 
 
-Overfull \hbox (12.77255pt too wide) detected at line 631
+Overfull \hbox (12.77255pt too wide) detected at line 633
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
 [10]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 660--661
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 662--663
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -966,23 +1110,41 @@ m/it/10.95 .
  []
 
 [11]
-File: figures/startingfunction.png Graphic file (type bmp)
-<figures/startingfunction.png>
-File: figures/minisecmono.png Graphic file (type bmp)
-<figures/minisecmono.png>
-File: figures/table.png Graphic file (type bmp)
-<figures/table.png>
+File: figures/E6.pdf Graphic file (type pdf)
+<use figures/E6.pdf>
+File: figures/E7.pdf Graphic file (type pdf)
+<use figures/E7.pdf>
+File: figures/E8.pdf Graphic file (type pdf)
+<use figures/E8.pdf>
+File: figures/E6easy.pdf Graphic file (type pdf)
+<use figures/E6easy.pdf>
+File: figures/E7easy.pdf Graphic file (type pdf)
+<use figures/E7easy.pdf>
+File: figures/E8easy.pdf Graphic file (type pdf)
+<use figures/E8easy.pdf>
+File: figures/E8hard.pdf Graphic file (type pdf)
+<use figures/E8hard.pdf>
  [12] [13] [14]
-File: figures/specialcases.png Graphic file (type bmp)
-<figures/specialcases.png>
- [15] [16] (affinepaving.bbl [17]) [18] (affinepaving.aux) ) 
+File: figures/E8graypic1.pdf Graphic file (type pdf)
+<use figures/E8graypic1.pdf>
+File: figures/E8graypic2.pdf Graphic file (type pdf)
+<use figures/E8graypic2.pdf>
+File: figures/E8graypic3.pdf Graphic file (type pdf)
+<use figures/E8graypic3.pdf>
+File: figures/E8graypic4.pdf Graphic file (type pdf)
+<use figures/E8graypic4.pdf>
+ [15] [16] [17] (affinepaving.bbl) [18] (affinepaving.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 19309 strings out of 427748
- 376308 string characters out of 3150981
- 493590 words of memory out of 3000000
- 22784 multiletter control sequences out of 15000+200000
- 17469 words of font info for 84 fonts, out of 3000000 for 9000
+ 21449 strings out of 427748
+ 408885 string characters out of 3150981
+ 536184 words of memory out of 3000000
+ 24855 multiletter control sequences out of 15000+200000
+ 20703 words of font info for 98 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,23n,82p,3261b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,23n,82p,3261b,1119s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on affinepaving.pdf (18 pages).

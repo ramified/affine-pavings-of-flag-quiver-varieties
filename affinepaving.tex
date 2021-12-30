@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{bm}
+\usepackage{caption,subcaption}
 \usepackage{graphicx}
 \usepackage{amsthm}
 \usepackage{enumerate}
@@ -21,6 +22,7 @@
 \usepackage{tikz-cd}
 \usepackage{quiver} 
 \usepackage{resizegather}
+\usepackage{diagbox}
 %\usepackage[notcite,notref]{showkeys}
 
 % showkeys  make label explicit on the paper
@@ -729,13 +731,27 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 %We use rep 2 Cor 18.8.
 
 \textbf{In the rest of this section we focus on the ``difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
-
+		\captionsetup[subfigure]{labelformat=empty}
 \begin{center}
 	\begin{figure}[ht]
 		\vspace{0cm}
-		\centering
-		\includegraphics[width=6cm]{figures/startingfunction.png}
-%		\captionsetup{labelformat=empty}
+			\parbox[t]{.15\textwidth}{\centering
+			\vspace{0cm}
+			\includegraphics[width=1.7cm]{figures/E6.pdf}
+			\vspace{2.9cm}
+			\subcaption{$E_6$}
+			}
+			\parbox[t]{.15\textwidth}{\centering
+			\vspace{0cm}
+			\includegraphics[width=1.7cm]{figures/E7.pdf}
+			\vspace{1.95cm}
+			\subcaption{$E_7$}
+			}
+			\parbox[t]{.15\textwidth}{\centering
+			\vspace{0cm}
+			\includegraphics[width=1.7cm]{figures/E8.pdf}
+			\subcaption{$E_8$}
+			}
 		\caption{central imformation of Auslander-Reiten quiver}
 		\label{fig:startingfunction}
 	\end{figure}
@@ -750,9 +766,28 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 	\begin{center}
 		\begin{figure}[ht]
 			\vspace{0cm}
-			\centering
-			\includegraphics[width=7.5cm]{figures/minisecmono.png}
-	%		\captionsetup{labelformat=empty}
+			\parbox[t]{.15\textwidth}{\centering
+			\vspace{0cm}
+			\includegraphics[width=1.7cm]{figures/E6easy.pdf}
+			\vspace{4.14cm}
+			\subcaption{$E_6$}
+			}
+			\parbox[t]{.20\textwidth}{\centering
+			\vspace{0cm}
+			\includegraphics[width=1.7cm]{figures/E7easy.pdf}
+			\vspace{3.17cm}
+			\subcaption{$E_7$}
+			}
+			\parbox[t]{.20\textwidth}{\centering
+			\vspace{0cm}
+			\includegraphics[width=2cm]{figures/E8easy.pdf}
+			\subcaption{$E_8$ easy situation}
+			}
+			\parbox[t]{.2\textwidth}{\centering
+			\vspace{0cm}
+			\includegraphics[width=2cm]{figures/E8hard.pdf}
+			\subcaption{$E_8$ some exceptions}
+			}
 			\caption{minimal section monos}
 			\label{fig:minisecmono}
 			\vspace{0.2cm}
@@ -767,13 +802,23 @@ Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotie
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 and the following values:
 
-\begin{center}
-	\begin{figure}[ht]\label{fig:table}
-		\vspace{0cm}
-		\centering
-		\includegraphics[width=5cm]{figures/table.png}
-	\end{figure}
-\end{center}
+\begin{table}
+\centering
+\begin{tabular}{|c|l|l|l|} 
+\hline
+       \diagbox[height=3.8\line]{$M$}{$[M,N]$\\$[M,N]^1$}{$N$}            & X & Y & S  \\ 
+\hline
+\multirow{2}{*}{X} & 1 & 1 & 0  \\
+                   & 0 & 0 & 0  \\ 
+\hline
+\multirow{2}{*}{Y} & 0 & 1 & 1  \\
+                   & 0 & 0 & 0  \\ 
+\hline
+\multirow{2}{*}{S} & 0 & 0 & 1  \\
+                   & 1 & 0 & 0  \\
+\hline
+\end{tabular}
+\end{table}
 
 In particular, $S$ is indecomposable and rigid; $[S,X]^1 =1$, so $X_S$ and $S^X$ are well-defined.
 \end{lemma}
@@ -842,12 +887,28 @@ By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is
 Luckily $\orde(S_1)$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
 
 In the exception cases the game is similar, but we need to discuss a little more complicated. Let us look at some examples. (We simplify the notations: $\Gr(M)$ as $\Grr_{\dimvec{f}}(\Phi(M))$, $U(M,N)$ as $\Grr_{\dimvec{f}}(\Phi(M)) \setminus \Grr_{\dimvec{f}}(\Phi(M))$, and we also ignore the dimension vectors.)
+\captionsetup[subfigure]{labelfont=rm}
+\captionsetup[subfigure]{labelformat=parens}
+%https://tex.stackexchange.com/questions/233481/subcaption-defaulting-to-capital-letter-labels
 	\begin{center}
 		\begin{figure}[ht]
 			\vspace{0cm}
-			\centering
-			\includegraphics[width=7.5cm]{figures/specialcases.png}
-	%		\captionsetup{labelformat=empty}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=3.2cm]{figures/E8graypic1.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=3.2cm]{figures/E8graypic2.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=3.2cm]{figures/E8graypic3.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=3.2cm]{figures/E8graypic4.pdf}
+			\subcaption{}
+			}
 			\caption{special cases}
 			\label{fig:specialcases}
 			\vspace{0.2cm}

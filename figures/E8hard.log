@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 DEC 2021 21:24
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 DEC 2021 20:24
 entering extended mode
-**./E8easy.tex
-(E8easy.tex
+**./E8hard.tex
+(E8hard.tex
 LaTeX2e <2018-12-01>
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone
@@ -545,25 +545,21 @@ File: tikzlibraryarrows.code.tex 2019/01/05 v3.1 (3.1)
 aries\pgflibraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2019/01/05 v3.1 (3.1)
 \arrowsize=\dimen166
-)))
-("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
-tendlayer/tikz/libraries\tikzlibraryintersections.code.tex"
-("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
-aries\pgflibraryintersections.code.tex"
-("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
-aries\pgflibraryfpu.code.tex")
-\pgf@intersect@solutions=\count125
+))) (quiver.sty
+Package: quiver 2021/01/11 quiver
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\a
+mssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\a
+msfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
-tendlayer/tikz/libraries\tikzlibrarythrough.code.tex"
-File: tikzlibrarythrough.code.tex 2019/01/05 v3.1 (3.1)
-)
-("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
-tendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex"
-File: tikzlibrarybackgrounds.code.tex 2019/01/05 v3.1 (3.1)
-\pgf@layerbox@background=\box42
-\pgf@layerboxsaved@background=\box43
-)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
 tendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex"
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
@@ -575,14 +571,32 @@ les\pgfmoduledecorations.code.tex"
 \pgfdecoratedinputsegmentcompleteddistance=\dimen169
 \pgfdecoratedinputsegmentremainingdistance=\dimen170
 \pgf@decorate@distancetomove=\dimen171
-\pgf@decorate@repeatstate=\count126
+\pgf@decorate@repeatstate=\count125
 \pgfdecorationsegmentamplitude=\dimen172
 \pgfdecorationsegmentlength=\dimen173
 )
-\tikz@lib@dec@box=\box44
+\tikz@lib@dec@box=\box42
 )
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
-aries/decorations\pgflibrarydecorations.pathmorphing.code.tex"))
+aries/decorations\pgflibrarydecorations.pathmorphing.code.tex")))
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
+tendlayer/tikz/libraries\tikzlibraryintersections.code.tex"
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
+aries\pgflibraryintersections.code.tex"
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
+aries\pgflibraryfpu.code.tex")
+\pgf@intersect@solutions=\count126
+))
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
+tendlayer/tikz/libraries\tikzlibrarythrough.code.tex"
+File: tikzlibrarythrough.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
+tendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex"
+File: tikzlibrarybackgrounds.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@layerbox@background=\box43
+\pgf@layerboxsaved@background=\box44
+)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
 tendlayer/tikz/libraries\tikzlibrarydecorations.shapes.code.tex"
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
@@ -598,34 +612,46 @@ File: tikzlibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
 aries\pgflibrarypatterns.code.tex"
 File: pgflibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
-)) (E8easy.aux)
-\openout1 = `E8easy.aux'.
+)) (E8hard.aux)
+\openout1 = `E8hard.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
-ABD: EveryShipout initializing macros [1
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
-] (E8easy.aux) ) 
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
+msa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
+msb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+] (E8hard.aux) ) 
 Here is how much of TeX's memory you used:
- 15936 strings out of 427748
- 350908 string characters out of 3150981
- 503533 words of memory out of 3000000
- 19717 multiletter control sequences out of 15000+200000
- 4102 words of font info for 17 fonts, out of 3000000 for 9000
+ 16319 strings out of 427748
+ 356270 string characters out of 3150981
+ 486952 words of memory out of 3000000
+ 20079 multiletter control sequences out of 15000+200000
+ 5347 words of font info for 23 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 61i,17n,101p,2120b,1271s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,17n,101p,2120b,1284s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on E8easy.pdf (1 page).
+Output written on E8hard.pdf (1 page).
