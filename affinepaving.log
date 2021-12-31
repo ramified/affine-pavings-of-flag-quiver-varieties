@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 DEC 2021 22:53
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  31 DEC 2021 11:48
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1055,13 +1055,6 @@ Overfull \hbox (5.1381pt too wide) detected at line 141
 [][]
  []
 
-
-Package caption Warning: \label without proper reference on input line 165.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:result' on page 1 undefined on input line 144.
-
 [1] [2] [3] [4]
 File: figures/bigpic.pdf Graphic file (type pdf)
 <use figures/bigpic.pdf>
@@ -1116,6 +1109,7 @@ File: figures/E7.pdf Graphic file (type pdf)
 <use figures/E7.pdf>
 File: figures/E8.pdf Graphic file (type pdf)
 <use figures/E8.pdf>
+ [12]
 File: figures/E6easy.pdf Graphic file (type pdf)
 <use figures/E6easy.pdf>
 File: figures/E7easy.pdf Graphic file (type pdf)
@@ -1124,7 +1118,7 @@ File: figures/E8easy.pdf Graphic file (type pdf)
 <use figures/E8easy.pdf>
 File: figures/E8hard.pdf Graphic file (type pdf)
 <use figures/E8hard.pdf>
- [12] [13] [14]
+ [13] [14]
 File: figures/E8graypic1.pdf Graphic file (type pdf)
 <use figures/E8graypic1.pdf>
 File: figures/E8graypic2.pdf Graphic file (type pdf)
@@ -1133,16 +1127,16 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [15] [16] [17] (affinepaving.bbl) [18] (affinepaving.aux)
+ [15]
+Underfull \vbox (badness 1142) has occurred while \output is active []
 
-LaTeX Warning: There were undefined references.
-
- ) 
+ [16]
+[17] (affinepaving.bbl) [18] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 21449 strings out of 427748
- 408885 string characters out of 3150981
- 536184 words of memory out of 3000000
- 24855 multiletter control sequences out of 15000+200000
+ 21450 strings out of 427748
+ 408896 string characters out of 3150981
+ 536125 words of memory out of 3000000
+ 24856 multiletter control sequences out of 15000+200000
  20703 words of font info for 98 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,82p,3261b,1119s stack positions out of 5000i,500n,10000p,200000b,50000s

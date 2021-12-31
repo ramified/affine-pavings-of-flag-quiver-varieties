@@ -162,7 +162,8 @@ It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be di
 %\end{table}
 
 %The nocolor version 
-\begin{table}\label{table:result}
+\renewcommand{\arraystretch}{1.3}
+\begin{table}
 \begin{tabular}{|c|c|c|c|}
 \hline
             & $\Grq(X)$                  & $\Flagd(X)$                          & $\Flagdstr(X)$          \\ \hline
@@ -173,9 +174,8 @@ $\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2
 $\tilde{D}$ &                            & \multicolumn{2}{c|}{}                                          \\ \cline{1-1} \cline{3-4} 
 $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the regular quasi-finite case.} \\ \hline
 \end{tabular}
-\caption{Until now, except the $\tilde{E}$ case we've proved the affine paving properties for these varieties.}
+\caption{Until now, except the $\tilde{E}$ case we've proved the affine paving properties for these varieties.}\label{table:result}
 \end{table}
-
 The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section \ref{sec:flag=gr},\ref{sec:mainthm},\ref{sec:Dynkin}, accordingly.
 \begin{notation}
 Throughout this article, we denote $K=\mathbb{C}$ as a field, $R$ as a commutative $K$-algebra with unit, and $\Mod(R)$ as the category of $R$-modules of finite dimension. Let $Q$ be a quiver equipped with the set of finite vertices $v(Q)$ and the set of finite edges $a(Q)$. For an
@@ -713,25 +713,7 @@ $$\ord(M):= \max_{i \in v(Q)} \dim_K M_i.$$
 When the quiver $Q$ is of type $E$, we denote by $e \in v(Q)$ the unique vertex which is connected to three other vertices, and the number 
 $$\orde(M):=\dim_K M_e=[P(e),M]$$
 is equal to $\ord(M)$ unless $\orde(M)=0$.
-
-By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable modules. The next lemma tells us, for the ``easy representation", we can prove the affine paving property easily.
-
-\begin{lemma}[{follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
-	For the representation $M \in \Rep(Q)$ satisfying $\ord(M) \leqslant 2$ and the dimension vector $\dimvec{f}$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or is a singleton or is a direct product of some copies of $\mathbb{P}^1$.
-\end{lemma}
-\begin{proof}
-	For each vertex $i$ of the bigger quiver, the dimension of $V_i$ is 0,1,2; then the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is naturally included to a direct product of $\mathbb{P}^1$, and the information of arrows just reduce the number of $\mathbb{P}^1$(maybe to singleton or empty).
-\end{proof}
-\begin{corollary}[{\cite[Theorem 2.20]{maksimau2019flag}}]\label{cor:affinepavingofAD}
-	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
-\end{corollary}
-\begin{corollary}\label{cor:affineADcase}
-	Assume that $Q$ is a affine quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the \textbf{regular quasi-simple} representation. then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
-\end{corollary}
-%We use rep 2 Cor 18.8.
-
-\textbf{In the rest of this section we focus on the ``difficult" indecomposable representation of $E_6,E_7,E_8$.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form is we use the number $\orde(M)$ to represent the representation $M$:\footnote{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
-		\captionsetup[subfigure]{labelformat=empty}
+\captionsetup[subfigure]{labelformat=empty}
 \begin{center}
 	\begin{figure}[ht]
 		\vspace{0cm}
@@ -752,10 +734,29 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 			\includegraphics[width=1.7cm]{figures/E8.pdf}
 			\subcaption{$E_8$}
 			}
-		\caption{central imformation of Auslander-Reiten quiver}
+		\caption[Caption for LOF]{central imformation $\orde$ of Auslander-Reiten quiver\footnotemark}
 		\label{fig:startingfunction}
 	\end{figure}
 \end{center}
+\footnotetext{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
+By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable modules. The next lemma tells us, for the ``representation of small order", we can prove the affine paving property easily.
+
+\begin{lemma}[{follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
+	For the representation $M \in \Rep(Q)$ satisfying $\ord(M) \leqslant 2$ and the dimension vector $\dimvec{f}$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or is a singleton or is a direct product of some copies of $\mathbb{P}^1$.
+\end{lemma}
+\begin{proof}
+	For each vertex $i$ of the bigger quiver, the dimension of $V_i$ is 0,1,2; then the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is naturally included to a direct product of $\mathbb{P}^1$, and the information of arrows just reduce the number of $\mathbb{P}^1$(maybe to singleton or empty).
+\end{proof}
+\begin{corollary}[{\cite[Theorem 2.20]{maksimau2019flag}}]\label{cor:affinepavingofAD}
+	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the representation, then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
+\end{corollary}
+\begin{corollary}\label{cor:affineADcase}
+	Assume that $Q$ is a affine quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the \textbf{regular quasi-simple} representation, then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.\footnote{The concept ``quasi-simple'' is defined in \cite[Definition 15]{irelli2019cell}; the concepts ``preprojective'',``preinjective'' and ``regular'' are defined in \cite[2.1.1]{irelli2019cell}. It's shown in \cite[Section 9, Lemma 3]{crawley1992lectures} that the regular quasi-simple representation $M$ have dimension vector smaller or equal to the minimal positive imaginary root, thus $\orde(M) \leqslant 2$ when the quiver is affine of type A or D.}
+\end{corollary}
+%We use rep 2 Cor 18.8.
+
+\textbf{In the rest of this section we focus on the  indecomposable representation of $E_6,E_7,E_8$ ``with big order''.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form when we use the number $\orde(M)$ to represent the representation $M$, as shown in Figure \ref{fig:startingfunction}.
+
 
 \begin{lemma}
 	For every indecomposable representation $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
@@ -800,11 +801,12 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \begin{lemma}\label{lem:value}
 Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotient. Then we have the short exact sequence 
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-and the following values:
-
+and dimensions of Extension groups among $X,Y,S$, as shown in the Table \ref{table:result}.
+\renewcommand{\arraystretch}{1.1}
+%https://tex.stackexchange.com/questions/552563/centering-on-the-last-column-messes-table-up
 \begin{table}
 \centering
-\begin{tabular}{|c|l|l|l|} 
+\begin{tabular}{|c|>{ \centering }m{5mm}|>{ \centering }m{5mm}|>{\centering\arraybackslash}m{5mm}|} 
 \hline
        \diagbox[height=3.8\line]{$M$}{$[M,N]$\\$[M,N]^1$}{$N$}            & X & Y & S  \\ 
 \hline
@@ -818,6 +820,8 @@ and the following values:
                    & 1 & 0 & 0  \\
 \hline
 \end{tabular}
+\caption{}
+\label{table:dim}
 \end{table}
 
 In particular, $S$ is indecomposable and rigid; $[S,X]^1 =1$, so $X_S$ and $S^X$ are well-defined.
@@ -975,7 +979,7 @@ Case 1: $M\longrightarrow X$ is not injective, then
 \begin{eg}
 Finally we begin to handle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
 $$\Gr(Y) \longrightarrow \Gr(F) \times \Gr(Y/F) \text{ or } U(F,?)$$
-then we get the result \footnote{$\Gr(F)$ is empty or a singleton, so is $U(F,?)$.}.
+then we get the result \footnote{$\Gr(F)$ is empty or a singleton, so is $U(F,?)$, no matter what representation is in the questionmark.}.
 
 When $X \longrightarrow Y$ is injective, we have
 $$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S)$$
