@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  31 DEC 2021 12:00
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  27 JAN 2022 11:46
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1061,7 +1061,7 @@ File: figures/bigpic.pdf Graphic file (type pdf)
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
  [5] [6] [7]
-Overfull \hbox (17.0955pt too wide) in paragraph at lines 499--501
+Overfull \hbox (17.0955pt too wide) in paragraph at lines 502--504
 \TU/lmr/m/n/10.95 By Lemma 2.16[] (1[]) and (5[]), $[][]\OT1/cmr/m/n/10.95 (^^H
 (\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =W; T\OT1/cmr/m/n
 /10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.9
@@ -1070,29 +1070,22 @@ Overfull \hbox (17.0955pt too wide) in paragraph at lines 499--501
 10.95 (\OML/cmm/m/it/10.95 W; T\OT1/cmr/m/n/10.95 ) =
  []
 
-[8] [9]
-Overfull \hbox (39.72507pt too wide) in paragraph at lines 623--624
-[]\TU/lmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 V; V[] \OMS/cmsy/m/n/10.95 ^^Z \O
-T1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10
-.95 such that $\OT1/cmr/m/n/10.95 [^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 
-)\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n
-/10.95 )\OML/cmm/m/it/10.95 =V\OT1/cmr/m/n/10.95 ][] = [^^H(\OML/cmm/m/it/10.95
- S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(\OML/cmm/m/i
-t/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V[]\OT1/cmr/m/n/10.95 ][] = 1
-\OML/cmm/m/it/10.95 :$ \TU/lmr/m/it/10.95 Then $\OT1/cmr/m/n/10.95 [^^H(\OML/cm
-m/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^H(
-\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V \OT1/cmr/m/n/10
-.95 +
+[8]
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 601--602
+[]\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
+e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
+^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
+10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )) =
  []
 
-
-Overfull \hbox (12.77255pt too wide) detected at line 633
+[9]
+Overfull \hbox (12.77255pt too wide) detected at line 634
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
 [10]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 662--663
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 663--664
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -1127,15 +1120,15 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [15]
-Underfull \vbox (badness 1142) has occurred while \output is active []
+ [15] [16]
+Overfull \vbox (1.39333pt too high) has occurred while \output is active []
 
- [16]
+
 [17] (affinepaving.bbl) [18] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
  21450 strings out of 427748
  408896 string characters out of 3150981
- 536125 words of memory out of 3000000
+ 537217 words of memory out of 3000000
  24856 multiletter control sequences out of 15000+200000
  20703 words of font info for 98 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
