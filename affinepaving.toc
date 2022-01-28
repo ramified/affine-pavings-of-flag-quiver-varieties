@@ -6,8 +6,8 @@
 \contentsline {subsection}{\tocsubsection {}{2.3}{Dimension vector}}{5}% 
 \contentsline {subsection}{\tocsubsection {}{2.4}{Ext-vanishing properties}}{7}% 
 \contentsline {subsection}{\tocsubsection {}{2.5}{How much do we understand the quiver representation?}}{8}% 
-\contentsline {section}{\tocsection {}{3}{Main Theorem}}{9}% 
-\contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{12}% 
-\contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{15}% 
-\contentsline {section}{\tocsection {Appendix}{A}{}}{15}% 
-\contentsline {section}{\tocsection {Appendix}{}{References}}{18}% 
+\contentsline {section}{\tocsection {}{3}{Main Theorem}}{10}% 
+\contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{13}% 
+\contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{16}% 
+\contentsline {section}{\tocsection {Appendix}{A}{}}{16}% 
+\contentsline {section}{\tocsection {Appendix}{}{References}}{19}% 
