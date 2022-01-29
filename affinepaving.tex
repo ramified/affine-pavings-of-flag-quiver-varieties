@@ -539,6 +539,11 @@ To understand the category $\Rep(Q)$, one should understand indecomposable modul
 
 We will use the Auslander-Reiten quiver to find ``good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander-Reiten theory, one can see \cite{crawley1992lectures}.
 
+\subsection{A crash course on Auslander-Reiten theory}
+
+In this subsection, we will introduce concepts in Auslander-Reiten theory one by one: indecomposable representation, irreducible morphism, Auslander-Reiten translation, Auslander-Reiten sequence, Auslander–Reiten quiver, and minimal sectional mono. The main references for the material covered in this section are \cite{crawley1992lectures,maksimau2019flag}.
+
+Indecomposable representations form the vertices of Auslander–Reiten quiver, while irreducible morphisms form the arrows.
 \begin{defn}[Irreducible morphism]
 Given two indecomposable representations $T,T' \in \Mod(R)$, denote
 \begin{equation*}
@@ -583,7 +588,26 @@ $$\left(\Homup_R (T,\tau T') \right)^{\vee} \stackrel{\sim}{\longrightarrow} \Ex
 $$\left(\Homdown_R (\tau^{-1}T,T') \right)^{\vee} \stackrel{\sim}{\longrightarrow} \Ext_R^1(T',T)$$
 which is functorial for any $T,T' \in \Mod(R)$. Especially, when $T$ is not injective, $\Homup_R (T,\tau T')=\Hom_R (T,\tau T')$, we get $[T',T]^1=[T,\tau T']$; when $T'$ is not projective, $\Homdown_R (\tau^{-1}T,T')=\Hom_R (\tau^{-1}T,T')$, we get $[T',T]^1=[\tau^{-1}T, T']$.
 
+Finally we move forward to the definition of minimal sectional mono. The rest can be skipped until Lemma \ref{lem:msm&order}.
 
+\begin{defn}[Sectional morphism]
+Suppose $Q$ is a quiver of Dynkin/affine type, and $M,N \in \Rep(Q)$ be two indecomposable representations of $Q$, which are preprojective\footnote{A representation $M \in \Rep(Q)$ is called preprojective if $\tau^k M$ is projective for some $k \geqslant 0$.} when $Q$ is affine. The morphism $f \in \Hom_{KQ}(M,N)$ is called sectional morphism if $f$ can be written as the composition
+$$f: M=X_0 \stackrel{f_1}{\longrightarrow} X_1 \stackrel{f_2}{\longrightarrow} \cdots \stackrel{f_{t-1}}{\longrightarrow} X_{t-1} \stackrel{f_t}{\longrightarrow} X_t=N$$
+where $f_i \in \Hom_{KQ}(X_{i-1},X_i)$ are irreducible morphisms between indecomposable representations, and $\tau X_{i+2} \ncong X_i$ for any suitable $i$.
+\end{defn}
+\begin{remark}
+Fix the sectional morphism $f$. When the underlying quiver $Q$ is a Dynkin/affine quiver without oriented cycles, then $X_0,\ldots,X_t$ are uniquely determined, and $f_1,\ldots, f_t$ are unique up to constant.
+\end{remark}
+\begin{lemma}
+Any sectional morphism $f \in \Hom_{KQ}(M,N)$ is either surjective or injective.
+\end{lemma}
+\begin{proof}
+When $Q$ is a quiver without oriented cycles, then $[N,M]^1 \leqslant [M,\tau N]=0$, thus by \cite[Lemma 7]{maksimau2019flag} we get the result; when $Q$ is of type $\tilde{A}$, the result comes from \cite[Lemma 51]{maksimau2019flag}.
+\end{proof}
+\begin{defn}[Sectional mono, minimal sectional mono]
+Let $Q$ be a quiver without oriented cycles. A sectional morphism $f \in \Hom_{KQ}(M,N)$ is called as a sectional mono if $f$ is injective; a sectional mono is called minimal if $f_t \circ \cdots \circ f_{i+1}:X_i \longrightarrow N$ are surjective for any $i \in \{1,2,\ldots,t \}$.
+\end{defn}
+Minimal sectional mono can also be clearly seen from the Auslander–Reiten quiver, and we can check if a sectional morphism is mono by comparing the dimension vectors. In the case of Example ???, a non-zero morphism from $A$ to $B$ is a minimal sectional mono while a non-zero morphism from $C$ to $D$ is not, since a sectional morphism from $E$ to $D$ is also injective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Main Theorem}\label{sec:mainthm}
@@ -849,7 +873,7 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 \textbf{In the rest of this section we focus on the  indecomposable representation of $E_6,E_7,E_8$ ``with big order''.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form when we use the number $\orde(M)$ to represent the representation $M$, as shown in Figure \ref{fig:startingfunction}.
 
 
-\begin{lemma}
+\begin{lemma}\label{lem:msm&order}
 	For every indecomposable representation $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
 \end{lemma}
 \begin{proof}
@@ -937,6 +961,9 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
+\begin{center}
+    \includegraphics[scale=0.45]{figures/minisecmono.jpg}
+\end{center}
 \begin{lemma}[{follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]\label{lem:descriptionofX_S}
 	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
