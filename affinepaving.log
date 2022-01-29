@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  29 JAN 2022 00:45
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  29 JAN 2022 16:50
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -976,33 +976,33 @@ Package: fp-eval 1995/04/03
  (affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Try loading font information for U+msa on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Try loading font information for U+msa on input line 115.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 114.
+LaTeX Font Info:    Try loading font information for U+msb on input line 115.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 114.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 115.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\u
 rsfs.fd"
@@ -1011,7 +1011,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package xypdf Info: Line width: 0.43799pt on input line 114.
+Package xypdf Info: Line width: 0.43799pt on input line 115.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1051,7 +1051,7 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (5.1381pt too wide) detected at line 150
+Overfull \hbox (5.1381pt too wide) detected at line 151
 [][]
  []
 
@@ -1061,7 +1061,7 @@ File: figures/bigpic.pdf Graphic file (type pdf)
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
  [5] [6] [7]
-Overfull \hbox (17.0955pt too wide) in paragraph at lines 511--513
+Overfull \hbox (17.0955pt too wide) in paragraph at lines 512--514
 \TU/lmr/m/n/10.95 By Lemma 2.16[] (1[]) and (5[]), $[][]\OT1/cmr/m/n/10.95 (^^H
 (\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =W; T\OT1/cmr/m/n
 /10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.9
@@ -1070,8 +1070,15 @@ Overfull \hbox (17.0955pt too wide) in paragraph at lines 511--513
 10.95 (\OML/cmm/m/it/10.95 W; T\OT1/cmr/m/n/10.95 ) =
  []
 
+
+Overfull \hbox (5.63177pt too wide) in paragraph at lines 543--544
+[]\TU/lmr/bx/n/10.95 Definition 2.19 \TU/lmr/m/n/10.95 (Irreducible morphism)\T
+U/lmr/bx/n/10.95 . []\TU/lmr/m/it/10.95 Given two indecomposable representation
+s $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
+ []
+
 [8]
-Overfull \hbox (21.41911pt too wide) in paragraph at lines 566--568
+Overfull \hbox (21.41911pt too wide) in paragraph at lines 583--585
 \TU/lmr/m/n/10.95 which is functorial for any $\OML/cmm/m/it/10.95 T; T[] \OMS/
 cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 
 )$\TU/lmr/m/n/10.95 . Especially, when $\OML/cmm/m/it/10.95 T$ \TU/lmr/m/n/10.9
@@ -1079,15 +1086,8 @@ cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95
 cmr/m/n/10.95 ) =
  []
 
-
-Overfull \hbox (5.63177pt too wide) in paragraph at lines 570--571
-[]\TU/lmr/bx/n/10.95 Definition 2.20 \TU/lmr/m/n/10.95 (Irreducible morphism)\T
-U/lmr/bx/n/10.95 . []\TU/lmr/m/it/10.95 Given two indecomposable representation
-s $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
- []
-
 [9]
-Overfull \hbox (49.10031pt too wide) in paragraph at lines 654--655
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 657--658
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 ^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
@@ -1095,13 +1095,13 @@ e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
  []
 
 [10]
-Overfull \hbox (12.77255pt too wide) detected at line 687
+Overfull \hbox (12.77255pt too wide) detected at line 690
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
 [11]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 745--746
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 748--749
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -1136,18 +1136,15 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
-
-Underfull \vbox (badness 6625) has occurred while \output is active []
-
- [17]
-[18] (affinepaving.bbl) [19] (affinepaving.aux) ) 
+ [17] [18] (affinepaving.bbl [19]) [20]
+(affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 21570 strings out of 427748
- 411551 string characters out of 3150981
- 537385 words of memory out of 3000000
- 24976 multiletter control sequences out of 15000+200000
+ 21573 strings out of 427748
+ 411572 string characters out of 3150981
+ 537417 words of memory out of 3000000
+ 24979 multiletter control sequences out of 15000+200000
  20703 words of font info for 98 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,82p,3261b,1119s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (19 pages).
+Output written on affinepaving.pdf (20 pages).

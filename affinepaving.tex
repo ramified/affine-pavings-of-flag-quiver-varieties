@@ -80,6 +80,7 @@
 \DeclareMathOperator{\ind}{\operatorname{ind}}
 \DeclareMathOperator{\End}{\operatorname{End}}
 \DeclareMathOperator{\Jac}{\operatorname{Jac}}
+\DeclareMathOperator{\Spec}{\operatorname{Spec}}
 \DeclareMathOperator{\Modup}{\overline{\operatorname{mod}}}
 \DeclareMathOperator{\Moddown}{\underline{\operatorname{mod}}}
 \DeclareMathOperator{\Homup}{\overline{\operatorname{Hom}}}
@@ -538,6 +539,22 @@ To understand the category $\Rep(Q)$, one should understand indecomposable modul
 
 We will use the Auslander-Reiten quiver to find ``good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander-Reiten theory, one can see \cite{crawley1992lectures}.
 
+\begin{defn}[Irreducible morphism]
+Given two indecomposable representations $T,T' \in \Mod(R)$, denote
+\begin{equation*}
+\begin{aligned}
+  \rad(T,T'):=\;& \left\{ f \in \Hom_{R}(T,T')  \middle|  f \text{ is not invertible}  \right\} \\
+  =\;& \begin{cases}
+  \Hom_{R}(T,T') & T \ncong T',\\
+  \Jac(\End_R(T)) & T \cong T'.
+  \end{cases} 
+\end{aligned}
+\end{equation*}
+be the radical, and let
+$$\rad^2(T,T'):= \bigcup_{S \in \ind(R)} \Img \big[ \rad(T,S) \times \rad(S,T') \longrightarrow \rad(T,T')  \big]$$
+be the subspace of $\rad(T,T')$. A morphism $f\in \Hom_{R}(T,T')$ is called irreducible if $f \in \rad(T,T') \setminus \rad^2(T,T')$.
+\end{defn}
+
 \begin{defn}
 Let $R=KQ/I$ be a bounded quiver algebra, we define Nakayama functor $\nu_R$, Auslander-Reiten translation $\tau_R$, and inverse Auslander-Reiten translation $\tau_R^{-1}$, as follows:
 % https://q.uiver.app/?q=WzAsMTIsWzAsMCwiXFxudV9SOiJdLFsxLDAsIlxcTW9kKFIpIl0sWzMsMCwiXFxNb2QoUikiXSxbMiwwLCJcXE1vZChSXntvcH0pIl0sWzEsMSwiXFxNb2Rkb3duKFIpIl0sWzMsMSwiXFxNb2R1cChSKSJdLFsyLDEsIlxcTW9kZG93bihSXntvcH0pIl0sWzAsMSwiXFx0YXVfUjoiXSxbMCwyLCJcXHRhdV9SXnstMX06Il0sWzMsMiwiXFxNb2Rkb3duKFIpIl0sWzIsMiwiXFxNb2Rkb3duKFJee29wfSkiXSxbMSwyLCJcXE1vZHVwKFIpIl0sWzEsMywiXFxIb21fUigtLF9SXFwhUikiXSxbMywyLCJcXEhvbV9LKC0sSykiXSxbNCw2LCJcXEV4dF4xX1IoLSxfUlxcIVIpIl0sWzYsNSwiXFxIb21fSygtLEspIl0sWzExLDEwLCJcXEhvbV9LKC0sSykiXSxbMTAsOSwiXFxFeHReMV97Ul57b3B9fSgtLFJfUikiXV0=
@@ -566,21 +583,7 @@ $$\left(\Homup_R (T,\tau T') \right)^{\vee} \stackrel{\sim}{\longrightarrow} \Ex
 $$\left(\Homdown_R (\tau^{-1}T,T') \right)^{\vee} \stackrel{\sim}{\longrightarrow} \Ext_R^1(T',T)$$
 which is functorial for any $T,T' \in \Mod(R)$. Especially, when $T$ is not injective, $\Homup_R (T,\tau T')=\Hom_R (T,\tau T')$, we get $[T',T]^1=[T,\tau T']$; when $T'$ is not projective, $\Homdown_R (\tau^{-1}T,T')=\Hom_R (\tau^{-1}T,T')$, we get $[T',T]^1=[\tau^{-1}T, T']$.
 
-\begin{defn}[Irreducible morphism]
-Given two indecomposable representations $T,T' \in \Mod(R)$, denote
-\begin{equation*}
-\begin{aligned}
-  \rad(T,T'):=\;& \left\{ f \in \Hom_{R}(T,T')  \middle|  f \text{ is not invertible}  \right\} \\
-  =\;& \begin{cases}
-  \Hom_{R}(T,T') & T \ncong T',\\
-  \Jac(\End_R(T)) & T \cong T'.
-  \end{cases} 
-\end{aligned}
-\end{equation*}
-be the radical, and let
-$$\rad^2(T,T'):= \bigcup_{S \in \ind(R)} \Img \big[ \rad(T,S) \times \rad(S,T') \longrightarrow \rad(T,T')  \big]$$
-be the subspace of $\rad(T,T')$. A morphism $f\in \Hom_{R}(T,T')$ is called irreducible if $f \in \rad(T,T') \setminus \rad^2(T,T')$.
-\end{defn}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Main Theorem}\label{sec:mainthm}
@@ -741,7 +744,7 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 	$$\Img \Psi_{\dimvec{f},\dimvec{g}} = \bigg(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) \bigg) \setminus \bigg(\Grr_{\dimvec{f}}(\Phi(X_S)) \times \Grr_{\dimvec{g}-\dimv \Phi(S^X)}\left(\Phi(S/S^X)\right) \bigg)$$
 \end{corollary}
 
-\begin{lemma}
+\begin{lemma}\label{lem:torsor}
 	For $(V,W) \in \Img \Psi$, the preimage of $(V,W)$ is a torsor of $\,\Hom_{R}(W,\Phi(X)/V)$. Or we could say, there is one non-canonical isomorphism
 	$$\Psi^{-1}((V,W)) \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{lemma}
@@ -777,6 +780,11 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{black}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
+\begin{remark}
+Any point $(V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}}$ can be also viewed as a morphism
+$$f: \Spec K \longrightarrow \Img \Psi_{\dimvec{f},\dimvec{g}}  \subseteq \Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) $$
+where Grassmannian are viewed as moduli spaces over $K$. Essentially by replacing $\Spec K$ by $\Spec A$ in Lemma \ref{lem:torsor}, we can run the machinery of algebraic geometry, and prove that $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
+\end{remark}
 \begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]
 We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:img2}. For the rank of the affine bundle, we have 
 \begin{equation*}
@@ -877,7 +885,6 @@ By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable 
 			\vspace{0.2cm}
 		\end{figure}
 	\end{center}
-	
 \begin{remark}
 	The condition $\ord(Y)>2$ in the lemma can not be removed.
 \end{remark}
@@ -973,7 +980,7 @@ By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is
 \end{equation*}
 Luckily $\orde(S_1)$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
 
-In the exception cases the game is similar, but we need to discuss a little more complicated. Let us look at some examples. (We simplify the notations: $\Gr(M)$ as $\Grr_{\dimvec{f}}(\Phi(M))$, $U(M,N)$ as $\Grr_{\dimvec{f}}(\Phi(M)) \setminus \Grr_{\dimvec{f}}(\Phi(M))$, and we also ignore the dimension vectors.)
+In the exception cases the game is similar, but we need to discuss a little more complicated. Let us look at some examples. (We simplify the notations: $\Gr(M)$ as $\Grr_{\dimvec{f}}(\Phi(M))$, $U(M,N)$ as $\Grr_{\dimvec{f}}(\Phi(M)) \setminus \Grr_{\dimvec{f}}(\Phi(N))$, and we also ignore the dimension vectors.)
 \captionsetup[subfigure]{labelfont=rm}
 \captionsetup[subfigure]{labelformat=parens}
 %https://tex.stackexchange.com/questions/233481/subcaption-defaulting-to-capital-letter-labels
