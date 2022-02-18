@@ -543,8 +543,8 @@ We will use the Auslander-Reiten quiver to find ``good monomorphisms" in Section
 
 In this subsection, we will introduce concepts in Auslander-Reiten theory one by one: indecomposable representation, irreducible morphism, Auslander-Reiten translation, Auslander-Reiten sequence, Auslander–Reiten quiver, and minimal sectional mono. The main references for the material covered in this section are \cite{crawley1992lectures,maksimau2019flag}.
 
-\begin{defn}[Indecomposable representation]
-Fix a quiver $Q$. A non-zero representation $M \in \Rep(Q)$ is called indecomposable if $M$ can not be written as a direct sum of two non-zero subrepresentations.
+\begin{defn}[Indecomposable module]
+Fix a algebra $R$. A non-zero module $M \in \mod(R)$ is called indecomposable if $M$ can not be written as a direct sum of two non-zero submodules. The set of all indecomposable modules is denoted by $\ind(R)$.
 \end{defn}
 Mathematitions have found several descriptions of the indecomposable representations in special cases. For instance:
 \begin{itemize}
@@ -699,6 +699,8 @@ $$\rad^2(T,T'):= \bigcup_{S \in \ind(R)} \Img \big[ \rad(T,S) \times \rad(S,T') 
 be the subspace of $\rad(T,T')$. A morphism $f\in \Hom_{R}(T,T')$ is called irreducible if $f \in \rad(T,T') \setminus \rad^2(T,T')$.
 \end{defn}
 
+Actually the definition of irreducible morphism can be defined over any representation, and people can easily show that any irreducible morphism is either injective or surjective.
+
 \begin{defn}\label{def:Auslander-Reiten translation}
 Let $R=KQ/I$ be a bounded quiver algebra, we define Nakayama functor $\nu_R$, Auslander-Reiten translation $\tau_R$, and inverse Auslander-Reiten translation $\tau_R^{-1}$, as follows:
 % https://q.uiver.app/?q=WzAsMTIsWzAsMCwiXFxudV9SOiJdLFsxLDAsIlxcTW9kKFIpIl0sWzMsMCwiXFxNb2QoUikiXSxbMiwwLCJcXE1vZChSXntvcH0pIl0sWzEsMSwiXFxNb2Rkb3duKFIpIl0sWzMsMSwiXFxNb2R1cChSKSJdLFsyLDEsIlxcTW9kZG93bihSXntvcH0pIl0sWzAsMSwiXFx0YXVfUjoiXSxbMCwyLCJcXHRhdV9SXnstMX06Il0sWzMsMiwiXFxNb2Rkb3duKFIpIl0sWzIsMiwiXFxNb2Rkb3duKFJee29wfSkiXSxbMSwyLCJcXE1vZHVwKFIpIl0sWzEsMywiXFxIb21fUigtLF9SXFwhUikiXSxbMywyLCJcXEhvbV9LKC0sSykiXSxbNCw2LCJcXEV4dF4xX1IoLSxfUlxcIVIpIl0sWzYsNSwiXFxIb21fSygtLEspIl0sWzExLDEwLCJcXEhvbV9LKC0sSykiXSxbMTAsOSwiXFxFeHReMV97Ul57b3B9fSgtLFJfUikiXV0=
@@ -727,6 +729,154 @@ $$\left(\Homup_R (T,\tau T') \right)^{\vee} \stackrel{\sim}{\longrightarrow} \Ex
 $$\left(\Homdown_R (\tau^{-1}T,T') \right)^{\vee} \stackrel{\sim}{\longrightarrow} \Ext_R^1(T',T)$$
 which is functorial for any $T,T' \in \Mod(R)$. Especially, when $T$ is not injective, $\Homup_R (T,\tau T')=\Hom_R (T,\tau T')$, we get $[T',T]^1=[T,\tau T']$; when $T'$ is not projective, $\Homdown_R (\tau^{-1}T,T')=\Hom_R (\tau^{-1}T,T')$, we get $[T',T]^1=[\tau^{-1}T, T']$.
 
+For the Auslander–Reiten sequence there can be many equivalent definitions, and we only present one due to limitations of space. 
+\begin{defn}[Auslander–Reiten sequence]
+Suppose $X \in \ind (R)$ is non-projective, an epimorphism $g:E \longrightarrow X$ is called \textbf{right almost split} if $g$ is not split epi and every homomorphism $h:T \longrightarrow X$ which is not split epi factors through $E$. The short exact sequence 
+$$0 \longrightarrow \tau X \longrightarrow E \stackrel{g}{\longrightarrow} X \longrightarrow 0$$
+is called an Auslander–Reiten sequence if $g$ is right almost split.
+\end{defn}
+
+All the concepts introduced in this subsection can be clearly observed from the Auslander–Reiten quiver. In the Auslander–Reiten quiver the vertices are indecomposable representations, the arrows are irreducible morphisms among indecomposable representations, Auslander-Reiten translation is labeled as the dotted arrow, and the Auslander–Reiten sequence can be read by collecting all paths from $\tau X$ to $X$. For instance, in the Figure \ref{fig:Auslander–Reiten_quiver} we can get an Auslander–Reiten sequence 
+\renewcommand{\arraystretch}{0.5}
+$$0 \longrightarrow \begin{matrix}
+2\\
+12321
+\end{matrix} \longrightarrow
+\begin{matrix}
+1\\
+12211
+\end{matrix} \oplus
+\begin{matrix}
+1\\
+11110
+\end{matrix} \oplus
+\begin{matrix}
+1\\
+01221
+\end{matrix}
+ \longrightarrow
+\begin{matrix}
+1\\
+12221
+\end{matrix} \longrightarrow
+0
+$$
+\renewcommand{\arraystretch}{1}
+of the corresponding quiver.
+
+%https://www.math.uni-bielefeld.de/~wcrawley/knitting/?projectives=1:,2:1+3,3:,4:3,5:43,6:3&orientation=vertical&positions=1:(500|0),2:(400|0),3:(300|0),4:(200|0),5:(100|0),6:(320|0)
+
+% https://q.uiver.app/?q=WzAsMzYsWzAsMCwiXFxzdWJzdGFja3swXFxcXDEwMDAwfSJdLFszLDAsIlxcc3Vic3RhY2t7MFxcXFwwMDEwMH0iXSxbMSwxLCJcXHN1YnN0YWNrezBcXFxcMTExMDB9Il0sWzIsMSwiXFxzdWJzdGFja3sxXFxcXDAwMTAwfSJdLFs0LDEsIlxcc3Vic3RhY2t7MFxcXFwwMDExMH0iXSxbMCwyLCJcXHN1YnN0YWNrezBcXFxcMDExMDB9Il0sWzMsMiwiXFxzdWJzdGFja3sxXFxcXDExMjEwfSJdLFs1LDIsIlxcc3Vic3RhY2t7MFxcXFwwMDExMX0iXSxbMSwzLCJcXHN1YnN0YWNrezFcXFxcMDEyMTB9Il0sWzIsMywiXFxzdWJzdGFja3swXFxcXDExMTEwfSJdLFs0LDMsIlxcc3Vic3RhY2t7MVxcXFwxMTIxMX0iXSxbMCw0LCJcXHN1YnN0YWNrezFcXFxcMDAxMTB9Il0sWzMsNCwiXFxzdWJzdGFja3sxXFxcXDEyMzIxfSJdLFs1LDQsIlxcc3Vic3RhY2t7MVxcXFwxMTEwMH0iXSxbMSw1LCJcXHN1YnN0YWNrezFcXFxcMTEyMjF9Il0sWzIsNSwiXFxzdWJzdGFja3sxXFxcXDAxMjExfSJdLFs0LDUsIlxcc3Vic3RhY2t7MVxcXFwxMjIxMH0iXSxbMCw2LCJcXHN1YnN0YWNrezBcXFxcMTExMTF9Il0sWzMsNiwiXFxzdWJzdGFja3syXFxcXDEyMzIxfSJdLFs1LDYsIlxcc3Vic3RhY2t7MFxcXFwwMTExMH0iXSxbMSw3LCJcXHN1YnN0YWNrezFcXFxcMTIyMTF9Il0sWzIsNywiXFxzdWJzdGFja3sxXFxcXDExMTEwfSJdLFs0LDcsIlxcc3Vic3RhY2t7MVxcXFwwMTIyMX0iXSxbMCw4LCJcXHN1YnN0YWNrezFcXFxcMDExMDB9Il0sWzAsMTAsIlxcc3Vic3RhY2t7MFxcXFwwMDAxMH0iXSxbMCwxMiwiXFxzdWJzdGFja3swXFxcXDAwMDAxfSJdLFsxLDExLCJcXHN1YnN0YWNrezBcXFxcMDAwMTF9Il0sWzIsMTEsIlxcc3Vic3RhY2t7MVxcXFwwMDAwMH0iXSxbNCwxMSwiXFxzdWJzdGFja3swXFxcXDAxMDAwfSJdLFszLDEwLCJcXHN1YnN0YWNrezFcXFxcMDExMTF9Il0sWzUsMTAsIlxcc3Vic3RhY2t7MFxcXFwxMTAwMH0iXSxbMSw5LCJcXHN1YnN0YWNrezFcXFxcMDExMTB9Il0sWzIsOSwiXFxzdWJzdGFja3swXFxcXDAxMTExfSJdLFs0LDksIlxcc3Vic3RhY2t7MVxcXFwxMTExMX0iXSxbMyw4LCJcXHN1YnN0YWNrezFcXFxcMTIyMjF9Il0sWzUsOCwiXFxzdWJzdGFja3sxXFxcXDAwMTExfSJdLFswLDJdLFsxLDJdLFsxLDNdLFsxLDRdLFsyLDVdLFsyLDZdLFszLDZdLFs0LDZdLFs0LDddLFs3LDEwXSxbNiwxMF0sWzYsOV0sWzYsOF0sWzUsOF0sWzgsMTFdLFs4LDEyXSxbOSwxMl0sWzEwLDEyXSxbMTAsMTNdLFsxMywxNl0sWzEyLDE2XSxbMTIsMTVdLFsxMiwxNF0sWzExLDE0XSxbMTQsMTddLFsxNCwxOF0sWzE1LDE4XSxbMTYsMThdLFsxNiwxOV0sWzE3LDIwXSxbMTgsMjBdLFsxOCwyMV0sWzE4LDIyXSxbMTksMjJdLFsyMiwzNV0sWzIyLDM0XSxbMjEsMzRdLFsyMCwzNF0sWzIwLDIzXSxbMjMsMzFdLFszNCwzMV0sWzM0LDMyXSxbMzQsMzNdLFszNSwzM10sWzMzLDMwXSxbMzMsMjldLFszMiwyOV0sWzMxLDI5XSxbMzEsMjRdLFsyNCwyNl0sWzI5LDI2XSxbMjksMjddLFsyOSwyOF0sWzMwLDI4XSxbMjYsMjVdLFs1LDAsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs2LDEsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs4LDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs5LDMsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxMCw0LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTEsNSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEyLDYsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxMyw3LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTQsOCwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzE1LDksIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxNiwxMCwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzE5LDEzLCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMTgsMTIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxNywxMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzIwLDE0LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMjEsMTUsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyMiwxNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzIzLDE3LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMzQsMTgsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszNSwxOSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzMzLDIyLCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMzEsMjAsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszMiwyMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzI0LDIzLCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMjUsMjQsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyNiwzMSwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzI3LDMyLCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMjksMzQsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyOCwzMywiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzMwLDM1LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=
+
+\begin{figure}[ht]
+  \vspace{0cm}
+    \centering  \[\begin{tikzcd}[row sep=5mm]
+    	{\substack{0\\10000}} &&[-5mm]&[-16mm] {\substack{0\\00100}} \\
+    	& {\substack{0\\11100}} & {\substack{1\\00100}} && {\substack{0\\00110}} \\
+    	{\substack{0\\01100}} &&& {\substack{1\\11210}} && {\substack{0\\00111}} \\
+    	& {\substack{1\\01210}} & {\substack{0\\11110}} && {\substack{1\\11211}} \\
+    	{\substack{1\\00110}} &&& {\substack{1\\12321}} && {\substack{1\\11100}} \\
+    	& {\substack{1\\11221}} & {\substack{1\\01211}} && {\substack{1\\12210}} \\
+    	{\substack{0\\11111}} &&& {\substack{2\\12321}} && {\substack{0\\01110}} \\
+    	& {\substack{1\\12211}} & {\substack{1\\11110}} && {\substack{1\\01221}} \\
+    	{\substack{1\\01100}} &&& {\substack{1\\12221}} && {\substack{1\\00111}} \\
+    	& {\substack{1\\01110}} & {\substack{0\\01111}} && {\substack{1\\11111}} \\
+    	{\substack{0\\00010}} &&& {\substack{1\\01111}} && {\substack{0\\11000}} \\
+    	& {\substack{0\\00011}} & {\substack{1\\00000}} && {\substack{0\\01000}} \\
+    	{\substack{0\\00001}}
+    	\arrow[from=1-1, to=2-2]
+    	\arrow[from=1-4, to=2-2]
+    	\arrow[from=1-4, to=2-3]
+    	\arrow[from=1-4, to=2-5]
+    	\arrow[from=2-2, to=3-1]
+    	\arrow[from=2-2, to=3-4]
+    	\arrow[from=2-3, to=3-4]
+    	\arrow[from=2-5, to=3-4]
+    	\arrow[from=2-5, to=3-6]
+    	\arrow[from=3-6, to=4-5]
+    	\arrow[from=3-4, to=4-5]
+    	\arrow[from=3-4, to=4-3]
+    	\arrow[from=3-4, to=4-2]
+    	\arrow[from=3-1, to=4-2]
+    	\arrow[from=4-2, to=5-1]
+    	\arrow[from=4-2, to=5-4]
+    	\arrow[from=4-3, to=5-4]
+    	\arrow[from=4-5, to=5-4]
+    	\arrow[from=4-5, to=5-6]
+    	\arrow[from=5-6, to=6-5]
+    	\arrow[from=5-4, to=6-5]
+    	\arrow[from=5-4, to=6-3]
+    	\arrow[from=5-4, to=6-2]
+    	\arrow[from=5-1, to=6-2]
+    	\arrow[from=6-2, to=7-1]
+    	\arrow[from=6-2, to=7-4]
+    	\arrow[from=6-3, to=7-4]
+    	\arrow[from=6-5, to=7-4]
+    	\arrow[from=6-5, to=7-6]
+    	\arrow[from=7-1, to=8-2]
+    	\arrow[from=7-4, to=8-2]
+    	\arrow[from=7-4, to=8-3]
+    	\arrow[from=7-4, to=8-5]
+    	\arrow[from=7-6, to=8-5]
+    	\arrow[from=8-5, to=9-6]
+    	\arrow[from=8-5, to=9-4]
+    	\arrow[from=8-3, to=9-4]
+    	\arrow[from=8-2, to=9-4]
+    	\arrow[from=8-2, to=9-1]
+    	\arrow[from=9-1, to=10-2]
+    	\arrow[from=9-4, to=10-2]
+    	\arrow[from=9-4, to=10-3]
+    	\arrow[from=9-4, to=10-5]
+    	\arrow[from=9-6, to=10-5]
+    	\arrow[from=10-5, to=11-6]
+    	\arrow[from=10-5, to=11-4]
+    	\arrow[from=10-3, to=11-4]
+    	\arrow[from=10-2, to=11-4]
+    	\arrow[from=10-2, to=11-1]
+    	\arrow[from=11-1, to=12-2]
+    	\arrow[from=11-4, to=12-2]
+    	\arrow[from=11-4, to=12-3]
+    	\arrow[from=11-4, to=12-5]
+    	\arrow[from=11-6, to=12-5]
+    	\arrow[from=12-2, to=13-1]
+    	\arrow[dashed, from=3-1, to=1-1]
+    	\arrow[dashed, from=3-4, to=1-4]
+    	\arrow[dashed, from=4-2, to=2-2]
+    	\arrow[dashed, from=4-3, to=2-3]
+    	\arrow[dashed, from=4-5, to=2-5]
+    	\arrow[dashed, from=5-1, to=3-1]
+    	\arrow[dashed, from=5-4, to=3-4]
+    	\arrow[dashed, from=5-6, to=3-6]
+    	\arrow[dashed, from=6-2, to=4-2]
+    	\arrow[dashed, from=6-3, to=4-3]
+    	\arrow[dashed, from=6-5, to=4-5]
+    	\arrow[dashed, from=7-6, to=5-6]
+    	\arrow[dashed, from=7-4, to=5-4]
+    	\arrow[dashed, from=7-1, to=5-1]
+    	\arrow[dashed, from=8-2, to=6-2]
+    	\arrow[dashed, from=8-3, to=6-3]
+    	\arrow[dashed, from=8-5, to=6-5]
+    	\arrow[dashed, from=9-1, to=7-1]
+    	\arrow[dashed, from=9-4, to=7-4]
+    	\arrow[dashed, from=9-6, to=7-6]
+    	\arrow[dashed, from=10-5, to=8-5]
+    	\arrow[dashed, from=10-2, to=8-2]
+    	\arrow[dashed, from=10-3, to=8-3]
+    	\arrow[dashed, from=11-1, to=9-1]
+    	\arrow[dashed, from=13-1, to=11-1]
+    	\arrow[dashed, from=12-2, to=10-2]
+    	\arrow[dashed, from=12-3, to=10-3]
+    	\arrow[dashed, from=11-4, to=9-4]
+    	\arrow[dashed, from=12-5, to=10-5]
+    	\arrow[dashed, from=11-6, to=9-6]
+    \end{tikzcd}\]
+    \caption{The Auslander–Reiten quiver of the quiver}
+    \begin{tikzcd}[row sep=3mm, column sep=5mm]
+    	                                &                 & \bullet \arrow[d] &                 &                 \\
+ E_6:\bullet  & \bullet \arrow[r]\arrow[l] & \bullet           & \bullet \arrow[l] & \bullet \arrow[l]
+    	\end{tikzcd}
+     \label{fig:Auslander–Reiten_quiver}   
+\end{figure} 
 Finally we move forward to the definition of minimal sectional mono. The rest can be skipped until Lemma \ref{lem:msm&order}.
 
 \begin{defn}[Sectional morphism]
@@ -746,7 +896,7 @@ When $Q$ is a quiver without oriented cycles, then $[N,M]^1 \leqslant [M,\tau N]
 \begin{defn}[Sectional mono, minimal sectional mono]
 Let $Q$ be a quiver without oriented cycles. A sectional morphism $f \in \Hom_{KQ}(M,N)$ is called as a sectional mono if $f$ is injective; a sectional mono is called minimal if $f_t \circ \cdots \circ f_{i+1}:X_i \longrightarrow N$ are surjective for any $i \in \{1,2,\ldots,t \}$.
 \end{defn}
-Minimal sectional mono can also be clearly seen from the Auslander–Reiten quiver, and we can check if a sectional morphism is mono by comparing the dimension vectors. In the case of Example ???, a non-zero morphism from $A$ to $B$ is a minimal sectional mono while a non-zero morphism from $C$ to $D$ is not, since a sectional morphism from $E$ to $D$ is also injective.
+Minimal sectional mono can also be clearly seen from the Auslander–Reiten quiver, and we can check if a sectional morphism is mono by comparing the dimension vectors. In the case of Example $E_6$ in Figure \ref{fig:Auslander–Reiten_quiver}, a non-zero morphism from $\substack{1\\00110}$ to $\substack{1\\11110}$ is a minimal sectional mono while a non-zero morphism from $\substack{0\\01100}$ to $\substack{1\\01211}$ is not, since a sectional morphism from $\substack{1\\01210}$ to $\substack{1\\01211}$ is also injective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Main Theorem}\label{sec:mainthm}

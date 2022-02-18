@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  17 FEB 2022 20:51
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  18 FEB 2022 17:24
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1083,7 +1083,7 @@ s $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
  []
 
 [9] [10]
-Overfull \hbox (21.41911pt too wide) in paragraph at lines 727--729
+Overfull \hbox (21.41911pt too wide) in paragraph at lines 729--731
 \TU/lmr/m/n/10.95 which is functorial for any $\OML/cmm/m/it/10.95 T; T[] \OMS/
 cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 
 )$\TU/lmr/m/n/10.95 . Especially, when $\OML/cmm/m/it/10.95 T$ \TU/lmr/m/n/10.9
@@ -1092,29 +1092,35 @@ cmr/m/n/10.95 ) =
  []
 
 
-Overfull \hbox (12.27896pt too wide) in paragraph at lines 738--739
-[]\TU/lmr/m/it/10.95 Remark \TU/lmr/m/n/10.95 2.23\TU/lmr/m/it/10.95 . []\TU/lm
+Overfull \hbox (6.09383pt too wide) in paragraph at lines 739--741
+[]\TU/lmr/m/n/10.95 All the concepts introduced in this subsection can be clear
+ly observed from the Auslander–
+ []
+
+
+Overfull \hbox (12.27896pt too wide) in paragraph at lines 888--889
+[]\TU/lmr/m/it/10.95 Remark \TU/lmr/m/n/10.95 2.24\TU/lmr/m/it/10.95 . []\TU/lm
 r/m/n/10.95 Fix the sectional morphism $\OML/cmm/m/it/10.95 f$\TU/lmr/m/n/10.95
  . When the underlying quiver $\OML/cmm/m/it/10.95 Q$ \TU/lmr/m/n/10.95 is a Dy
 nkin/affine
  []
 
-[11]
-Overfull \hbox (49.10031pt too wide) in paragraph at lines 820--821
+[11] [12]
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 970--971
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 ^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
 10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )) =
  []
 
-[12]
-Overfull \hbox (12.77255pt too wide) detected at line 853
+[13]
+Overfull \hbox (12.77255pt too wide) detected at line 1003
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
-[13]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 911--912
+[14]
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 1061--1062
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -1124,14 +1130,14 @@ m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
 m/it/10.95 .
  []
 
-[14]
+[15]
 File: figures/E6.pdf Graphic file (type pdf)
 <use figures/E6.pdf>
 File: figures/E7.pdf Graphic file (type pdf)
 <use figures/E7.pdf>
 File: figures/E8.pdf Graphic file (type pdf)
 <use figures/E8.pdf>
- [15]
+ [16] [17]
 File: figures/E6easy.pdf Graphic file (type pdf)
 <use figures/E6easy.pdf>
 File: figures/E7easy.pdf Graphic file (type pdf)
@@ -1140,14 +1146,10 @@ File: figures/E8easy.pdf Graphic file (type pdf)
 <use figures/E8easy.pdf>
 File: figures/E8hard.pdf Graphic file (type pdf)
 <use figures/E8hard.pdf>
- [16]
+ [18]
 File: figures/minisecmono.jpg Graphic file (type bmp)
 <figures/minisecmono.jpg>
-
-Underfull \vbox (badness 1803) has occurred while \output is active []
-
- [17]
-[18]
+ [19]
 File: figures/E8graypic1.pdf Graphic file (type pdf)
 <use figures/E8graypic1.pdf>
 File: figures/E8graypic2.pdf Graphic file (type pdf)
@@ -1156,14 +1158,18 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [19] [20] (affinepaving.bbl [21]) [22] (affinepaving.aux) ) 
+ [20]
+Underfull \vbox (badness 1142) has occurred while \output is active []
+
+ [21]
+[22] (affinepaving.bbl) [23] (affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 22204 strings out of 427748
- 428236 string characters out of 3150981
- 587645 words of memory out of 3000000
- 25608 multiletter control sequences out of 15000+200000
+ 22580 strings out of 427748
+ 438011 string characters out of 3150981
+ 595381 words of memory out of 3000000
+ 25984 multiletter control sequences out of 15000+200000
  20703 words of font info for 98 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,23n,82p,3261b,1119s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,23n,82p,4082b,1119s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (22 pages).
+Output written on affinepaving.pdf (23 pages).
