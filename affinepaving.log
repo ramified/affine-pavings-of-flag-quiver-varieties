@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  18 FEB 2022 17:24
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  18 FEB 2022 23:11
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -976,33 +976,33 @@ Package: fp-eval 1995/04/03
  (affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Try loading font information for U+msa on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 115.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 116.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\u
 rsfs.fd"
@@ -1011,7 +1011,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package xypdf Info: Line width: 0.43799pt on input line 115.
+Package xypdf Info: Line width: 0.43799pt on input line 116.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1051,7 +1051,7 @@ ABD: EveryShipout initializing macros (affinepaving.toc)
 \openout5 = `affinepaving.toc'.
 
 
-Overfull \hbox (5.1381pt too wide) detected at line 151
+Overfull \hbox (5.1381pt too wide) detected at line 152
 [][]
  []
 
@@ -1061,7 +1061,7 @@ File: figures/bigpic.pdf Graphic file (type pdf)
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
  [5] [6] [7]
-Overfull \hbox (17.0955pt too wide) in paragraph at lines 512--514
+Overfull \hbox (17.0955pt too wide) in paragraph at lines 513--515
 \TU/lmr/m/n/10.95 By Lemma 2.16[] (1[]) and (5[]), $[][]\OT1/cmr/m/n/10.95 (^^H
 (\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =W; T\OT1/cmr/m/n
 /10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.9
@@ -1071,19 +1071,19 @@ Overfull \hbox (17.0955pt too wide) in paragraph at lines 512--514
  []
 
 [8]
-Overfull \hbox (1.1089pt too wide) in paragraph at lines 568--682
+Overfull \hbox (1.1089pt too wide) in paragraph at lines 569--683
  [][] 
  []
 
 
-Overfull \hbox (5.63177pt too wide) in paragraph at lines 687--688
+Overfull \hbox (5.63177pt too wide) in paragraph at lines 688--689
 []\TU/lmr/bx/n/10.95 Definition 2.20 \TU/lmr/m/n/10.95 (Irreducible morphism)\T
 U/lmr/bx/n/10.95 . []\TU/lmr/m/it/10.95 Given two indecomposable representation
 s $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
  []
 
 [9] [10]
-Overfull \hbox (21.41911pt too wide) in paragraph at lines 729--731
+Overfull \hbox (21.41911pt too wide) in paragraph at lines 730--732
 \TU/lmr/m/n/10.95 which is functorial for any $\OML/cmm/m/it/10.95 T; T[] \OMS/
 cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 
 )$\TU/lmr/m/n/10.95 . Especially, when $\OML/cmm/m/it/10.95 T$ \TU/lmr/m/n/10.9
@@ -1092,13 +1092,13 @@ cmr/m/n/10.95 ) =
  []
 
 
-Overfull \hbox (6.09383pt too wide) in paragraph at lines 739--741
+Overfull \hbox (6.09383pt too wide) in paragraph at lines 740--742
 []\TU/lmr/m/n/10.95 All the concepts introduced in this subsection can be clear
 ly observed from the Auslander–
  []
 
 
-Overfull \hbox (12.27896pt too wide) in paragraph at lines 888--889
+Overfull \hbox (12.27896pt too wide) in paragraph at lines 889--890
 []\TU/lmr/m/it/10.95 Remark \TU/lmr/m/n/10.95 2.24\TU/lmr/m/it/10.95 . []\TU/lm
 r/m/n/10.95 Fix the sectional morphism $\OML/cmm/m/it/10.95 f$\TU/lmr/m/n/10.95
  . When the underlying quiver $\OML/cmm/m/it/10.95 Q$ \TU/lmr/m/n/10.95 is a Dy
@@ -1106,7 +1106,7 @@ nkin/affine
  []
 
 [11] [12]
-Overfull \hbox (49.10031pt too wide) in paragraph at lines 970--971
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 971--972
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 ^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
@@ -1114,13 +1114,13 @@ e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
  []
 
 [13]
-Overfull \hbox (12.77255pt too wide) detected at line 1003
+Overfull \hbox (12.77255pt too wide) detected at line 1004
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
 [14]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 1061--1062
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 1062--1063
 []\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cmr/
 m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/cm
@@ -1130,14 +1130,16 @@ m/m/it/10.95 V; W\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 is a torsor of $ [][]
 m/it/10.95 .
  []
 
-[15]
+[15] [16]
 File: figures/E6.pdf Graphic file (type pdf)
 <use figures/E6.pdf>
 File: figures/E7.pdf Graphic file (type pdf)
 <use figures/E7.pdf>
 File: figures/E8.pdf Graphic file (type pdf)
 <use figures/E8.pdf>
- [16] [17]
+File: figures/flowchart.jpg Graphic file (type bmp)
+<figures/flowchart.jpg>
+ [17] [18]
 File: figures/E6easy.pdf Graphic file (type pdf)
 <use figures/E6easy.pdf>
 File: figures/E7easy.pdf Graphic file (type pdf)
@@ -1146,10 +1148,10 @@ File: figures/E8easy.pdf Graphic file (type pdf)
 <use figures/E8easy.pdf>
 File: figures/E8hard.pdf Graphic file (type pdf)
 <use figures/E8hard.pdf>
- [18]
+ [19]
 File: figures/minisecmono.jpg Graphic file (type bmp)
 <figures/minisecmono.jpg>
- [19]
+ [20]
 File: figures/E8graypic1.pdf Graphic file (type pdf)
 <use figures/E8graypic1.pdf>
 File: figures/E8graypic2.pdf Graphic file (type pdf)
@@ -1158,18 +1160,15 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [20]
-Underfull \vbox (badness 1142) has occurred while \output is active []
-
- [21]
-[22] (affinepaving.bbl) [23] (affinepaving.aux) ) 
+ [21] [22] (affinepaving.bbl [23]) [24]
+(affinepaving.aux) ) 
 Here is how much of TeX's memory you used:
- 22580 strings out of 427748
- 438011 string characters out of 3150981
- 595381 words of memory out of 3000000
- 25984 multiletter control sequences out of 15000+200000
+ 22590 strings out of 427748
+ 438160 string characters out of 3150981
+ 596445 words of memory out of 3000000
+ 25993 multiletter control sequences out of 15000+200000
  20703 words of font info for 98 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,82p,4082b,1119s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (23 pages).
+Output written on affinepaving.pdf (24 pages).

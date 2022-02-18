@@ -40,6 +40,7 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{claim}[theorem]{Claim}
+\newtheorem{conj}[theorem]{Conjecture}
 \newtheorem{defn}[theorem]{Definition}
 \newtheorem{ques}[theorem]{Question}
 \newtheorem*{fact}{Facts}
@@ -177,9 +178,9 @@ It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be di
 \begin{tabular}{|c|c|c|c|}
 \hline
             & $\Grq(X)$                  & $\Flagd(X)$                          & $\Flagdstr(X)$          \\ \hline
-$A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 2.20]{maksimau2019flag}}        & \multirow{2}{*}{Corollary \ref{cor:affinepavingofAD}}       \\ \cline{1-1}
+$A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 2.20]{maksimau2019flag}}        & \multirow{2}{*}{Theorem \ref{thm:Dynkincase}}       \\ \cline{1-1}
 $D$         &                            &                                      &                         \\ \cline{1-1} \cline{3-4} 
-$E$         &                            & \multicolumn{2}{c|}{Section \ref{sec:Dynkin}}                                          \\ \hline
+$E$         &                            & \multicolumn{2}{c|}{Theorem \ref{thm:Dynkincase}}                                          \\ \hline
 $\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{2}{*}{Section \ref{sec:affine}}}                         \\ \cline{1-1}
 $\tilde{D}$ &                            & \multicolumn{2}{c|}{}                                          \\ \cline{1-1} \cline{3-4} 
 $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the regular quasi-finite case.} \\ \hline
@@ -1110,7 +1111,13 @@ We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:im
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application: Dynkin Case}\label{sec:Dynkin}
-Before discussing the affine paving property, let me introduce some new numerical concepts, which can be seen as the measure of the ``complexity" of the representation.
+This section (plus appendix) mainly focus on the proof of the following result:
+
+\begin{theorem}\label{thm:Dynkincase}
+For any Dynkin quiver $Q$ and any representation $M \in \Rep(Q)$, the (strict) partial flag variety $\Flag{}(M)\cong\Grr(\Phi(M))$ has an affine paving, i.e. it can be written as the disjoint union of affine spaces.
+\end{theorem}
+
+Before discussing the proof of the affine paving property, let me introduce some new numerical concepts, which can be seen as the measure of the ``complexity" of the representation.
 
 Fix an \textbf{indecomposable} quiver representation $M \in \Rep(Q)$, we define the order of $M$ by
 $$\ord(M):= \max_{i \in v(Q)} \dim_K M_i.$$
@@ -1143,24 +1150,66 @@ is equal to $\ord(M)$ unless $\orde(M)=0$.
 	\end{figure}
 \end{center}
 \footnotetext{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
-By Theorem \ref{thm:main1}, we just need to focus on the case of indecomposable modules. The next lemma tells us, for the ``representation of small order", we can prove the affine paving property easily.
+
+The next lemma tells us, for the representation of small order, we can prove the affine paving property easily.
 
 \begin{lemma}[{follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
-	For the representation $M \in \Rep(Q)$ satisfying $\ord(M) \leqslant 2$ and the dimension vector $\dimvec{f}$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or is a singleton or is a direct product of some copies of $\mathbb{P}^1$.
+	For the representation $M \in \Rep(Q)$ satisfying $\ord(M) \leqslant 2$ and the dimension vector $\dimvec{f}$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or is a singleton or is a direct product of some copies of $\mathbb{P}^1$. Especially, the partial flag variety $ \Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving.
 \end{lemma}
 %\begin{proof}
 %	For each vertex $i$ of the bigger quiver, the dimension of $V_i$ is 0,1,2; then the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is naturally included to a direct product of $\mathbb{P}^1$, and the information of arrows just reduce the number of $\mathbb{P}^1$(maybe to singleton or empty).
 %\end{proof}
-\begin{corollary}[{\cite[Theorem 2.20]{maksimau2019flag}}]\label{cor:affinepavingofAD}
-	Assume that $Q$ is a Dynkin quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the representation, then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
-\end{corollary}
-\begin{corollary}\label{cor:affineADcase}
-	Assume that $Q$ is a affine quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the \textbf{regular quasi-simple} representation, then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.\footnote{The concept ``quasi-simple'' is defined in \cite[Definition 15]{irelli2019cell}; the concepts ``preprojective'',``preinjective'' and ``regular'' are defined in \cite[2.1.1]{irelli2019cell}. It's shown in \cite[Section 9, Lemma 3]{crawley1992lectures} that the regular quasi-simple representation $M$ have dimension vector smaller or equal to the minimal positive imaginary root, thus $\orde(M) \leqslant 2$ when the quiver is affine of type A or D.}
-\end{corollary}
+
+Now we've nearly prepared every step of the proof of Theorem \ref{thm:Dynkincase}. By following the process in Figure \ref{fig:flowchart}, we now prove Theorem \ref{thm:Dynkincase} under Claim \ref{claim:bigorder}. We will prove Claim \ref{claim:bigorder} in the appendix.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.3]{figures/flowchart.jpg}
+    \caption{the process of induction}
+    \label{fig:flowchart}
+\end{figure}
+
+\begin{claim}\label{claim:bigorder}
+Suppose $Q$ is of Dynkin type. For any indecomposable representation $M \in \Rep(Q)$ with $\ord(M)>2$, the (strict) partial flag variety $\Grr(\Phi(M))$ has an affine paving.
+\end{claim}
+
+\begin{proof}[{Proof of Theorem \ref{thm:Dynkincase}}]
+First of all, any indecomposable representation $M \in \Rep(Q)$ have an affine paving. This follows from Claim \ref{claim:bigorder} when $\ord(M)>2$, and follows from Lemma \ref{lem:smallvecdim} when $\ord(M)\leqslant 2$.
+
+Now we prove it by induction on dimension vector. Suppose any proper subrepresentation $N \subsetneq M$ have an affine paving and $M \cong M_1 \oplus M_2$ is not indecomposable, then by applying Theorem \ref{thm:main1} to the short exact sequence 
+$$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0$$
+we get an affine paving from the affine paving of $M_1$ and $M_2$.
+\end{proof}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Application: Affine Case}\label{sec:affine}
+This section tries to explain the difficulty of the Conjecture \ref{conj:affinecase}.
+
+\begin{conj}\label{conj:affinecase}
+For any affine quiver $Q$ and any representation $M \in \Rep(Q)$, the (strict) partial flag variety $\Flag{}(M)\cong\Grr(\Phi(M))$ has an affine paving.
+\end{conj}
+
+Actually, if readers follow the proof in \cite[Section 6]{irelli2019cell}, and change everything from $\Gr(-)$ to $\Grr(\Phi(-))$, then there is no difference except the Proposition 48, in which the authors proved the affine paving properties of quasi-simple regular representations. So we reduced the question to the case of quasi-simple regular representation. Combined with Lemma \ref{lem:affineADcase}, we've proved the affine paving properties for $\tilde{A},\tilde{D}$ cases.
+
+\begin{lemma}\label{lem:affineADcase}
+	Assume that $Q$ is a affine quiver of type $A$ or $D$, $M \in \Rep(Q)$ is the \textbf{regular quasi-simple} representation, then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
+\end{lemma}
+\begin{proof}
+The concept ``quasi-simple'' is defined in \cite[Definition 15]{irelli2019cell}; the concepts ``preprojective'',``preinjective'' and ``regular'' are defined in \cite[2.1.1]{irelli2019cell}. It's shown in \cite[Section 9, Lemma 3]{crawley1992lectures} that the regular quasi-simple representation $M$ have dimension vector smaller or equal to the minimal positive imaginary root, thus $\orde(M) \leqslant 2$ when the quiver is affine of type A or D.
+\end{proof}
 %We use rep 2 Cor 18.8.
 
-\textbf{In the rest of this section we focus on the  indecomposable representation of $E_6,E_7,E_8$ ``with big order''.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form when we use the number $\orde(M)$ to represent the representation $M$, as shown in Figure \ref{fig:startingfunction}.
+For an regular quasi-simple representation $Y$ of type $\tilde{E}$, it's possible that there's no short exact sequence
+$$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
+such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main1} or \ref{thm:main2}. We leave this small tail for interested readers.
+\appendix
+%\setcounter{secnumdepth}{0}
+%\section{Appendix}
+\section{}
 
+\textbf{In this appendix we focus on the  indecomposable representation of $E_6,E_7,E_8$ ``with big order''.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form when we use the number $\orde(M)$ to represent the representation $M$, as shown in Figure \ref{fig:startingfunction}.
 
 \begin{lemma}\label{lem:msm&order}
 	For every indecomposable representation $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
@@ -1271,17 +1320,6 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	
 	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail for some examples.
 \end{remark}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Application: Affine Case}\label{sec:affine}
-For the affine case, we just need to follow \cite[Section 6]{irelli2019cell}, and change everything from $\Gr(-)$ to $\Grr(\Phi(-))$. There is no difference except the Proposition 48, in which the authors proved the affine paving properties of quasi-simple regular representations. So we reduced the question to the case of quasi-simple regular representation. Combined with Corollary \ref{cor:affineADcase}, we've proved the affine paving properties for $\tilde{A},\tilde{D}$ cases.
-
-For an regular quasi-simple representation $Y$ of type $\tilde{E}$, it's possible that there's no short exact sequence
-$$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main1} or \ref{thm:main2}. We leave this small tail for interested readers.
-\appendix
-%\setcounter{secnumdepth}{0}
-%\section{Appendix}
-\section{}
 
 In this appendix we solve every case in Figure \ref{fig:minisecmono}. 
 
