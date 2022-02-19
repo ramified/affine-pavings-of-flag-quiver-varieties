@@ -1209,8 +1209,17 @@ such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main
 %\section{Appendix}
 \section{}
 
-\textbf{In this appendix we focus on the  indecomposable representation of $E_6,E_7,E_8$ ``with big order''.} The idea is to design the special route for each case, and use Theorem \ref{thm:main2} in the process. Notice that even though the Auslander-Reiten quivers look quite different for different quiver(with same type), they can have the same form when we use the number $\orde(M)$ to represent the representation $M$, as shown in Figure \ref{fig:startingfunction}.
+The task of this appendix is to prove Claim \ref{claim:bigorder}. When the quiver $Q$ is of type $A$ or $D$, Claim \ref{claim:bigorder} is trivially true since no indecomposable representation can have order bigger than two. So we only concentrate on the case of $E$-type.
 
+The idea of the proof is as follows. For any indecomposable representation $Y$ with $\ord(Y)>2$, we put $Y$ into a short exact sequence 
+$$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
+where $\Img \Psi$ has an affine paving, then $\Gr(\Phi(Y))$ also have an affine paving by Theorem \ref{thm:main2}. Moreover, $\Img \Psi_{f,g}$ can be written as the product space when the map $X \hookrightarrow Y$ is a minimal section mono, so the affine paving problem of $\Img \Psi$ is usually easier than $\Gr(\Phi(Y))$.
+
+\begin{center}
+    \includegraphics[scale=0.45]{figures/minisecmono.jpg}
+\end{center}
+
+The next two lemmas tell us the existence of the desired short exact sequence.
 \begin{lemma}\label{lem:msm&order}
 	For every indecomposable representation $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal section mono $f:X \longrightarrow Y$.
 \end{lemma}
@@ -1251,7 +1260,7 @@ such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main
 	The condition $\ord(Y)>2$ in the lemma can not be removed.
 \end{remark}
 \begin{lemma}\label{lem:value}
-Let $X \hookrightarrow Y$ be an minimal section mono, and $S:=Y/X$ be the quotient. Then we have the short exact sequence 
+Let $X \hookrightarrow Y$ be a minimal section mono, and $S:=Y/X$ be the quotient. Then we have the short exact sequence 
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 and dimensions of Extension groups among $X,Y,S$, as shown in the Table \ref{table:dim}.
 \renewcommand{\arraystretch}{1.1}
@@ -1299,9 +1308,7 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal section mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
-\begin{center}
-    \includegraphics[scale=0.45]{figures/minisecmono.jpg}
-\end{center}
+
 \begin{lemma}[{follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]\label{lem:descriptionofX_S}
 	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
@@ -1321,11 +1328,12 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	Luckily, we can avoid this bad situation by carefully choosing the minimal section mono $X \longrightarrow Y$. The minimal section monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail for some examples.
 \end{remark}
 
-In this appendix we solve every case in Figure \ref{fig:minisecmono}. 
+Now we analyse every case in Figure \ref{fig:minisecmono}, i.e. prove Claim \ref{claim:bigorder} by cases. For convenience we omit subscriptions which indicate the dimension vectors. 
 
+\begin{proof}[{Proof of Claim \ref{claim:bigorder}}]
 When the minimal section mono $X \longrightarrow Y$ is irreducible, we use Theorem \ref{thm:main2} to get morphism
 $$\Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \text{ or } \Grr(\Phi(X)) \setminus \Grr(\Phi(X_S))$$ 
-By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\orde(S)$ has the affine paving property. Let $Y_1:=X$, $X_1:=X_S$, $S_1:=Y_1/X_1$, we again use Theorem \ref{thm:main2} to get morphism
+By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\Gr(\Phi(S))$ has the affine paving property. Let $Y_1:=X$, $X_1:=X_S$, $S_1:=Y_1/X_1$, we again use Theorem \ref{thm:main2} to get morphism
 \begin{equation*}
 \begin{aligned}
 \Grr(\Phi(X)) &\longrightarrow \Grr(\Phi(X_1)) \times \Grr(\Phi(S_1)) \text{ or } \Grr(\Phi(X_1)) \setminus \Grr(\Phi(X_{1S_1}))\\
@@ -1453,6 +1461,7 @@ $$U(X,X_S) \longrightarrow \Gr(F) \times U(X/F,T).$$
 Finally, by applying the short exact sequence $\xi$ to Theorem \ref{thm:main2} we get the map
 $$U(X/F,T) \longrightarrow \Gr(X/F) \times \Gr(T).$$
 Since all the Grassmannians $\Gr(X)$, $\Gr(Y/X)$, $\Gr(F)$, $\Gr(X/F)$, $\Gr(T)$ have the affine paving property, we conclude that $\Gr(Y)$ has the affine paving property.
+\end{proof}
 \bibliographystyle{plain}
 \bibliography{reference}
 
