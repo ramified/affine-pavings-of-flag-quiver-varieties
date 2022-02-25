@@ -10,3 +10,4 @@
 \contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{13}{section.5}% 
 \contentsline {section}{\tocsection {Appendix}{A}{A crash course on Auslander-Reiten theory}}{14}{appendix.A}% 
 \contentsline {section}{\tocsection {Appendix}{B}{Proof of Claim \ref {claim:bigorder}}}{18}{appendix.B}% 
+\contentsline {section}{\tocsection {Appendix}{}{References}}{24}{section*.13}% 
