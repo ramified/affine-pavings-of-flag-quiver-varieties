@@ -1,28 +1,15 @@
+\documentclass[draft]{article}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new]{german}
 
-\documentclass[border={10pt 10pt 10pt 10pt},varwidth]{standalone}
-\usepackage{amsmath}
-\usepackage{tikz-cd,tikz-3dplot} 
-\usetikzlibrary{calc,intersections,through,backgrounds,decorations.pathmorphing, decorations.shapes,decorations.markings,patterns,shapes}
-%include other needed packages here   
-
+\usepackage{tikz}
+\usetikzlibrary{external}
+\tikzexternalize
 
 \begin{document}
-\tikzset{long/.style={red, to path={
-	.. controls +(-45:1.3cm) and +(90:0.4cm) .. (\tikztotarget) \tikztonodes}}}
-\tikzset{short/.style={blue, to path={
-	.. controls +(-45:0.75cm) and +(90:0.5cm) .. (\tikztotarget) \tikztonodes}}}
-\[\begin{tikzcd}[row sep={10mm,between origins},column sep={10mm,between origins}]
-	1&|[label={[red]center:233}]| 2&3&4& 5 &6& 7 \\
-	1&2&3&4& 5 &6& 7 \\
-	1&2&3&4& 5 &6& 7 \\
-	1&2&3&4& 5 &6& 7 \\
-	1&2&3&4& 5 &6& 7 \\
-	1&2&3&4& 5 &6& 7 \\
-	1&2&3&4& 5 &6& 7 \\
-	1&2&3&4& 5 &6& 7 \\
-	\arrow[from=1-1, to=3-2,controls={+(0.3,-0.3) and +(0,1cm)}]
-	\arrow[from=1-2, to=3-3]
-	\arrow[from=2-5, to=4-6, short]	
-	\arrow[from=1-4, to=4-6, long, shift right=1]		
-\end{tikzcd}\]
+\begin{tikzpicture}
+    \draw (1,1) -- (2,2);
+\end{tikzpicture}
 \end{document}
