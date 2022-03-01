@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  25 FEB 2022 21:16
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  1 MAR 2022 14:36
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1101,37 +1101,37 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 31.
  (affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Try loading font information for U+msa on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 122.
+LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 122.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 124.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\u
 rsfs.fd"
@@ -1141,7 +1141,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package xypdf Info: Line width: 0.43799pt on input line 122.
+Package xypdf Info: Line width: 0.43799pt on input line 124.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1178,7 +1178,7 @@ Package xypdf Info: Line width: 0.43799pt on input line 122.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring ON on input line 122.
+Package hyperref Info: Link coloring ON on input line 124.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\n
 ameref.sty"
@@ -1190,9 +1190,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 124.
+LaTeX Info: Redefining \pageref on input line 124.
+LaTeX Info: Redefining \nameref on input line 124.
  (affinepaving.out) (affinepaving.out)
 \@outlinefile=\write5
 \openout5 = `affinepaving.out'.
@@ -1207,30 +1207,34 @@ LaTeX Info: Redefining \nameref on input line 122.
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-Overfull \hbox (5.1381pt too wide) detected at line 158
+Overfull \hbox (5.1381pt too wide) detected at line 165
 [][]
  []
 
-[1] [2]
+[1]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [2]
+[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 292.
+(hyperref)                removing `math shift' on input line 310.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Phi' on input line 292.
+(hyperref)                removing `\Phi' on input line 310.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 292.
+(hyperref)                removing `math shift' on input line 310.
 
-[3] [4]
+[4] [5]
 File: figures/bigpic.pdf Graphic file (type pdf)
 <use figures/bigpic.pdf>
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
- [5] [6] [7]
-Overfull \hbox (17.09554pt too wide) in paragraph at lines 519--521
+ [6] [7] [8]
+Overfull \hbox (17.09554pt too wide) in paragraph at lines 538--540
 \TU/lmr/m/n/10.95 By Lemma [][]2.16[][] ([][]1[][]) and ([][]5[][]), $[][]\OT1/
 cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
  =W; T\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(
@@ -1239,22 +1243,22 @@ cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
 $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W; T\OT1/cmr/m/n/10.95 ) =
  []
 
-[8]
-Overfull \hbox (49.10031pt too wide) in paragraph at lines 620--621
+[9]
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 639--640
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 ^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
 10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )) =
  []
 
-[9]
-Overfull \hbox (12.77255pt too wide) detected at line 653
+[10]
+Overfull \hbox (12.77255pt too wide) detected at line 672
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
-[10]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 711--712
+[11]
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 730--731
 [][]\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95
  (\OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cm
 r/m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/
@@ -1264,24 +1268,24 @@ it/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V\OT1/cmr/m/n/10.95 )$\TU/lm
 r/m/it/10.95 .
  []
 
-[11]
+[12]
 File: figures/E6.pdf Graphic file (type pdf)
 <use figures/E6.pdf>
 File: figures/E7.pdf Graphic file (type pdf)
 <use figures/E7.pdf>
 File: figures/E8.pdf Graphic file (type pdf)
 <use figures/E8.pdf>
- [12]
+ [13]
 File: figures/flowchart.pdf Graphic file (type pdf)
 <use figures/flowchart.pdf>
- [13]
-Overfull \hbox (16.38356pt too wide) in paragraph at lines 862--863
+ [14]
+Overfull \hbox (16.38356pt too wide) in paragraph at lines 881--882
 \TU/lmr/m/n/10.95 decomposable representation, irreducible morphism, Auslander-
 Reiten translation, Auslander-
  []
 
 
-Overfull \hbox (1.1089pt too wide) in paragraph at lines 886--1000
+Overfull \hbox (1.1089pt too wide) in paragraph at lines 905--1019
  [][] 
  []
 
@@ -1289,15 +1293,15 @@ Overfull \hbox (1.1089pt too wide) in paragraph at lines 886--1000
 Overfull \vbox (2.33295pt too high) has occurred while \output is active []
 
 
-[14]
-Overfull \hbox (2.55482pt too wide) in paragraph at lines 1005--1006
+[15]
+Overfull \hbox (2.55482pt too wide) in paragraph at lines 1024--1025
 [][]\TU/lmr/bx/n/10.95 Definition A.2 \TU/lmr/m/n/10.95 (Irreducible morphism)\
 TU/lmr/bx/n/10.95 . []\TU/lmr/m/it/10.95 Given two indecomposable representatio
 ns $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
  []
 
-[15]
-Overfull \hbox (21.41911pt too wide) in paragraph at lines 1047--1049
+[16]
+Overfull \hbox (21.41911pt too wide) in paragraph at lines 1066--1068
 \TU/lmr/m/n/10.95 which is functorial for any $\OML/cmm/m/it/10.95 T; T[] \OMS/
 cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 
 )$\TU/lmr/m/n/10.95 . Especially, when $\OML/cmm/m/it/10.95 T$ \TU/lmr/m/n/10.9
@@ -1305,8 +1309,8 @@ cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95
 cmr/m/n/10.95 ) =
  []
 
-[16] [17]
-Overfull \hbox (9.54146pt too wide) in paragraph at lines 1206--1207
+[17] [18]
+Overfull \hbox (9.54146pt too wide) in paragraph at lines 1225--1226
 [][]\TU/lmr/m/it/10.95 Remark \TU/lmr/m/n/10.95 A.6\TU/lmr/m/it/10.95 . []\TU/l
 mr/m/n/10.95 Fix the sectional morphism $\OML/cmm/m/it/10.95 f$\TU/lmr/m/n/10.9
 5 . When the underlying quiver $\OML/cmm/m/it/10.95 Q$ \TU/lmr/m/n/10.95 is a D
@@ -1315,7 +1319,7 @@ ynkin/affine
 
 File: figures/preferredimage.pdf Graphic file (type pdf)
 <use figures/preferredimage.pdf>
-[18]
+[19]
 File: figures/E6easy.pdf Graphic file (type pdf)
 <use figures/E6easy.pdf>
 File: figures/E7easy.pdf Graphic file (type pdf)
@@ -1324,7 +1328,7 @@ File: figures/E8easy.pdf Graphic file (type pdf)
 <use figures/E8easy.pdf>
 File: figures/E8hard.pdf Graphic file (type pdf)
 <use figures/E8hard.pdf>
- [19] [20]
+ [20] [21]
 File: figures/E8graypic1.pdf Graphic file (type pdf)
 <use figures/E8graypic1.pdf>
 File: figures/E8graypic2.pdf Graphic file (type pdf)
@@ -1333,28 +1337,28 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [21]
+ [22]
 Underfull \vbox (badness 1688) has occurred while \output is active []
 
- [22]
-(affinepaving.bbl [23]) [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1481.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1481.
+ [23]
+(affinepaving.bbl [24]) [25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1503.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1503.
  (affinepaving.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1481.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1481.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1503.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1503.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
-(rerunfilecheck)             Checksum: B752B70BEAB1DA88B90D19C3D2305D80.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1481.
+(rerunfilecheck)             Checksum: 428DF984C38AA90C3A5C401B3A8C0301.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1503.
  ) 
 Here is how much of TeX's memory you used:
- 29492 strings out of 427748
- 535138 string characters out of 3150981
- 709480 words of memory out of 3000000
- 32852 multiletter control sequences out of 15000+200000
+ 29495 strings out of 427748
+ 535178 string characters out of 3150981
+ 709555 words of memory out of 3000000
+ 32855 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,82p,4082b,1130s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (24 pages).
+Output written on affinepaving.pdf (25 pages).

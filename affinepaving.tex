@@ -109,6 +109,8 @@ urlcolor=blue,
 \newcommand{\dimvec}[1]{\boldsymbol{#1}}
 \newcommand{\ord}{\operatorname{ord}}
 \newcommand{\orde}{\operatorname{ord}_e }
+\newcommand{\shorttimes}{\!\times\!}
+\newcommand{\oder}{\;\;\text{ or }\;\;}
 \newcommand{\representation}[2]{\genfrac{}{}{0pt}{3}{\phantom{000}#2\phantom{00}}{#1}}
 %https://tex.stackexchange.com/questions/96549/how-do-i-write-above-a-left-right-arrow
 \makeatletter
@@ -147,8 +149,13 @@ In this article, we establish an affine paving for partial flag quiver varieties
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-Let $Q$ be a quiver of Dynkin or affine type(without loops), $X\in \Rep(Q)$ be an quiver representation.\footnote{We fix the base field $K=\mathbb{C}$ for convinience.} We are interested in three objects related to $X \in \Rep(Q)$:
+Cellular decompositions have been used in topology for a long time as a tool in computing cohomology, while paving by affine spaces offers us a weaker substitution of the cellular decomposition. We say that an complex algebraic variety $X$ has an affine paving if $X$ has a filtration
+$$0= X_0 \subset X_1 \subset \cdots \subset X_d=X$$
+with $X_i$ closed and $X_{i+1} \setminus X_i$ isomorphic to some affine space $\mathbb{A}^k_{\mathbb{C}}$.
 
+Affine pavings imply nice properties about the cohomology of varieties. For instance, any variety paved by affine spaces would have no nontrivial odd-dimensional cohomology. For other properties coming from affine paving, readers can see \cite[Definition 11]{irelli2019cell}.
+
+Affine pavings have been constructed in many cases, such as Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians or quiver flag varieties. This article focuses on the case of (strict) quiver flag varieties where the quiver is of Dynkin type or affine type, as follows:\footnote{Here $Q$ is a quiver of Dynkin or affine type(without loops), and $X\in \Rep(Q)$ is an quiver representation.}
 \begin{equation*}
 \begin{aligned}
 &	\text{quiver Grassmannian} && \Grq(X)\colon = \left\{ M_1 \mid M_1 \subseteq X \right\}\\
@@ -157,8 +164,7 @@ Let $Q$ be a quiver of Dynkin or affine type(without loops), $X\in \Rep(Q)$ be a
 \end{aligned}
 \end{equation*}
 \footnotetext{for any $x \in Q_1, i \in \{2,\ldots ,d \} $.}
-
-It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zariski) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the Table \ref{table:result}.
+There, for most cases affine pavings have been constructed, see Table \ref{table:result}.
 
 
 % Please add the following required packages to your document preamble:
@@ -180,7 +186,8 @@ It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be di
 
 %The nocolor version 
 \renewcommand{\arraystretch}{1.3}
-\begin{table}
+\begin{table}[ht]
+\vspace{0.5cm}
 \begin{tabular}{|c|c|c|c|}
 \hline
             & $\Grq(X)$                  & $\Flagd(X)$                          & $\Flagdstr(X)$          \\ \hline
@@ -193,7 +200,18 @@ $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the re
 \end{tabular}
 \caption{Until now, except the $\tilde{E}$ case we've proved the affine paving properties for these varieties.}\label{table:result}
 \end{table}
-The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section \ref{sec:flag=gr},\ref{sec:mainthm},\ref{sec:Dynkin}, accordingly.
+
+We will prove key Theorems \ref{thm:main1} and \ref{thm:main2} in Section \ref{sec:mainthm}, implying that there are affine pavings for the quiver partial flag variety of Dynkin type in Section \ref{thm:Dynkincase}, see Figure \ref{fig:flowchart}. The difficulty in case of type $\tilde{E}$ is shown in Section \ref{sec:affine}. We refrain from giving a more detailed introduction here
+and instead refer the reader to the table of contents as
+well as to the short introductions of the individual
+sections.
+
+We will combine and extend results from \cite{irelli2019cell} and \cite{maksimau2019flag}.
+In fact, following the arguments of \cite{maksimau2019flag} would require stuying millions of cases. To avoid this, we extend the methods of \cite{irelli2019cell} from quiver Grassmannian to quiver partial flag variety. This will reduce the case by case analysis mostly to 8 critical cases, which are discussed in the Appendix \ref{appendix:proofcomplement}.
+%It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zariski) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the Table \ref{table:result}.
+%
+%
+%The idea of proof is very simple: first, we view the partial flag quiver variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section \ref{sec:flag=gr},\ref{sec:mainthm},\ref{sec:Dynkin}, accordingly.
 \begin{notation}
 Throughout this article, we denote $K=\mathbb{C}$ as a field, $R$ as a commutative $K$-algebra with unit, and $\Mod(R)$ as the category of $R$-modules of finite dimension. Let $Q$ be a quiver equipped with the set of finite vertices $v(Q)$ and the set of finite edges $a(Q)$. For an
 arrow $b$, we call $s(b)$ the starting vertex and $t(b)$ the terminal vertex
@@ -206,7 +224,7 @@ of $b$. Let $KQ$ be the path algebra, and $\Rep(Q):=\Mod(KQ)$ as the category of
 %\addcontentsline{toc}{section}{Acknowledgement}
 First, I would like to thank my supervisor, Professor Jens Niklas Eberhardt, for introducing me this specific problem of partial flag quiver variety and giving some advises. I would also like to thank Hans Franzen for answering some questions I had for understanding the article \cite{irelli2019cell}.
 %My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this tome
-\section{Preliminary Facts}\label{sec:flag=gr}
+\section{Preliminaries}\label{sec:flag=gr}
 In this section, we will collect all the knowledges required in the later sections, and fix the notations.
 \subsection{Extended quiver}
 We follow \cite[2.2,2.3]{maksimau2019flag} in this subsection, but we will have some small variations and different notations. We want to view partial flag variety as the quiver Grassmannian. Intuitively, the partial flag variety contains more information than the quiver Grassmannian. So we need to use bigger quiver, and encode these informations in the extra arrows.
@@ -331,6 +349,7 @@ Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver
 		\centering
 		\includegraphics[width=0.9\linewidth]{figures/bigpic.pdf}
 		\includegraphics[width=\linewidth]{figures/bigpic2.pdf}
+		\vspace{-1cm}
 %		\captionsetup{labelformat=empty}
 		\caption{}
 		\label{fig:flagasgr}
@@ -745,7 +764,7 @@ $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\
 \end{proof}
 \begin{remark}
 Any point $(V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}}$ can be also viewed as a morphism
-$$f: \Spec K \longrightarrow \Img \Psi_{\dimvec{f},\dimvec{g}}  \subseteq \Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) $$
+$$f: \Spec K \longrightarrow \Img \Psi_{\dimvec{f},\dimvec{g}}  \subseteq \Grr_{\dimvec{f}}(\Phi(X)) \shorttimes \Grr_{\dimvec{g}}(\Phi(S)) $$
 where Grassmannian are viewed as moduli spaces over $K$. Essentially by replacing $\Spec K$ by $\Spec A$ in Lemma \ref{lem:torsor}, we can run the machinery of algebraic geometry, and prove that $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
 \end{remark}
 \begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]
@@ -1216,13 +1235,16 @@ Let $Q$ be a quiver without oriented cycles. A sectional morphism $f \in \Hom_{K
 \end{defn}
 Minimal sectional mono can also be clearly seen from the Auslander–Reiten quiver, and we can check if a sectional morphism is mono by comparing the dimension vectors. In the case of Example $E_6$ in Figure \ref{fig:Auslander–Reiten_quiver}, a non-zero morphism from $\substack{1\\00110}$ to $\substack{1\\11110}$ is a minimal sectional mono while a non-zero morphism from $\substack{0\\01100}$ to $\substack{1\\01211}$ is not, since a sectional morphism from $\substack{1\\01210}$ to $\substack{1\\01211}$ is also injective.
 
-\section{Proof of Claim \ref{claim:bigorder}}
+\section{Proof of Claim \ref{claim:bigorder}}\label{appendix:proofcomplement}
 
 The task of this appendix is to prove Claim \ref{claim:bigorder}. When the quiver $Q$ is of type $A$ or $D$, Claim \ref{claim:bigorder} is trivially true since no indecomposable representation can have order bigger than two. So we only concentrate on the case of $E$-type.
 
 The idea of the proof is as follows. For any indecomposable representation $Y$ with $\ord(Y)>2$, we put $Y$ into a short exact sequence 
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-where $\Img \Psi$ has an affine paving, then $\Gr(\Phi(Y))$ also have an affine paving by Theorem \ref{thm:main2}. Moreover, $\Img \Psi_{f,g}$ can be written as the product space when the map $X \hookrightarrow Y$ is a minimal sectional mono, so the affine paving problem of $\Img \Psi$ is usually easier than $\Gr(\Phi(Y))$.
+for filling the assumptions of Theorem \ref{thm:main2}, then $\Gr(\Phi(Y))$ has an affine paving if $\Img \Psi$ has. If additional the map $X \hookrightarrow Y$ is a minimal sectional mono, then $\Img \Psi_{f,g}$ can be written as the product space, which makes $\Img \Psi$ easier to understand.
+
+
+
 
 \begin{center}
     \includegraphics[scale=0.7]{figures/preferredimage.pdf}
@@ -1337,16 +1359,16 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	Luckily, we can avoid this bad situation by carefully choosing the minimal sectional mono $X \longrightarrow Y$. The minimal sectional monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail for some examples.
 \end{remark}
 
-Now we analyse every case in Figure \ref{fig:minisecmono}, i.e. prove Claim \ref{claim:bigorder} by cases. For convenience we omit subscriptions which indicate the dimension vectors. 
+Now we analyse every case in Figure \ref{fig:minisecmono}, i.e. prove Claim \ref{claim:bigorder} by cases. For convenience we omit subscripts which indicate the dimension vectors. 
 
 \begin{proof}[{Proof of Claim \ref{claim:bigorder}}]
 When the minimal sectional mono $X \longrightarrow Y$ is irreducible, we use Theorem \ref{thm:main2} to get morphism
-$$\Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \text{ or } \Grr(\Phi(X)) \setminus \Grr(\Phi(X_S))$$ 
-By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\Gr(\Phi(S))$ has the affine paving property. Let $Y_1:=X$, $X_1:=X_S$, $S_1:=Y_1/X_1$, we again use Theorem \ref{thm:main2} to get morphism
+$$\Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \shorttimes \Grr(\Phi(S)) \oder \Grr(\Phi(X)) \setminus \Grr(\Phi(X_S))$$ 
+By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\Gr(\Phi(S))$ has the affine paving property. Let $Y_1:=X$, $X_1:=X_S$, $S_1:=Y_1/X_1$, we again use Theorem \ref{thm:main2} to get Zariski-locally affine maps
 \begin{equation*}
 \begin{aligned}
-\Grr(\Phi(X)) &\longrightarrow \Grr(\Phi(X_1)) \times \Grr(\Phi(S_1)) \text{ or } \Grr(\Phi(X_1)) \setminus \Grr(\Phi(X_{1S_1}))\\
-\Grr(\Phi(X))\setminus \Grr(\Phi(X_S))&\longrightarrow \Grr(\Phi(X_1)) \times \Grr(\Phi(S_1))
+\Grr(\Phi(X)) &\longrightarrow \Grr(\Phi(X_1)) \shorttimes \Grr(\Phi(S_1)) \oder \Grr(\Phi(X_1)) \setminus \Grr(\Phi(X_{1S_1}))\\
+\Grr(\Phi(X))\setminus \Grr(\Phi(X_S))&\longrightarrow \Grr(\Phi(X_1)) \shorttimes \Grr(\Phi(S_1))
 \end{aligned}
 \end{equation*}
 Luckily $\orde(S_1)$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
@@ -1380,48 +1402,48 @@ In the exception cases the game is similar, but we need to discuss a little more
 		\end{figure}
 	\end{center}
 \begin{eg}
-In the case of Figure \ref{fig:specialcases}(a), if $X_1 \longrightarrow Y$ is injective, then
+In the case of Figure \ref{fig:specialcases}(a), if $X_1 \longrightarrow Y$ is injective, then we obtain some Zariski-locally affine maps
 \begin{equation*}
 \begin{aligned}
-\Gr(Y) &\longrightarrow \Gr(X_1) \times \Gr(Y/X_1) \text{ or } U(X_1,X)\\
-\Gr(X_1) &\longrightarrow \Gr(X) \times \Gr(X_1/X) \text{ or } U(X,X_S)\\
-U(X_1,X) &\longrightarrow \Gr(X) \times \Gr(X_1/X) \\
-U(X,X_S) &\longrightarrow \Gr(X_S) \times \Gr(X/X_S). \\
+\Gr(Y) &\longrightarrow \Gr(X_1) \shorttimes \Gr(Y/X_1) \oder U(X_1,X)\\
+\Gr(X_1) &\longrightarrow \Gr(X) \shorttimes \Gr(X_1/X) \oder U(X,X_S)\\
+U(X_1,X) &\longrightarrow \Gr(X) \shorttimes \Gr(X_1/X) \\
+U(X,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(X/X_S). \\
 \end{aligned}
 \end{equation*}
 
 When $X_1 \longrightarrow Y$ is not injective, we get
-$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S).$$
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S).$$
 Since the map $\tau X_1 \longrightarrow \tau Y$ is injective, from Lemma \ref{lem:descriptionofX_S} we get $X_S\longrightarrow X$ is irreducible monomorphism. Thus
-$$U(X,X_S) \longrightarrow \Gr(X_S) \times \Gr(X/X_S).$$
+$$U(X,X_S) \longrightarrow \Gr(X_S) \shorttimes \Gr(X/X_S).$$
 These maps give the variety $\Gr(Y)$ an affine paving from bottom to top.
 \end{eg}
 \begin{eg}
 In Figure \ref{fig:specialcases}(b), we would like to prove that  $\Gr(Y)$ has the affine paving property. We have
-$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S).$$
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S).$$
 When the map $M \longrightarrow X$ is not monomorphism, we get
-$$U(X,X_S) \longrightarrow \Gr(X_S) \times \Gr(X/X_S);$$
+$$U(X,X_S) \longrightarrow \Gr(X_S) \shorttimes \Gr(X/X_S);$$
 when the map $M \longrightarrow X$ is monomorphism, we get
 \begin{equation*}
 \begin{aligned}
 U(X,X_S)&=U(X,M) \bigsqcup U(M,X_S)\\
-U(X,M) &\longrightarrow \Gr(M) \times \Gr(X/M)\\
-U(M,X_S) &\longrightarrow \Gr(X_S) \times \Gr(M/X_S).
+U(X,M) &\longrightarrow \Gr(M) \shorttimes \Gr(X/M)\\
+U(M,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(M/X_S).
 \end{aligned}
 \end{equation*}
 Since the order of $X$, $Y/X$, $X_S$, $X/X_S$, $M$, $X/M$, $M/X_S$ are small or equal to $2$, the induction process stops, we get $\Gr(Y)$ has the affine paving property.
 \end{eg}
 \begin{eg}
 In the case of Figure \ref{fig:specialcases}(c), we have 
-$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S)$$
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S)$$
 where $X_S=\ker(\tau X_1 \longrightarrow \tau Y)$. When $X_S=0$ we're done; if not, then $A \neq 0$ and $X_S=A$, we decompose $X_S \longrightarrow Y$ as compositions of minimal sectional monos:
 
 Case 1: $M\longrightarrow X$ is not injective, then
  \begin{equation*}
  \begin{aligned}
  U(X,X_S)&=U(X,N) \bigsqcup U(N,X_S)\\
- U(X,N) &\longrightarrow \Gr(N) \times \Gr(X/N)\\
- U(N,X_S) &\longrightarrow \Gr(X_S) \times \Gr(N/X_S).
+ U(X,N) &\longrightarrow \Gr(N) \shorttimes \Gr(X/N)\\
+ U(N,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(N/X_S).
  \end{aligned}
  \end{equation*}
  
@@ -1429,21 +1451,21 @@ Case 1: $M\longrightarrow X$ is not injective, then
   \begin{equation*}
   \begin{aligned}
   U(X,X_S)&=U(X,M) \bigsqcup U(M,N) \bigsqcup U(N,X_S)\\
-  U(X,M) &\longrightarrow \Gr(M) \times \Gr(X/M)\\
-  U(M,N) &\longrightarrow \Gr(N) \times \Gr(M/N)\\
-  U(N,X_S) &\longrightarrow \Gr(X_S) \times \Gr(N/X_S).
+  U(X,M) &\longrightarrow \Gr(M) \shorttimes \Gr(X/M)\\
+  U(M,N) &\longrightarrow \Gr(N) \shorttimes \Gr(M/N)\\
+  U(N,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(N/X_S).
   \end{aligned}
   \end{equation*}
   
   Since $\Gr(X)$, $\Gr(Y/X)$, $\Gr(N)$, $\ldots$ have affine paving property, we conclude that $\Gr(Y)$ has also the affine paving property.
 \end{eg}
 \begin{eg}
-Finally we begin to handle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
-$$\Gr(Y) \longrightarrow \Gr(F) \times \Gr(Y/F) \text{ or } U(F,?)$$
+Finally we begin to tackle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
+$$\Gr(Y) \longrightarrow \Gr(F) \shorttimes \Gr(Y/F) \oder U(F,?)$$
 then we get the result \footnote{$\Gr(F)$ is empty or a singleton, so is $U(F,?)$, no matter what representation is in the questionmark.}.
 
 When $X \longrightarrow Y$ is injective, we have
-$$\Gr(Y) \longrightarrow \Gr(X) \times \Gr(Y/X) \text{ or } U(X,X_S)$$
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S)$$
 where $X_S=F\oplus \ker(\tau X_1 \longrightarrow \tau Y)=F \oplus T$ by Lemma \ref{lem:descriptionofX_S}. Since $X \longrightarrow Y$ is injective, we get $A=0$, thus $B=0$ also, and then the sectional map $T \longrightarrow X/F$ in injective. We thus get two short exact sequence satisfying the conditions in \ref{thm:main2}:
 \begin{center}
 % https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZARgBoAGAXVJADcBDAGwFcYkRyQBfU9TXfIRQAmCtTpNW7AGLdeIDNjwEiAZjE0GLNohAANOXyWCiAFg0Tt7PQHpZPIwJUoArBa1TdnBwv7KhJKTE4h46HIa+xs7IbsGakmHe8opOAaJxlp4gACoRKf5qQSEJ1nZ5fiYo5hmhpXoA+gDK5VEB5O4lugA6XTA49Lo++ZXI7TWdID0AHliD4jBQAObwRKAAZgBOEAC2SG4gOBBIAOw+mzsnNIdIABxnW7uIN1dHiACc8VbdXWhYAOQRc6PD4HV4ANnuF0Q6lBSFMkMeolh0M+WR6v0BDyQZGRwgRSHayOIXEoXCAA
@@ -1463,12 +1485,12 @@ Let $N \in \Gr(X)$ be a subrepresentation, it's obvious that $N \in \Gr(X_S) \if
   \end{equation*}
 \end{eg}
 Thus the Zarisky-locally trivial affine bundle map
-$$U(X,F) \longrightarrow \Gr(F) \times \Gr(X/F)$$
+$$U(X,F) \longrightarrow \Gr(F) \shorttimes \Gr(X/F)$$
 restricted to the Zarisky-locally trivial affine bundle map
 $$U(X,X_S) \longrightarrow \Gr(F) \times U(X/F,T).$$
 
 Finally, by applying the short exact sequence $\xi$ to Theorem \ref{thm:main2} we get the map
-$$U(X/F,T) \longrightarrow \Gr(X/F) \times \Gr(T).$$
+$$U(X/F,T) \longrightarrow \Gr(X/F) \shorttimes \Gr(T).$$
 Since all the Grassmannians $\Gr(X)$, $\Gr(Y/X)$, $\Gr(F)$, $\Gr(X/F)$, $\Gr(T)$ have the affine paving property, we conclude that $\Gr(Y)$ has the affine paving property.
 \end{proof}
 \bibliographystyle{plain}
