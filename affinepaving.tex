@@ -139,7 +139,7 @@ Bonn, 53115\\ Germany\\}
 
 
 \begin{abstract}
-In this article, we establish an affine paving for partial flag quiver varieties when the quiver is of Dynkin type. By copying results in \cite[section 6]{irelli2019cell} word by word, the same problem for affine quiver reduced to the case where the representation is regular quasi-simple. The idea of the proof mainly comes from \cite{irelli2019cell}, and the result is a natural continuation of \cite{maksimau2019flag}.
+In this article, we establish an affine paving for partial flag quiver varieties when the quiver is of Dynkin type or $\tilde{A}, \tilde{D}$-type. By extending methods from \cite[section 6]{irelli2019cell}, we describe the map $\Psi$ associated with some short exact sequence, which works surprisingly effectively in decomposing partial flag quiver varieties. Combined with tools from Auslander-Reiten theory, we prove the affine-paving property by a few case studies. 
 \end{abstract}
 
 
@@ -149,13 +149,13 @@ In this article, we establish an affine paving for partial flag quiver varieties
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-Cellular decompositions have been used in topology for a long time as a tool in computing cohomology, while paving by affine spaces offers us a weaker substitution of the cellular decomposition. We say that an complex algebraic variety $X$ has an affine paving if $X$ has a filtration
+Cellular decompositions have been used in topology for a long time as a tool in computing cohomology, while paving by affine spaces offers us a weaker substitution of the cellular decomposition. We say that a complex algebraic variety $X$ has an affine paving if $X$ has a filtration
 $$0= X_0 \subset X_1 \subset \cdots \subset X_d=X$$
 with $X_i$ closed and $X_{i+1} \setminus X_i$ isomorphic to some affine space $\mathbb{A}^k_{\mathbb{C}}$.
 
 Affine pavings imply nice properties about the cohomology of varieties. For instance, any variety paved by affine spaces would have no nontrivial odd-dimensional cohomology. For other properties coming from affine paving, readers can see \cite[Definition 11]{irelli2019cell}.
 
-Affine pavings have been constructed in many cases, such as Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians or quiver flag varieties. This article focuses on the case of (strict) quiver flag varieties where the quiver is of Dynkin type or affine type, as follows:\footnote{Here $Q$ is a quiver of Dynkin or affine type(without loops), and $X\in \Rep(Q)$ is an quiver representation.}
+Affine pavings have been constructed in many cases, such as Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians or quiver flag varieties. This article focuses on the case of (strict) partial flag quiver varieties where the quiver is of Dynkin type or affine type, which is defined as follows:\footnote{Here $Q$ is a quiver of Dynkin or affine type(without loops), and $X\in \Rep(Q)$ is an quiver representation.}
 \begin{equation*}
 \begin{aligned}
 &	\text{quiver Grassmannian} && \Grq(X)\colon = \left\{ M_1 \mid M_1 \subseteq X \right\}\\
@@ -198,10 +198,11 @@ $\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2
 $\tilde{D}$ &                            & \multicolumn{2}{c|}{}                                          \\ \cline{1-1} \cline{3-4} 
 $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the regular quasi-finite case.} \\ \hline
 \end{tabular}
+\vspace{1mm}
 \caption{Until now, except the $\tilde{E}$ case we've proved the affine paving properties for these varieties.}\label{table:result}
 \end{table}
 
-We will prove key Theorems \ref{thm:main1} and \ref{thm:main2} in Section \ref{sec:mainthm}, implying that there are affine pavings for the quiver partial flag variety of Dynkin type in Section \ref{thm:Dynkincase}, see Figure \ref{fig:flowchart}. The difficulty in case of type $\tilde{E}$ is shown in Section \ref{sec:affine}. We refrain from giving a more detailed introduction here
+We will prove key Theorems \ref{thm:main1} and \ref{thm:main2} in Section \ref{sec:mainthm}, implying that there are affine pavings for the quiver partial flag variety of Dynkin type in Section \ref{sec:Dynkin}, see Figure \ref{fig:flowchart}. The difficulty in case of type $\tilde{E}$ is shown in Section \ref{sec:affine}. We refrain from giving a more detailed introduction here
 and instead refer the reader to the table of contents as
 well as to the short introductions of the individual
 sections.
@@ -222,15 +223,21 @@ of $b$. Let $KQ$ be the path algebra, and $\Rep(Q):=\Mod(KQ)$ as the category of
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgement}
 %\addcontentsline{toc}{section}{Acknowledgement}
-First, I would like to thank my supervisor, Professor Jens Niklas Eberhardt, for introducing me this specific problem of partial flag quiver variety and giving some advises. I would also like to thank Hans Franzen for answering some questions I had for understanding the article \cite{irelli2019cell}.
-%My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this tome
+First, I would like to thank my supervisor, Professor Jens Niklas Eberhardt, for introducing me this specific problem of partial flag quiver variety, spending many hours discussing earlier drafts, and giving enormous helps in polishing the article. I would also like to thank Hans Franzen for answering some questions I had for the article \cite{irelli2019cell}.
+%My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this article
+% I would like to express my gratitude to
+%my advisor James Newton without whom this paper would never have been completed. I
+%thank him for suggesting this problem and guiding me throughout the whole project. He
+%spent many hours discussing earlier drafts with me and explained a lot of things to me.
 \section{Preliminaries}\label{sec:flag=gr}
 In this section, we will collect all the knowledges required in the later sections, and fix the notations.
 \subsection{Extended quiver}
-We follow \cite[2.2,2.3]{maksimau2019flag} in this subsection, but we will have some small variations and different notations. We want to view partial flag variety as the quiver Grassmannian. Intuitively, the partial flag variety contains more information than the quiver Grassmannian. So we need to use bigger quiver, and encode these informations in the extra arrows.
+We follow \cite[2.2,2.3]{maksimau2019flag} in this subsection, but we will have some small variations and different notations. 
+
+We want to view partial flag variety as the quiver Grassmannian. Intuitively, the partial flag variety contains more information than the quiver Grassmannian. So we need to use bigger quiver, and encode these informations in the extra arrows.
 
 \begin{defn}[Extended quiver]
-Fix a quiver $Q$ and an integer $d \geqslant 1$, the \textbf{extended quiver} $Q_{d}$ is defined as follows:
+Fix a quiver $Q$ and an integer $d \geqslant 1$, the extended quiver $Q_{d}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
 	$$v(Q_d)=v(Q) \times \{1,\ldots,d\}$$
@@ -241,7 +248,7 @@ Fix a quiver $Q$ and an integer $d \geqslant 1$, the \textbf{extended quiver} $Q
 The extended quiver $Q_d$ is exactly the same quiver as $\hat{\Gamma}_d$ in \cite[Definition 2.2]{maksimau2019flag}. The next definition is a small variation of it:
 
 \begin{defn}[Strict extended quiver]
-Fix a quiver $Q$ and an integer $d \geqslant 2$, the \textbf{strict extended quiver} $Q_{d,str}$ is defined as follows:
+Fix a quiver $Q$ and an integer $d \geqslant 2$, the strict extended quiver $Q_{d,str}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.
 	$$v(Q_{d,str})=v(Q) \times \{1,\ldots,d\}$$
@@ -309,14 +316,14 @@ By an aesthentically desirable abuse of notation, we abbreviate the notations $R
 \subsection{Canonical functor $\Phi$}
 We still follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. 
 \begin{defn}[Partial flag]\label{def:pf}
-Fix a quiver representation $X \in \Rep(Q)$, a \textbf{partial flag} of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an integer $d \geqslant 1$, we denote
+Fix a quiver representation $X \in \Rep(Q)$, a partial flag of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an integer $d \geqslant 1$, we denote
 $$\Flagd(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}$$
-as the collections of all partial flags of length $d$, and call it the \textbf{partial flag variety}. 
+as the collections of all partial flags of length $d$, and call it the partial flag variety. 
 \end{defn}
 \begin{defn}[Strict partial flag]\label{def:spf}
-Fix a quiver representation $X \in \Rep(Q)$, a \textbf{strict partial flag} of $X$ is defined as an increasing sequence of subrepresentation $(M_k)_k$ of $X$ such that for any arrow $x \in v(Q)$ and any $k$, we have $x.M_{k+1} \subseteq M_{k}$. For an integer $d \geqslant 2$, we denote
+Fix a quiver representation $X \in \Rep(Q)$, a strict partial flag of $X$ is defined as an increasing sequence of subrepresentation $(M_k)_k$ of $X$ such that for any arrow $x \in v(Q)$ and any $k$, we have $x.M_{k+1} \subseteq M_{k}$. For an integer $d \geqslant 2$, we denote
 $$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{k+1} \subseteq M_k \right\}$$
-as the collections of all strict partial flags of length $d$, and call it the \textbf{strict partial flag variety}. 
+as the collections of all strict partial flags of length $d$, and call it the strict partial flag variety. 
 \end{defn}
 \begin{defn}[Grassmannian]
 Let $R$ be the bounded quiver algebra defined in Definition \ref{def:pf} or \ref{def:spf}. Fix a module $T \in \Mod(R)$, the Grassmannian $\Gralg{R}(T)$ is defined as the set of all submodules of $T$, equivalently,
@@ -342,12 +349,12 @@ This is obvious. The isomorphism $\Phi'$ maps a flag $M:M_1 \subseteq \cdots M_d
 %https://tex.stackexchange.com/questions/495252/i-want-to-get-a-big-subset
 \begin{eg}\label{eg:bigpic}
 Let $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$ be a quiver, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a quiver representation, then the varieties $\Flag{3}(X),\Flagstr{3}(X)$ can be viewed as quiver Grassmannian in Figure \ref{fig:flagasgr}:
-\newpage
 \begin{center}
 	\begin{figure}[ht]
 		\vspace{0cm}
 		\centering
 		\includegraphics[width=0.9\linewidth]{figures/bigpic.pdf}
+		\vspace{-0.5cm}
 		\includegraphics[width=\linewidth]{figures/bigpic2.pdf}
 		\vspace{-1cm}
 %		\captionsetup{labelformat=empty}
