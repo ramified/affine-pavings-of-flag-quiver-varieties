@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  1 MAR 2022 17:30
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  2 MAR 2022 11:51
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1230,7 +1230,7 @@ File: figures/bigpic.pdf Graphic file (type pdf)
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
  [5] [6] [7]
-Overfull \hbox (17.09554pt too wide) in paragraph at lines 545--547
+Overfull \hbox (17.09554pt too wide) in paragraph at lines 547--549
 \TU/lmr/m/n/10.95 By Lemma [][]2.16[][] ([][]1[][]) and ([][]5[][]), $[][]\OT1/
 cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
  =W; T\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(
@@ -1240,7 +1240,7 @@ $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W; T\OT1/cmr/m/n/10.95 ) =
  []
 
 [8]
-Overfull \hbox (49.10031pt too wide) in paragraph at lines 646--647
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 648--649
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 ^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
@@ -1248,13 +1248,13 @@ e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
  []
 
 [9]
-Overfull \hbox (12.77255pt too wide) detected at line 679
+Overfull \hbox (12.77255pt too wide) detected at line 681
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
 [10]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 737--738
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 739--740
 [][]\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95
  (\OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cm
 r/m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/
@@ -1275,13 +1275,13 @@ File: figures/E8.pdf Graphic file (type pdf)
 File: figures/flowchart.pdf Graphic file (type pdf)
 <use figures/flowchart.pdf>
  [13]
-Overfull \hbox (16.38356pt too wide) in paragraph at lines 888--889
+Overfull \hbox (16.38356pt too wide) in paragraph at lines 890--891
 \TU/lmr/m/n/10.95 decomposable representation, irreducible morphism, Auslander-
 Reiten translation, Auslander-
  []
 
 
-Overfull \hbox (1.1089pt too wide) in paragraph at lines 912--1026
+Overfull \hbox (1.1089pt too wide) in paragraph at lines 914--1029
  [][] 
  []
 
@@ -1290,14 +1290,14 @@ Overfull \vbox (2.33295pt too high) has occurred while \output is active []
 
 
 [14]
-Overfull \hbox (2.55482pt too wide) in paragraph at lines 1031--1032
+Overfull \hbox (2.55482pt too wide) in paragraph at lines 1034--1035
 [][]\TU/lmr/bx/n/10.95 Definition A.2 \TU/lmr/m/n/10.95 (Irreducible morphism)\
 TU/lmr/bx/n/10.95 . []\TU/lmr/m/it/10.95 Given two indecomposable representatio
 ns $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
  []
 
 [15]
-Overfull \hbox (21.41911pt too wide) in paragraph at lines 1073--1075
+Overfull \hbox (21.41911pt too wide) in paragraph at lines 1076--1078
 \TU/lmr/m/n/10.95 which is functorial for any $\OML/cmm/m/it/10.95 T; T[] \OMS/
 cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 
 )$\TU/lmr/m/n/10.95 . Especially, when $\OML/cmm/m/it/10.95 T$ \TU/lmr/m/n/10.9
@@ -1306,7 +1306,7 @@ cmr/m/n/10.95 ) =
  []
 
 [16] [17]
-Overfull \hbox (9.54146pt too wide) in paragraph at lines 1232--1233
+Overfull \hbox (9.54146pt too wide) in paragraph at lines 1235--1236
 [][]\TU/lmr/m/it/10.95 Remark \TU/lmr/m/n/10.95 A.6\TU/lmr/m/it/10.95 . []\TU/l
 mr/m/n/10.95 Fix the sectional morphism $\OML/cmm/m/it/10.95 f$\TU/lmr/m/n/10.9
 5 . When the underlying quiver $\OML/cmm/m/it/10.95 Q$ \TU/lmr/m/n/10.95 is a D
@@ -1333,25 +1333,21 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [21]
-Underfull \vbox (badness 1688) has occurred while \output is active []
-
- [22]
-(affinepaving.bbl [23]) [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1510.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1510.
+ [21] [22] (affinepaving.bbl [23]) [24]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1513.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1513.
  (affinepaving.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1510.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1510.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1513.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1513.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
 (rerunfilecheck)             Checksum: 428DF984C38AA90C3A5C401B3A8C0301.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1510.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1513.
  ) 
 Here is how much of TeX's memory you used:
  29495 strings out of 427748
  535178 string characters out of 3150981
- 709557 words of memory out of 3000000
+ 710557 words of memory out of 3000000
  32855 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
