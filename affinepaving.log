@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  8 MAR 2022 17:55
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  15 MAR 2022 00:02
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1206,11 +1206,7 @@ LaTeX Info: Redefining \nameref on input line 124.
 \se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
-) [1]
-Underfull \vbox (badness 2310) has occurred while \output is active []
-
- [2]
-[3]
+) [1] [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 285.
@@ -1223,11 +1219,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 285.
 
+[3]
 File: figures/bigpic.pdf Graphic file (type pdf)
 <use figures/bigpic.pdf>
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
-[4] [5] [6]
+ [4] [5] [6]
 Overfull \hbox (17.09554pt too wide) in paragraph at lines 515--517
 \TU/lmr/m/n/10.95 By Lemma [][]2.16[][] ([][]1[][]) and ([][]5[][]), $[][]\OT1/
 cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
@@ -1245,13 +1242,13 @@ e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )) =
  []
 
-[9]
+
 Overfull \hbox (12.77255pt too wide) detected at line 649
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
  
  []
 
-[10]
+[9] [10]
 Overfull \hbox (9.76743pt too wide) in paragraph at lines 707--708
 [][]\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95
  (\OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cm
@@ -1272,9 +1269,9 @@ File: figures/E8.pdf Graphic file (type pdf)
 File: figures/flowchart.pdf Graphic file (type pdf)
 <use figures/flowchart.pdf>
  [12] [13]
-Overfull \hbox (16.38356pt too wide) in paragraph at lines 858--859
-\TU/lmr/m/n/10.95 decomposable representation, irreducible morphism, Auslander-
-Reiten translation, Auslander-
+Overfull \hbox (20.04085pt too wide) in paragraph at lines 858--859
+\TU/lmr/m/n/10.95 decomposable representation, irreducible morphism, Auslander–
+Reiten translation, Auslander–
  []
 
 
@@ -1338,13 +1335,13 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1481.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1481.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
-(rerunfilecheck)             Checksum: 428DF984C38AA90C3A5C401B3A8C0301.
+(rerunfilecheck)             Checksum: AF604A7A419DE8DD42E06F82A1AF28DB.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1481.
  ) 
 Here is how much of TeX's memory you used:
  29497 strings out of 427748
- 535209 string characters out of 3150981
- 709549 words of memory out of 3000000
+ 535210 string characters out of 3150981
+ 710431 words of memory out of 3000000
  32857 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
