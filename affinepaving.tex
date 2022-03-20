@@ -161,7 +161,7 @@ Affine pavings are an important concept in algebraic geometry similar to cellula
 $$0= X_0 \subset X_1 \subset \cdots \subset X_d=X$$
 with $X_i$ closed and $X_{i+1} \setminus X_i$ isomorphic to some affine space $\mathbb{A}^k_{\mathbb{C}}$.
 
-Affine pavings imply nice properties about the cohomology of varieties, as for example the vanishing of cohomology in odd degrees. For other properties see \cite[1.7]{de1988homology}.
+Affine pavings imply nice properties about the cohomology of varieties, as\todo{, for exmaple the...} for example the vanishing of cohomology in odd degrees. For other properties see \cite[1.7]{de1988homology}.
 
 Affine pavings have been constructed in many cases, as for Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians, and quiver flag varieties. This article focuses on the case of (strict) partial flag varieties which parameterize subrepresentations of a fixed representation of a quiver. In particular, we consider quivers of Dynkin type or affine type.
 In this case, affine pavings have been constructed in \cite{irelli2019cell} for quiver Grassmannians in all types and in \cite{maksimau2019flag} for partial flag varieties of type $A$ and $D$ (see Table \ref{table:result}). Besides, affine pavings 
@@ -319,7 +319,7 @@ The isomorphism maps a flag $M:M_1 \subseteq \cdots \subseteq M_d$ to a represen
 \end{proof}
 %https://tex.stackexchange.com/questions/495252/i-want-to-get-a-big-subset
 \begin{eg}\label{eg:bigpic}
-Consider the quiver $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a representation. Then the varieties $\Flag{3}(X),\Flagstr{3}(X)$ arise as quiver Grassmannian as shown in Figure \ref{fig:flagasgr}.
+Consider the quiver $Q\colon x \longrightarrow y \longleftarrow z \longrightarrow w$, and let $X\colon X_x \longrightarrow X_y \longleftarrow X_z \longrightarrow X_w$ be a representation. The varieties $\Flag{3}(X),\Flagstr{3}(X)$ then arise as quiver Grassmannian as shown in Figure \ref{fig:flagasgr}.
 \begin{center}
 	\begin{figure}[ht]
 		\vspace{0cm}
@@ -352,7 +352,7 @@ Now we can write the (strict) partial flag variety and Grassmannian as disjoint 
   \Gralg{R}_{\dimvec{f}}(T):=\;&\{T' \subseteq T \text{ with } \dimv T'=\dimvec{f}\} && \subseteq  \Gralg{R}(T). 
 \end{aligned}
 \end{equation*}
-Then from the Proposition \ref{prop:flag=gr} we get 
+Then, from the Proposition \ref{prop:flag=gr} we get 
 $$\Flagd_{,\dimvec{f}}(X) \cong \Gralg{R_d}_{\dimvec{f}}(\Phi(X)) \qquad \Flag{d,\dimvec{f}}^{\operatorname{str}}(X) \cong \Gralg{R_{d,\operatorname{str}}}_{\dimvec{f}}(\Phi(X)).$$
 
 Finally, we need to define the Euler form of two dimension vectors. For this we need to define the set of virtual arrows of the quivers $Q_d$ and $Q_{d,\operatorname{str}}$. Following Example \ref{example:virtualarrow}, the virtual arrows of the quivers $Q_3$ and $Q_{3,\operatorname{str}}$ are depicted in red.
@@ -510,7 +510,7 @@ For (\ref{lm:projdim}), notice that the minimal projective resolution of $M$ is 
 \end{proof}
 The following key lemma will be crucial later.
 \begin{lemma}\label{lm:Ext2van}
-Let $X,S \in \rep(Q)$ and $V \subseteq \Phi(X), W \subseteq \Phi(S)$, $T \in \Mod(R)$. Then $\Ext^2_{R}(W,T)=0$ and $\Ext^2_{R}(T,\Phi(X)/V)=0$.
+Let $X,S \in \rep(Q)$ and $V \subseteq \Phi(X), W \subseteq \Phi(S)$, $T \in \Mod(R)$. Then\todo{Then, } $\Ext^2_{R}(W,T)=0$ and $\Ext^2_{R}(T,\Phi(X)/V)=0$.
 \end{lemma}
 \begin{proof}
 The short exact sequence 
@@ -542,7 +542,7 @@ $$\left< T,T'\right>_R:= \sum_{i=0}^{\infty} (-1)^i [T,T']^i \quad=[T,T']-[T,T']
 Compute $\left< T,T'\right>_R$ by applying the functor $\Hom_R(-,T')$ to the standard resolution of the $R$-module $T$.
 \end{proof}
 %\subsection{How much do we understand the quiver representation?}
-%To understand the category $\rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander--Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite indecomposable representations(up to isomorphism) and each indecomposable representation corresponds to the positive root of Dynkin diagram. One can compute the Auslander--Reiten quiver by knitting algorithm and get the structure of indecomposable representations. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$\footnote{These paths may be linear dependent, so it's not too easy.}.
+%To understand the category $\rep(Q)$, one should understand indecomposable modules(as well as their relations). This has almost been done in the Auslander--Reiten theory. For example, when the quiver $Q$ is of Dynkin type, then there are only finite indecomposable representations(up to isomorphism) and each indecomposable representation corresponds to the positive root of Dynkin diagram. One can compute the Auslander--Reiten quiver by knitting algorithm and get the structure of indecomposable representations. Moreover, one can directly get Hom space between $M$ and $N$ by looking at nontrivial paths from $M$ to $N$.\footnote{These paths may be linear dependent, so it's not too easy.}
 %
 %We will use the Auslander--Reiten quiver to find ``good monomorphisms" in Section \ref{sec:Dynkin},\ref{sec:affine}. For more informations about Auslander--Reiten theory, one can see \cite{crawley1992lectures}.
 
@@ -607,7 +607,6 @@ The element $(V,W) \in \Grr(\Phi(X)) \times \Grr(\Phi(S))$ lies in the image of 
 	\arrow[maps to, from=1-1, to=3-1]
 \end{tikzcd}\]
 so $\bar{\eta}=0$ if and only if the last short exact sequence splits, that means, there exists a submodule $U \subseteq \Phi(Y)$, such that $\Phi(\pi)(U)=W$ and $U \cap \Phi(X) =V$.
-
 \end{proof}
 
 \begin{corollary}\label{cor:img1}
@@ -653,8 +652,9 @@ we get the long exact sequence
 $$\hspace{-0.4cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V\cap V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V}\right) \oplus \;\Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V+ V'}\right) \rightarrow\cdots.$$
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/(V\cap V')]^1\leqslant 1, \; [\Phi(S),\Phi(X)/(V+V')]^1\leqslant 1$, and this forces $[\Phi(S),\Phi(X)/(V+V')]^1= 1$.
 \end{proof}
+
 \begin{lemma}[Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, with the same proof]\todo{Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}} with the same proof}Let $\tau$ be the Auslander--Reiten translation.\\
-Let $f:X \longrightarrow \tau S$ be a non-zero morphism\footnote{Since $X$ is not injective, $[X,\tau S]=[S,X]^1=1$, $f$ is uniquely determined up to a constant.}, then $X_S=\ker (f)$;\\
+Let $f:X \longrightarrow \tau S$ be a non-zero morphism,\footnote{Since $X$ is not injective, $[X,\tau S]=[S,X]^1=1$, $f$ is uniquely determined up to a constant.} then $X_S=\ker (f)$;\\
  also, $\Phi(f): \Phi(X) \longrightarrow \Phi(\tau S)$ is a non-zero morphism, $\widetilde{X_S}=\ker (\Phi(f))$.
 \end{lemma}
 
@@ -829,7 +829,7 @@ Suppose $Q$ is of Dynkin type. For any indecomposable representation $M \in \rep
 First of all, for any indecomposable representation $M \in \rep(Q)$ we obtain an affine paving. This follows from Claim \ref{claim:bigorder} when $\ord(M)>2$, and follows from Lemma \ref{lem:smallvecdim} when $\ord(M)\leqslant 2$.
 
 The general case follows by induction on the dimension vector. \todo{Let $M \cong M_1 \oplus M_2$. By ...}Let $M \cong M_1 \oplus M_2$, then by applying Theorem \ref{thm:main1} to the short exact sequence 
-$$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0$$
+$$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0,$$
 we get an affine paving from the affine pavings of $M_1$ and $M_2$.
 \end{proof}
 
@@ -1325,7 +1325,7 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
 
-\begin{lemma}[{Follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]\label{lem:descriptionofX_S}
+\begin{lemma}[{Follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]\label{lem:descriptionofX_S}\todo{, with the same proof}
 	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
 \begin{corollary}
@@ -1350,12 +1350,12 @@ Now we analyse every case in Figure \ref{fig:minisecmono}, i.e., prove Claim \re
 
 \begin{proof}[{Proof of Claim \ref{claim:bigorder}}]
 When the minimal sectional mono $X \longrightarrow Y$ is irreducible, we use Theorem \ref{thm:main2} to get morphism
-$$\Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \shorttimes \Grr(\Phi(S)) \oder \Grr(\Phi(X)) \setminus \Grr(\Phi(X_S))$$ 
+$$\Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \shorttimes \Grr(\Phi(S)) \oder \Grr(\Phi(X)) \setminus \Grr(\Phi(X_S)).$$ 
 By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\Gr(\Phi(S))$ has the affine paving property. Let $Y_1:=X$, $X_1:=X_S$, $S_1:=Y_1/X_1$, we again use Theorem \ref{thm:main2} to get Zariski-locally affine maps
 \begin{equation*}
 \begin{aligned}
 \Grr(\Phi(X)) &\longrightarrow \Grr(\Phi(X_1)) \shorttimes \Grr(\Phi(S_1)) \oder \Grr(\Phi(X_1)) \setminus \Grr(\Phi(X_{1S_1}))\\
-\Grr(\Phi(X))\setminus \Grr(\Phi(X_S))&\longrightarrow \Grr(\Phi(X_1)) \shorttimes \Grr(\Phi(S_1))
+\Grr(\Phi(X))\setminus \Grr(\Phi(X_S))&\longrightarrow \Grr(\Phi(X_1)) \shorttimes \Grr(\Phi(S_1)).
 \end{aligned}
 \end{equation*}
 Luckily $\orde(S_1)$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
@@ -1448,8 +1448,8 @@ Case 1: $M\longrightarrow X$ is not injective, then
 \end{eg}
 \begin{eg}
 Finally we begin to tackle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
-$$\Gr(Y) \longrightarrow \Gr(F) \shorttimes \Gr(Y/F) \oder U(F,?)$$
-then we get the result \footnote{$\Gr(F)$ is empty or a singleton, so is $U(F,?)$, no matter what representation is in the questionmark.}.
+$$\Gr(Y) \longrightarrow \Gr(F) \shorttimes \Gr(Y/F) \oder U(F,?),$$
+and then we get the result.\footnote{$\Gr(F)$ is empty or a singleton, so is $U(F,?)$, no matter what representation is in the questionmark.}
 
 When $X \longrightarrow Y$ is injective, we have
 $$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S)$$
@@ -1458,16 +1458,16 @@ where $X_S=F\oplus \ker(\tau X_1 \longrightarrow \tau Y)=F \oplus T$ by Lemma \r
 % https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZARgBoAGAXVJADcBDAGwFcYkRyQBfU9TXfIRQAmCtTpNW7AGLdeIDNjwEiAZjE0GLNohAANOXyWCiAFg0Tt7PQHpZPIwJUoArBa1TdnBwv7KhJKTE4h46HIa+xs7IbsGakmHe8opOAaJxlp4gACoRKf5qQSEJ1nZ5fiYo5hmhpXoA+gDK5VEB5O4lugA6XTA49Lo++ZXI7TWdID0AHliD4jBQAObwRKAAZgBOEAC2SG4gOBBIAOw+mzsnNIdIABxnW7uIN1dHiACc8VbdXWhYAOQRc6PD4HV4ANnuF0Q6lBSFMkMeolh0M+WR6v0BDyQZGRwgRSHayOIXEoXCAA
 \begin{tikzcd}[row sep=0mm]
 \eta: & 0 \arrow[r] & F \arrow[r] & X \arrow[r, "\pi"]    & X/F \arrow[r]   & 0 \\
-\xi:  & 0 \arrow[r] & T \arrow[r] & X/F \arrow[r, "\pi'"] & X/X_S \arrow[r] & 0
+\xi:  & 0 \arrow[r] & T \arrow[r] & X/F \arrow[r, "\pi'"] & X/X_S \arrow[r] & 0.
 \end{tikzcd}
 \end{center}
-Let $N \in \Gr(X)$ be a subrepresentation, it's obvious that $N \in \Gr(X_S) \iff \pi'\circ \pi(N)=0$, so 
+Let $N \in \Gr(X)$ be a subrepresentation, it is obvious that $N \in \Gr(X_S) \iff \pi'\circ \pi(N)=0$, so 
   \begin{equation*}
   \begin{aligned}
   N\in U(X,X_S) & \iff \pi'\circ \pi(N) \neq 0\\
   & \iff \pi(N) \notin \Gr(T)\\
   & \iff \pi(N) \in U(X/F,T)\\
-  & \iff \Psi_{\eta}(N) \in \Gr(F) \times U(X/F,T)
+  & \iff \Psi_{\eta}(N) \in \Gr(F) \times U(X/F,T).
   \end{aligned}
   \end{equation*}
 \end{eg}
@@ -1476,7 +1476,7 @@ $$U(X,F) \longrightarrow \Gr(F) \shorttimes \Gr(X/F)$$
 restricted to the Zarisky-locally trivial affine bundle map
 $$U(X,X_S) \longrightarrow \Gr(F) \times U(X/F,T).$$
 
-Finally, by applying the short exact sequence $\xi$ to Theorem \ref{thm:main2} we get the map
+Finally, by applying the short exact sequence $\xi$ to Theorem \ref{thm:main2}, we get the map
 $$U(X/F,T) \longrightarrow \Gr(X/F) \shorttimes \Gr(T).$$
 Since all the Grassmannians $\Gr(X)$, $\Gr(Y/X)$, $\Gr(F)$, $\Gr(X/F)$, $\Gr(T)$ have the affine paving property, we conclude that $\Gr(Y)$ has the affine paving property.
 \end{proof}

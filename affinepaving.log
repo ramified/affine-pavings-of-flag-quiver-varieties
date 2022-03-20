@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  20 MAR 2022 17:49
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  20 MAR 2022 21:42
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1249,7 +1249,7 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 168.
+ine 164.
  [1] [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1279,7 +1279,7 @@ $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W; T\OT1/cmr/m/n/10.95 ) =
  []
 
 [7] [8]
-Overfull \hbox (49.10031pt too wide) in paragraph at lines 620--621
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 619--620
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 ^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
@@ -1287,7 +1287,7 @@ e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
  []
 
 
-Overfull \hbox (17.63919pt too wide) detected at line 653
+Overfull \hbox (17.63919pt too wide) detected at line 652
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
   \OML/cmm/m/it/10.95 :
  []
@@ -1375,14 +1375,14 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1490.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1490.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
-(rerunfilecheck)             Checksum: 31AE2B4465B2AC7A0FBC0EDE8456E58C.
+(rerunfilecheck)             Checksum: 473A212759EEAEA83FB70EC19A12C35B.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1490.
  ) 
 Here is how much of TeX's memory you used:
- 30229 strings out of 427748
- 551152 string characters out of 3150981
- 733146 words of memory out of 3000000
- 33563 multiletter control sequences out of 15000+200000
+ 30253 strings out of 427748
+ 551707 string characters out of 3150981
+ 739501 words of memory out of 3000000
+ 33587 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,84p,4082b,1209s stack positions out of 5000i,500n,10000p,200000b,50000s
