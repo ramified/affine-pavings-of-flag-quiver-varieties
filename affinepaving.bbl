@@ -17,6 +17,11 @@ Corrado De~Concini, George Lusztig, and Claudio Procesi.
 \newblock {\em Journal of the American Mathematical Society}, 1(1):15--34,
   1988.
 
+\bibitem{eberhardt2022motivic}
+Jens~Niklas Eberhardt and Catharina Stroppel.
+\newblock Motivic springer theory.
+\newblock {\em Indagationes Mathematicae}, 33(1):190--217, 2022.
+
 \bibitem{article}
 D.~Faenzi.
 \newblock A one-day tour of representations and invariants of quivers.
@@ -31,5 +36,11 @@ Giovanni~Cerulli Irelli, Francesco Esposito, Hans Franzen, and Markus Reineke.
 Ruslan Maksimau.
 \newblock Flag versions of quiver grassmannians for dynkin quivers have no odd
   cohomology over $\mathbb{Z}$, 2019.
+
+\bibitem{sauter2015cell}
+Julia Sauter.
+\newblock Cell decompositions of quiver flag varieties for nilpotent
+  representations of the oriented cycle.
+\newblock {\em arXiv preprint arXiv:1509.08026}, 2015.
 
 \end{thebibliography}

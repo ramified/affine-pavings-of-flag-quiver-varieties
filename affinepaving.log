@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  20 MAR 2022 14:15
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  20 MAR 2022 17:49
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1247,18 +1247,21 @@ LaTeX Info: Redefining \nameref on input line 131.
 \se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
-) [1] [2]
+)
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 168.
+ [1] [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 288.
+(hyperref)                removing `math shift' on input line 289.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Phi' on input line 288.
+(hyperref)                removing `\Phi' on input line 289.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 288.
+(hyperref)                removing `math shift' on input line 289.
 
 [3]
 File: figures/bigpic.pdf Graphic file (type pdf)
@@ -1266,7 +1269,7 @@ File: figures/bigpic.pdf Graphic file (type pdf)
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
  [4] [5] [6]
-Overfull \hbox (17.09554pt too wide) in paragraph at lines 518--520
+Overfull \hbox (17.09554pt too wide) in paragraph at lines 519--521
 \TU/lmr/m/n/10.95 By Lemma [][]2.16[][] ([][]1[][]) and ([][]5[][]), $[][]\OT1/
 cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
  =W; T\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(
@@ -1275,11 +1278,8 @@ cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
 $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W; T\OT1/cmr/m/n/10.95 ) =
  []
 
-[7]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 527.
- [8]
-Overfull \hbox (49.10031pt too wide) in paragraph at lines 619--620
+[7] [8]
+Overfull \hbox (49.10031pt too wide) in paragraph at lines 620--621
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
 ^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/
@@ -1287,13 +1287,13 @@ e fact that $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W=\OT1/cmr/m/n/10.95 ^
  []
 
 
-Overfull \hbox (12.77255pt too wide) detected at line 652
+Overfull \hbox (17.63919pt too wide) detected at line 653
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
- 
+  \OML/cmm/m/it/10.95 :
  []
 
-[9]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 711--712
+[9] [10]
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 712--713
 [][]\TU/lmr/bx/n/10.95 Lemma 3.12. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95
  (\OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cm
 r/m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/
@@ -1303,7 +1303,7 @@ it/10.95 X\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =V\OT1/cmr/m/n/10.95 )$\TU/lm
 r/m/it/10.95 .
  []
 
-[10] [11]
+[11]
 File: figures/E6.pdf Graphic file (type pdf)
 <use figures/E6.pdf>
 File: figures/E7.pdf Graphic file (type pdf)
@@ -1313,25 +1313,25 @@ File: figures/E8.pdf Graphic file (type pdf)
 File: figures/flowchart.pdf Graphic file (type pdf)
 <use figures/flowchart.pdf>
  [12]
-Overfull \hbox (20.04085pt too wide) in paragraph at lines 863--864
+Overfull \hbox (20.04085pt too wide) in paragraph at lines 865--866
 \TU/lmr/m/n/10.95 decomposable representation, irreducible morphism, Auslander–
 Reiten translation, Auslander–
  []
 
 [13]
-Overfull \hbox (1.1089pt too wide) in paragraph at lines 887--1002
+Overfull \hbox (1.1089pt too wide) in paragraph at lines 889--1004
  [][] 
  []
 
 
-Overfull \hbox (2.55482pt too wide) in paragraph at lines 1007--1008
+Overfull \hbox (2.55482pt too wide) in paragraph at lines 1009--1010
 [][]\TU/lmr/bx/n/10.95 Definition A.2 \TU/lmr/m/n/10.95 (Irreducible morphism)\
 TU/lmr/bx/n/10.95 . []\TU/lmr/m/it/10.95 Given two indecomposable representatio
 ns $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
  []
 
 [14]
-Overfull \hbox (21.41911pt too wide) in paragraph at lines 1049--1051
+Overfull \hbox (21.41911pt too wide) in paragraph at lines 1051--1053
 \TU/lmr/m/n/10.95 which is functorial for any $\OML/cmm/m/it/10.95 T; T[] \OMS/
 cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 
 )$\TU/lmr/m/n/10.95 . Especially, when $\OML/cmm/m/it/10.95 T$ \TU/lmr/m/n/10.9
@@ -1368,21 +1368,21 @@ Overfull \vbox (1.39333pt too high) has occurred while \output is active []
 
 
 [22] (affinepaving.bbl) [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1488.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1488.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1490.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1490.
  (affinepaving.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1488.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1488.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1490.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1490.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
-(rerunfilecheck)             Checksum: 56CFBC87301F7D2C08B96F0D1306D6E8.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1488.
+(rerunfilecheck)             Checksum: 31AE2B4465B2AC7A0FBC0EDE8456E58C.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1490.
  ) 
 Here is how much of TeX's memory you used:
- 30187 strings out of 427748
- 550196 string characters out of 3150981
- 726314 words of memory out of 3000000
- 33521 multiletter control sequences out of 15000+200000
+ 30229 strings out of 427748
+ 551152 string characters out of 3150981
+ 733146 words of memory out of 3000000
+ 33563 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,84p,4082b,1209s stack positions out of 5000i,500n,10000p,200000b,50000s

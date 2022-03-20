@@ -164,7 +164,8 @@ with $X_i$ closed and $X_{i+1} \setminus X_i$ isomorphic to some affine space $\
 Affine pavings imply nice properties about the cohomology of varieties, as for example the vanishing of cohomology in odd degrees. For other properties see \cite[1.7]{de1988homology}.
 
 Affine pavings have been constructed in many cases, as for Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians, and quiver flag varieties. This article focuses on the case of (strict) partial flag varieties which parameterize subrepresentations of a fixed representation of a quiver. In particular, we consider quivers of Dynkin type or affine type.
-In this case, affine pavings have been constructed in \cite{irelli2019cell} for quiver Grassmannians in all types and in \cite{maksimau2019flag} for partial flag varieties of type $A$ and $D$ (see Table \ref{table:result}). In this paper, we will tackle the remaining cases.
+In this case, affine pavings have been constructed in \cite{irelli2019cell} for quiver Grassmannians in all types and in \cite{maksimau2019flag} for partial flag varieties of type $A$ and $D$ (see Table \ref{table:result}). Besides, affine pavings 
+have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic}\todo{I wonder if it is only proved for the nilpotent representation.} for (strict) partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. In this paper, we will tackle the remaining cases.
 
 
 %The nocolor version 
@@ -185,7 +186,7 @@ $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the re
 \caption{}\label{table:result}
 \end{table}
 
-We proceed as follows. In Section \ref{sec:flag=gr}, we discuss basic definitions and properties of partial flags. In Section \ref{sec:mainthm} we will prove key Theorems \ref{thm:main1} and \ref{thm:main2}, which allow us to construct affine pavings for quiver partial flag varieties inductively. We apply these theorems to partial flag varieties of Dynkin type, see Section \ref{sec:Dynkin}, and to partial flag varieties of affine type, see Section \ref{sec:affine}. We will combine and extend results from \cite{irelli2019cell} and \cite{maksimau2019flag}.
+We proceed as follows. In Section \ref{sec:flag=gr}, we discuss basic definitions and properties of partial flags. In Section \ref{sec:mainthm} we will prove key Theorems \ref{thm:main1} and \ref{thm:main2}, which allow us to construct affine pavings for quiver partial flag varieties inductively. We apply these theorems to partial flag varieties of Dynkin type, see Section \ref{sec:Dynkin}, and to partial flag varieties of affine type, see Section \ref{sec:affine}. \todo{During the process, we will...}We will combine and extend results from \cite{irelli2019cell} and \cite{maksimau2019flag}.
 Following the arguments of \cite{maksimau2019flag} would require studying millions of cases when we  consider the Dynkin quivers of type $E$. To avoid this, we extend the methods of \cite{irelli2019cell} from quiver Grassmannian to quiver partial flag variety. This will reduce the case by case analysis to a feasible computation of (mostly) 8 critical cases, which we carry out in Section \ref{sec:Dynkin} and Appendix \ref{appendix:proofcomplement}. The reduction uses Auslander--Reiten theory which we recall in Appendix \ref{appendix:arth}.
 %It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zariski) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the Table \ref{table:result}.
 %
@@ -194,7 +195,7 @@ Following the arguments of \cite{maksimau2019flag} would require studying millio
 \begin{notation}
 Throughout this article, $K=\mathbb{C}$, $R$ is a $K$-algebra with unit, and $\Mod(R)$ denotes the category of $R$-modules of finite dimension. Let $Q$ be a quiver equipped with the set of finite vertices $v(Q)$ and the set of finite edges $a(Q)$. For an
 arrow $b$, we call $s(b)$ the starting vertex and $t(b)$ the terminal vertex
-of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category of quiver representations of finite dimension. For a representation $X\in \rep(Q)$, we denote by $X_i:=e_iX$ the $K$-linear space at the vertex $i\in v(Q)$. We denote by $P(i)$, $I(i)$ and $S(i)$ the indecomposable projective, injective, simple modules corresponding to the vertex $i$, respectively.
+of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category of quiver representations of finite dimension. For a representation $X\in \rep(Q)$, we denote by $X_i:=e_iX$ the $K$-linear space at the vertex $i\in v(Q)$. We denote by $P(i)$, $I(i)$ and $S(i)$ the indecomposable projective, injective, simple modules\todo{indecomposable projective, indecomposable injective, simple modules} corresponding to the vertex $i$, respectively.
 \end{notation}
 
 
@@ -215,8 +216,8 @@ In this subsection, we introduce the notion of extended quiver which allows to v
 For a quiver $Q$ and an integer $d \geqslant 1$, the extended quiver $Q_{d}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.,
-	$$v(Q_d)=v(Q) \times \{1,\ldots,d\}$$
-	\item  There are two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for every arrow $i \longrightarrow j$ in $Q$ and $r \in \{1,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r)$.
+	$$v(Q_d)=v(Q) \times \{1,\ldots,d\}.$$
+	\item  There are two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for every\todo{for each arrow? To be compatible with last sentence} arrow $i \longrightarrow j$ in $Q$ and $r \in \{1,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r)$.
 \end{itemize}
 \end{defn}
 
@@ -226,14 +227,14 @@ The extended quiver $Q_d$ is exactly the same quiver as $\hat{\Gamma}_d$ in \cit
 For a quiver $Q$ and an integer $d \geqslant 2$, the strict extended quiver $Q_{d,\operatorname{str}}$ is defined as follows:
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.,
-	$$v(Q_{d,\operatorname{str}})=v(Q) \times \{1,\ldots,d\}$$
+	$$v(Q_{d,\operatorname{str}})=v(Q) \times \{1,\ldots,d\}.$$
 	\item  We have two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for every arrow $i \longrightarrow j$ in quiver $Q$ and $r \in \{2,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r-1)$.
 \end{itemize}
 \end{defn}
 
 
 \begin{eg}
-The (strict) extended quiver for a Dynkin quiver $Q$ of type $A_4$ look as follows.
+The (strict) extended quiver for a Dynkin quiver $Q$ of type $A_4$ look\todo{looks?} as follows.
 % https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XV0=
 \[\begin{tikzcd}[column sep=3mm, row sep=5mm]
 	&&&&&&&[5mm] \bullet && \bullet && \bullet && \bullet &[5mm] \bullet && \bullet && \bullet && \bullet \\
@@ -292,12 +293,12 @@ $$\Flagd(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}$$
 as the collection of all partial flags of length $d$, and call it the partial flag variety. 
 \end{defn}
 \begin{defn}[Strict partial flag]\label{def:spf}
-Fix a quiver representation $X \in \rep(Q)$, a strict partial flag of $X$ is defined as an increasing sequence of subrepresentation $(M_k)_k$ of $X$ such that for any arrow $x \in v(Q)$ and any $k$, we have $x.M_{k+1} \subseteq M_{k}$. For an integer $d \geqslant 2$, we denote
+For a quiver representation $X \in \rep(Q)$, a strict partial flag of $X$ is defined as an increasing sequence of subrepresentation $(M_k)_k$ of $X$ such that for any arrow $x \in v(Q)$ and any $k$, we have $x.M_{k+1} \subseteq M_{k}$. For an integer $d \geqslant 2$, we denote
 $$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{k+1} \subseteq M_k \right\}$$
-as the collections of all strict partial flags of length $d$, and call it the strict partial flag variety. 
+as the collection of all strict partial flags of length $d$, and call it the strict partial flag variety. 
 \end{defn}
 \begin{defn}[Grassmannian]
-Let $R$ be the bounded quiver algebra defined in Definition \ref{def:pf} or \ref{def:spf}. Fix a module $T \in \Mod(R)$, the Grassmannian $\Gralg{R}(T)$ is defined as the set of all submodules of $T$, equivalently,
+Let $R$ be the bounded quiver algebra defined in Definition \ref{def:pf} or \ref{def:spf}. For a module $T \in \Mod(R)$, the Grassmannian $\Gralg{R}(T)$ is defined as the set of all submodules of $T$, i.e.,
 $$\Gralg{R}(T):=\{T' \subseteq T \text{ as the submodule}  \}.$$
 \end{defn}
 \begin{defn}[Canonical functor $\Phi$]
@@ -438,7 +439,7 @@ Let $R$ be a bounded quiver algebra defined in Definition \ref{def:bqa}. We deno
 \end{equation*}
 
 For two dimension vectors $\dimvec{f},\dimvec{g}$ of $R$, the Euler form $\left< \dimvec{f},\dimvec{g}\right>_R$ is defined by
-	$$\left< \dimvec{f},\dimvec{g}\right>_R:= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}$$
+	$$\left< \dimvec{f},\dimvec{g}\right>_R:= \sum_{i \in v(R)} f_ig_i - \sum_{b \in a(R)} f_{s(b)}g_{t(b)}+ \sum_{c \in va(R)} f_{s(c)}g_{t(c)}.$$
 \end{defn}
 \subsection{Ext-vanishing properties}
 We will show that some higher rank extension group are zero, which will be a key ingredient in the proofs of the next section.
@@ -515,20 +516,20 @@ Let $X,S \in \rep(Q)$ and $V \subseteq \Phi(X), W \subseteq \Phi(S)$, $T \in \Mo
 The short exact sequence 
 $$0 \longrightarrow W \longrightarrow \Phi(S) \longrightarrow \Phi(S)/W \longrightarrow 0$$
 induces the long exact sequence 
-$$\cdots \longrightarrow \Ext^2_{R}(\Phi(S),T) \longrightarrow \Ext^2_{R}(W,T) \longrightarrow \Ext^3_{R}(\Phi(S)/W,T) \longrightarrow \cdots$$
+$$\cdots \longrightarrow \Ext^2_{R}(\Phi(S),T) \longrightarrow \Ext^2_{R}(W,T) \longrightarrow \Ext^3_{R}(\Phi(S)/W,T) \longrightarrow \cdots.$$
 By Lemma \ref{lm:Extvan} (\ref{lm:gldim}) and (\ref{lm:projdim}), $\Ext^3_{R}(\Phi(S)/W,T)$ and $\Ext^2_{R}(\Phi(S),T)$ are both $0$, so $\Ext^2_{R}(W,T)=0$.
 
 Similarly, from the short exact sequence
 $$0 \longrightarrow V \longrightarrow \Phi(X) \longrightarrow \Phi(X)/V \longrightarrow 0$$
 we get the induced long exact sequence
-$$\cdots \longrightarrow \Ext^2_{R}(T,\Phi(X)) \longrightarrow \Ext^2_{R}(T,\Phi(X)/V) \longrightarrow \Ext^3_{R}(T,V) \longrightarrow \cdots$$
+$$\cdots \longrightarrow \Ext^2_{R}(T,\Phi(X)) \longrightarrow \Ext^2_{R}(T,\Phi(X)/V) \longrightarrow \Ext^3_{R}(T,V) \longrightarrow \cdots,$$
 so $\Ext^2_{R}(T,\Phi(X)/V)=0$.
 \end{proof}
 We will frequently use extension groups as well as long exact sequences, so we introduce some abbreviations.\todo{Some abbreviations are introduced for frequent usage of extension groups.} For $Q$-representations $M,N$ and $R$-modules $T,T'$, we denote  
 \begin{equation*}
 \begin{aligned}[]
-	[M,N]^i:&=\dim_K \Ext^i_{KQ} (M,N),\qquad [M,N]:=\dim_K \Hom_{KQ} (M,N)\\
-	[T,T']^i:&=\dim_K \Ext^i_R (T,T'),\qquad\hspace{0.5cm} [T,T']:=\dim_K \Hom_R (T,T')
+	[M,N]^i:&=\dim_K \Ext^i_{KQ} (M,N)\qquad [M,N]:=\dim_K \Hom_{KQ} (M,N)\\
+	[T,T']^i:&=\dim_K \Ext^i_R (T,T')\qquad\hspace{0.5cm} [T,T']:=\dim_K \Hom_R (T,T')
 \end{aligned}
 \end{equation*}
 and write the Euler form as
@@ -565,8 +566,8 @@ and let $\Psi_{\dimvec{f},\dimvec{g}}$ be the map $\Psi$ restricted to the preim
 	where 
 	\begin{equation*}
 	\begin{aligned}
-	X_S:&= \max \left\{ M \subseteq X \,\middle|\; [S,X/M ]^1=1 \right\} \subseteq X\\
-	S^X:&= \max \left\{ M \subseteq S \,\middle|\; [M,X]^1=1 \right\} \subseteq S
+	X_S:&= \max \left\{ M \subseteq X \,\middle|\; [S,X/M ]^1=1 \right\} \subseteq X,\\
+	S^X:&= \max \left\{ M \subseteq S \,\middle|\; [M,X]^1=1 \right\} \subseteq S.
 	\end{aligned}
 	\end{equation*}
 Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$ over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
@@ -622,7 +623,7 @@ so $\bar{\eta}=0$ if and only if the last short exact sequence splits, that mean
 \end{proof}
 \begin{corollary}[]\label{cor:0or1}
 	Let $W \subseteq \Phi(S), V \subseteq \Phi(X)$ be $R$-submodules, then
-	$$[W,\Phi(X)/V]^1 \leqslant [\Phi(S),\Phi(X)]^1=[S,X]^1,$$
+	$$[W,\Phi(X)/V]^1 \leqslant [\Phi(S),\Phi(X)]^1=[S,X]^1.$$
 	In particular, when $[S,X]^1=1$, we get $[W,\Phi(X)/V]^1=0 \text{ or }1$; when $\eta$ generates $\Ext^1(S,X)$, we get
 	$$(V,W) \in \Img \Psi \iff [W,\Phi(X)/V]^1=0.$$	
 \end{corollary}
@@ -630,8 +631,8 @@ so $\bar{\eta}=0$ if and only if the last short exact sequence splits, that mean
 In the case where $\eta$ generates $\Ext^1(S,X)$, we want to describe $\Img \Psi$ more precisely. For this reason we need to introduce two new $R$-modules:
 	\begin{equation*}
 	\begin{aligned}
-	\widetilde{X_S}:&= \max \left\{ V \subseteq \Phi(X) \,\middle|\; [\Phi(S),\Phi(X)/V ]^1=1 \right\} \subseteq \Phi(X)\\
-	\widetilde{S^X}:&= \max \left\{ W \subseteq \Phi(S) \,\middle|\; [W,\Phi(X)]^1=1 \right\} \subseteq \Phi(S)
+	\widetilde{X_S}:&= \max \left\{ V \subseteq \Phi(X) \,\middle|\; [\Phi(S),\Phi(X)/V ]^1=1 \right\} \subseteq \Phi(X),\\
+	\widetilde{S^X}:&= \max \left\{ W \subseteq \Phi(S) \,\middle|\; [W,\Phi(X)]^1=1 \right\} \subseteq \Phi(S).
 	\end{aligned}
 	\end{equation*}
 $\widetilde{X_S}$ and $\widetilde{S^X}$ are well-defined because of the following lemma:
@@ -649,7 +650,7 @@ We only prove (i). (ii) is similar.
 From the short exact sequence 
 $$0 \longrightarrow \Phi(X)/(V\cap V') \longrightarrow \Phi(X)/V \oplus \Phi(X)/V' \longrightarrow \Phi(X)/(V+V') \longrightarrow 0,$$
 we get the long exact sequence
-$$\hspace{-0.4cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V\cap V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V}\right) \oplus \;\Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V+ V'}\right) \rightarrow\cdots$$
+$$\hspace{-0.4cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V\cap V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V}\right) \oplus \;\Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V'}\right) \rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(X)}{V+ V'}\right) \rightarrow\cdots.$$
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/(V\cap V')]^1\leqslant 1, \; [\Phi(S),\Phi(X)/(V+V')]^1\leqslant 1$, and this forces $[\Phi(S),\Phi(X)/(V+V')]^1= 1$.
 \end{proof}
 \begin{lemma}[Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, with the same proof]\todo{Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}} with the same proof}Let $\tau$ be the Auslander--Reiten translation.\\
@@ -665,7 +666,7 @@ For any $M \subseteq X$, we have
   \cong\;& \left\{ g \in \Hom(X,\tau S) \middle| \,g|_M=0 \right\} \\ 
   \cong\;& \begin{cases}
   \mathbb{C}, & M \subseteq \ker f\\
-  0, & M \nsubseteq \ker f
+  0, & M \nsubseteq \ker f.
   \end{cases} \\ 
 \end{aligned}
 \end{equation*}
@@ -679,7 +680,7 @@ For $\Phi(f)$ it is similar. For any $V \subseteq \Phi(X)$, we have
   \cong\;& \left\{ g \in \Hom(\Phi(X), \Phi(\tau S)) \middle| \,g|_V=0 \right\} \\ 
   \cong\;& \begin{cases}
   \mathbb{C}, & V \subseteq \ker \Phi(f)\\
-  0, & V \nsubseteq \ker \Phi(f)
+  0, & V \nsubseteq \ker \Phi(f).
   \end{cases} \\ 
 \end{aligned}
 \end{equation*}
@@ -704,7 +705,7 @@ $$V \nsubseteq \Phi(X_S) \iff [\Phi(S),\Phi(X)/V ]^1=0 \Rightarrow  [W,\Phi(X)/V
 \end{proof}
 \begin{corollary}\label{cor:img2}
 When $\eta$ generates $\Ext^1(S,X)$, we have 
-	$$\Img \Psi_{\dimvec{f},\dimvec{g}} = \bigg(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) \bigg) \setminus \bigg(\Grr_{\dimvec{f}}(\Phi(X_S)) \times \Grr_{\dimvec{g}-\dimv \Phi(S^X)}\left(\Phi(S/S^X)\right) \bigg)$$
+	$$\Img \Psi_{\dimvec{f},\dimvec{g}} = \bigg(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)) \bigg) \setminus \bigg(\Grr_{\dimvec{f}}(\Phi(X_S)) \times \Grr_{\dimvec{g}-\dimv \Phi(S^X)}\left(\Phi(S/S^X)\right) \bigg).$$
 \end{corollary}
 
 \begin{lemma}\label{lem:torsor}
@@ -741,6 +742,7 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 	\arrow["\theta"', color={rgb,255:red,255;green,51;blue,58}, curve={height=-18pt}, from=3-7, to=3-6]
 \end{tikzcd}\]
 When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{black}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
+\belowdisplayskip=-12pt
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
 \begin{remark}
@@ -748,12 +750,12 @@ Any point $(V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}}$ can be also viewed as a 
 $$f: \Spec K \longrightarrow \Img \Psi_{\dimvec{f},\dimvec{g}}  \subseteq \Grr_{\dimvec{f}}(\Phi(X)) \shorttimes \Grr_{\dimvec{g}}(\Phi(S)) $$
 where Grassmannian are viewed as moduli spaces over $K$. Essentially by replacing $\Spec K$ by $\Spec A$ in Lemma \ref{lem:torsor}, we can run the machinery of algebraic geometry, and prove that $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
 \end{remark}
-\begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]
+\begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]\belowdisplayskip=-12pt
 We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:img2}. For the rank of the affine bundle, we have 
 \begin{equation*}
 \begin{aligned}
 (V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}} &\Longrightarrow [W,\Phi(X)/V]^1=0\\
-& \Longrightarrow [W,\Phi(X)/V]=\left< W,\Phi(X)/V\right>_R=\left< \dimvec{f},\dimv \Phi(X)-\dimvec{g}\right>_R
+& \Longrightarrow [W,\Phi(X)/V]=\left< W,\Phi(X)/V\right>_R=\left< \dimvec{f},\dimv \Phi(X)-\dimvec{g}\right>_R.
 \end{aligned}
 \end{equation*}
 \end{proof}
@@ -853,7 +855,7 @@ The concept ``quasi-simple'' is defined in \cite[Definition 15]{irelli2019cell};
 
 For a regular quasi-simple representation $Y$ of type $\tilde{E}$, it's possible that there's no short exact sequence
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main1} or \ref{thm:main2}. Hence the new methods are needed for this case.
+such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main1} or \ref{thm:main2}. Hence, the new methods are needed for this case.
 \appendix
 %\setcounter{secnumdepth}{0}
 %\section{Appendix}
