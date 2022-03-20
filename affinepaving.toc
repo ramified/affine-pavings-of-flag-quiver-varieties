@@ -2,12 +2,12 @@
 \contentsline {section}{\tocsection {}{}{Acknowledgement}}{2}{section*.3}% 
 \contentsline {section}{\tocsection {}{2}{Preliminaries}}{2}{section.2}% 
 \contentsline {subsection}{\tocsubsection {}{2.1}{Extended quiver}}{2}{subsection.2.1}% 
-\contentsline {subsection}{\tocsubsection {}{2.2}{Canonical functor $\Phi $}}{4}{subsection.2.2}% 
-\contentsline {subsection}{\tocsubsection {}{2.3}{Dimension vector}}{5}{subsection.2.3}% 
-\contentsline {subsection}{\tocsubsection {}{2.4}{Ext-vanishing properties}}{7}{subsection.2.4}% 
+\contentsline {subsection}{\tocsubsection {}{2.2}{Canonical functor $\Phi $}}{3}{subsection.2.2}% 
+\contentsline {subsection}{\tocsubsection {}{2.3}{Dimension vector}}{4}{subsection.2.3}% 
+\contentsline {subsection}{\tocsubsection {}{2.4}{Ext-vanishing properties}}{6}{subsection.2.4}% 
 \contentsline {section}{\tocsection {}{3}{Main Theorem}}{8}{section.3}% 
 \contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{11}{section.4}% 
 \contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{13}{section.5}% 
-\contentsline {section}{\tocsection {Appendix}{A}{A crash course on Auslander--Reiten theory}}{14}{appendix.A}% 
+\contentsline {section}{\tocsection {Appendix}{A}{A crash course on Auslander--Reiten theory}}{13}{appendix.A}% 
 \contentsline {section}{\tocsection {Appendix}{B}{Proof of Claim \ref {claim:bigorder}}}{18}{appendix.B}% 
-\contentsline {section}{\tocsection {Appendix}{}{References}}{23}{section*.13}% 
+\contentsline {section}{\tocsection {Appendix}{}{References}}{23}{section*.18}% 
