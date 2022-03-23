@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  20 MAR 2022 21:42
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  23 MAR 2022 23:09
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1247,10 +1247,7 @@ LaTeX Info: Redefining \nameref on input line 131.
 \se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
-)
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 164.
- [1] [2]
+) [1] [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 289.
@@ -1375,14 +1372,14 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1490.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1490.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
-(rerunfilecheck)             Checksum: 473A212759EEAEA83FB70EC19A12C35B.
+(rerunfilecheck)             Checksum: 010430CFDDD97D2DC2187F29EFA44482.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1490.
  ) 
 Here is how much of TeX's memory you used:
- 30253 strings out of 427748
- 551707 string characters out of 3150981
- 739501 words of memory out of 3000000
- 33587 multiletter control sequences out of 15000+200000
+ 30104 strings out of 427748
+ 548305 string characters out of 3150981
+ 724534 words of memory out of 3000000
+ 33438 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,84p,4082b,1209s stack positions out of 5000i,500n,10000p,200000b,50000s

@@ -161,11 +161,11 @@ Affine pavings are an important concept in algebraic geometry similar to cellula
 $$0= X_0 \subset X_1 \subset \cdots \subset X_d=X$$
 with $X_i$ closed and $X_{i+1} \setminus X_i$ isomorphic to some affine space $\mathbb{A}^k_{\mathbb{C}}$.
 
-Affine pavings imply nice properties about the cohomology of varieties, as\todo{, for exmaple the...} for example the vanishing of cohomology in odd degrees. For other properties see \cite[1.7]{de1988homology}.
+Affine pavings imply nice properties about the cohomology of varieties, for example the vanishing of cohomology in odd degrees. For other properties see \cite[1.7]{de1988homology}.
 
 Affine pavings have been constructed in many cases, as for Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians, and quiver flag varieties. This article focuses on the case of (strict) partial flag varieties which parameterize subrepresentations of a fixed representation of a quiver. In particular, we consider quivers of Dynkin type or affine type.
 In this case, affine pavings have been constructed in \cite{irelli2019cell} for quiver Grassmannians in all types and in \cite{maksimau2019flag} for partial flag varieties of type $A$ and $D$ (see Table \ref{table:result}). Besides, affine pavings 
-have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic}\todo{I wonder if it is only proved for the nilpotent representation.} for (strict) partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. In this paper, we will tackle the remaining cases.
+have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic} for strict partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. In this paper, we will tackle the remaining cases.
 
 
 %The nocolor version 
@@ -186,7 +186,7 @@ $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the re
 \caption{}\label{table:result}
 \end{table}
 
-We proceed as follows. In Section \ref{sec:flag=gr}, we discuss basic definitions and properties of partial flags. In Section \ref{sec:mainthm} we will prove key Theorems \ref{thm:main1} and \ref{thm:main2}, which allow us to construct affine pavings for quiver partial flag varieties inductively. We apply these theorems to partial flag varieties of Dynkin type, see Section \ref{sec:Dynkin}, and to partial flag varieties of affine type, see Section \ref{sec:affine}. \todo{During the process, we will...}We will combine and extend results from \cite{irelli2019cell} and \cite{maksimau2019flag}.
+We proceed as follows. In Section \ref{sec:flag=gr}, we discuss basic definitions and properties of partial flags. In Section \ref{sec:mainthm} we will prove key Theorems \ref{thm:main1} and \ref{thm:main2}, which allow us to construct affine pavings for quiver partial flag varieties inductively. We apply these theorems to partial flag varieties of Dynkin type, see Section \ref{sec:Dynkin}, and to partial flag varieties of affine type, see Section \ref{sec:affine}. We will combine and extend results from \cite{irelli2019cell} and \cite{maksimau2019flag}.
 Following the arguments of \cite{maksimau2019flag} would require studying millions of cases when we  consider the Dynkin quivers of type $E$. To avoid this, we extend the methods of \cite{irelli2019cell} from quiver Grassmannian to quiver partial flag variety. This will reduce the case by case analysis to a feasible computation of (mostly) 8 critical cases, which we carry out in Section \ref{sec:Dynkin} and Appendix \ref{appendix:proofcomplement}. The reduction uses Auslander--Reiten theory which we recall in Appendix \ref{appendix:arth}.
 %It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zariski) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the Table \ref{table:result}.
 %
@@ -195,7 +195,7 @@ Following the arguments of \cite{maksimau2019flag} would require studying millio
 \begin{notation}
 Throughout this article, $K=\mathbb{C}$, $R$ is a $K$-algebra with unit, and $\Mod(R)$ denotes the category of $R$-modules of finite dimension. Let $Q$ be a quiver equipped with the set of finite vertices $v(Q)$ and the set of finite edges $a(Q)$. For an
 arrow $b$, we call $s(b)$ the starting vertex and $t(b)$ the terminal vertex
-of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category of quiver representations of finite dimension. For a representation $X\in \rep(Q)$, we denote by $X_i:=e_iX$ the $K$-linear space at the vertex $i\in v(Q)$. We denote by $P(i)$, $I(i)$ and $S(i)$ the indecomposable projective, injective, simple modules\todo{indecomposable projective, indecomposable injective, simple modules} corresponding to the vertex $i$, respectively.
+of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category of quiver representations of finite dimension. For a representation $X\in \rep(Q)$, we denote by $X_i:=e_iX$ the $K$-linear space at the vertex $i\in v(Q)$. We denote by $P(i)$, $I(i)$ and $S(i)$ the indecomposable projective, injective, simple modules corresponding to the vertex $i$, respectively.
 \end{notation}
 
 
@@ -217,7 +217,7 @@ For a quiver $Q$ and an integer $d \geqslant 1$, the extended quiver $Q_{d}$ is 
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.,
 	$$v(Q_d)=v(Q) \times \{1,\ldots,d\}.$$
-	\item  There are two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for every\todo{for each arrow? To be compatible with last sentence} arrow $i \longrightarrow j$ in $Q$ and $r \in \{1,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r)$.
+	\item  There are two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for each arrow $i \longrightarrow j$ in $Q$ and $r \in \{1,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r)$.
 \end{itemize}
 \end{defn}
 
@@ -228,13 +228,13 @@ For a quiver $Q$ and an integer $d \geqslant 2$, the strict extended quiver $Q_{
 \begin{itemize}
 	\item The vertex set of $Q_d$ is defined as the Cartesian product of the vertex set of $Q$ and $\{1,\ldots,d\}$, i.e.,
 	$$v(Q_{d,\operatorname{str}})=v(Q) \times \{1,\ldots,d\}.$$
-	\item  We have two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for every arrow $i \longrightarrow j$ in quiver $Q$ and $r \in \{2,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r-1)$.
+	\item  We have two types of arrows: for each $(i,r) \in v(Q) \times \{1,\ldots,d-1\}$, there is one arrow from $(i,r)$ to $(i,r+1)$; for each arrow $i \longrightarrow j$ in quiver $Q$ and $r \in \{2,\ldots,d\}$, there is one arrow from $(i,r)$ to $(j,r-1)$.
 \end{itemize}
 \end{defn}
 
 
 \begin{eg}
-The (strict) extended quiver for a Dynkin quiver $Q$ of type $A_4$ look\todo{looks?} as follows.
+The (strict) extended quiver for a Dynkin quiver $Q$ of type $A_4$ looks as follows.
 % https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XV0=
 \[\begin{tikzcd}[column sep=3mm, row sep=5mm]
 	&&&&&&&[5mm] \bullet && \bullet && \bullet && \bullet &[5mm] \bullet && \bullet && \bullet && \bullet \\
@@ -352,7 +352,7 @@ Now we can write the (strict) partial flag variety and Grassmannian as disjoint 
   \Gralg{R}_{\dimvec{f}}(T):=\;&\{T' \subseteq T \text{ with } \dimv T'=\dimvec{f}\} && \subseteq  \Gralg{R}(T). 
 \end{aligned}
 \end{equation*}
-Then, from the Proposition \ref{prop:flag=gr} we get 
+Then from the Proposition \ref{prop:flag=gr} we get 
 $$\Flagd_{,\dimvec{f}}(X) \cong \Gralg{R_d}_{\dimvec{f}}(\Phi(X)) \qquad \Flag{d,\dimvec{f}}^{\operatorname{str}}(X) \cong \Gralg{R_{d,\operatorname{str}}}_{\dimvec{f}}(\Phi(X)).$$
 
 Finally, we need to define the Euler form of two dimension vectors. For this we need to define the set of virtual arrows of the quivers $Q_d$ and $Q_{d,\operatorname{str}}$. Following Example \ref{example:virtualarrow}, the virtual arrows of the quivers $Q_3$ and $Q_{3,\operatorname{str}}$ are depicted in red.
@@ -510,7 +510,7 @@ For (\ref{lm:projdim}), notice that the minimal projective resolution of $M$ is 
 \end{proof}
 The following key lemma will be crucial later.
 \begin{lemma}\label{lm:Ext2van}
-Let $X,S \in \rep(Q)$ and $V \subseteq \Phi(X), W \subseteq \Phi(S)$, $T \in \Mod(R)$. Then\todo{Then, } $\Ext^2_{R}(W,T)=0$ and $\Ext^2_{R}(T,\Phi(X)/V)=0$.
+Let $X,S \in \rep(Q)$ and $V \subseteq \Phi(X), W \subseteq \Phi(S)$, $T \in \Mod(R)$. Then $\Ext^2_{R}(W,T)=0$ and $\Ext^2_{R}(T,\Phi(X)/V)=0$.
 \end{lemma}
 \begin{proof}
 The short exact sequence 
@@ -525,7 +525,7 @@ we get the induced long exact sequence
 $$\cdots \longrightarrow \Ext^2_{R}(T,\Phi(X)) \longrightarrow \Ext^2_{R}(T,\Phi(X)/V) \longrightarrow \Ext^3_{R}(T,V) \longrightarrow \cdots,$$
 so $\Ext^2_{R}(T,\Phi(X)/V)=0$.
 \end{proof}
-We will frequently use extension groups as well as long exact sequences, so we introduce some abbreviations.\todo{Some abbreviations are introduced for frequent usage of extension groups.} For $Q$-representations $M,N$ and $R$-modules $T,T'$, we denote  
+We will frequently use extension groups as well as long exact sequences, so we introduce some abbreviations. For $Q$-representations $M,N$ and $R$-modules $T,T'$, we denote  
 \begin{equation*}
 \begin{aligned}[]
 	[M,N]^i:&=\dim_K \Ext^i_{KQ} (M,N)\qquad [M,N]:=\dim_K \Hom_{KQ} (M,N)\\
@@ -653,7 +653,7 @@ $$\hspace{-0.4cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/(V\cap V')]^1\leqslant 1, \; [\Phi(S),\Phi(X)/(V+V')]^1\leqslant 1$, and this forces $[\Phi(S),\Phi(X)/(V+V')]^1= 1$.
 \end{proof}
 
-\begin{lemma}[Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, with the same proof]\todo{Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}} with the same proof}Let $\tau$ be the Auslander--Reiten translation.\\
+\begin{lemma}[Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, with the same proof]Let $\tau$ be the Auslander--Reiten translation.\\
 Let $f:X \longrightarrow \tau S$ be a non-zero morphism,\footnote{Since $X$ is not injective, $[X,\tau S]=[S,X]^1=1$, $f$ is uniquely determined up to a constant.} then $X_S=\ker (f)$;\\
  also, $\Phi(f): \Phi(X) \longrightarrow \Phi(\tau S)$ is a non-zero morphism, $\widetilde{X_S}=\ker (\Phi(f))$.
 \end{lemma}
@@ -796,7 +796,7 @@ is equal to $\ord(M)$ unless $\orde(M)=0$.
 			\includegraphics[width=1.7cm]{figures/E8.pdf}
 			\subcaption{$E_8$}
 			}
-		\caption[Caption for LOF]{The quantity  $\orde$ for indecomposable representations in type $E$ arranged in the  Auslander--Reiten quiver\footnotemark}
+		\caption[Caption for LOF]{The quantity  $\orde$ for indecomposable representations in type $E$ arranged in the  Auslander--Reiten quiver.\footnotemark}
 		\label{fig:startingfunction}
 	\end{figure}
 \end{center}
@@ -816,7 +816,7 @@ Now we've nearly prepared every step of the proof of Theorem \ref{thm:Dynkincase
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.7]{figures/flowchart.pdf}
-    \caption{The process of induction.}
+    \caption{the process of induction}
     \vspace{2mm}
     \label{fig:flowchart}
 \end{figure}
@@ -828,7 +828,7 @@ Suppose $Q$ is of Dynkin type. For any indecomposable representation $M \in \rep
 \begin{proof}[{Proof of Theorem \ref{thm:Dynkincase}}]
 First of all, for any indecomposable representation $M \in \rep(Q)$ we obtain an affine paving. This follows from Claim \ref{claim:bigorder} when $\ord(M)>2$, and follows from Lemma \ref{lem:smallvecdim} when $\ord(M)\leqslant 2$.
 
-The general case follows by induction on the dimension vector. \todo{Let $M \cong M_1 \oplus M_2$. By ...}Let $M \cong M_1 \oplus M_2$, then by applying Theorem \ref{thm:main1} to the short exact sequence 
+The general case follows by induction on the dimension vector. Let $M \cong M_1 \oplus M_2$, then by applying Theorem \ref{thm:main1} to the short exact sequence 
 $$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0,$$
 we get an affine paving from the affine pavings of $M_1$ and $M_2$.
 \end{proof}
@@ -1275,9 +1275,9 @@ The next two lemmas tell us the existence of the desired short exact sequence.
 	The condition $\ord(Y)>2$ in the lemma can not be removed.
 \end{remark}
 \begin{lemma}\label{lem:value}
-Let $X \hookrightarrow Y$ be a minimal sectional mono, and $S:=Y/X$ be the quotient. Then, we have the short exact sequence 
+Let $X \hookrightarrow Y$ be a minimal sectional mono, and $S:=Y/X$ be the quotient. Then we have the short exact sequence 
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-and the dimensions of extension groups among $X,Y,S$ are as shown\todo{are shown?} in the Table \ref{table:dim}.
+and the dimensions of extension groups among $X,Y,S$ are as shown in the Table \ref{table:dim}.
 \renewcommand{\arraystretch}{1.1}
 %https://tex.stackexchange.com/questions/552563/centering-on-the-last-column-messes-table-up
 \begin{table}
@@ -1325,7 +1325,7 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
 
-\begin{lemma}[{Follows \cite[Lemma 36]{irelli2019cell}, proof is exactly the same}]\label{lem:descriptionofX_S}\todo{, with the same proof}
+\begin{lemma}[{Follows \cite[Lemma 36]{irelli2019cell}, with the same proof}]\label{lem:descriptionofX_S}
 	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
 \begin{corollary}
