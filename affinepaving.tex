@@ -202,7 +202,7 @@ of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category o
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgement}
 %\addcontentsline{toc}{section}{Acknowledgement}
-First, I would like to thank my supervisor, Jens Niklas Eberhardt, for introducing me this specific problem, discussing earlier drafts, as well as providing help with the write-up. I would also like to thank Hans Franzen for answering some questions regarding \cite{irelli2019cell}. This article is part of my master thesis project.
+First, I would like to thank my supervisor, Jens Niklas Eberhardt, for introducing me this specific problem, discussing earlier drafts, as well as providing help with the write-up. I would also like to thank Hans Franzen for answering some questions regarding \cite{irelli2019cell}, and thank Ruslan Maksimau for some comments and suggestions. This article is part of my master thesis project.
 %My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this article
 % I would like to express my gratitude to
 %my advisor James Newton without whom this paper would never have been completed. I
@@ -558,7 +558,7 @@ and let $\Psi_{\dimvec{f},\dimvec{g}}$ be the map $\Psi$ restricted to the preim
 
 %The goal of this section is to prove the following theorems:
 \begin{theorem}\label{thm:main1}
-	If $\eta$ splits, then $\Psi$ is surjective. Moreover, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$.
+	If $\eta$ splits, then $\Psi$ is surjective. Moreover, if $[S,X]^1=0$, then $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$.
 \end{theorem}
 \begin{theorem}[Generalizes {\cite[Theorem 32]{irelli2019cell}}]\label{thm:main2}
 	When $\eta$ does not split and $[S,X]^1=1$, 
@@ -751,10 +751,10 @@ $$f: \Spec K \longrightarrow \Img \Psi_{\dimvec{f},\dimvec{g}}  \subseteq \Grr_{
 where Grassmannian are viewed as moduli spaces over $K$. Essentially by replacing $\Spec K$ by $\Spec A$ in Lemma \ref{lem:torsor}, we can run the machinery of algebraic geometry, and prove that $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle over $\Img \Psi_{\dimvec{f},\dimvec{g}}$.
 \end{remark}
 \begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]\belowdisplayskip=-12pt
-We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:img2}. For the rank of the affine bundle, we have 
+We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:img2}. In both cases $\eta$ generates $\Ext^1(S,X)$, so by Corollary \ref{cor:0or1} we get
 \begin{equation*}
 \begin{aligned}
-(V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}} &\Longrightarrow [W,\Phi(X)/V]^1=0\\
+(V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}} &\Longleftrightarrow [W,\Phi(X)/V]^1=0\\
 & \Longrightarrow [W,\Phi(X)/V]=\left< W,\Phi(X)/V\right>_R=\left< \dimvec{f},\dimv \Phi(X)-\dimvec{g}\right>_R.
 \end{aligned}
 \end{equation*}
@@ -828,7 +828,8 @@ Suppose $Q$ is of Dynkin type. For any indecomposable representation $M \in \rep
 \begin{proof}[{Proof of Theorem \ref{thm:Dynkincase}}]
 First of all, for any indecomposable representation $M \in \rep(Q)$ we obtain an affine paving. This follows from Claim \ref{claim:bigorder} when $\ord(M)>2$, and follows from Lemma \ref{lem:smallvecdim} when $\ord(M)\leqslant 2$.
 
-The general case follows by induction on the dimension vector. Let $M \cong M_1 \oplus M_2$, then by applying Theorem \ref{thm:main1} to the short exact sequence 
+The general case follows by induction on the dimension vector. The indecomposable representations $\{N_i\}_{i \in Q_0}$ of quiver $Q$ can be ordered such that $[N_i,N_j]=0$ for all $i>j$. Therefore, every non-indecomposable representation $M$ can be decomposed as the direct sum of two nonzero representations $M_1, M_2$ satisfying $[M_2,M_1]^1=0$.
+By applying Theorem \ref{thm:main1} to the short exact sequence 
 $$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0,$$
 we get an affine paving from the affine pavings of $M_1$ and $M_2$.
 \end{proof}

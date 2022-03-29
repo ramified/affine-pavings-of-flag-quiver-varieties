@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  25 MAR 2022 11:46
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  29 MAR 2022 15:16
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1247,7 +1247,10 @@ LaTeX Info: Redefining \nameref on input line 131.
 \se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
-) [1] [2]
+) [1]
+Underfull \vbox (badness 2334) has occurred while \output is active []
+
+ [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 289.
@@ -1310,25 +1313,25 @@ File: figures/E8.pdf Graphic file (type pdf)
 File: figures/flowchart.pdf Graphic file (type pdf)
 <use figures/flowchart.pdf>
  [12]
-Overfull \hbox (20.04085pt too wide) in paragraph at lines 865--866
+Overfull \hbox (20.04085pt too wide) in paragraph at lines 866--867
 \TU/lmr/m/n/10.95 decomposable representation, irreducible morphism, Auslander–
 Reiten translation, Auslander–
  []
 
 [13]
-Overfull \hbox (1.1089pt too wide) in paragraph at lines 889--1004
+Overfull \hbox (1.1089pt too wide) in paragraph at lines 890--1005
  [][] 
  []
 
 
-Overfull \hbox (2.55482pt too wide) in paragraph at lines 1009--1010
+Overfull \hbox (2.55482pt too wide) in paragraph at lines 1010--1011
 [][]\TU/lmr/bx/n/10.95 Definition A.2 \TU/lmr/m/n/10.95 (Irreducible morphism)\
 TU/lmr/bx/n/10.95 . []\TU/lmr/m/it/10.95 Given two indecomposable representatio
 ns $\OML/cmm/m/it/10.95 T; T[] \OMS/cmsy/m/n/10.95 2
  []
 
-[14]
-Overfull \hbox (21.41911pt too wide) in paragraph at lines 1051--1053
+[14] [15]
+Overfull \hbox (21.41911pt too wide) in paragraph at lines 1052--1054
 \TU/lmr/m/n/10.95 which is functorial for any $\OML/cmm/m/it/10.95 T; T[] \OMS/
 cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 
 )$\TU/lmr/m/n/10.95 . Especially, when $\OML/cmm/m/it/10.95 T$ \TU/lmr/m/n/10.9
@@ -1336,7 +1339,7 @@ cmsy/m/n/10.95 2 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95
 cmr/m/n/10.95 ) =
  []
 
-[15] [16]
+[16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
@@ -1351,7 +1354,7 @@ File: figures/E8easy.pdf Graphic file (type pdf)
 File: figures/E8hard.pdf Graphic file (type pdf)
 <use figures/E8hard.pdf>
 
-[18] [19]
+[18] [19] [20]
 File: figures/E8graypic1.pdf Graphic file (type pdf)
 <use figures/E8graypic1.pdf>
 File: figures/E8graypic2.pdf Graphic file (type pdf)
@@ -1360,25 +1363,21 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [20] [21]
-Overfull \vbox (1.39333pt too high) has occurred while \output is active []
-
-
-[22] (affinepaving.bbl) [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1490.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1490.
+ [21] [22] (affinepaving.bbl) [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1491.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1491.
  (affinepaving.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1490.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1490.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1491.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1491.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
 (rerunfilecheck)             Checksum: 010430CFDDD97D2DC2187F29EFA44482.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1490.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1491.
  ) 
 Here is how much of TeX's memory you used:
  30104 strings out of 427748
  548305 string characters out of 3150981
- 724534 words of memory out of 3000000
+ 725706 words of memory out of 3000000
  33438 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
