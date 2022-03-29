@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  29 MAR 2022 15:16
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  29 MAR 2022 16:27
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1238,7 +1238,13 @@ LaTeX Info: Redefining \nameref on input line 131.
 \@outlinefile=\write5
 \openout5 = `affinepaving.out'.
 
- (affinepaving.toc)
+
+Overfull \hbox (17.64975pt too wide) in paragraph at lines 149--151
+\TU/lmr/m/n/9 Cerulli-Irelli–Esposito–Franzen–Reineke and Maksimau as well as t
+echniques from Auslander–
+ []
+
+(affinepaving.toc)
 \tf@toc=\write6
 \openout6 = `affinepaving.toc'.
 
