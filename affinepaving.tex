@@ -805,7 +805,7 @@ is equal to $\ord(M)$ unless $\orde(M)=0$.
 The next lemma shows the affine paving property for representations of small order.
 
 \begin{lemma}[{Follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
-	Suppose that the underlying graph of $Q$ is a tree. For a representation $M \in \rep(Q)$ with $\ord(M) \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or a direct product of some copies of $\mathbb{P}^1$. Especially, the partial flag variety $ \Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving.
+	Suppose that the underlying graph of $Q$ is a tree. For an indecomposable representation $M \in \rep(Q)$ with $\ord(M) \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or a direct product of some copies of $\mathbb{P}^1$. Especially, the partial flag variety $ \Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving.
 \end{lemma}
 %\begin{proof}
 %	For each vertex $i$ of the bigger quiver, the dimension of $V_i$ is 0,1,2; then the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is naturally included to a direct product of $\mathbb{P}^1$, and the information of arrows just reduce the number of $\mathbb{P}^1$(maybe to singleton or empty).
@@ -833,6 +833,9 @@ By applying Theorem \ref{thm:main1} to the short exact sequence
 $$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0,$$
 we get an affine paving from the affine pavings of $M_1$ and $M_2$, see \cite[Lemma 13]{irelli2019cell}.
 \end{proof}
+\begin{remark}\label{rem:smallorder}
+By the same technique one can show that, for Dynkin quiver $Q$ and any representation $M$ with $\displaystyle\max_{i \in v(Q)} \dim_K M_i \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving. This result does not depend on Claim \ref{claim:bigorder}.
+\end{remark}
 
 
 
