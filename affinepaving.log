@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  30 MAR 2022 12:21
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  31 MAR 2022 10:35
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1318,13 +1318,13 @@ File: figures/E8.pdf Graphic file (type pdf)
 <use figures/E8.pdf>
 File: figures/flowchart.pdf Graphic file (type pdf)
 <use figures/flowchart.pdf>
- [12]
+ [12] [13]
 Overfull \hbox (20.04085pt too wide) in paragraph at lines 866--867
 \TU/lmr/m/n/10.95 decomposable representation, irreducible morphism, Auslander–
 Reiten translation, Auslander–
  []
 
-[13]
+
 Overfull \hbox (1.1089pt too wide) in paragraph at lines 890--1005
  [][] 
  []
@@ -1383,7 +1383,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1491.
 Here is how much of TeX's memory you used:
  30104 strings out of 427748
  548305 string characters out of 3150981
- 725706 words of memory out of 3000000
+ 725708 words of memory out of 3000000
  33438 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
