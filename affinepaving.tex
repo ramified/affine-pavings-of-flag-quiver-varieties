@@ -233,7 +233,7 @@ For a quiver $Q$ and an integer $d \geqslant 2$, the strict extended quiver $Q_{
 \end{defn}
 
 
-\begin{eg}
+\begin{eg}\label{eg:ext_quiver}
 The (strict) extended quiver for a Dynkin quiver $Q$ of type $A_4$ looks as follows.
 % https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFs0LDIsIlxcYnVsbGV0Il0sWzYsMiwiXFxidWxsZXQiXSxbNywyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzExLDIsIlxcYnVsbGV0Il0sWzEzLDIsIlxcYnVsbGV0Il0sWzcsMSwiXFxidWxsZXQiXSxbOSwxLCJcXGJ1bGxldCJdLFsxMSwxLCJcXGJ1bGxldCJdLFsxMywxLCJcXGJ1bGxldCJdLFs3LDAsIlxcYnVsbGV0Il0sWzksMCwiXFxidWxsZXQiXSxbMTEsMCwiXFxidWxsZXQiXSxbMTMsMCwiXFxidWxsZXQiXSxbMTQsMiwiXFxidWxsZXQiXSxbMTYsMiwiXFxidWxsZXQiXSxbMTQsMSwiXFxidWxsZXQiXSxbMTQsMCwiXFxidWxsZXQiXSxbMTYsMSwiXFxidWxsZXQiXSxbMTgsMSwiXFxidWxsZXQiXSxbMTgsMCwiXFxidWxsZXQiXSxbMjAsMSwiXFxidWxsZXQiXSxbMjAsMiwiXFxidWxsZXQiXSxbMjAsMCwiXFxidWxsZXQiXSxbMTgsMiwiXFxidWxsZXQiXSxbMTYsMCwiXFxidWxsZXQiXSxbMywzLCJcXGhzcGFjZXstMWNtfVFcXGhzcGFjZXstMWNtfSJdLFsxMCwzLCJcXGhzcGFjZXstMWNtfVFfM1xcaHNwYWNley0xY219Il0sWzE3LDMsIlxcaHNwYWNley0xY219UV97MyxzdHJ9XFxoc3BhY2V7LTFjbX0iXSxbMCwxXSxbMiwxXSxbMiwzXSxbNCw1XSxbNiw1XSxbNiw3XSxbOCw5XSxbMTAsOV0sWzEwLDExXSxbMTIsMTNdLFsxNCwxM10sWzE0LDE1XSxbOCwxMl0sWzQsOF0sWzUsOV0sWzksMTNdLFsxMCwxNF0sWzYsMTBdLFs3LDExXSxbMTEsMTVdLFsxOCwxN10sWzE5LDIwXSxbMjEsMTddLFsyMiwyMF0sWzIyLDIzXSxbMjEsMjRdLFsyMywyNV0sWzI0LDIzXSxbMjYsMjFdLFsyMSwyMl0sWzE3LDIwXSxbMjAsMjddLFsxOCwxOV0sWzE2LDE4XV0=
 \[\begin{tikzcd}[column sep=3mm, row sep=5mm]
@@ -354,6 +354,15 @@ Now we can write the (strict) partial flag variety and Grassmannian as disjoint 
 \end{equation*}
 Then from the Proposition \ref{prop:flag=gr} we get 
 $$\Flagd_{,\dimvec{f}}(X) \cong \Gralg{R_d}_{\dimvec{f}}(\Phi(X)) \qquad \Flag{d,\dimvec{f}}^{\operatorname{str}}(X) \cong \Gralg{R_{d,\operatorname{str}}}_{\dimvec{f}}(\Phi(X)).$$
+\begin{remark}
+All the spaces we defined here have natural topologies and variety structures. For example, by the standard embedding
+\[\begin{tikzcd}
+	\Gralg{R}_{\dimvec{f}}(T) & \displaystyle\prod_{(i,r) \in v\left(Q_{d,(str)}\right)} \Gr_{\dimvec{f}_{i,r}}\big(T_{(i,r)}\big),
+	\arrow[hook, from=1-1, to=1-2]
+\end{tikzcd}\]
+$\Gralg{R}_{\dimvec{f}}(T)$ is then endowed with the subspace topology and subvariety structure.
+\end{remark}
+
 
 Finally, we need to define the Euler form of two dimension vectors. For this we need to define the set of virtual arrows of the quivers $Q_d$ and $Q_{d,\operatorname{str}}$. Following Example \ref{example:virtualarrow}, the virtual arrows of the quivers $Q_3$ and $Q_{3,\operatorname{str}}$ are depicted in red.
 \begin{defn}[Virtual arrows of the quiver $Q_d$]
@@ -553,9 +562,21 @@ Compute $\left< T,T'\right>_R$ by applying the functor $\Hom_R(-,T')$ to the sta
 In this section we state and prove the main theorems, which are essential in Section \ref{sec:Dynkin} and \ref{sec:affine}.
    
 Let $\eta: 0\longrightarrow X \stackrel{\iota}{\longrightarrow} Y \stackrel{\pi}{\longrightarrow} S \longrightarrow 0$ be a short exact sequence in $\rep(Q)$. Consider the canonical \textbf{non-continuous} map
-$$\Psi: \Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \qquad U \longmapsto \left([\Phi(\iota)]^{-1}(U),[\Phi(\pi)](U)   \right)$$
-and let $\Psi_{\dimvec{f},\dimvec{g}}$ be the map $\Psi$ restricted to the preimage of $\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S))$.
-
+$$\Psi: \Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \times \Grr(\Phi(S)) \qquad U \longmapsto \left([\Phi(\iota)]^{-1}(U),[\Phi(\pi)](U)   \right).$$
+Denote the set
+$$\Grr(\Phi(Y))_{\dimvec{f},\dimvec{g}}:= \Psi^{-1}\Big(\Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S))\Big)$$
+and
+let $\Psi_{\dimvec{f},\dimvec{g}}$ be the map $\Psi$ restricted to $\Grr(\Phi(Y))_{\dimvec{f},\dimvec{g}}$, i.e.,
+$$\Psi_{\dimvec{f},\dimvec{g}}: \Grr(\Phi(Y))_{\dimvec{f},\dimvec{g}} \longrightarrow \Grr_{\dimvec{f}}(\Phi(X)) \times \Grr_{\dimvec{g}}(\Phi(S)).$$
+\begin{remark}\label{rem:topo}
+Even though $\Psi$ is not continuous, $\Psi_{\dimvec{f},\dimvec{g}}$ is continuous. Moreover, for any dimension vectors $\dimvec{f},\dimvec{g}$, the set
+$$\Gr(\Phi(Y))_{\geqslant \dimvec{f}, \leqslant \dimvec{g} }:= \left\{ U \in \Gr(\Phi(Y)) \,\middle|\,\begin{aligned}
+\dimv [\Phi(\iota)]^{-1}(U) &\geqslant \dimvec{f}\\ \dimv [\Phi(\pi)]\phantom{^{0}}(U) &\leqslant \dimvec{g}
+\end{aligned}  \right\}$$
+is closed in $\Gr(\Phi(Y))$. This gives us a filtration 
+$$0= Z_0 \subset Z_1 \subset \cdots \subset Z_d=\Gr(\Phi(Y))$$
+with $Z_i$ closed and $Z_{i+1} \setminus Z_i$ isomorphic to $\Gr(\Phi(Y))_{ \dimvec{f},\dimvec{g}}$ for some $\dimvec{f},\dimvec{g}$. Therefore, from the affine pavings of $\Gr(\Phi(Y))_{ \dimvec{f},\dimvec{g}}$ (for every $\dimvec{f},\dimvec{g}$) one can construct one affine paving of $\Gr(\Phi(Y))$.
+\end{remark} 
 %The goal of this section is to prove the following theorems:
 \begin{theorem}\label{thm:main1}
 	If $\eta$ splits, then $\Psi$ is surjective. Moreover, if $[S,X]^1=0$, then $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle of rank $\left< \dimvec{g},\dimv \Phi(X) - \dimvec{f}\right>_R$.
@@ -807,9 +828,18 @@ The next lemma shows the affine paving property for representations of small ord
 \begin{lemma}[{Follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
 	Suppose that the underlying graph of $Q$ is a tree. For an indecomposable representation $M \in \rep(Q)$ with $\ord(M) \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or a direct product of some copies of $\mathbb{P}^1$. Especially, the partial flag variety $ \Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving.
 \end{lemma}
-%\begin{proof}
-%	For each vertex $i$ of the bigger quiver, the dimension of $V_i$ is 0,1,2; then the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is naturally included to a direct product of $\mathbb{P}^1$, and the information of arrows just reduce the number of $\mathbb{P}^1$(maybe to singleton or empty).
-%\end{proof}
+\begin{proof}\belowdisplayskip=-12pt
+	For every $i \in v(Q)$, $\dim_K M_i\leqslant 2$. Since $Q$ is a tree and $M$ is indecomposable, for every $b\in a(Q)$ satisfying $\dim_K M_{s(b)}= \dim_K M_{t(b)}=2$, the map $M_{s(b)} \longrightarrow M_{t(b)}$ is an isomorphism. Therefore, when $\Grr_{\dimvec{f}}(\Phi(M)) \neq \varnothing$,\footnote{This condition imposes very strong restrictions on $\dimvec{f}$.} we get the natural embedding
+	$$\Grr_{\dimvec{f}}(\Phi(M)) \longrightarrow \prod_{\substack{i \in v(Q) \;s.t.\\ \dim_K M_i=2 \\ \dimvec{f}_{(i,r)}=1 \text{ for some }r}} \mathbb{P}^1,$$
+	and the information of non-vertical arrows in the extended quiver (see Example \ref{eg:ext_quiver}) just reduce the number of $\mathbb{P}^1$. Precisely, one need to carefully discuss three cases of $M_i \longrightarrow M_j$:
+	% https://q.uiver.app/?q=WzAsNyxbMCwwLCJLIl0sWzMsMCwiSyJdLFsxLDAsIkteMiJdLFsyLDAsIkteMiJdLFs1LDAsIkteMiJdLFs2LDAsIkteMi4iXSxbNCwwLCJcXHRleHR7YW5kfSJdLFs0LDUsIlxcY29uZyJdLFszLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFswLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d
+	\[\begin{tikzcd}
+		K & {K^2} & {K^2} & K &[-0.5cm] {\text{and}} &[-0.5cm] {K^2} & {K^2.}
+		\arrow["\cong", from=1-6, to=1-7]
+		\arrow[two heads, from=1-3, to=1-4]
+		\arrow[hook, from=1-1, to=1-2]
+	\end{tikzcd}\]
+\end{proof}
 
 Now we've nearly prepared every step of the proof of Theorem \ref{thm:Dynkincase}. By following the process in Figure \ref{fig:flowchart}, we now prove Theorem \ref{thm:Dynkincase} assuming Claim \ref{claim:bigorder}. We will prove Claim \ref{claim:bigorder} in Appendix \ref{appendix:proofcomplement}.
 
@@ -831,7 +861,7 @@ First of all, for any indecomposable representation $M \in \rep(Q)$ we obtain an
 The general case follows by induction on the dimension vector. The indecomposable representations $\{N_i\}_{i \in Q_0}$ of quiver $Q$ can be ordered such that $[N_i,N_j]=0$ for all $i>j$. Therefore, every non-indecomposable representation $M$ can be decomposed as the direct sum of two nonzero representations $M_1, M_2$ satisfying $[M_2,M_1]^1=0$.
 By applying Theorem \ref{thm:main1} to the short exact sequence 
 $$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0,$$
-we get an affine paving from the affine pavings of $M_1$ and $M_2$, see \cite[Lemma 13]{irelli2019cell}.
+we get an affine paving from the affine pavings of $M_1$ and $M_2$, see Remark \ref{rem:topo}.
 \end{proof}
 \begin{remark}\label{rem:smallorder}
 By the same technique one can show that, for Dynkin quiver $Q$ and any representation $M$ with $\displaystyle\max_{i \in v(Q)} \dim_K M_i \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving. This result does not depend on Claim \ref{claim:bigorder}.
