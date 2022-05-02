@@ -574,8 +574,8 @@ $$\Gr(\Phi(Y))_{\geqslant \dimvec{f}, \leqslant \dimvec{g} }:= \left\{ U \in \Gr
 \dimv [\Phi(\iota)]^{-1}(U) &\geqslant \dimvec{f}\\ \dimv [\Phi(\pi)]\phantom{^{0}}(U) &\leqslant \dimvec{g}
 \end{aligned}  \right\}$$
 is closed in $\Gr(\Phi(Y))$. This gives us a filtration 
-$$0= Z_0 \subset Z_1 \subset \cdots \subset Z_d=\Gr(\Phi(Y))$$
-with $Z_i$ closed and $Z_{i+1} \setminus Z_i$ isomorphic to $\Gr(\Phi(Y))_{ \dimvec{f},\dimvec{g}}$ for some $\dimvec{f},\dimvec{g}$. Therefore, from the affine pavings of $\Gr(\Phi(Y))_{ \dimvec{f},\dimvec{g}}$ (for every $\dimvec{f},\dimvec{g}$) one can construct one affine paving of $\Gr(\Phi(Y))$.
+$$0= Z_0 \subset Z_1 \subset \cdots \subset Z_d=\Gr_{\dimvec{h}}(\Phi(Y))$$
+with $Z_i$ closed and $Z_{i+1} \setminus Z_i$ isomorphic to $\Gr(\Phi(Y))_{ \dimvec{f},\dimvec{g}}$ for some $\dimvec{f},\dimvec{g}$. Therefore, from the affine pavings of $\Gr(\Phi(Y))_{ \dimvec{f},\dimvec{g}}$ (for every $\dimvec{f},\dimvec{g}$) one can construct one affine paving of $\Gr_{\dimvec{h}}(\Phi(Y))$.
 \end{remark} 
 %The goal of this section is to prove the following theorems:
 \begin{theorem}\label{thm:main1}
@@ -791,11 +791,7 @@ For any Dynkin quiver $Q$ and any representation $M \in \rep(Q)$, the (strict) p
 
 Before discussing the proof of the affine paving property, we introduce some numerical concepts, which can be seen as a measure of the ``complexity" of the representation.
 
-For an \textbf{indecomposable} quiver representation $M \in \rep(Q)$, we define the order of $M$ by
-$$\ord(M):= \max_{i \in v(Q)} \dim_K M_i.$$
-When the quiver $Q$ is of type $E$, we denote by $e \in v(Q)$ the unique vertex which is connected to three other vertices, and the number 
-$$\orde(M):=\dim_K M_e=[P(e),M]$$
-is equal to $\ord(M)$ unless $\orde(M)=0$.
+
 \captionsetup[subfigure]{labelformat=empty}
 \begin{center}
 	\begin{figure}[ht]
@@ -823,6 +819,12 @@ is equal to $\ord(M)$ unless $\orde(M)=0$.
 \end{center}
 \footnotetext{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
 
+For an \textbf{indecomposable} quiver representation $M \in \rep(Q)$, we define the order of $M$ by
+$$\ord(M):= \max_{i \in v(Q)} \dim_K M_i.$$
+When the quiver $Q$ is of type $E$, we denote by $e \in v(Q)$ the unique vertex which is connected to three other vertices, and the number 
+$$\orde(M):=\dim_K M_e=[P(e),M]$$
+is equal to $\ord(M)$ unless $\orde(M)=0$.
+
 The next lemma shows the affine paving property for representations of small order.
 
 \begin{lemma}[{Follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
@@ -830,7 +832,7 @@ The next lemma shows the affine paving property for representations of small ord
 \end{lemma}
 \begin{proof}\belowdisplayskip=-12pt
 	For every $i \in v(Q)$, $\dim_K M_i\leqslant 2$. Since $Q$ is a tree and $M$ is indecomposable, for every $b\in a(Q)$ satisfying $\dim_K M_{s(b)}= \dim_K M_{t(b)}=2$, the map $M_{s(b)} \longrightarrow M_{t(b)}$ is an isomorphism. Therefore, when $\Grr_{\dimvec{f}}(\Phi(M)) \neq \varnothing$,\footnote{This condition imposes very strong restrictions on $\dimvec{f}$.} we get the natural embedding
-	$$\Grr_{\dimvec{f}}(\Phi(M)) \longrightarrow \prod_{\substack{i \in v(Q) \;s.t.\\ \dim_K M_i=2 \\ \dimvec{f}_{(i,r)}=1 \text{ for some }r}} \mathbb{P}^1,$$
+	$$\Grr_{\dimvec{f}}(\Phi(M)) \longrightarrow \prod_{\substack{i \in v(Q) \;s.t.\\ \dim_K M_i=2 \\ \dimvec{f}_{(i,r)}=1 \text{ for some }r}} \mathbb{P}^1,$$\\[0.3cm]
 	and the information of non-vertical arrows in the extended quiver (see Example \ref{eg:ext_quiver}) just reduce the number of $\mathbb{P}^1$. Precisely, one need to carefully discuss three cases of $M_i \longrightarrow M_j$:
 	% https://q.uiver.app/?q=WzAsNyxbMCwwLCJLIl0sWzMsMCwiSyJdLFsxLDAsIkteMiJdLFsyLDAsIkteMiJdLFs1LDAsIkteMiJdLFs2LDAsIkteMi4iXSxbNCwwLCJcXHRleHR7YW5kfSJdLFs0LDUsIlxcY29uZyJdLFszLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFswLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d
 	\[\begin{tikzcd}
