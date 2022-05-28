@@ -167,7 +167,14 @@ Affine pavings have been constructed in many cases, as for Grassmannians, flag v
 In this case, affine pavings have been constructed in \cite{irelli2019cell} for quiver Grassmannians in all types and in \cite{maksimau2019flag} for partial flag varieties of type $A$ and $D$ (see Table \ref{table:result}). Besides, affine pavings 
 have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic} for strict partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. In this paper, we will tackle the remaining cases.
 
-
+\begin{theorem}
+Denote $Q$ a quiver and $M$ a representation of $Q$.
+\begin{enumerate}[(1)]
+\item If $Q$ is Dynkin, then any (strict) partial flag variety $\Flag{}(M)$ has an affine paving;
+\item If $Q$ is of type $\tilde{A}$ or $\tilde{D}$, then for any indecomposable representation $M$, the (strict) partial flag variety $\Flag{}(M)$ has an affine paving;
+\item If $Q$ is of type $\tilde{E}$, assume that $\Flag{}(N)$ has an affine paving for any regular quasi-simple representation $N \in \rep(Q)$, then $\Flag{}(M)$ has an affine paving for any indecomposable representation $M$.
+\end{enumerate}
+\end{theorem}
 %The nocolor version 
 \renewcommand{\arraystretch}{1.3}
 \begin{table}[ht]
@@ -178,7 +185,7 @@ have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic} for strict par
 $A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 2.20]{maksimau2019flag}}        & \multirow{2}{*}{Theorem \ref{thm:Dynkincase}}       \\ \cline{1-1}
 $D$         &                            &                                      &                         \\ \cline{1-1} \cline{3-4} 
 $E$         &                            & \multicolumn{2}{c|}{Theorem \ref{thm:Dynkincase}}                                          \\ \hline
-$\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{2}{*}{Section \ref{sec:affine}}}                         \\ \cline{1-1}
+$\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{2}{*}{Theorem \ref{thm:affinecase}}}                         \\ \cline{1-1}
 $\tilde{D}$ &                            & \multicolumn{2}{c|}{}                                          \\ \cline{1-1} \cline{3-4} 
 $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the regular quasi-finite case.} \\ \hline
 \end{tabular}
@@ -422,15 +429,15 @@ $\qquad$
 	\arrow[from=2-17, to=1-17]
 	\arrow[from=2-15, to=1-15]
 	\arrow[from=3-15, to=2-15]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-8, to=1-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-8, to=2-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-10]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-14]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-14]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-15, to=2-17]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-17]
-	\arrow[color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-21]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=2-8, to=1-10]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=3-8, to=2-10]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-10]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-10]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=3-12, to=2-14]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=2-12, to=1-14]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=2-15, to=2-17]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-17]
+	\arrow[dashed,color={rgb,255:red,255;green,51;blue,51}, from=2-19, to=2-21]
 \end{tikzcd}\]
 \vspace{-5mm}
 		\label{fig:virtualarrow}
@@ -637,7 +644,7 @@ so $\bar{\eta}=0$ if and only if the last short exact sequence splits, that mean
 	The canonical map $\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$ is surjective.
 \end{lemma}
 \begin{proof}
-	By using the long exact sequence of extension groups and the fact that $\allowbreak\Ext^2(W/\Phi(S),\Phi(X))=0$ and $\Ext^2(W,V)=0$ by Lemma \ref{lm:Ext2van}, the maps
+	By using the long exact sequence of extension groups and the fact that $\allowbreak\Ext^2(\Phi(S)/W,\Phi(X))=0$ and $\Ext^2(W,V)=0$ by Lemma \ref{lm:Ext2van}, the maps
 	$$\Ext^1(\Phi(S),\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X))\qquad \Ext^1(W,\Phi(X)) \longrightarrow \Ext^1(W,\Phi(X)/V)$$
 	are both surjective. Thus the composition is also surjective.
 \end{proof}
@@ -656,10 +663,8 @@ In the case where $\eta$ generates $\Ext^1(S,X)$, we want to describe $\Img \Psi
 	\end{aligned}
 	\end{equation*}
 $\widetilde{X_S}$ and $\widetilde{S^X}$ are well-defined because of the following lemma:
-\begin{lemma}[Follows {\cite[Lemma 27]{irelli2019cell}}]
-
-\begin{enumerate}[(i)]
-	\item[] 
+\begin{lemma}[Follows {\cite[Lemma 27]{irelli2019cell}}]\
+\begin{enumerate}[(i)] 
 	\item Let $V,V' \subset \Phi(X)$ such that $[\Phi(S),\Phi(X)/V ]^1=[\Phi(S),\Phi(X)/V']^1=1 .$ Then $\allowbreak[\Phi(S),\Phi(X)/(V+V') ]^1=1$.
 	\item  Let $W,W' \subset \Phi(S)$ such that $[W,\Phi(X)]^1=[W',\Phi(X)]^1=1 .$ Then $\allowbreak[W\cap W',\Phi(X)]^1=1$.
 \end{enumerate}
@@ -766,12 +771,19 @@ When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\the
 \belowdisplayskip=-12pt
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
-\begin{remark}
+\begin{remark}\label{rem:bundleprop}
 Any point $(V,W) \in \Img \Psi_{\dimvec{f},\dimvec{g}}$ can be also viewed as a morphism
 $$f: \Spec K \longrightarrow \Img \Psi_{\dimvec{f},\dimvec{g}}  \subseteq \Grr_{\dimvec{f}}(\Phi(X)) \shorttimes \Grr_{\dimvec{g}}(\Phi(S)) $$
-where Grassmannian are viewed as moduli spaces over $K$. Essentially by replacing $\Spec K$ by $\Spec A$ in Lemma \ref{lem:torsor}, we can run the machinery of algebraic geometry, and mimic the proof of \cite[Theorem 24]{irelli2019cell} to show that $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle over $\Img \Psi_{\dimvec{f},\dimvec{g}}$ when $\eta$ generates $\Ext^1(S,X)$.
+where Grassmannian are viewed as moduli spaces over $K$. Essentially by replacing $\Spec K$ by any locally closed reduced subscheme $\Spec A$ of $\Img \Psi_{\dimvec{f},\dimvec{g}}$ in Lemma \ref{lem:torsor}, we can run the machinery of algebraic geometry, and mimic the proof of \cite[Theorem 24]{irelli2019cell} to show that $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle over $\Img \Psi_{\dimvec{f},\dimvec{g}}$ when $\eta$ generates $\Ext^1(S,X)$. Roughly, there are 4 steps:
+\begin{enumerate}[1.]
+\item Realise Grassmannians as representable functors, and replace $K$-modules by $A$-modules;
+\item Verify that $\Psi_{\dimvec{f},\dimvec{g}}^{-1} (\Spec A)$ is a $\Hom_A(\mathcal{W},\Phi(X)_A/\mathcal{V})$ torsor, where $$(\mathcal{V},\mathcal{W}) \in \Grr_{\dimvec{f}}(\Phi(X))(A) \shorttimes \Grr_{\dimvec{g}}(\Phi(S))(A)$$ corresponds to the immersion $\Spec A \hookrightarrow \Img \Psi_{\dimvec{f},\dimvec{g}}\,$;
+\item Verify that $\Hom_A(\mathcal{W},\Phi(X)_A/\mathcal{V})$ is a vector bundle over $\Spec A$ of constant dimension $\left< \dimvec{f},\dimv \Phi(X)-\dimvec{g}\right>_R\,$;
+\item Find a section of $\Psi_{\dimvec{f},\dimvec{g}}^{-1} (\Spec A) \longrightarrow \Spec A$, which is essentially the splitting $\theta$ in \cite[Lemma 22]{irelli2019cell}.
+\end{enumerate}
+
 \end{remark}
-\begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]\belowdisplayskip=-12pt
+\begin{proof}[{Proof of Theorem \ref{thm:main1} and \ref{thm:main2}}]%\belowdisplayskip=-12pt
 We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:img2}. In both cases $\eta$ generates $\Ext^1(S,X)$, so by Corollary \ref{cor:0or1} we get
 \begin{equation*}
 \begin{aligned}
@@ -779,6 +791,7 @@ We have already computed $\Img \Psi$ in Corollary \ref{cor:img1} and \ref{cor:im
 & \Longrightarrow [W,\Phi(X)/V]=\left< W,\Phi(X)/V\right>_R=\left< \dimvec{f},\dimv \Phi(X)-\dimvec{g}\right>_R.
 \end{aligned}
 \end{equation*}
+From Remark \ref{rem:bundleprop}, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zarisky-locally trivial affine bundle.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -882,12 +895,19 @@ For any affine quiver $Q$ and any indecomposable representation $M \in \rep(Q)$,
 Actually, if readers follow the proof in \cite[Section 6]{irelli2019cell}, and change everything from $\Gr(-)$ to $\Grr(\Phi(-))$, then there is no difference except the Proposition 48, in which the authors proved the affine paving properties of quasi-simple regular representations. So we reduced the question to the case of quasi-simple regular representation. Combined with Lemma \ref{lem:affineADcase}, we've proved the affine paving properties for $\tilde{A},\tilde{D}$ cases.
 
 \begin{lemma}\label{lem:affineADcase}
-	Assume that $Q$ is a affine quiver of type $A$ or $D$, $M \in \rep(Q)$ is the \textbf{regular quasi-simple} representation, then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
+	Assume that $Q$ is an affine quiver of type $A$ or $D$, $M \in \rep(Q)$ is the \textbf{regular quasi-simple} representation, then the Grassmannian $\Grr(\Phi(M))$ has an affine paving.
 \end{lemma}
 \begin{proof}
 The concept ``quasi-simple'' is defined in \cite[Definition 15]{irelli2019cell}; the concepts ``preprojective'',``preinjective'' and ``regular'' are defined in \cite[2.1.1]{irelli2019cell}. It's shown in \cite[Section 9, Lemma 3]{crawley1992lectures} that the regular quasi-simple representation $M$ have dimension vector smaller or equal to the minimal positive imaginary root, thus $\orde(M) \leqslant 2$ for the quiver of type $\tilde{D}$ and $\orde(M) \leqslant 1$ for the quiver of type $\tilde{A}$.
 \end{proof}
 %We use rep 2 Cor 18.8.
+
+\begin{theorem}\label{thm:affinecase}\
+\begin{enumerate}[(1)]
+\item Assume that $Q$ is an affine quiver of type $A$ or $D$, then for any indecomposable representation $M$, the Grassmannian $\Gr(\Phi(M))$ has an affine paving;
+\item Assume that $Q$ is an affine quiver of type $E$, and $\Gr(\Phi(N))$ has an affine paving for any regular quasi-simple representation $N \in \rep(Q)$. The Grassmannian $\Gr(\Phi(M))$ then has an affine paving for any indecomposable representation $M$.
+\end{enumerate}
+\end{theorem}
 
 For a regular quasi-simple representation $Y$ of type $\tilde{E}$, it's possible that there's no short exact sequence
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
@@ -1262,7 +1282,7 @@ The task of this appendix is to prove Claim \ref{claim:bigorder}. When the quive
 
 The idea of the proof is as follows. For any indecomposable representation $Y$ with $\ord(Y)>2$, we put $Y$ into a short exact sequence 
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-fulfilling the assumptions of Theorem \ref{thm:main2}, and then $\Gr(\Phi(Y))$ has an affine paving if $\Img \Psi$ has. If additionally the map $X \hookrightarrow Y$ is a minimal sectional mono, then $\Img \Psi_{f,g}$ can be written as the product space, which makes $\Img \Psi$ easier to understand.
+fulfilling the assumptions of Theorem \ref{thm:main2}, and then $\Gr(\Phi(Y))$ has an affine paving if $\Img \Psi$ has. If additionally the map $X \hookrightarrow Y$ is a minimal sectional mono, then $\Img \Psi_{\dimvec{f},\dimvec{g}}$ can be written as the product space, which makes $\Img \Psi$ easier to understand.
 
 
 
