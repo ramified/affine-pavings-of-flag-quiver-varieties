@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  28 MAY 2022 15:41
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  1 JUN 2022 14:17
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1391,7 +1391,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1546.
 Here is how much of TeX's memory you used:
  30195 strings out of 427748
  550644 string characters out of 3150981
- 727644 words of memory out of 3000000
+ 727629 words of memory out of 3000000
  33529 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
