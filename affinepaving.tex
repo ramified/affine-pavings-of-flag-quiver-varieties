@@ -295,12 +295,12 @@ By abuse of notation, we often abbreviate $R_d$ and $R_{d,\operatorname{str}}$ b
 \subsection{Canonical functor $\Phi$}
 We follow \cite[2.3]{maksimau2019flag} in this subsection with a few variations. 
 \begin{defn}[Partial flag]\label{def:pf}
-For a quiver representation $X \in \rep(Q)$, a partial flag of $X$ is defined as an increasing sequence of subrepresentation of $X$. For an integer $d \geqslant 1$, we denote
+For a quiver representation $X \in \rep(Q)$, a partial flag of $X$ is defined as an increasing sequence of subrepresentations of $X$. For an integer $d \geqslant 1$, we denote
 $$\Flagd(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \right\}$$
 as the collection of all partial flags of length $d$, and call it the partial flag variety. 
 \end{defn}
 \begin{defn}[Strict partial flag]\label{def:spf}
-For a quiver representation $X \in \rep(Q)$, a strict partial flag of $X$ is defined as an increasing sequence of subrepresentation $(M_k)_k$ of $X$ such that for any arrow $x \in v(Q)$ and any $k$, we have $x.M_{k+1} \subseteq M_{k}$. For an integer $d \geqslant 2$, we denote
+For a quiver representation $X \in \rep(Q)$, a strict partial flag of $X$ is defined as an increasing sequence of subrepresentations $(M_k)_k$ of $X$ such that for any arrow $x \in v(Q)$ and any $k$, we have $x.M_{k+1} \subseteq M_{k}$. For an integer $d \geqslant 2$, we denote
 $$\Flagdstr(X):=\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X\mid x.M_{k+1} \subseteq M_k \right\}$$
 as the collection of all strict partial flags of length $d$, and call it the strict partial flag variety. 
 \end{defn}
@@ -351,16 +351,16 @@ $$\dimv M:=(\dim_K M_i)_{i \in v(Q)}.$$
 \end{defn}
 Moreover, if $R=KQ/I$ is a bounded quiver algebra, then every module $T \in \Mod(R)$ can be viewed as a representation of $Q$, so we automatically have a notion of dimension vector for $R$ and $T$.
 
-Now we can write the (strict) partial flag variety and Grassmannian as disjoint union of several pieces. Since $v(Q_{d,(\operatorname{str})})=v(Q) \times \{1,\ldots,d\}$, any dimension vector $\dimvec{f}$ of $R$ can be viewed as $d$ dimension vectors $(\dimvec{f_1},\ldots,\dimvec{f_d})$. Define
+Now we can write the (strict) partial flag variety and Grassmannian as disjoint union of several pieces. Since $v(Q_{d,(\operatorname{str})})=v(Q) \times \{1,\ldots,d\}$, any dimension vector $\dimvec{f}$ of $R$ can be viewed as $d$ dimension vectors $(\dimvec{f}_1,\ldots,\dimvec{f}_d)$. Define
 \begin{equation*}
 \begin{aligned}
-  \Flagd_{,\dimvec{f}}(X):=\;&\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \;\middle|\; \dimv M_k=\dimvec{f_k} \right\} && \subseteq  \Flagd(X), \\ 
-  \Flag{d,\dimvec{f}}^{\operatorname{str}}(X):=\;&\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \;\middle|\; x.M_{k+1} \subseteq M_k,\, \dimv M_k=\dimvec{f_k} \right\} && \subseteq  \Flagdstr(X), \\ 
+  \Flag{\dimvec{f}}(X):=\;&\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \;\middle|\; \dimv M_k=\dimvec{f}_k \right\} && \subseteq  \Flagd(X), \\ 
+  \Flag{\dimvec{f},\operatorname{str}}(X):=\;&\left\{ 0 \subseteq M_1 \subseteq \cdots M_d \subseteq X \;\middle|\; x.M_{k+1} \subseteq M_k,\, \dimv M_k=\dimvec{f}_k \right\} && \subseteq  \Flagdstr(X), \\ 
   \Gralg{R}_{\dimvec{f}}(T):=\;&\{T' \subseteq T \text{ with } \dimv T'=\dimvec{f}\} && \subseteq  \Gralg{R}(T). 
 \end{aligned}
 \end{equation*}
 Then from the Proposition \ref{prop:flag=gr} we get 
-$$\Flagd_{,\dimvec{f}}(X) \cong \Gralg{R_d}_{\dimvec{f}}(\Phi(X)) \qquad \Flag{d,\dimvec{f}}^{\operatorname{str}}(X) \cong \Gralg{R_{d,\operatorname{str}}}_{\dimvec{f}}(\Phi(X)).$$
+$$\Flag{\dimvec{f}}(X) \cong \Gralg{R_d}_{\dimvec{f}}(\Phi(X)) \qquad \Flag{\dimvec{f},\operatorname{str}}(X) \cong \Gralg{R_{d,\operatorname{str}}}_{\dimvec{f}}(\Phi(X)).$$
 \begin{remark}
 All the spaces we defined here have natural topologies and variety structures. For example, by the standard embedding
 \[\begin{tikzcd}
