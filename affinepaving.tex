@@ -679,7 +679,8 @@ $$\hspace{-0.4cm}\cdots\rightarrow \Ext^1\!\!\left(\Phi(S),\textstyle\frac{\Phi(
 By Corollary \ref{cor:0or1}, $[\Phi(S),\Phi(X)/(V\cap V')]^1\leqslant 1, \; [\Phi(S),\Phi(X)/(V+V')]^1\leqslant 1$, and this forces $[\Phi(S),\Phi(X)/(V+V')]^1= 1$.
 \end{proof}
 
-\begin{lemma}[Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, with the same proof]Let $\tau$ be the Auslander--Reiten translation.\\
+\begin{lemma}[Follows {\cite[Lemma 31(1)(2)]{irelli2019cell}}, with the same proof]\label{lemma:second_description_XS}
+Let $\tau$ be the Auslander--Reiten translation.\\
 Let $f:X \longrightarrow \tau S$ be a non-zero morphism,\footnote{Since $X$ is not injective, $[X,\tau S]=[S,X]^1=1$, $f$ is uniquely determined up to a constant.} then $X_S=\ker (f)$;\\
  also, $\Phi(f): \Phi(X) \longrightarrow \Phi(\tau S)$ is a non-zero morphism, $\widetilde{X_S}=\ker (\Phi(f))$.
 \end{lemma}
@@ -1257,7 +1258,7 @@ of the corresponding quiver.
 \end{figure} 
 Finally we move forward to the definition of minimal sectional mono. The rest can be skipped until Lemma \ref{lem:msm&order}.
 
-\begin{defn}[Sectional morphism]
+\begin{defn}[Sectional morphism]\label{def:sec_morphism}
 Let $Q$ be a quiver of Dynkin/affine type, and $M,N \in \rep(Q)$ be two indecomposable representations of $Q$, which are preprojective\footnote{A representation $M \in \rep(Q)$ is called preprojective if $\tau^k M$ is projective for some $k \geqslant 0$. Similarly, A representation $M \in \rep(Q)$ is called preinjective if $\tau^{-k} M$ is injective for some $k \geqslant 0$.} when $Q$ is affine. A morphism $f \in \Hom_{KQ}(M,N)$ is called sectional if $f$ can be written as the composition
 $$f: M=X_0 \stackrel{f_1}{\longrightarrow} X_1 \stackrel{f_2}{\longrightarrow} \cdots \stackrel{f_{t-1}}{\longrightarrow} X_{t-1} \stackrel{f_t}{\longrightarrow} X_t=N$$
 where $f_i \in \Hom_{KQ}(X_{i-1},X_i)$ are irreducible morphisms between indecomposable representations, and $\tau X_{i+2} \ncong X_i$ for any suitable $i$.
@@ -1298,8 +1299,8 @@ The next two lemmas tell us the existence of the desired short exact sequence.
 \begin{proof}
 	Just observe the Auslander--Reiten quiver. The chosen minimal sectional monos are represented in Figure \ref{fig:minisecmono}. Notice that for the most time $\orde(-)$ is enough to guarantee the map to be a mono.
 \end{proof}
-	\begin{center}
 		\begin{figure}[ht]
+		\centering
 			\vspace{0cm}
 			\parbox[t]{.15\textwidth}{\centering
 			\vspace{0cm}
@@ -1326,7 +1327,6 @@ The next two lemmas tell us the existence of the desired short exact sequence.
 			\caption{Minimal sectional monos}
 			\label{fig:minisecmono}
 		\end{figure}
-	\end{center}
 \begin{remark}
 	The condition $\ord(Y)>2$ in the lemma can not be removed.
 \end{remark}
@@ -1364,31 +1364,32 @@ Since every indecomposable representation of Dynkin quiver is a brick, we get $[
 $[X,Y]=1, [Y,X]=0$ and $[X,Y]^1=[Y,X]^1=0$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-Y]$ to the short exact sequence $\eta$ we get the results. 
 \end{proof}
 In the following two lemmas we will describe the representations $S^X$ and $X_S$ more clearly.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%???Here we begin to correct mistakes
 \begin{lemma} Take the same notations as in Lemma \ref{lem:value}. Then $S^X=S$.
 \end{lemma}
 \begin{proof}
 	Let $\iota:N \longrightarrow S$ be a proper non-zero subrepresentation of $S$, we need to prove that $\iota^* \eta: 0\longrightarrow X \longrightarrow Y' \longrightarrow N \longrightarrow 0$ splits.
 	
 
-\begin{center}
+\[
 \begin{tikzcd}
-\iota^*\eta: & 0 \arrow[r] & X \arrow[r, hook'] \arrow[d, equal] & Y' \arrow[r] \arrow[d, "\eta", hook'] & N \arrow[r] \arrow[d, "\iota", hook'] & 0 \\
+\iota^*\eta: & 0 \arrow[r] & X \arrow[r, hook'] \arrow[d, equal] & Y' \arrow[r] \arrow[d, "h", hook'] & N \arrow[r] \arrow[d, "\iota", hook'] & 0 \\
 \eta:        & 0 \arrow[r] & X \arrow[r]                                       & Y \arrow[r]                           & S \arrow[r]                           & 0
 \end{tikzcd}
-\end{center}
+\]
 	
-	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal sectional mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for all $i$.
-	If there exists $i$ such that $Y_i'=X$, then $\iota^* $ splits; if there exists $i$ such that $Y_i'=Y$, then $\eta$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
+	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal sectional mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for each $i$.
+	If there exists $i$ such that $Y_i'=X$, then $\iota^* \eta $ splits; if there exists $i$ such that $Y_i'=Y$, then $h$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
 \end{proof}
 
 \begin{lemma}[{Follows \cite[Lemma 36]{irelli2019cell}, with the same proof}]\label{lem:descriptionofX_S}
-	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
+	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$.\footnote{$X_1$ is defined in Definition \ref{def:sec_morphism}, where we take $M=X$ and $N=Y$.} When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
 \begin{corollary}
 	When $X \longrightarrow Y$ is irreducible monomorphism, the representation $X_S$ is either $0$ or an indecomposable representation with property that $X_S \longrightarrow X$ is also an irreducible monomorphism.
 \end{corollary}
 \begin{remark}
-	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a good mono.
+	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a sectional mono. Even when $X_S$ is indecomposable, the map $X_S \longrightarrow X$ can be not a sectional mono.
 	
 	For example, take the quiver of type $E_7$: 
 	\[
@@ -1397,119 +1398,22 @@ In the following two lemmas we will describe the representations $S^X$ and $X_S$
 	\bullet \arrow[r] & \bullet \arrow[r] & \bullet \arrow[r] & \bullet           & \bullet \arrow[l] & \bullet \arrow[l]
 	\end{tikzcd}
 	\]
-	 take $Y=\representation{122321}{1}$, $X=\representation{112321}{1}$, then $X_S=\representation{111210}{1}\oplus \representation{000111}{0}=F \oplus T$, $X/F =\representation{001111}{0}$, the map $T \longrightarrow X/F$ is not a good mono.
-	
-	Luckily, we can avoid this bad situation by carefully choosing the minimal sectional mono $X \longrightarrow Y$. The minimal sectional monos I chose are presented in Figure \ref{fig:minisecmono}. In appendix we will write down the induction process in detail for some examples.
+	 take $Y=\representation{111111}{0}$, $X=\representation{111110}{0}$, then $X_S=\representation{111100}{0}$, the map $X_S \longrightarrow X$ is not a sectional mono.
 \end{remark}
 
-Now we analyse every case in Figure \ref{fig:minisecmono}, i.e., prove Claim \ref{claim:bigorder} by cases. For convenience we omit subscripts which indicate the dimension vectors. 
+Luckily, we can avoid this bad situation by carefully choosing the minimal sectional mono $X \longrightarrow Y$. The minimal sectional monos I chose are presented in Figure \ref{fig:minisecmono}.  We will write down the induction process in detail for some examples.
 
-\begin{proof}[{Proof of Claim \ref{claim:bigorder}}]
-When the minimal sectional mono $X \longrightarrow Y$ is irreducible, we use Theorem \ref{thm:main2} to get morphism
-$$\Grr(\Phi(Y)) \longrightarrow \Grr(\Phi(X)) \shorttimes \Grr(\Phi(S)) \oder \Grr(\Phi(X)) \setminus \Grr(\Phi(X_S)).$$ 
-By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\Gr(\Phi(S))$ has the affine paving property. Let $Y_1:=X$, $X_1:=X_S$, $S_1:=Y_1/X_1$, we again use Theorem \ref{thm:main2} to get Zariski-locally affine maps
-\begin{equation*}
-\begin{aligned}
-\Grr(\Phi(X)) &\longrightarrow \Grr(\Phi(X_1)) \shorttimes \Grr(\Phi(S_1)) \oder \Grr(\Phi(X_1)) \setminus \Grr(\Phi(X_{1S_1}))\\
-\Grr(\Phi(X))\setminus \Grr(\Phi(X_S))&\longrightarrow \Grr(\Phi(X_1)) \shorttimes \Grr(\Phi(S_1)).
-\end{aligned}
-\end{equation*}
-Luckily $\orde(S_1)$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
+For convenience, we simplify the notations: write $\Gr_{\dimvec{f}}(\Phi(M))$ as $\Gr(M)$, $\Gr_{\dimvec{f}}(\Phi(M)) \setminus \Gr_{\dimvec{f}}(\Phi(N))$ as $U(M,N)$, where we omit subscripts which indicate the dimension vectors.
 
-The exceptional cases are similar, but the discussion is a bit more complicated. Let us look at some examples. (We simplify the notations: $\Gr(M)$ as $\Grr_{\dimvec{f}}(\Phi(M))$, $U(M,N)$ as $\Grr_{\dimvec{f}}(\Phi(M)) \setminus \Grr_{\dimvec{f}}(\Phi(N))$, and we also ignore the dimension vectors.)
-\captionsetup[subfigure]{labelfont=rm}
-\captionsetup[subfigure]{labelformat=parens}
-%https://tex.stackexchange.com/questions/233481/subcaption-defaulting-to-capital-letter-labels
-	\begin{center}
-		\begin{figure}[ht]
-			\vspace{0cm}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=3.2cm]{figures/E8graypic1.pdf}
-			\subcaption{}
-			}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=3.2cm]{figures/E8graypic2.pdf}
-			\subcaption{}
-			}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=3.2cm]{figures/E8graypic3.pdf}
-			\subcaption{}
-			}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=3.2cm]{figures/E8graypic4.pdf}
-			\subcaption{}
-			}
-			\caption{Special cases}
-			\label{fig:specialcases}
-			\vspace{0.2cm}
-		\end{figure}
-	\end{center}
-\begin{eg}
-In the case of Figure \ref{fig:specialcases}(a), if $X_1 \longrightarrow Y$ is injective, then we obtain some Zariski-locally affine maps
-\begin{equation*}
-\begin{aligned}
-\Gr(Y) &\longrightarrow \Gr(X_1) \shorttimes \Gr(Y/X_1) \oder U(X_1,X)\\
-\Gr(X_1) &\longrightarrow \Gr(X) \shorttimes \Gr(X_1/X) \oder U(X,X_S)\\
-U(X_1,X) &\longrightarrow \Gr(X) \shorttimes \Gr(X_1/X) \\
-U(X,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(X/X_S). \\
-\end{aligned}
-\end{equation*}
+\begin{lemma}[{Follows \cite[Theorem 59]{irelli2019cell}}]\label{lem:worst_case}
+Let $f:X \hookrightarrow Y$ be a minimal sectional mono and $S:=Y/X$ be the quotient. When $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F\hookrightarrow X$ irreducible and $T \hookrightarrow X/F$ sectional mono, we have
+$$U(X,X_S)\longrightarrow \Gr(F) \shorttimes U(X/F,T) \oder U(F,F_{X/F})$$
+as a Zarisky-locally trivial affine bundle.
+\end{lemma}
 
-When $X_1 \longrightarrow Y$ is not injective, we get
-$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S).$$
-Since the map $\tau X_1 \longrightarrow \tau Y$ is injective, from Lemma \ref{lem:descriptionofX_S} we get $X_S\longrightarrow X$ is irreducible monomorphism. Thus
-$$U(X,X_S) \longrightarrow \Gr(X_S) \shorttimes \Gr(X/X_S).$$
-These maps give the variety $\Gr(Y)$ an affine paving from bottom to top.
-\end{eg}
-\begin{eg}
-In Figure \ref{fig:specialcases}(b), we would like to prove that  $\Gr(Y)$ has the affine paving property. We have
-$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S).$$
-When the map $M \longrightarrow X$ is not monomorphism, we get
-$$U(X,X_S) \longrightarrow \Gr(X_S) \shorttimes \Gr(X/X_S);$$
-when the map $M \longrightarrow X$ is monomorphism, we get
-\begin{equation*}
-\begin{aligned}
-U(X,X_S)&=U(X,M) \bigsqcup U(M,X_S)\\
-U(X,M) &\longrightarrow \Gr(M) \shorttimes \Gr(X/M)\\
-U(M,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(M/X_S).
-\end{aligned}
-\end{equation*}
-Since the order of $X$, $Y/X$, $X_S$, $X/X_S$, $M$, $X/M$, $M/X_S$ are smaller or equal to $2$, the induction process stops, we get $\Gr(Y)$ has the affine paving property.
-\end{eg}
-\begin{eg}
-In the case of Figure \ref{fig:specialcases}(c), we have 
-$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S)$$
-where $X_S=\ker(\tau X_1 \longrightarrow \tau Y)$. When $X_S=0$ we're done; if not, then $A \neq 0$ and $X_S=A$, we decompose $X_S \longrightarrow Y$ as compositions of minimal sectional monos:
-
-Case 1: $M\longrightarrow X$ is not injective, then
- \begin{equation*}
- \begin{aligned}
- U(X,X_S)&=U(X,N) \bigsqcup U(N,X_S)\\
- U(X,N) &\longrightarrow \Gr(N) \shorttimes \Gr(X/N)\\
- U(N,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(N/X_S).
- \end{aligned}
- \end{equation*}
- 
- Case 2: $M\longrightarrow X$ is injective, then
-  \begin{equation*}
-  \begin{aligned}
-  U(X,X_S)&=U(X,M) \bigsqcup U(M,N) \bigsqcup U(N,X_S)\\
-  U(X,M) &\longrightarrow \Gr(M) \shorttimes \Gr(X/M)\\
-  U(M,N) &\longrightarrow \Gr(N) \shorttimes \Gr(M/N)\\
-  U(N,X_S) &\longrightarrow \Gr(X_S) \shorttimes \Gr(N/X_S).
-  \end{aligned}
-  \end{equation*}
-  
-  Since $\Gr(X)$, $\Gr(Y/X)$, $\Gr(N)$, $\ldots$ have affine paving property, we conclude that $\Gr(Y)$ has also the affine paving property.
-\end{eg}
-\begin{eg}
-Finally we begin to tackle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
-$$\Gr(Y) \longrightarrow \Gr(F) \shorttimes \Gr(Y/F) \oder U(F,?),$$
-and then we get the result.\footnote{$\Gr(F)$ is empty or a singleton, so is $U(F,?)$, no matter what representation is in the questionmark.}
-
-When $X \longrightarrow Y$ is injective, we have
-$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,X_S)$$
-where $X_S=F\oplus \ker(\tau X_1 \longrightarrow \tau Y)=F \oplus T$ by Lemma \ref{lem:descriptionofX_S}. Since $X \longrightarrow Y$ is injective, we get $A=0$, thus $B=0$ also, and then the sectional map $T \longrightarrow X/F$ in injective. We thus get two short exact sequence satisfying the conditions in \ref{thm:main2}:
+%https://tex.stackexchange.com/questions/66152/pushing-qed-to-the-right-within-a-displayed-formula
+\begin{proof}
+We have two short exact sequence satisfying the conditions in \ref{thm:main2}:
 \begin{center}
 % https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZARgBoAGAXVJADcBDAGwFcYkRyQBfU9TXfIRQAmCtTpNW7AGLdeIDNjwEiAZjE0GLNohAANOXyWCiAFg0Tt7PQHpZPIwJUoArBa1TdnBwv7KhJKTE4h46HIa+xs7IbsGakmHe8opOAaJxlp4gACoRKf5qQSEJ1nZ5fiYo5hmhpXoA+gDK5VEB5O4lugA6XTA49Lo++ZXI7TWdID0AHliD4jBQAObwRKAAZgBOEAC2SG4gOBBIAOw+mzsnNIdIABxnW7uIN1dHiACc8VbdXWhYAOQRc6PD4HV4ANnuF0Q6lBSFMkMeolh0M+WR6v0BDyQZGRwgRSHayOIXEoXCAA
 \begin{tikzcd}[row sep=0mm]
@@ -1526,15 +1430,176 @@ Let $N \in \Gr(X)$ be a subrepresentation, it is obvious that $N \in \Gr(X_S) \i
   & \iff \Psi_{\eta}(N) \in \Gr(F) \times U(X/F,T).
   \end{aligned}
   \end{equation*}
-\end{eg}
 Thus the Zarisky-locally trivial affine bundle map
 $$U(X,F) \longrightarrow \Gr(F) \shorttimes \Gr(X/F)$$
 restricted to the Zarisky-locally trivial affine bundle map
-$$U(X,X_S) \longrightarrow \Gr(F) \times U(X/F,T).$$
 
-Finally, by applying the short exact sequence $\xi$ to Theorem \ref{thm:main2}, we get the map
-$$U(X/F,T) \longrightarrow \Gr(X/F) \shorttimes \Gr(T).$$
-Since all the Grassmannians $\Gr(X)$, $\Gr(Y/X)$, $\Gr(F)$, $\Gr(X/F)$, $\Gr(T)$ have the affine paving property, we conclude that $\Gr(Y)$ has the affine paving property.
+\vspace{\abovedisplayskip}
+\hfill $\displaystyle U(X,X_S) \longrightarrow \Gr(F) \times U(X/F,T).$ \qedhere
+\end{proof}
+
+We conclude Theorem \ref{thm:main2}, Lemma \ref{lemma:second_description_XS}, \ref{lem:value}, \ref{lem:descriptionofX_S}, \ref{lem:worst_case} in the following proposition.
+
+\begin{proposition}\label{prop:conclusion_for_combinatorics}
+Let $f:X \hookrightarrow Y$ be a minimal sectional mono and $S:=Y/X$ be the quotient. One get Zariski-locally affine maps
+\begin{equation*}
+\begin{aligned}
+\Gr(Y) &\longrightarrow \Gr(X) \shorttimes \Gr(S) \oder U(X,X_S), \\
+U(Y,X) &\longrightarrow \Gr(X) \shorttimes \Gr(S) \oder U(X,X_S), \\
+\end{aligned}
+\end{equation*}
+where
+\begin{equation*}
+\begin{aligned}
+  X_S:=\;& \max \left\{ M \subseteq X \,\middle|\; [S,X/M ]^1=1 \right\} \\ 
+  =\;& \ker (X \longrightarrow \tau S) \\ 
+  =\;& \begin{cases}
+  E' \oplus \ker (\tau X_1 \longrightarrow \tau Y) & Y \text{ not projective, }\\
+  E & Y \text{ projective. }
+  \end{cases} \\ 
+\end{aligned}
+\end{equation*}
+Moreover, when $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F\hookrightarrow X$ irreducible and $T \hookrightarrow X/F$ sectional mono, one get a Zariski-locally affine map
+$$U(X,X_S)\longrightarrow \Gr(F) \shorttimes U(X/F,T) \oder U(F,F_{X/F}).$$
+\end{proposition}
+
+With Proposition \ref{prop:conclusion_for_combinatorics} in hand, we prove Claim \ref{claim:bigorder} by cases, which turns out to be a pure combinatorical problem. 
+
+\begin{proof}[{Proof of Claim \ref{claim:bigorder}}]
+When the minimal sectional mono $X \longrightarrow Y$ is irreducible, we use Theorem \ref{thm:main2} to get morphism
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(S) \oder U(X,X_S).$$ 
+By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is smaller or equal to $2$, so by Lemma \ref{lem:smallvecdim} $\Gr(S)$ has the affine paving property. Let $Y':=X$, $X':=X_S$, $S':=Y'/X'$, we again use Theorem \ref{thm:main2} to get Zariski-locally affine maps
+\begin{equation*}
+\begin{aligned}
+\Gr(X) &\longrightarrow \Gr(X') \shorttimes \Gr(S') \oder U(X',X'_{S'}) \\
+U(X,X_S)&\longrightarrow \Gr(X') \shorttimes \Gr(S') \oder U(X',X'_{S'}).
+\end{aligned}
+\end{equation*}
+Luckily $\orde(S')$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
+
+The exceptional cases are similar, but the discussion is a bit more complicated. Let us look at some examples. 
+\captionsetup[subfigure]{labelfont=rm}
+\captionsetup[subfigure]{labelformat=parens}
+%https://tex.stackexchange.com/questions/233481/subcaption-defaulting-to-capital-letter-labels
+
+		\begin{figure}[ht]
+		\centering
+			\vspace{0cm}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic1.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic2.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic3.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic4.pdf}
+			\subcaption{}
+			}
+			\caption[A detailed discussion of the exceptional cases]{Special cases}
+			\label{fig:specialcases}
+			\vspace{0.2cm}
+		\end{figure}
+
+\begin{eg}
+In the case of Figure \ref{fig:specialcases}(a), if $X_1 \longrightarrow Y$ is injective, then we obtain some Zariski-locally affine maps
+\begin{equation*}
+\begin{aligned}
+\Gr(Y) &\longrightarrow \Gr(X_1) \shorttimes \Gr(Y/X_1) &&\oder U(X_1,X)\\
+\Gr(X_1) &\longrightarrow \Gr(X) \shorttimes \Gr(X_1/X) &&\oder U(X,A)\\
+U(X_1,X) &\longrightarrow \Gr(X) \shorttimes \Gr(X_1/X) &&\oder U(X,A)\\
+U(X,A) &\longrightarrow \Gr(A) \shorttimes \Gr(X/A) &&\oder U(A,-).\footnotemark \\
+\end{aligned}
+\end{equation*}
+\footnotetext{$\Gr(A)$ is empty or a singleton, so is $U(A,-)$, no matter what representation is in the dash mark.}
+When $X_1 \longrightarrow Y$ is not injective, we get
+\begin{equation*}
+\begin{aligned}
+\Gr(Y) &\longrightarrow \Gr(X) \shorttimes \Gr(Y/X)\hspace{3mm} &&\oder U(X,A)\\
+U(X,A) &\longrightarrow \Gr(A) \shorttimes \Gr(X/A) &&\oder U(A,-).\\
+\end{aligned}
+\end{equation*}
+These maps give the variety $\Gr(Y)$ an affine paving from bottom to top.
+\end{eg}
+\begin{eg}
+In Figure \ref{fig:specialcases}(b), we would like to prove that  $\Gr(Y)$ has the affine paving property. We have
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,A).$$
+When the map $M \longrightarrow X$ is not monomorphism, we get
+$$U(X,A) \longrightarrow \Gr(A) \shorttimes \Gr(X/A) \oder U(A,-);$$
+when the map $M \longrightarrow X$ is monomorphism, we get
+%tex.stackexchange.com/questions/453057/alignment-in-cases-with-text-outside-the-cases
+%https://tex.stackexchange.com/questions/483234/align-text-in-a-cases-environment-with-text-outside
+\begin{equation*}
+\begin{aligned}
+&U(X,A)=U(X,M) \bigsqcup U(M,A)\hspace{-30mm}&&\\
+U(X,M) &\longrightarrow \Gr(M) \shorttimes \Gr(X/M) && \oder U(M,A \oplus B)\\
+U(M,A) &\longrightarrow \Gr(A) \shorttimes \Gr(M/A)&& \oder U(A,-)\\
+U(M,A \oplus B)  &\longrightarrow \begin{cases}
+\Gr(A) \shorttimes \Gr(M/A)\\
+\Gr(A) \shorttimes U(M/A,B)\\
+\end{cases} \hspace{-5mm}&& \begin{aligned}
+\oder U(A,-), &\qquad B=0,\\
+\oder U(A,-), &\qquad B\neq 0.
+\end{aligned}\\
+\end{aligned}
+\end{equation*}
+
+Since the order of $X$, $Y/X$, $A$, $X/A$, $M$, $X/M$, $M/A$ are smaller or equal to $2$ as well as $\ord(A)=1$, the induction process stops, we get an affine paving of $\Gr(Y)$.
+\end{eg}
+\begin{eg}
+In the case of Figure \ref{fig:specialcases}(c), we have 
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,A).$$
+If $A=0$, we're done; if not, we decompose $A \longrightarrow Y$ as compositions of minimal sectional monos:
+
+Case 1: $M\longrightarrow X$ is not injective, then
+ \begin{equation*}
+ \begin{aligned}
+ &U(X,A)=U(X,N) \bigsqcup U(N,A)\\
+ U(X,N) &\longrightarrow \Gr(N) \shorttimes \Gr(X/N) \oder U(N,-)\\
+ \end{aligned}
+ \end{equation*}
+ 
+ Case 2: $M\longrightarrow X$ is injective, then
+  \begin{equation*}
+  \begin{aligned}  
+  &U(X,A)=U(X,M) \bigsqcup U(M,N) \bigsqcup U(N,A)\hspace{-50mm}&&\\
+  U(X,M) &\longrightarrow \Gr(M) \shorttimes \Gr(X/M) && \oder U(M,N \oplus B)\\
+  U(M,N) &\longrightarrow \Gr(N) \shorttimes \Gr(M/N)&& \oder U(N,-)\\
+  U(M,N \oplus B)  &\longrightarrow \begin{cases}
+  \Gr(N) \shorttimes \Gr(M/N)\\
+  \Gr(N) \shorttimes U(M/N,B)\\
+  \end{cases} \hspace{-5mm}&& \begin{aligned}
+  \oder U(N,-), &\qquad B=0,\\
+  \oder U(N,-), &\qquad B\neq 0.
+  \end{aligned}\\
+  \end{aligned}
+  \end{equation*}
+  
+  Since $\Gr(X)$, $\Gr(Y/X)$, $\Gr(N)$, $\ldots$ have the property of affine paving, we conclude that $\Gr(Y)$ also has the property of affine paving.
+\end{eg}
+\begin{eg}
+Finally we begin to tackle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
+$$\Gr(Y) \longrightarrow \Gr(F) \shorttimes \Gr(Y/F) \oder U(F,-),\hspace{8mm}$$
+and then we get the result.
+
+When $X \longrightarrow Y$ is injective, we have
+$$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,F \oplus T).$$
+Since $X \longrightarrow Y$ is injective, we get $A=0$, thus $B=0$ also, and then the sectional map $T \longrightarrow X/F$ in injective. We get 
+\begin{equation*}
+\begin{aligned}
+U(X,F \oplus T) &\longrightarrow \Gr(F) \shorttimes U(X/F,T) &&\oder U(F,-)\\
+U(X/F,T) &\longrightarrow \Gr(T) \shorttimes \Gr(X/X_S) &&\oder U(T,C)\\
+U(T,C) &\longrightarrow \Gr(C) \shorttimes \Gr(T/C) &&\oder U(C,D \oplus E)\\
+U(C,D \oplus E) &\longrightarrow \Gr(D) \shorttimes U(C/D,E) &&\oder U(D,-). \\
+\end{aligned}
+\end{equation*}
+We conclude that $\Gr(Y)$ has the affine paving property.\qedhere
+\end{eg}
 \end{proof}
 \bibliographystyle{plain}
 \bibliography{reference}
