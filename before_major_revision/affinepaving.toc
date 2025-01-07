@@ -1,0 +1,13 @@
+\contentsline {section}{\tocsection {}{1}{Introduction}}{1}{section.1}% 
+\contentsline {section}{\tocsection {}{}{Acknowledgement}}{3}{section*.3}% 
+\contentsline {section}{\tocsection {}{2}{Preliminaries}}{3}{section.2}% 
+\contentsline {subsection}{\tocsubsection {}{2.1}{Extended quiver}}{3}{subsection.2.1}% 
+\contentsline {subsection}{\tocsubsection {}{2.2}{Canonical functor $\Phi $}}{4}{subsection.2.2}% 
+\contentsline {subsection}{\tocsubsection {}{2.3}{Dimension vector}}{5}{subsection.2.3}% 
+\contentsline {subsection}{\tocsubsection {}{2.4}{Ext-vanishing properties}}{7}{subsection.2.4}% 
+\contentsline {section}{\tocsection {}{3}{Main Theorem}}{9}{section.3}% 
+\contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{13}{section.4}% 
+\contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{15}{section.5}% 
+\contentsline {section}{\tocsection {Appendix}{A}{A crash course on Auslander--Reiten theory}}{15}{appendix.A}% 
+\contentsline {section}{\tocsection {Appendix}{B}{Proof of Claim \ref {claim:bigorder}}}{20}{appendix.B}% 
+\contentsline {section}{\tocsection {Appendix}{}{References}}{26}{section*.14}% 
