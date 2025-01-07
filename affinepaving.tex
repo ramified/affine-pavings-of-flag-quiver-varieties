@@ -871,9 +871,10 @@ Now we've nearly prepared every step of the proof of Theorem \ref{thm:Dynkincase
 
 \begin{theorem}\label{thm:bigorder}
 Suppose $Q$ is of Dynkin type. For any indecomposable representation $M \in \rep(Q)$ with $\ord(M)>2$, the (strict) partial flag variety $\Grr(\Phi(M))$ has an affine paving.
+\end{theorem}
 
 \begin{proof}[{Proof of Theorem \ref{thm:Dynkincase}}]
-First of all, for any indecomposable representation $M \in \rep(Q)$ we obtain an affine paving. This follows from Claim \ref{claim:bigorder} when $\ord(M)>2$, and follows from Lemma \ref{lem:smallvecdim} when $\ord(M)\leqslant 2$.
+First of all, for any indecomposable representation $M \in \rep(Q)$ we obtain an affine paving. This follows from Theorem \ref{thm:bigorder} when $\ord(M)>2$, and follows from Lemma \ref{lem:smallvecdim} when $\ord(M)\leqslant 2$.
 
 The general case follows by induction on the dimension vector. The indecomposable representations $\{N_i\}_{i \in Q_0}$ of quiver $Q$ can be ordered such that $[N_i,N_j]=0$ for all $i>j$. Therefore, every non-indecomposable representation $M$ can be decomposed as the direct sum of two nonzero representations $M_1, M_2$ satisfying $[M_2,M_1]^1=0$.
 By applying Theorem \ref{thm:main1} to the short exact sequence 
@@ -881,7 +882,6 @@ $$0 \longrightarrow M_1 \longrightarrow M \longrightarrow M_2 \longrightarrow 0,
 we get an affine paving from the affine pavings of $M_1$ and $M_2$, see Remark \ref{rem:topo}.
 \end{proof}
 \begin{remark}\label{rem:smallorder}
-By the same technique one can show that, for Dynkin quiver $Q$ and any representation $M$ with $\displaystyle\max_{i \in v(Q)} \dim_K M_i \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving. This result does not depend on Claim \ref{claim:bigorder}.
 By the same technique one can show that, for Dynkin quiver $Q$ and any representation $M$ with $\displaystyle\max_{i \in v(Q)} \dim_K M_i \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving. This result does not depend on Theorem \ref{thm:bigorder}.
 \end{remark}
 
