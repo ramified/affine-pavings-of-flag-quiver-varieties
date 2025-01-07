@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  7 JAN 2025 11:03
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  7 JAN 2025 12:03
 entering extended mode
-**./affinepaving.tex
-(affinepaving.tex
+**./affinepaving_bmr.tex
+(affinepaving_bmr.tex
 LaTeX2e <2018-12-01>
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\ams
@@ -1167,8 +1167,8 @@ aries\pgflibraryfadings.code.tex"
 File: pgflibraryfadings.code.tex 2019/01/05 v3.1 (3.1)
 )))
 \c@@todonotes@numberoftodonotes=\count181
-) (affinepaving.aux)
-\openout1 = `affinepaving.aux'.
+) (affinepaving_bmr.aux)
+\openout1 = `affinepaving_bmr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
 LaTeX Font Info:    ... okay on input line 131.
@@ -1266,9 +1266,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 131.
 LaTeX Info: Redefining \pageref on input line 131.
 LaTeX Info: Redefining \nameref on input line 131.
- (affinepaving.out) (affinepaving.out)
+ (affinepaving_bmr.out) (affinepaving_bmr.out)
 \@outlinefile=\write5
-\openout5 = `affinepaving.out'.
+\openout5 = `affinepaving_bmr.out'.
 
 
 Overfull \hbox (17.64975pt too wide) in paragraph at lines 149--151
@@ -1276,9 +1276,9 @@ Overfull \hbox (17.64975pt too wide) in paragraph at lines 149--151
 echniques from Auslander–
  []
 
-(affinepaving.toc)
+(affinepaving_bmr.toc)
 \tf@toc=\write6
-\openout6 = `affinepaving.toc'.
+\openout6 = `affinepaving_bmr.toc'.
 
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek
@@ -1405,24 +1405,24 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [23] [24] [25] (affinepaving.bbl) [26]
+ [23] [24] [25] (affinepaving_bmr.bbl) [26]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1613.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1613.
- (affinepaving.aux)
+ (affinepaving_bmr.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1613.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1613.
 
-Package rerunfilecheck Info: File `affinepaving.out' has not changed.
+Package rerunfilecheck Info: File `affinepaving_bmr.out' has not changed.
 (rerunfilecheck)             Checksum: 010430CFDDD97D2DC2187F29EFA44482.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1613.
  ) 
 Here is how much of TeX's memory you used:
  30236 strings out of 427748
- 552124 string characters out of 3150981
+ 552196 string characters out of 3150981
  726366 words of memory out of 3000000
  33531 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
- 61i,23n,84p,4082b,1209s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,23n,84p,4086b,1209s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (26 pages).
+Output written on affinepaving_bmr.pdf (26 pages).

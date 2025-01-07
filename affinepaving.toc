@@ -7,7 +7,6 @@
 \contentsline {subsection}{\tocsubsection {}{2.4}{Ext-vanishing properties}}{7}{subsection.2.4}% 
 \contentsline {section}{\tocsection {}{3}{Main Theorem}}{9}{section.3}% 
 \contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{13}{section.4}% 
-\contentsline {section}{\tocsection {}{5}{Application: Affine Case}}{15}{section.5}% 
-\contentsline {section}{\tocsection {Appendix}{A}{A crash course on Auslander--Reiten theory}}{15}{appendix.A}% 
-\contentsline {section}{\tocsection {Appendix}{B}{Proof of Claim \ref {claim:bigorder}}}{20}{appendix.B}% 
-\contentsline {section}{\tocsection {Appendix}{}{References}}{26}{section*.14}% 
+\contentsline {section}{\tocsection {}{5}{Proof of Theorem \ref {thm:bigorder}}}{15}{section.5}% 
+\contentsline {section}{\tocsection {}{6}{Application: Affine Case}}{21}{section.6}% 
+\contentsline {section}{\tocsection {}{}{References}}{22}{section*.12}% 
