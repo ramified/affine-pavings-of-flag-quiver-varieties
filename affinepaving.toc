@@ -7,6 +7,6 @@
 \contentsline {subsection}{\tocsubsection {}{2.4}{Ext-vanishing properties}}{7}{subsection.2.4}% 
 \contentsline {section}{\tocsection {}{3}{Main Theorem}}{9}{section.3}% 
 \contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{13}{section.4}% 
-\contentsline {section}{\tocsection {}{5}{Proof of Theorem \ref {thm:bigorder}}}{15}{section.5}% 
+\contentsline {section}{\tocsection {}{5}{affine paving for big order representations}}{14}{section.5}% 
 \contentsline {section}{\tocsection {}{6}{Application: Affine Case}}{21}{section.6}% 
-\contentsline {section}{\tocsection {}{}{References}}{22}{section*.12}% 
+\contentsline {section}{\tocsection {}{}{References}}{22}{section*.10}% 

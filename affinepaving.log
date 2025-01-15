@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  7 JAN 2025 12:06
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  15 JAN 2025 11:23
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1286,12 +1286,7 @@ echniques from Auslander–
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ) [1]
-
-LaTeX Warning: Reference `appendix:arth' on page 2 undefined on input line 196.
-
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2922) has occurred while \output is active []
 
  [2]
 [3]
@@ -1354,11 +1349,9 @@ File: figures/E7.pdf Graphic file (type pdf)
 File: figures/E8.pdf Graphic file (type pdf)
 <use figures/E8.pdf>
  [13]
-File: figures/flowchart.pdf Graphic file (type pdf)
-<use figures/flowchart.pdf>
- [14]
 File: figures/preferredimage.pdf Graphic file (type pdf)
 <use figures/preferredimage.pdf>
+ [14]
 File: figures/E6easy.pdf Graphic file (type pdf)
 <use figures/E6easy.pdf>
 File: figures/E7easy.pdf Graphic file (type pdf)
@@ -1367,12 +1360,7 @@ File: figures/E8easy.pdf Graphic file (type pdf)
 <use figures/E8easy.pdf>
 File: figures/E8hard.pdf Graphic file (type pdf)
 <use figures/E8hard.pdf>
- [15] [16]
-
-LaTeX Warning: Reference `def:sec_morphism' on page 17 undefined on input line 
-1010.
-
-[17] [18]
+ [15] [16] [17]
 File: figures/E8graypic1.pdf Graphic file (type pdf)
 <use figures/E8graypic1.pdf>
 File: figures/E8graypic2.pdf Graphic file (type pdf)
@@ -1381,34 +1369,24 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-Overfull \vbox (3.10461pt too high) has occurred while \output is active []
-
-
-[20] [21] (affinepaving.bbl) [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1270.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1270.
+ [18] [19] [20] (affinepaving.bbl [21])
+[22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1254.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1254.
  (affinepaving.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1270.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1270.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1254.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1254.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
-(rerunfilecheck)             Checksum: 6F0C862BA73E6A99C4E40BCE1C8191AA.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1270.
+(rerunfilecheck)             Checksum: C760A3EDBD8905E0E7661B79CD9950A8.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1254.
  ) 
 Here is how much of TeX's memory you used:
- 29136 strings out of 427748
- 523583 string characters out of 3150981
- 670259 words of memory out of 3000000
- 32429 multiletter control sequences out of 15000+200000
- 21071 words of font info for 100 fonts, out of 3000000 for 9000
+ 29022 strings out of 427748
+ 520594 string characters out of 3150981
+ 670188 words of memory out of 3000000
+ 32318 multiletter control sequences out of 15000+200000
+ 21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,84p,3261b,1209s stack positions out of 5000i,500n,10000p,200000b,50000s
 

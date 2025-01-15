@@ -107,7 +107,7 @@ urlcolor=blue,
 \newcommand{\Flagstr}[1]{\operatorname{Flag}_{#1,\operatorname{str}}}
 \newcommand{\dimvec}[1]{\boldsymbol{#1}}
 \newcommand{\ord}{\operatorname{ord}}
-\newcommand{\orde}{\operatorname{ord}_e }
+\newcommand{\orde}{s_{P(e)} }
 \newcommand{\shorttimes}{\!\times\!}
 \newcommand{\oder}{\;\;\text{ or }\;\;}
 \newcommand{\representation}[2]{\genfrac{}{}{0pt}{3}{\phantom{000}#2\phantom{00}}{#1}}
@@ -164,7 +164,7 @@ Affine pavings imply nice properties about the cohomology of varieties, for exam
 
 Affine pavings have been constructed in many cases, as for Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians, and quiver flag varieties. This article focuses on the case of (strict) partial flag varieties which parameterize subrepresentations of a fixed indecomposable representation of a quiver. In particular, we consider quivers of Dynkin type or affine type.
 In this case, affine pavings have been constructed in \cite{irelli2019cell} for quiver Grassmannians in all types and in \cite{maksimau2019flag} for partial flag varieties of type $A$ and $D$ (see Table \ref{table:result}). Besides, affine pavings 
-have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic} for strict partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. In this paper, we will tackle the remaining cases.
+have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic} for strict partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. Recently, De Concini and Maffei \cite{E7paving} introduced an independent method to construct affine pavings for Springer fibers of type $G_2$, $F_4$, and $E_7$, which differs from the technique we describe. In this paper, we will tackle the remaining cases.
 
 \begin{theorem}
 Denote $Q$ a quiver and $M$ a representation of $Q$.
@@ -193,7 +193,7 @@ $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the re
 \end{table}
 
 We proceed as follows. In Section \ref{sec:flag=gr}, we discuss basic definitions and properties of partial flags. In Section \ref{sec:mainthm} we will prove key Theorems \ref{thm:main1} and \ref{thm:main2}, which allow us to construct affine pavings for quiver partial flag varieties inductively. We apply these theorems to partial flag varieties of Dynkin type, see Section \ref{sec:Dynkin}, and to partial flag varieties of affine type, see Section \ref{sec:affine}. We will combine and extend results from \cite{irelli2019cell} and \cite{maksimau2019flag}.
-Following the arguments of \cite{maksimau2019flag} would require studying millions of cases when we  consider the Dynkin quivers of type $E$. To avoid this, we extend the methods of \cite{irelli2019cell} from quiver Grassmannian to quiver partial flag variety. This will reduce the case by case analysis to a feasible computation of (mostly) 8 critical cases, which we carry out in Section \ref{sec:Dynkin} and Appendix \ref{appendix:proofcomplement}. The reduction uses Auslander--Reiten theory which we recall in Appendix \ref{appendix:arth}.
+Following the arguments of \cite{maksimau2019flag} would require studying millions of cases when we  consider the Dynkin quivers of type $E$. To avoid this, we extend the methods of \cite{irelli2019cell} from quiver Grassmannian to quiver partial flag variety. This will reduce the case by case analysis to a feasible computation of (mostly) 8 critical cases, which we carry out in Section \ref{sec:Dynkin} and Section \ref{sec:proofcomplement}. 
 %It's easy to see that $\Flag{1}(X)=\Grq(X)$. These geometrical objects can be divided into different pieces according to the dimension vectors of $M_1,\ldots,M_d$, and each piece have its own natural (complex/Zariski) topology. It was proved in \cite{irelli2019cell} that $\Grq(X)$ have an affine paving, and in \cite{maksimau2019flag} that $\Flagd(X)$ have the same property when $Q$ is Dynkin quiver of type $A/E$. Here we go one step further, the results are concluded in the Table \ref{table:result}.
 %
 %
@@ -796,9 +796,9 @@ From Remark \ref{rem:bundleprop}, $\Psi_{\dimvec{f},\dimvec{g}}$ is a Zariski-lo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application: Dynkin Case}\label{sec:Dynkin}
-In this section, $Q$ denotes a Dynkin quiver.
 
-This section (plus appendix???) mainly focus on the proof of the following result:
+
+In this section and the next, the proof of Theorem 4.1 is the main subject, with $Q$ representing a Dynkin quiver throughout.
 
 \begin{theorem}\label{thm:Dynkincase}
 For any Dynkin quiver $Q$ and any representation $M \in \rep(Q)$, the (strict) partial flag variety $\Flag{}(M)\cong\Grr(\Phi(M))$ has an affine paving.
@@ -828,17 +828,17 @@ Before discussing the proof of the affine paving property, we introduce some num
 			\includegraphics[width=1.7cm]{figures/E8.pdf}
 			\subcaption{$E_8$}
 			}
-		\caption[Caption for LOF]{The quantity  $\orde$ for indecomposable representations in type $E$ arranged in the  Auslander--Reiten quiver.\footnotemark}
+		\caption[Caption for LOF]{The starting functions $s_{P(e)}$}
 		\label{fig:startingfunction}
 	\end{figure}
 \end{center}
-\footnotetext{Some representations $M$ are hidden when $\orde(M)=0$. In \cite{bongartz1984critical} the Figure \ref{fig:startingfunction} is called the starting functions.}
 
-For an \textbf{indecomposable} quiver representation $M \in \rep(Q)$, we define the order of $M$ by
-$$\ord(M):= \max_{i \in v(Q)} \dim_K M_i.$$
-When the quiver $Q$ is of type $E$, we denote by $e \in v(Q)$ the unique vertex which is connected to three other vertices, and the number 
-$$\orde(M):=\dim_K M_e=[P(e),M]$$
-is equal to $\ord(M)$ unless $\orde(M)=0$.
+
+For an \textbf{indecomposable} quiver representation $M \in \rep(Q)$, we can define the starting functions for each vertex $i \in v(Q)$:
+$$s_{P(i)}(M):= \dim_K \Hom(P_i,M) = \dim_K M_i.$$
+The order of $M$ is defined as the maximum:
+$$\ord(M):= \max_{i \in v(Q)} s_{P(i)}(M).$$
+When the quiver $Q$ is of type $E$, let $e \in v(Q)$ denote the branch vertex, then $\ord(M)=\orde(M)$ unless $\orde(M)=0$. The starting functions are detailed in \cite{bongartz1984critical}. For reference, Figure \ref{fig:startingfunction} presents a subset pertinent to this work.
 
 The next lemma shows the affine paving property for representations of small order.
 
@@ -858,22 +858,8 @@ The next lemma shows the affine paving property for representations of small ord
 	\end{tikzcd}\]
 \end{proof}
 
-Now we've nearly prepared every step of the proof of Theorem \ref{thm:Dynkincase}. By following the process in Figure \ref{fig:flowchart}, we now prove Theorem \ref{thm:Dynkincase} assuming Theorem \ref{thm:bigorder}. We will prove Theorem \ref{thm:bigorder} in Appendix \ref{appendix:proofcomplement}.
 
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.7]{figures/flowchart.pdf}
-    \caption{The process of induction}
-    \vspace{2mm}
-    \label{fig:flowchart}
-\end{figure}
-
-\begin{theorem}\label{thm:bigorder}
-Suppose $Q$ is of Dynkin type. For any indecomposable representation $M \in \rep(Q)$ with $\ord(M)>2$, the (strict) partial flag variety $\Grr(\Phi(M))$ has an affine paving.
-\end{theorem}
-
-\begin{proof}[{Proof of Theorem \ref{thm:Dynkincase}}]
+\begin{proof}[{Proof of Theorem \ref{thm:Dynkincase}, assuming Theorem \ref{thm:bigorder}}]
 First of all, for any indecomposable representation $M \in \rep(Q)$ we obtain an affine paving. This follows from Theorem \ref{thm:bigorder} when $\ord(M)>2$, and follows from Lemma \ref{lem:smallvecdim} when $\ord(M)\leqslant 2$.
 
 The general case follows by induction on the dimension vector. The indecomposable representations $\{N_i\}_{i \in Q_0}$ of quiver $Q$ can be ordered such that $[N_i,N_j]=0$ for all $i>j$. Therefore, every non-indecomposable representation $M$ can be decomposed as the direct sum of two nonzero representations $M_1, M_2$ satisfying $[M_2,M_1]^1=0$.
@@ -889,9 +875,15 @@ By the same technique one can show that, for Dynkin quiver $Q$ and any represent
 
 
 
-\section{Proof of Theorem \ref{thm:bigorder}}\label{appendix:proofcomplement}
+\section{affine paving for big order representations}\label{sec:proofcomplement}
 
-The task of this appendix is to prove Theorem \ref{thm:bigorder}. When the quiver $Q$ is of type $A$ or $D$, Theorem \ref{thm:bigorder} is trivially true since no indecomposable representation can have order bigger than two. So we only concentrate on type $E$.
+This section aims to establish the following theorem:
+
+\begin{theorem}\label{thm:bigorder}
+Suppose $Q$ is of Dynkin type. For any indecomposable representation $M \in \rep(Q)$ with $\ord(M)>2$, the (strict) partial flag variety $\Grr(\Phi(M))$ has an affine paving.
+\end{theorem}
+
+When the quiver $Q$ is of type $A$ or $D$, Theorem \ref{thm:bigorder} is trivially true since no indecomposable representation can have order bigger than two. So we only concentrate on type $E$.
 
 The idea of the proof is as follows. For any indecomposable representation $Y$ with $\ord(Y)>2$, we put $Y$ into a short exact sequence 
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
@@ -906,22 +898,31 @@ fulfilling the assumptions of Theorem \ref{thm:main2}, and then $\Gr(\Phi(Y))$ h
 
 Here, we recall two results from \cite{irelli2019cell}. ???
 
-\begin{lemma}
-Any sectional morphism $f \in \Hom_{KQ}(M,N)$ is either surjective or injective.
+
+\begin{defn}[Sectional morphism]\label{def:sec_morphism}
+Let $Q$ be a quiver of Dynkin type, and $M,N \in \rep(Q)$ be two indecomposable representations of $Q$. A morphism $f \in \Hom_{KQ}(M,N)$ is called sectional if $f$ can be written as the composition
+$$f: M=X_0 \stackrel{f_1}{\longrightarrow} X_1 \stackrel{f_2}{\longrightarrow} \cdots \stackrel{f_{t-1}}{\longrightarrow} X_{t-1} \stackrel{f_t}{\longrightarrow} X_t=N$$
+where $f_i \in \Hom_{KQ}(X_{i-1},X_i)$ are irreducible morphisms between indecomposable representations, and $\tau X_{i+2} \ncong X_i$ for any suitable $i$.
+
+A sectional morphism $f \in \Hom_{KQ}(M,N)$ is called as a sectional mono if $f$ is injective; a sectional mono is called minimal if $f_t \circ \cdots \circ f_{i+1}:X_i \longrightarrow N$ are surjective for any $i \in \{1,2,\ldots,t \}$.
+\end{defn}
+
+\begin{lemma}[Happel--Ringel]
+Let $M$ and $N$ be two indecomposable $Q$-representations. Any sectional morphism $f \in \Hom_{KQ}(M,N)$ is either surjective or injective.
 \end{lemma}
 \begin{proof}
 When $Q$ is a quiver without oriented cycles, then $[N,M]^1 \leqslant [M,\tau N]=0$, thus by \cite[Lemma 7]{irelli2019cell} we get the result; when $Q$ is of type $\tilde{A}$, the result comes from \cite[Lemma 51]{irelli2019cell}.
 \end{proof}
-\begin{defn}[Sectional mono, minimal sectional mono]
-Let $Q$ be a quiver without oriented cycles. A sectional morphism $f \in \Hom_{KQ}(M,N)$ is called as a sectional mono if $f$ is injective; a sectional mono is called minimal if $f_t \circ \cdots \circ f_{i+1}:X_i \longrightarrow N$ are surjective for any $i \in \{1,2,\ldots,t \}$.
-\end{defn}
 
 The next two lemmas tell us the existence of the desired short exact sequence.
 \begin{lemma}\label{lem:msm&order}
-	For every indecomposable representation $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal sectional mono $f:X \longrightarrow Y$.
+	For every indecomposable representation $Y$ of type $E$ with $\ord(Y)>2$, there is a minimal sectional mono $f:X \longrightarrow Y$ such that $\dimv(X)<\dimv(Y)$.
 \end{lemma}
 \begin{proof}
-	Just observe the Auslander--Reiten quiver. The chosen minimal sectional monos are represented in Figure \ref{fig:minisecmono}. Notice that for the most time $\orde(-)$ is enough to guarantee the map to be a mono.
+	Suppose that $Y$ is an indecomposable representation of type $E$ such that $\ord(Y)>2$, then $s_{P(e)}(Y)=\ord(Y)>2$. By direct inspection on every table on Figure \ref{fig:startingfunction}, one sees that there is a sectional
+	path (which can hence be chosen to be minimal) ending
+	in $[Y]$ and starting at some $[M]$ with $s_{P(e)}(M)<s_{P(e)}(Y)$, so $\dimv(M)<\dimv(Y)$. Write this sectional path as $M=X_0 \rightarrow \cdots \rightarrow X_t=Y$, and take the maximal $i$ such that $\dimv(X_i)<\dimv(Y)$. Take $X=X_i$.
+	By Lemma \ref{lem:msm&order}, the sectional mono $f:X \longrightarrow Y$ is injective. It follows that there exists a minimal sectional mono from $X$ to $Y$. 
 \end{proof}
 		\begin{figure}[ht]
 		\centering
@@ -941,91 +942,63 @@ The next two lemmas tell us the existence of the desired short exact sequence.
 			\parbox[t]{.20\textwidth}{\centering
 			\vspace{0cm}
 			\includegraphics[width=2cm]{figures/E8easy.pdf}
-			\subcaption{$E_8$ easy situation}
+			\subcaption{$E_8$ usual cases}
 			}
 			\parbox[t]{.2\textwidth}{\centering
 			\vspace{0cm}
 			\includegraphics[width=2cm]{figures/E8hard.pdf}
-			\subcaption{$E_8$ some exceptions}
+			\subcaption{$E_8$ exception cases}
 			}
 			\caption{Minimal sectional monos}
 			\label{fig:minisecmono}
 		\end{figure}
 \begin{remark}
-	The condition $\ord(Y)>2$ in the lemma can not be removed.
+	The chosen minimal sectional monos are presented in Figure \ref{fig:minisecmono}, where the arrows ends in $[Y]$ and starts at $[X]$. From
+	those tables it is clear that in type $E_6$ the only indecomposable
+	representations with order strictly bigger than two are
+	those lying in the $\tau^-$-orbit of $P(e)$.
+	In particular, they are the middle term of an almost split
+	sequence, and hence in type $E_6$ Theorem \ref{thm:Dynkincase} is clear. Additionally, the tables demonstrate that the condition $\ord(Y) > 2$ in the lemma is essential and cannot be omitted.
 \end{remark}
 \begin{lemma}\label{lem:value}
-Let $X \hookrightarrow Y$ be a minimal sectional mono, and $S:=Y/X$ be the quotient. Then we have the short exact sequence 
+Let $\iota: X \hookrightarrow Y$ be a minimal sectional mono, and $S:=Y/X$ be the quotient. Then $S$ is indecomposable and rigid, the short exact sequence 
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-and the dimensions of extension groups among $X,Y,S$ are as shown in the Table \ref{table:dim}.
-\renewcommand{\arraystretch}{1.1}
-%https://tex.stackexchange.com/questions/552563/centering-on-the-last-column-messes-table-up
-\begin{table}
-\centering
-\begin{tabular}{|c|>{ \centering }m{5mm}|>{ \centering }m{5mm}|>{\centering\arraybackslash}m{5mm}|} 
-\hline
-       \diagbox[height=3.8\line]{$M$}{$[M,N]$\\$[M,N]^1$}{$N$}            & X & Y & S  \\ 
-\hline
-\multirow{2}{*}{X} & 1 & 1 & 0  \\
-                   & 0 & 0 & 0  \\ 
-\hline
-\multirow{2}{*}{Y} & 0 & 1 & 1  \\
-                   & 0 & 0 & 0  \\ 
-\hline
-\multirow{2}{*}{S} & 0 & 0 & 1  \\
-                   & 1 & 0 & 0  \\
-\hline
-\end{tabular}
-\vspace{1mm}
-\caption{}
-\label{table:dim}
-\end{table}
-
-In particular, $S$ is indecomposable and rigid; $[S,X]^1 =1$, so $X_S$ and $S^X$ are well-defined.
+generates $\Ext^1(S,X)$, and $S^X=S$. Moreover, one gets
+\begin{equation*}
+\left\{
+\begin{aligned}
+  \;& [X,X]=[Y,Y]=[S,S]=1 \\ 
+  \;& [X,Y]=[Y,S]=[S,X]^1=1 \\ 
+  \;& [X,S]=[Y,X]=[S,Y]=[S,X]=0 \\ 
+  \;& [X,X]^1=[Y,Y]^1=[S,S]^1=0 \\ 
+  \;& [X,Y]^1=[Y,S]^1=[X,S]^1=[Y,X]^1=[S,Y]^1=0 \\   
+\end{aligned}
+\right.
+\end{equation*}
 \end{lemma}
 \begin{proof}
-Since every indecomposable representation of Dynkin quiver is a brick, we get $[X,X]=[Y,Y]=1$ and $[X,X]^1=[Y,Y]^1=0$. By the definition of minimal sectional mono, we get
-$[X,Y]=1, [Y,X]=0$ and $[X,Y]^1=[Y,X]^1=0$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-Y]$ to the short exact sequence $\eta$ we get the results. 
-\end{proof}
-In the following two lemmas we will describe the representations $S^X$ and $X_S$ more clearly.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%???Here we begin to correct mistakes
-\begin{lemma} Take the same notations as in Lemma \ref{lem:value}. Then $S^X=S$.
-\end{lemma}
-\begin{proof}
-	Let $\iota:N \longrightarrow S$ be a proper non-zero subrepresentation of $S$, we need to prove that $\iota^* \eta: 0\longrightarrow X \longrightarrow Y' \longrightarrow N \longrightarrow 0$ splits.
-	
-
-\[
-\begin{tikzcd}
-\iota^*\eta: & 0 \arrow[r] & X \arrow[r, hook'] \arrow[d, equal] & Y' \arrow[r] \arrow[d, "h", hook'] & N \arrow[r] \arrow[d, "\iota", hook'] & 0 \\
-\eta:        & 0 \arrow[r] & X \arrow[r]                                       & Y \arrow[r]                           & S \arrow[r]                           & 0
-\end{tikzcd}
-\]
-	
-	We decompose $Y'=\oplus_i Y_i'$ as the direct sum of indecomposable representations. Since the map $X\longrightarrow Y$ is the minimal sectional mono, we get $Y_i'=X$ or $Y_i'=Y$ or $X\stackrel{0}{\longrightarrow} Y_i'$ for each $i$.
-	If there exists $i$ such that $Y_i'=X$, then $\iota^* \eta $ splits; if there exists $i$ such that $Y_i'=Y$, then $h$ is isomorphism, we get $\iota$ is isomorphism; if for every $i$ the map $X \longrightarrow Y_i'$ is $0$, then the map $X \longrightarrow Y'$ is $0$, we also get the contradiction.
+Since every indecomposable representation of Dynkin quiver is a brick and rigid, we get $[X,X]=[Y,Y]=1$ and $[X,X]^1=[Y,Y]^1=0$. Since $Q$ is a of type $E$, By the definition of minimal sectional mono, we get $[Y,X]^1=0$. Then by Unger’s lemma \cite{irelli2019cell} one
+gets that $S$ is indecomposable and $[S,X]^1 = 1$. In particular
+$\eta$ is generating. Since $\iota$ is minimal, the pullback $j^*(\eta)$ by any
+(proper) monomorphism $j:N \hookrightarrow S$ splits; it follows that
+$S^X = S$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-,Y]$ to the short exact sequence $\eta$ we get all the dimensions. 
 \end{proof}
 
 \begin{lemma}[{Follows \cite[Lemma 36]{irelli2019cell}, with the same proof}]\label{lem:descriptionofX_S}
-	Let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$, then we can decompose $E$ as $E=E' \oplus \tau X_1$.\footnote{$X_1$ is defined in Definition \ref{def:sec_morphism}, where we take $M=X$ and $N=Y$.} When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
+	The notation $X$, $Y$ and $S$ remains as in the previous lemma. Let $X_1$ be the indecomposable module in the sectional path $X=X_0 \rightarrow \cdots \rightarrow X_t=Y$, and let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$. We have the decomposition $E=E' \oplus \tau X_1$ for some $Q$-representation $E'$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
 \begin{corollary}
-	When $X \longrightarrow Y$ is irreducible monomorphism, the representation $X_S$ is either $0$ or an indecomposable representation with property that $X_S \longrightarrow X$ is also an irreducible monomorphism.
+	When $\iota: X \longrightarrow Y$ is irreducible monomorphism, the representation $X_S$ is either $0$ or an indecomposable representation with property that $X_S \longrightarrow X$ is also an irreducible monomorphism.
 \end{corollary}
-\begin{remark}
-	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a sectional mono. Even when $X_S$ is indecomposable, the map $X_S \longrightarrow X$ can be not a sectional mono.
-	
-	For example, take the quiver of type $E_7$: 
-	\[
-	\begin{tikzcd}[row sep=3mm, column sep=5mm]
-	                &                 &                 & \bullet \arrow[d] &                 &                 \\
-	\bullet \arrow[r] & \bullet \arrow[r] & \bullet \arrow[r] & \bullet           & \bullet \arrow[l] & \bullet \arrow[l]
-	\end{tikzcd}
-	\]
-	 take $Y=\representation{111111}{0}$, $X=\representation{111110}{0}$, then $X_S=\representation{111100}{0}$, the map $X_S \longrightarrow X$ is not a sectional mono.
-\end{remark}
+\begin{proof}
+If $\iota$ is an irreducible monomorphism, it follows that $X_1 = Y$, and $X$ does not belong to the $\tau^-$-orbit of $P(e)$. It follows that the representation $E$ has at most two indecomposable components. By Lemma \ref{lem:descriptionofX_S}, we obtain $X_S \cong E'$: 
+\begin{itemize}
+\item If $Y$ is not projective, then $\tau X_1 = \tau Y$, so $X_S \cong E' \oplus \ker(\tau X_1 \to \tau Y) \cong E'$;
+\item If $Y$ is projective, then $\tau X_1 = 0$, so $X_S \cong E \cong E'$.
+\end{itemize}
+In both cases, $E' \subset E$ is either $0$ or indecomposable. Since $E \to X$ is the minimal right almost split morphism, $E' \to X$ is an irreducible monomorphism.
+\end{proof}
 
-Luckily, we can avoid this bad situation by carefully choosing the minimal sectional mono $X \longrightarrow Y$. The minimal sectional monos I chose are presented in Figure \ref{fig:minisecmono}.  We will write down the induction process in detail for some examples.
 
 For convenience, we simplify the notations: write $\Gr_{\dimvec{f}}(\Phi(M))$ as $\Gr(M)$, $\Gr_{\dimvec{f}}(\Phi(M)) \setminus \Gr_{\dimvec{f}}(\Phi(N))$ as $U(M,N)$, where we omit subscripts which indicate the dimension vectors.
 
@@ -1099,9 +1072,7 @@ By observation of  Figure \ref{fig:minisecmono}, $\orde(S)=\orde(Y)-\orde(X)$ is
 U(X,X_S)&\longrightarrow \Gr(X') \shorttimes \Gr(S') \oder U(X',X'_{S'}).
 \end{aligned}
 \end{equation*}
-Luckily $\orde(S')$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
-
-The exceptional cases are similar, but the discussion is a bit more complicated. Let us look at some examples. 
+Luckily $\orde(S')$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough. This solved all the cases for type $E_6$, $E_7$, and the rests are exception cases in type $E_8$, as shown in Figure \ref{fig:minisecmono}. These exceptional cases are addressed in a similar manner, although the argument becomes more intricate.
 \captionsetup[subfigure]{labelfont=rm}
 \captionsetup[subfigure]{labelformat=parens}
 %https://tex.stackexchange.com/questions/233481/subcaption-defaulting-to-capital-letter-labels
@@ -1130,7 +1101,20 @@ The exceptional cases are similar, but the discussion is a bit more complicated.
 			\label{fig:specialcases}
 			\vspace{0.2cm}
 		\end{figure}
+\begin{remark}
+	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a sectional mono. Even when $X_S$ is indecomposable, the map $X_S \longrightarrow X$ can be not a sectional mono.
+	
+	For example, take the quiver of type $E_7$: 
+	\[
+	\begin{tikzcd}[row sep=3mm, column sep=5mm]
+	                &                 &                 & \bullet \arrow[d] &                 &                 \\
+	\bullet \arrow[r] & \bullet \arrow[r] & \bullet \arrow[r] & \bullet           & \bullet \arrow[l] & \bullet \arrow[l]
+	\end{tikzcd}
+	\]
+	 take $Y=\representation{111111}{0}$, $X=\representation{111110}{0}$, then $X_S=\representation{111100}{0}$, the map $X_S \longrightarrow X$ is not a sectional mono.
+\end{remark}
 
+Luckily, we can avoid this bad situation by carefully choosing the minimal sectional mono $X \longrightarrow Y$. The minimal sectional monos we chose are presented in Figure \ref{fig:minisecmono}.  We will write down the induction process in detail for some examples.
 \begin{eg}
 In the case of Figure \ref{fig:specialcases}(a), if $X_1 \longrightarrow Y$ is injective, then we obtain some (Zariski) locally-trivial affine maps
 \begin{equation*}
