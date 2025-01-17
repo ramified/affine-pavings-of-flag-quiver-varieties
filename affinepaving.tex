@@ -24,6 +24,7 @@
 \usepackage{resizegather}
 \usepackage{diagbox}
 \usepackage{hyperref}
+\usepackage{varwidth}
 \hypersetup{
 colorlinks=true,
 linkcolor=blue,
@@ -126,6 +127,10 @@ urlcolor=blue,
 \setlength{\marginparwidth}{2.5cm}
 \newcommand{\leftnote}[1]{\reversemarginpar\marginnote{\footnotesize #1}}
 \newcommand{\rightnote}[1]{\normalmarginpar\marginnote{\footnotesize #1}\reversemarginpar}
+
+
+%\captionsetup[subfigure]{labelfont=rm}
+\captionsetup[subfigure]{labelformat=parens}
 
 \begin{document}
 \date{}
@@ -807,30 +812,31 @@ For any Dynkin quiver $Q$ and any representation $M \in \rep(Q)$, the (strict) p
 Before discussing the proof of the affine paving property, we introduce some numerical concepts, which can be seen as a measure of the ``complexity" of the representation.
 
 
-\captionsetup[subfigure]{labelformat=empty}
+\captionsetup[subfigure]{labelformat=brace}
 \begin{center}
-	\begin{figure}[ht]
-		\vspace{0cm}
-			\parbox[t]{.15\textwidth}{\centering
-			\vspace{0cm}
-			\includegraphics[width=1.7cm]{figures/E6.pdf}
-			\vspace{2.9cm}
-			\subcaption{$E_6$}
-			}
-			\parbox[t]{.15\textwidth}{\centering
-			\vspace{0cm}
-			\includegraphics[width=1.7cm]{figures/E7.pdf}
-			\vspace{1.95cm}
-			\subcaption{$E_7$}
-			}
-			\parbox[t]{.15\textwidth}{\centering
-			\vspace{0cm}
-			\includegraphics[width=1.7cm]{figures/E8.pdf}
-			\subcaption{$E_8$}
-			}
-		\caption[Caption for LOF]{The starting functions $s_{P(e)}$}
-		\label{fig:startingfunction}
-	\end{figure}
+\begin{figure}[ht]
+\subcaptionbox[$E_6$]{$E_6$}[50mm][t]
+{
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E6.pdf}  
+\vspace{1mm}
+}~
+\subcaptionbox[$E_7$]{$E_7$}[80mm][t]
+{
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E7.pdf}  
+}
+\subcaptionbox[$E_8$]{$E_8$}[130mm][t]
+{
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E8.pdf}  
+}
+\caption[The starting functions $s_{P(e)}$]{The starting functions $s_{P(e)}$}
+\label{fig:startingfunction}
+\end{figure}
 \end{center}
 
 
@@ -924,34 +930,39 @@ The next two lemmas tell us the existence of the desired short exact sequence.
 	in $[Y]$ and starting at some $[M]$ with $s_{P(e)}(M)<s_{P(e)}(Y)$, so $\dimv(M)<\dimv(Y)$. Write this sectional path as $M=X_0 \rightarrow \cdots \rightarrow X_t=Y$, and take the maximal $i$ such that $\dimv(X_i)<\dimv(Y)$. Take $X=X_i$.
 	By Lemma \ref{lem:msm&order}, the sectional mono $f:X \longrightarrow Y$ is injective. It follows that there exists a minimal sectional mono from $X$ to $Y$. 
 \end{proof}
-		\begin{figure}[ht]
-		\centering
-			\vspace{0cm}
-			\parbox[t]{.15\textwidth}{\centering
-			\vspace{0cm}
-			\includegraphics[width=1.7cm]{figures/E6easy.pdf}
-			\vspace{4.14cm}
-			\subcaption{$E_6$}
-			}
-			\parbox[t]{.20\textwidth}{\centering
-			\vspace{0cm}
-			\includegraphics[width=1.7cm]{figures/E7easy.pdf}
-			\vspace{3.17cm}
-			\subcaption{$E_7$}
-			}
-			\parbox[t]{.20\textwidth}{\centering
-			\vspace{0cm}
-			\includegraphics[width=2cm]{figures/E8easy.pdf}
-			\subcaption{$E_8$ usual cases}
-			}
-			\parbox[t]{.2\textwidth}{\centering
-			\vspace{0cm}
-			\includegraphics[width=2cm]{figures/E8hard.pdf}
-			\subcaption{$E_8$ exception cases}
-			}
+
+\begin{center}
+\begin{figure}[ht]
+\subcaptionbox[$E_6$]{$E_6$}[50mm][t]
+{
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E6_red_easy.pdf}  
+\vspace{1mm}
+}~
+\subcaptionbox[$E_7$]{$E_7$}[80mm][t]
+{
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E7_red_easy.pdf}  
+}
+\subcaptionbox[$E_8$ usual cases]{$E_8$ usual cases}[130mm][t]
+{
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E8_red_easy.pdf}  
+}
+\subcaptionbox[$E_8$ exception cases]{$E_8$ exception cases}[130mm][t]
+{
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E8_red_hard.pdf}  
+}
 			\caption{Minimal sectional monos}
 			\label{fig:minisecmono}
-		\end{figure}
+\end{figure}
+\end{center}
+
 \begin{remark}
 	The chosen minimal sectional monos are presented in Figure \ref{fig:minisecmono}, where the arrows ends in $[Y]$ and starts at $[X]$. From
 	those tables it is clear that in type $E_6$ the only indecomposable
@@ -1073,34 +1084,8 @@ U(X,X_S)&\longrightarrow \Gr(X') \shorttimes \Gr(S') \oder U(X',X'_{S'}).
 \end{aligned}
 \end{equation*}
 Luckily $\orde(S')$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough. This solved all the cases for type $E_6$, $E_7$, and the rests are exception cases in type $E_8$, as shown in Figure \ref{fig:minisecmono}. These exceptional cases are addressed in a similar manner, although the argument becomes more intricate.
-\captionsetup[subfigure]{labelfont=rm}
-\captionsetup[subfigure]{labelformat=parens}
-%https://tex.stackexchange.com/questions/233481/subcaption-defaulting-to-capital-letter-labels
 
-		\begin{figure}[ht]
-		\centering
-			\vspace{0cm}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=32mm]{figures/E8graypic1.pdf}
-			\subcaption{}
-			}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=32mm]{figures/E8graypic2.pdf}
-			\subcaption{}
-			}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=32mm]{figures/E8graypic3.pdf}
-			\subcaption{}
-			}
-			\parbox[b]{.23\textwidth}{\centering
-			\includegraphics[width=32mm]{figures/E8graypic4.pdf}
-			\vspace{-0.75mm}
-			\subcaption{}
-			}
-			\caption[A detailed discussion of the exceptional cases]{Special cases}
-			\label{fig:specialcases}
-			\vspace{0.2cm}
-		\end{figure}
+
 \begin{remark}
 	We can not copy everything in \cite[Lemma 56]{irelli2019cell}, sometimes it would happen that $X_S=F \oplus T$ with $F$ and $T$ indecomposable, $F \hookrightarrow X$ is irreducible but $T \longrightarrow X/F$ is not a sectional mono. Even when $X_S$ is indecomposable, the map $X_S \longrightarrow X$ can be not a sectional mono.
 	
@@ -1115,6 +1100,15 @@ Luckily $\orde(S')$ is still smaller or equal to $2$. We can continue this proce
 \end{remark}
 
 Luckily, we can avoid this bad situation by carefully choosing the minimal sectional mono $X \longrightarrow Y$. The minimal sectional monos we chose are presented in Figure \ref{fig:minisecmono}.  We will write down the induction process in detail for some examples.
+\begin{center}
+\begin{figure}[ht]
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E8graypic1.pdf}  
+			\caption{}
+			\label{fig:h1}
+\end{figure}
+\end{center}
 \begin{eg}
 In the case of Figure \ref{fig:specialcases}(a), if $X_1 \longrightarrow Y$ is injective, then we obtain some (Zariski) locally-trivial affine maps
 \begin{equation*}
@@ -1135,6 +1129,15 @@ U(X,A) &\longrightarrow \Gr(A) \shorttimes \Gr(X/A) &&\oder U(A,-).\\
 \end{equation*}
 These maps give the variety $\Gr(Y)$ an affine paving from bottom to top.
 \end{eg}
+\begin{center}
+\begin{figure}[ht]
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E8graypic2.pdf}  
+			\caption{}
+			\label{fig:h2}
+\end{figure}
+\end{center}
 \begin{eg}
 In Figure \ref{fig:specialcases}(b), we would like to prove that  $\Gr(Y)$ has the affine paving property. We have
 $$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,A).$$
@@ -1160,6 +1163,18 @@ U(M,A \oplus B)  &\longrightarrow \begin{cases}
 
 Since the order of $X$, $Y/X$, $A$, $X/A$, $M$, $X/M$, $M/A$ are smaller or equal to $2$ as well as $\ord(A)=\ord(M/A)=1$, the induction process stops, we get an affine paving of $\Gr(Y)$.
 \end{eg}
+
+
+\begin{center}
+\begin{figure}[ht]
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E8graypic3.pdf}  
+			\caption{}
+			\label{fig:h3}
+\end{figure}
+\end{center}
+
 \begin{eg}
 In the case of Figure \ref{fig:specialcases}(c), we have 
 $$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,A).$$
@@ -1185,6 +1200,17 @@ Case 2: $M\longrightarrow X$ is injective, then
     \oder U(N,-).$$
   Since $\Gr(X)$, $\Gr(Y/X)$, $\Gr(N)$, $\ldots$ have the property of affine paving, we conclude that $\Gr(Y)$ also has the property of affine paving.
 \end{eg}
+
+\begin{center}
+\begin{figure}[ht]
+\centering
+\vspace{0mm}
+\includegraphics[scale=0.8]{figures/horizontal/h_E8graypic4.pdf}  
+			\caption{}
+			\label{fig:h4}
+\end{figure}
+\end{center}
+
 \begin{eg}
 Finally we begin to tackle the most difficult case(Figure \ref{fig:specialcases}(d)). When $X \longrightarrow Y$ is not injective, we get
 $$\Gr(Y) \longrightarrow \Gr(F) \shorttimes \Gr(Y/F) \oder U(F,-),\hspace{8mm}$$
@@ -1241,7 +1267,32 @@ For a regular quasi-simple representation $Y$ of type $\tilde{E}$, it's possible
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 such that $[S,X]^1 \leqslant 1$. Then we can no longer use Theorem \ref{thm:main1} or \ref{thm:main2}. Hence, the new methods are needed for this case.
 
+%https://tex.stackexchange.com/questions/233481/subcaption-defaulting-to-capital-letter-labels
 
+		\begin{figure}[ht]
+		\centering
+			\vspace{0cm}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic1.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic2.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic3.pdf}
+			\subcaption{}
+			}
+			\parbox[b]{.23\textwidth}{\centering
+			\includegraphics[width=32mm]{figures/E8graypic4.pdf}
+			\vspace{-0.75mm}
+			\subcaption{}
+			}
+			\caption[A detailed discussion of the exceptional cases]{Special cases}
+			\label{fig:specialcases}
+			\vspace{0.2cm}
+		\end{figure}
 
 
 \bibliographystyle{plain}

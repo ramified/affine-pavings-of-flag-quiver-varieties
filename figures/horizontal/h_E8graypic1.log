@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  16 JAN 2025 23:10
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  16 JAN 2025 23:28
 entering extended mode
-**./E8gray.tex
-(E8gray.tex
+**./h_E8graypic1.tex
+(h_E8graypic1.tex
 LaTeX2e <2018-12-01>
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone
@@ -598,8 +598,8 @@ File: tikzlibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libr
 aries\pgflibrarypatterns.code.tex"
 File: pgflibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
-)) (E8gray.aux)
-\openout1 = `E8gray.aux'.
+)) (h_E8graypic1.aux)
+\openout1 = `h_E8graypic1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -616,16 +616,26 @@ LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 
-ABD: EveryShipout initializing macros [1
+ABD: EveryShipout initializing macros
+Overfull \hbox (106.79205pt too wide) detected at line 47
+[]
+ []
 
-] (E8gray.aux) ) 
+
+Overfull \hbox (106.79205pt too wide) detected at line 48
+[]
+ []
+
+[1
+
+] (h_E8graypic1.aux) ) 
 Here is how much of TeX's memory you used:
- 15906 strings out of 427748
- 349912 string characters out of 3150981
- 483174 words of memory out of 3000000
- 19687 multiletter control sequences out of 15000+200000
+ 16035 strings out of 427748
+ 353786 string characters out of 3150981
+ 495363 words of memory out of 3000000
+ 19816 multiletter control sequences out of 15000+200000
  4102 words of font info for 17 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 61i,17n,84p,1568b,1082s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,17n,84p,1574b,1408s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on E8gray.pdf (1 page).
+Output written on h_E8graypic1.pdf (1 page).

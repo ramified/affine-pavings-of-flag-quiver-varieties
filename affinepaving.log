@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  15 JAN 2025 11:23
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6930 64-bit) (preloaded format=xelatex 2019.1.15)  18 JAN 2025 00:18
 entering extended mode
 **./affinepaving.tex
 (affinepaving.tex
@@ -1122,10 +1122,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 31.
-\c@theorem=\count177
-\c@thmsub=\count178
-\c@remarks=\count179
+("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\v
+arwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box80
+\sift@deathcycles=\count177
+\@vwid@loff=\dimen306
+\@vwid@roff=\dimen307
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 32.
+\c@theorem=\count178
+\c@thmsub=\count179
+\c@remarks=\count180
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/todonotes\
 todonotes.sty"
@@ -1147,7 +1155,7 @@ xkvutils.tex"
 \XKV@toks=\toks52
 \XKV@tempa@toks=\toks53
 )
-\XKV@depth=\count180
+\XKV@depth=\count181
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fron
@@ -1166,41 +1174,41 @@ File: tikzlibraryfadings.code.tex 2019/01/05 v3.1 (3.1)
 aries\pgflibraryfadings.code.tex"
 File: pgflibraryfadings.code.tex 2019/01/05 v3.1 (3.1)
 )))
-\c@@todonotes@numberoftodonotes=\count181
+\c@@todonotes@numberoftodonotes=\count182
 ) (affinepaving.aux)
 \openout1 = `affinepaving.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Try loading font information for U+msa on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Try loading font information for U+msa on input line 135.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 130.
+LaTeX Font Info:    Try loading font information for U+msb on input line 135.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 130.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 135.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\u
 rsfs.fd"
@@ -1210,7 +1218,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package xypdf Info: Line width: 0.43799pt on input line 130.
+Package xypdf Info: Line width: 0.43799pt on input line 135.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1246,8 +1254,8 @@ Package xypdf Info: Line width: 0.43799pt on input line 130.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring ON on input line 130.
+\AtBeginShipoutBox=\box81
+Package hyperref Info: Link coloring ON on input line 135.
 
 ("C:\Users\Administrator\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\n
 ameref.sty"
@@ -1261,17 +1269,17 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 \gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count182
+\c@section@level=\count183
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
+LaTeX Info: Redefining \ref on input line 135.
+LaTeX Info: Redefining \pageref on input line 135.
+LaTeX Info: Redefining \nameref on input line 135.
  (affinepaving.out) (affinepaving.out)
 \@outlinefile=\write5
 \openout5 = `affinepaving.out'.
 
 
-Overfull \hbox (17.64975pt too wide) in paragraph at lines 148--150
+Overfull \hbox (17.64975pt too wide) in paragraph at lines 153--155
 \TU/lmr/m/n/9 Cerulli-Irelli–Esposito–Franzen–Reineke and Maksimau as well as t
 echniques from Auslander–
  []
@@ -1292,22 +1300,22 @@ Underfull \vbox (badness 2922) has occurred while \output is active []
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 295.
+(hyperref)                removing `math shift' on input line 300.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Phi' on input line 295.
+(hyperref)                removing `\Phi' on input line 300.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 295.
+(hyperref)                removing `math shift' on input line 300.
 
 File: figures/bigpic.pdf Graphic file (type pdf)
 <use figures/bigpic.pdf>
 File: figures/bigpic2.pdf Graphic file (type pdf)
 <use figures/bigpic2.pdf>
 [4] [5] [6] [7]
-Overfull \hbox (17.09554pt too wide) in paragraph at lines 534--536
+Overfull \hbox (17.09554pt too wide) in paragraph at lines 539--541
 \TU/lmr/m/n/10.95 By Lemma [][]2.17[][] ([][]1[][]) and ([][]5[][]), $[][]\OT1/
 cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
  =W; T\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/n/10.95 and $[][]\OT1/cmr/m/n/10.95 (^^H(
@@ -1317,7 +1325,7 @@ $[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W; T\OT1/cmr/m/n/10.95 ) =
  []
 
 [8] [9]
-Overfull \hbox (48.49197pt too wide) in paragraph at lines 646--647
+Overfull \hbox (48.49197pt too wide) in paragraph at lines 651--652
 []\TU/lmr/m/n/10.95 By using the long exact sequence of extension groups and th
 e fact that $[][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.9
 5 )\OML/cmm/m/it/10.95 =W; \OT1/cmr/m/n/10.95 ^^H(\OML/cmm/m/it/10.95 X\OT1/cmr
@@ -1325,13 +1333,13 @@ e fact that $[][]\OT1/cmr/m/n/10.95 (^^H(\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.9
  []
 
 
-Overfull \hbox (17.63919pt too wide) detected at line 677
+Overfull \hbox (17.63919pt too wide) detected at line 682
  [] \OMS/cmsy/m/n/10.95 ! [][]   [] ! [][]   [] ^^H  [][]   [] ! [][]   [] ! []
   \OML/cmm/m/it/10.95 :
  []
 
 [10]
-Overfull \hbox (9.76743pt too wide) in paragraph at lines 738--739
+Overfull \hbox (9.76743pt too wide) in paragraph at lines 743--744
 [][]\TU/lmr/bx/n/10.95 Lemma 3.13. []\TU/lmr/m/it/10.95 For $\OT1/cmr/m/n/10.95
  (\OML/cmm/m/it/10.95 V; W\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 [] \OT1/cm
 r/m/n/10.95 ^^I$\TU/lmr/m/it/10.95 , the preimage of $\OT1/cmr/m/n/10.95 (\OML/
@@ -1342,25 +1350,40 @@ r/m/it/10.95 .
  []
 
 [11] [12]
-File: figures/E6.pdf Graphic file (type pdf)
-<use figures/E6.pdf>
-File: figures/E7.pdf Graphic file (type pdf)
-<use figures/E7.pdf>
-File: figures/E8.pdf Graphic file (type pdf)
-<use figures/E8.pdf>
+File: figures/horizontal/h_E6.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E6.pdf>
+File: figures/horizontal/h_E7.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E7.pdf>
+File: figures/horizontal/h_E8.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E8.pdf>
  [13]
 File: figures/preferredimage.pdf Graphic file (type pdf)
 <use figures/preferredimage.pdf>
  [14]
-File: figures/E6easy.pdf Graphic file (type pdf)
-<use figures/E6easy.pdf>
-File: figures/E7easy.pdf Graphic file (type pdf)
-<use figures/E7easy.pdf>
-File: figures/E8easy.pdf Graphic file (type pdf)
-<use figures/E8easy.pdf>
-File: figures/E8hard.pdf Graphic file (type pdf)
-<use figures/E8hard.pdf>
- [15] [16] [17]
+File: figures/horizontal/h_E6_red_easy.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E6_red_easy.pdf>
+File: figures/horizontal/h_E7_red_easy.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E7_red_easy.pdf>
+File: figures/horizontal/h_E8_red_easy.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E8_red_easy.pdf>
+File: figures/horizontal/h_E8_red_hard.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E8_red_hard.pdf>
+ [15] [16] [17] [18]
+File: figures/horizontal/h_E8graypic1.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E8graypic1.pdf>
+File: figures/horizontal/h_E8graypic2.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E8graypic2.pdf>
+ [19]
+File: figures/horizontal/h_E8graypic3.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E8graypic3.pdf>
+File: figures/horizontal/h_E8graypic4.pdf Graphic file (type pdf)
+<use figures/horizontal/h_E8graypic4.pdf>
+
+Overfull \hbox (57.2093pt too wide) in paragraph at lines 1208--1209
+ [][] 
+ []
+
+[20] [21]
 File: figures/E8graypic1.pdf Graphic file (type pdf)
 <use figures/E8graypic1.pdf>
 File: figures/E8graypic2.pdf Graphic file (type pdf)
@@ -1369,25 +1392,25 @@ File: figures/E8graypic3.pdf Graphic file (type pdf)
 <use figures/E8graypic3.pdf>
 File: figures/E8graypic4.pdf Graphic file (type pdf)
 <use figures/E8graypic4.pdf>
- [18] [19] [20] (affinepaving.bbl [21])
-[22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1254.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1254.
+ (affinepaving.bbl) [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1305.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1305.
  (affinepaving.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1254.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1305.
 
 Package rerunfilecheck Info: File `affinepaving.out' has not changed.
-(rerunfilecheck)             Checksum: C760A3EDBD8905E0E7661B79CD9950A8.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1254.
+(rerunfilecheck)             Checksum: B260F0C68BF52E6A28FE096818396E93.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1305.
  ) 
 Here is how much of TeX's memory you used:
- 29022 strings out of 427748
- 520594 string characters out of 3150981
- 670188 words of memory out of 3000000
- 32318 multiletter control sequences out of 15000+200000
+ 29097 strings out of 427748
+ 522385 string characters out of 3150981
+ 671138 words of memory out of 3000000
+ 32385 multiletter control sequences out of 15000+200000
  21063 words of font info for 99 fonts, out of 3000000 for 9000
  1489 hyphenation exceptions out of 8191
  61i,23n,84p,3261b,1209s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on affinepaving.pdf (22 pages).
+Output written on affinepaving.pdf (23 pages).
