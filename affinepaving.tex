@@ -167,9 +167,9 @@ with $X_i$ closed and $X_{i+1} \setminus X_i$ isomorphic to some affine space $\
 
 Affine pavings imply nice properties about the cohomology of varieties, for example the vanishing of cohomology in odd degrees. For other properties see \cite[1.7]{de1988homology}.
 
-Affine pavings have been constructed in many cases, as for Grassmannians, flag varieties, as well as certain Springer fibers, quiver Grassmannians, and quiver flag varieties. This article focuses on the case of (strict) partial flag varieties which parameterize subrepresentations of a fixed indecomposable representation of a quiver. In particular, we consider quivers of Dynkin type or affine type.
+Affine pavings have been constructed in many cases, as for Grassmannians \cite[Theorem 4.1]{3264}, flag varieties \cite[Theorem 9.9.5]{Dmoduleperv}, as well as certain Springer fibers \cite{E7paving}, quiver Grassmannians \cite[Theorem 4]{irelli2019cell}, and quiver flag varieties \cite[Theorem 1.2]{maksimau2019flag}. This article focuses on the case of (strict) partial flag varieties which parameterize subrepresentations of a fixed indecomposable representation of a quiver. In particular, we consider quivers of Dynkin type or affine type.
 In this case, affine pavings have been constructed in \cite{irelli2019cell} for quiver Grassmannians in all types and in \cite{maksimau2019flag} for partial flag varieties of type $A$ and $D$ (see Table \ref{table:result}). Besides, affine pavings 
-have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic} for strict partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. Recently, De Concini and Maffei \cite{E7paving} introduced an independent method to construct affine pavings for Springer fibers of type $G_2$, $F_4$, and $E_7$, which differs from the technique we describe. In this paper, we will tackle the remaining cases.
+have been constructed in \cite[Theorem 6.3]{eberhardt2022motivic} for strict partial flag varieties in type $\tilde{A}$ with cyclic orientation, which generalized the result in \cite{sauter2015cell} for complete quiver flag varieties in nilpotent representations of an oriented cycle. In this paper, we will tackle the remaining cases.
 
 \begin{theorem}
 Denote $Q$ a quiver and $M$ a representation of $Q$.
@@ -186,7 +186,7 @@ Denote $Q$ a quiver and $M$ a representation of $Q$.
 \begin{tabular}{|c|c|c|c|}
 \hline
             & $\Grq(X)$                  & $\Flagd(X)$                          & $\Flagdstr(X)$          \\ \hline
-$A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 2.20]{maksimau2019flag}}        & \multirow{2}{*}{Theorem \ref{thm:Dynkincase}}       \\ \cline{1-1}
+$A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 1.2]{maksimau2019flag}}        & \multirow{2}{*}{Theorem \ref{thm:Dynkincase}}       \\ \cline{1-1}
 $D$         &                            &                                      &                         \\ \cline{1-1} \cline{3-4} 
 $E$         &                            & \multicolumn{2}{c|}{Theorem \ref{thm:Dynkincase}}                                          \\ \hline
 $\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{2}{*}{Theorem \ref{thm:affinecase}}}                         \\ \cline{1-1}
@@ -213,7 +213,8 @@ of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category o
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgement}
 %\addcontentsline{toc}{section}{Acknowledgement}
-First, I would like to thank my supervisor, Jens Niklas Eberhardt, for introducing me this specific problem, discussing earlier drafts, as well as providing help with the write-up. I would also like to thank Hans Franzen for answering some questions regarding \cite{irelli2019cell}, and thank Ruslan Maksimau, Francesco Esposito for some comments and suggestions. This article is part of my master thesis project.
+
+First, I would like to thank my supervisor, Jens Niklas Eberhardt, for introducing me this specific problem, discussing earlier drafts, and assisting with the write-up. I also thank Hans Franzen for answering some questions regarding \cite{irelli2019cell}, and thank Ruslan Maksimau, Francesco Esposito for their valuable comments and suggestions. I am grateful to the anonymous reviewer for their constructive feedback, which has greatly improved this work. This article is part of my master thesis project. Submission of this paper was partially supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany´s Excellence Strategy – The Berlin Mathematics Research Center MATH+ (EXC-2046/1, project ID: 390685689)
 %My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this article
 % I would like to express my gratitude to
 %my advisor James Newton without whom this paper would never have been completed. I
@@ -848,7 +849,7 @@ When the quiver $Q$ is of type $E$, let $e \in v(Q)$ denote the branch vertex, t
 
 The next lemma shows the affine paving property for representations of small order.
 
-\begin{lemma}[{Follows \cite[Lemma 2.22]{maksimau2019flag}}]\label{lem:smallvecdim}
+\begin{lemma}[{Follows \cite[Lemma 2.23]{maksimau2019flag}}]\label{lem:smallvecdim}
  For an indecomposable representation $M \in \rep(Q)$ with $\ord(M) \leqslant 2$, the variety $\Grr_{\dimvec{f}}(\Phi(M))$ is either empty or a direct product of some copies of $\mathbb{P}^1$. Especially, the partial flag variety $ \Grr_{\dimvec{f}}(\Phi(M))$ has an affine paving.
 \end{lemma}
 \begin{proof}\belowdisplayskip=-12pt
@@ -881,7 +882,7 @@ By the same technique one can show that, for Dynkin quiver $Q$ and any represent
 
 
 
-\section{affine paving for big order representations}\label{sec:proofcomplement}
+\section{Affine paving for big order representations}\label{sec:proofcomplement}
 
 This section aims to establish the following theorem:
 
@@ -913,7 +914,7 @@ where $f_i \in \Hom_{KQ}(X_{i-1},X_i)$ are irreducible morphisms between indecom
 A sectional morphism $f \in \Hom_{KQ}(M,N)$ is called as a sectional mono if $f$ is injective; a sectional mono is called minimal if $f_t \circ \cdots \circ f_{i+1}:X_i \longrightarrow N$ are surjective for any $i \in \{1,2,\ldots,t \}$.
 \end{defn}
 
-\begin{lemma}[Happel--Ringel]
+\begin{lemma}[Happel--Ringel]\label{lem:Happel--Ringel}
 Let $M$ and $N$ be two indecomposable $Q$-representations. Any sectional morphism $f \in \Hom_{KQ}(M,N)$ is either surjective or injective.
 \end{lemma}
 \begin{proof}
@@ -928,7 +929,7 @@ The next two lemmas tell us the existence of the desired short exact sequence.
 	Suppose that $Y$ is an indecomposable representation of type $E$ such that $\ord(Y)>2$, then $s_{P(e)}(Y)=\ord(Y)>2$. By direct inspection on every table on Figure \ref{fig:startingfunction}, one sees that there is a sectional
 	path (which can hence be chosen to be minimal) ending
 	in $[Y]$ and starting at some $[M]$ with $s_{P(e)}(M)<s_{P(e)}(Y)$, so $\dimv(M)<\dimv(Y)$. Write this sectional path as $M=X_0 \rightarrow \cdots \rightarrow X_t=Y$, and take the maximal $i$ such that $\dimv(X_i)<\dimv(Y)$. Take $X=X_i$.
-	By Lemma \ref{lem:msm&order}, the sectional mono $f:X \longrightarrow Y$ is injective. It follows that there exists a minimal sectional mono from $X$ to $Y$. 
+	By Lemma \ref{lem:Happel--Ringel}, the sectional mono $f:X \longrightarrow Y$ is injective. It follows that there exists a minimal sectional mono from $X$ to $Y$. 
 \end{proof}
 
 \begin{center}
@@ -971,7 +972,7 @@ The next two lemmas tell us the existence of the desired short exact sequence.
 	In particular, they are the middle term of an almost split
 	sequence, and hence in type $E_6$ Theorem \ref{thm:Dynkincase} is clear. Additionally, the tables demonstrate that the condition $\ord(Y) > 2$ in the lemma is essential and cannot be omitted.
 \end{remark}
-\begin{lemma}\label{lem:value}
+\begin{lemma}[{Adapted from \cite[Lemma 56 \& Lemma 8]{irelli2019cell}}]\label{lem:value}
 Let $\iota: X \hookrightarrow Y$ be a minimal sectional mono, and $S:=Y/X$ be the quotient. Then $S$ is indecomposable and rigid, the short exact sequence 
 $$\eta: 0 \longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
 generates $\Ext^1(S,X)$, and $S^X=S$. Moreover, one gets
@@ -998,6 +999,57 @@ $S^X = S$. By applying the functors $[Y,-],[-,S],[X,-],[-,X],[-,Y]$ to the short
 \begin{lemma}[{Follows \cite[Lemma 36]{irelli2019cell}, with the same proof}]\label{lem:descriptionofX_S}
 	The notation $X$, $Y$ and $S$ remains as in the previous lemma. Let $X_1$ be the indecomposable module in the sectional path $X=X_0 \rightarrow \cdots \rightarrow X_t=Y$, and let $E \longrightarrow X$ be the minimal right almost split morphism ending in $X$. We have the decomposition $E=E' \oplus \tau X_1$ for some $Q$-representation $E'$. When $Y$ is not projective, $X_S$ is isomorphic to $\ker (E \longrightarrow \tau Y) \cong E' \oplus \ker (\tau X_1 \longrightarrow \tau Y)$; when $Y$ is projective, $X_S \cong E$.
 \end{lemma}
+
+\begin{proof}
+Let $f: X \longrightarrow \tau S$ be a non-zero morphism, then by Lemma \ref{lemma:second_description_XS}, $X_S=\ker(f)$. 
+
+When $X$ is not projective, we get a commutative diagram with exact rows:
+% https://q.uiver.app/#q=WzAsMTEsWzIsMCwiXFx0YXUgWCJdLFszLDAsIkUiXSxbNCwwLCJYIl0sWzIsMSwiXFx0YXUgWCJdLFszLDEsIlxcdGF1IFkiXSxbNCwxLCJcXHRhdSBTIl0sWzEsMCwiMCJdLFsxLDEsIjAiXSxbNSwwLCIwIl0sWzUsMSwiMCJdLFswLDAsIlxcZXRhX1g6Il0sWzYsMF0sWzAsMV0sWzEsMl0sWzIsOF0sWzcsM10sWzMsNF0sWzQsNV0sWzUsOV0sWzEsNF0sWzIsNSwiZiJdLFswLDMsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d
+\[\begin{tikzcd}
+	{\eta_X:} & 0 & {\tau X} & E & X & 0 \\
+	& 0 & {\tau X} & {\tau Y} & {\tau S} & 0
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[Rightarrow, no head, from=1-3, to=2-3]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=1-5, to=1-6]
+	\arrow["f", from=1-5, to=2-5]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-5, to=2-6]
+\end{tikzcd}\]
+where the commutativity comes from the fact that $[E,\tau S]=1$ (by applying $[-,\tau S]$ to $\eta_X$). By the snake lemma, one gets 
+\begin{equation}\label{eq:X_S}
+X_S = \ker(f) \;\cong\; \ker (E \longrightarrow \tau Y) \;\cong\; E' \oplus \ker (\tau X_1 \longrightarrow \tau Y). \tag{1}
+\end{equation}
+
+When $X=P(k)$ is projective while $Y$ is not projective, we get another commutative diagram with exact rows
+% https://q.uiver.app/#q=WzAsMTEsWzIsMCwiRSJdLFszLDAsIlg9UChrKSJdLFs0LDAsIlMoaykiXSxbMiwxLCJcXHRhdSBZIl0sWzMsMSwiXFx0YXUgUyJdLFs0LDEsIkkoaykiXSxbMSwwLCIwIl0sWzEsMSwiMCJdLFs1LDAsIjAiXSxbNSwxLCIwIl0sWzAsMCwiXFxwaGFudG9te1xcZXRhX1g6fSJdLFs2LDBdLFswLDFdLFsxLDJdLFsyLDhdLFs3LDNdLFszLDRdLFs0LDVdLFs1LDldLFsxLDQsImYiXSxbMiw1LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6ImJvdHRvbSJ9fX1dLFswLDNdXQ==
+\[\begin{tikzcd}
+	{\phantom{\eta_X:}} & 0 & E & {X=P(k)} & {S(k)} & 0 \\
+	& 0 & {\tau Y} & {\tau S} & {I(k)} & 0
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=1-4, to=1-5]
+	\arrow["f", from=1-4, to=2-4]
+	\arrow[from=1-5, to=1-6]
+	\arrow[hook', from=1-5, to=2-5]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-5, to=2-6]
+\end{tikzcd}\]
+one still gets \eqref{eq:X_S} through the snake lemma.
+
+When $X=P(k)$ is projective and $Y=P(j)$ is projective, it is clear that $X \longrightarrow Y$ is irreducible, and one can check by hand that $[S,X/E]^1 = [S(j), S(k)]^1=1$, so $X_S \cong E$.
+
+
+\end{proof}
+
+
 \begin{corollary}
 	When $\iota: X \longrightarrow Y$ is irreducible monomorphism, the representation $X_S$ is either $0$ or an indecomposable representation with property that $X_S \longrightarrow X$ is also an irreducible monomorphism.
 \end{corollary}

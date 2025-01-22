@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{bongartz1984critical}
 Klaus Bongartz.
@@ -27,6 +27,18 @@ Jens~Niklas Eberhardt and Catharina Stroppel.
 \newblock Motivic {Springer} theory.
 \newblock {\em Indag. Math., New Ser.}, 33(1):190--217, 2022.
 
+\bibitem{3264}
+David Eisenbud and Joe Harris.
+\newblock {\em 3264 and all that. {A} second course in algebraic geometry}.
+\newblock Cambridge: Cambridge University Press, 2016.
+
+\bibitem{Dmoduleperv}
+Ryoshi Hotta, Kiyoshi Takeuchi, and Toshiyuki Tanisaki.
+\newblock {\em {{\(D\)}}-modules, perverse sheaves, and representation theory.
+  {Translated} from the {Japanese} by {Kiyoshi} {Takeuchi}}, volume 236 of {\em
+  Prog. Math.}
+\newblock Basel: Birkh{\"a}user, expanded edition edition, 2008.
+
 \bibitem{irelli2019cell}
 Giovanni~Cerulli Irelli, Francesco Esposito, Hans Franzen, and Markus Reineke.
 \newblock Cell decompositions and algebraicity of cohomology for quiver
@@ -36,8 +48,10 @@ Giovanni~Cerulli Irelli, Francesco Esposito, Hans Franzen, and Markus Reineke.
 
 \bibitem{maksimau2019flag}
 Ruslan Maksimau.
-\newblock Flag versions of quiver {G}rassmannians for {D}ynkin quivers have no
-  odd cohomology over $\mathbb{Z}$, 2019.
+\newblock Flag versions of quiver {Grassmannians} for {Dynkin} quivers have no
+  odd cohomology.
+\newblock {\em Adv. Math.}, 461:20, 2025.
+\newblock Id/No 110078.
 
 \bibitem{sauter2015cell}
 Julia Sauter.
