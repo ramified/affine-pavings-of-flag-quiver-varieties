@@ -8,5 +8,5 @@
 \contentsline {section}{\tocsection {}{3}{Main Theorem}}{9}{section.3}% 
 \contentsline {section}{\tocsection {}{4}{Application: Dynkin Case}}{13}{section.4}% 
 \contentsline {section}{\tocsection {}{5}{Affine paving for big order representations}}{14}{section.5}% 
-\contentsline {section}{\tocsection {}{6}{Application: Affine Case}}{22}{section.6}% 
-\contentsline {section}{\tocsection {}{}{References}}{23}{section*.16}% 
+\contentsline {section}{\tocsection {}{6}{Application: Affine Case}}{23}{section.6}% 
+\contentsline {section}{\tocsection {}{}{References}}{24}{section*.16}% 
