@@ -1,5 +1,5 @@
 \contentsline {section}{\tocsection {}{1}{Introduction}}{1}{section.1}% 
-\contentsline {section}{\tocsection {}{}{Acknowledgement}}{3}{section*.3}% 
+\contentsline {section}{\tocsection {}{}{Acknowledgement}}{2}{section*.3}% 
 \contentsline {section}{\tocsection {}{2}{Preliminaries}}{3}{section.2}% 
 \contentsline {subsection}{\tocsubsection {}{2.1}{Extended quiver}}{3}{subsection.2.1}% 
 \contentsline {subsection}{\tocsubsection {}{2.2}{Canonical functor $\Phi $}}{4}{subsection.2.2}% 

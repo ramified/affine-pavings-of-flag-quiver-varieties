@@ -141,12 +141,10 @@ urlcolor=blue,
 
 
 \author{Xiaoxiang Zhou}
-\address{School of Mathematical Sciences\\
-University of Bonn\\
-Bonn, 53115\\ Germany\\} 
-\email{email:xx352229@mail.ustc.edu.cn}
-
-
+\address{Institut für Mathematik\\
+Humboldt-Universität zu Berlin\\
+Berlin, 12489\\ Germany\\} 
+\email{email:xiaoxiang.zhou@hu-berlin.de}
 
 
 
@@ -182,16 +180,30 @@ Denote $Q$ a quiver and $M$ a representation of $Q$.
 \end{theorem}
 %The nocolor version 
 \renewcommand{\arraystretch}{1.3}
+%\begin{table}[ht]
+%\vspace{0.5cm}
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%            & $\Grq(X)$                  & $\Flagd(X)$                          & $\Flagdstr(X)$          \\ \hline
+%$A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 1.2]{maksimau2019flag}}        & \multirow{2}{*}{Theorem \ref{thm:Dynkincase}}       \\ \cline{1-1}
+%$D$         &                            &                                      &                         \\ \cline{1-1} \cline{3-4} 
+%$E$         &                            & \multicolumn{2}{c|}{Theorem \ref{thm:Dynkincase}}                                          \\ \hline
+%$\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{2}{*}{Theorem \ref{thm:affinecase}}}                         \\ \cline{1-1}
+%$\tilde{D}$ &                            & \multicolumn{2}{c|}{}                                          \\ \cline{1-1} \cline{3-4} 
+%$\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the regular quasi-finite case.} \\ \hline
+%\end{tabular}
+%\vspace{1mm}
+%\caption{}\label{table:result2}
+%\end{table}
+
 \begin{table}[ht]
 \vspace{0.5cm}
 \begin{tabular}{|c|c|c|c|}
 \hline
             & $\Grq(X)$                  & $\Flagd(X)$                          & $\Flagdstr(X)$          \\ \hline
-$A$         & \multirow{3}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{2}{*}{\cite[Theorem 1.2]{maksimau2019flag}}        & \multirow{2}{*}{Theorem \ref{thm:Dynkincase}}       \\ \cline{1-1}
-$D$         &                            &                                      &                         \\ \cline{1-1} \cline{3-4} 
+$A,D$         & \multirow{2}{*}{\cite[Section 5]{irelli2019cell}} & \multirow{1}{*}{\cite[Theorem 1.2]{maksimau2019flag}}        & \multirow{1}{*}{Theorem \ref{thm:Dynkincase}}                                                                   \\ \cline{1-1} \cline{3-4} 
 $E$         &                            & \multicolumn{2}{c|}{Theorem \ref{thm:Dynkincase}}                                          \\ \hline
-$\tilde{A}$ & \multirow{3}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{2}{*}{Theorem \ref{thm:affinecase}}}                         \\ \cline{1-1}
-$\tilde{D}$ &                            & \multicolumn{2}{c|}{}                                          \\ \cline{1-1} \cline{3-4} 
+$\tilde{A}, \tilde{D}$ & \multirow{2}{*}{\cite[Section 6]{irelli2019cell}} & \multicolumn{2}{c|}{\multirow{1}{*}{Theorem \ref{thm:affinecase}}}                         \\  \cline{1-1} \cline{3-4} 
 $\tilde{E}$ &                            & \multicolumn{2}{c|}{reduced to the regular quasi-finite case.} \\ \hline
 \end{tabular}
 \vspace{1mm}
@@ -205,7 +217,7 @@ Following the arguments of \cite{maksimau2019flag} would require studying millio
 %
 %The idea of proof is very simple: first, we view the  quiver partial flag variety as the quiver Grassmannian of the more complicated quiver; then we establish the decomposition so that one may solve the problem by induction; finally we set a special way of decomposition for each indecomposable module so that we can avoid meeting the bad decomposition. These contents are in Section \ref{sec:flag=gr},\ref{sec:mainthm},\ref{sec:Dynkin}, accordingly.
 \begin{notation}
-Throughout this article, $K=\mathbb{C}$, $R$ is a $K$-algebra with unit, and $\Mod(R)$ denotes the category of left $R$-modules of finite dimension. Let $Q$ be a quiver equipped with the set of finite vertices $v(Q)$ and the set of finite edges $a(Q)$. For an
+Throughout this article, $K=\mathbb{C}$, $R$ is a $K$-algebra with unit, and $\Mod(R)$ denotes the category of left $R$-modules of finite dimension. Let $Q$ be a quiver equipped with the finite set of vertices $v(Q)$ and the finite set of edges $a(Q)$. For an
 arrow $b$, we call $s(b)$ the starting vertex and $t(b)$ the terminal vertex
 of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category of quiver representations of finite dimension. For a representation $X\in \rep(Q)$, we denote by $X_i:=e_iX$ the $K$-linear space at the vertex $i\in v(Q)$. We denote by $P(i)$, $I(i)$ and $S(i)$ the indecomposable projective, injective, simple modules corresponding to the vertex $i$, respectively.
 \end{notation}
@@ -215,7 +227,7 @@ of $b$. We denote by $KQ$ the path algebra and $\rep(Q)=\Mod(KQ)$ the category o
 \section*{Acknowledgement}
 %\addcontentsline{toc}{section}{Acknowledgement}
 
-First, I would like to thank my supervisor, Jens Niklas Eberhardt, for introducing me this specific problem, discussing earlier drafts, and assisting with the write-up. I also thank Hans Franzen for answering some questions regarding \cite{irelli2019cell}, and thank Ruslan Maksimau, Francesco Esposito for their valuable comments and suggestions. I am grateful to the anonymous reviewer for their constructive feedback, which has greatly improved this work. This article is part of my master thesis project. Submission of this paper was partially supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany´s Excellence Strategy – The Berlin Mathematics Research Center MATH+ (EXC-2046/1, project ID: 390685689)
+First, I would like to thank my supervisor, Jens Niklas Eberhardt, for introducing me this specific problem, discussing earlier drafts, and assisting with the write-up. I also thank Hans Franzen for answering some questions regarding \cite{irelli2019cell}, and thank Ruslan Maksimau, Francesco Esposito for their valuable comments and suggestions. I am grateful to the anonymous referee for their constructive feedback, which has greatly improved this work. This article is part of my master thesis project. Submission of this paper was partially supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany´s Excellence Strategy – The Berlin Mathematics Research Center MATH+ (EXC-2046/1, project ID: 390685689)
 %My thanks go to Professor xyz for his / her guidance and advice in the preparation and finalization of this article
 % I would like to express my gratitude to
 %my advisor James Newton without whom this paper would never have been completed. I
@@ -1199,9 +1211,9 @@ U(X,A) &\longrightarrow \Gr(A) \shorttimes \Gr(X/A) &&\oder U(A,-).\footnotemark
 These maps give the variety $\Gr(Y)$ an affine paving from bottom to top.
 \end{eg}
 
-Readers should easily read the short exact sequences from the given maps. For a short exact sequence 
-$$0\longrightarrow M \longrightarrow N \longrightarrow N/M \longrightarrow 0,$$
-one can get (Zariski) locally-trivial affine maps 
+In the examples that follow, the chosen short exact sequences are omitted for clarity. As a reminder to the reader, for a short exact sequence 
+$$0\longrightarrow M \longrightarrow N \longrightarrow N/M \longrightarrow 0$$
+where $\iota: M \hookrightarrow N$ is a minimal sectional mono, Theorem \ref{thm:main2} imply the existence of (Zariski) locally-trivial affine maps 
 \begin{equation*}
 \begin{aligned}
 \Gr(N) &\longrightarrow \Gr(M) \shorttimes \Gr(N/M)\hspace{3mm} &&\oder U(M,M_{N/M})\\
@@ -1209,7 +1221,7 @@ U(N,M) &\longrightarrow \Gr(M) \shorttimes \Gr(N/M) &&\oder U(M,M_{N/M})\\
 U(N,M \oplus T) &\longrightarrow \Gr(M) \shorttimes U(N/M,T) &&\oder U(M,M_{N/M}).\\
 \end{aligned}
 \end{equation*}
-In the examples that follow, the chosen short exact sequences are omitted for clarity.
+
 
 \begin{center}
 \begin{figure}[ht]
