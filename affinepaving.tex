@@ -391,7 +391,7 @@ $\Gralg{R}_{\dimvec{f}}(T)$ is then endowed with the subspace topology and subva
 
 Finally, we need to define the Euler form of two dimension vectors. For this we need to define the set of virtual arrows of the quivers $Q_d$ and $Q_{d,\operatorname{str}}$. Following Example \ref{example:virtualarrow}, the virtual arrows of the quivers $Q_3$ and $Q_{3,\operatorname{str}}$ are depicted in red.
 \begin{defn}[Virtual arrows of the quiver $Q_d$]
-For $d \geqslant 1$, the virtual arrows of the quiver $Q_d$ is defined as a triple $\big(va(Q_d),s,t\big)$, where
+For $d \geqslant 1$, the virtual arrows of the quiver $Q_d$ are defined as a triple $\big(va(Q_d),s,t\big)$, where
 $$va(Q_d):=a(Q) \times \{1,\ldots, d-1 \}$$
 is a finite set, and $s,t: va(Q_d) \longrightarrow v(Q_d)$ are maps defined by
 $$s\big((i\rightarrow j,r)\big)=(i,r) \qquad t \big((i\rightarrow j,r)\big)=(j,r+1).$$
@@ -711,7 +711,7 @@ For any $M \subseteq X$, we have
   \cong\;& \left\{ g \in \Hom(X,\tau S) \middle| \,g|_M=0 \right\} \\ 
   \cong\;& \begin{cases}
   \mathbb{C}, & M \subseteq \ker f\\
-  0, & M \nsubseteq \ker f.
+  0, & M \nsubseteq \ker f,
   \end{cases} \\ 
 \end{aligned}
 \end{equation*}
@@ -725,14 +725,14 @@ For $\Phi(f)$ it is similar. For any $V \subseteq \Phi(X)$, we have
   \cong\;& \left\{ g \in \Hom(\Phi(X), \Phi(\tau S)) \middle| \,g|_V=0 \right\} \\ 
   \cong\;& \begin{cases}
   \mathbb{C}, & V \subseteq \ker \Phi(f)\\
-  0, & V \nsubseteq \ker \Phi(f).
+  0, & V \nsubseteq \ker \Phi(f),
   \end{cases} \\ 
 \end{aligned}
 \end{equation*}
 so $[\Phi(S),\Phi(X)/V]^1=1$ exactly when $V \subseteq \ker \Phi(f)$. Thus $\widetilde{X_S}=\ker (\Phi(f))$.
 \end{proof}
 \begin{corollary}
-	$\widetilde{X_S}=\Phi(X_S)$.\textcolor{black}{(since $\widetilde{X_S}=\ker (\Phi(f))=\Phi(\ker(f))=\Phi(X_S)$)}
+	$\widetilde{X_S}=\Phi(X_S)$\textcolor{black}{(since $\widetilde{X_S}=\ker (\Phi(f))=\Phi(\ker(f))=\Phi(X_S)$)}.
 \end{corollary}
 By a dual argument, one can show that $\widetilde{S^X}=\Phi(S^X)$.
 \begin{lemma}[Follows {\cite[Lemma 31(6)]{irelli2019cell}}]
@@ -786,7 +786,7 @@ When $\eta$ generates $\Ext^1(S,X)$, we have
 	\arrow[maps to, from=1-1, to=3-1]
 	\arrow["\theta"', color={rgb,255:red,255;green,51;blue,58}, curve={height=-18pt}, from=3-7, to=3-6]
 \end{tikzcd}\]
-When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ give us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{black}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
+When $(V,W) \in \Img \Psi$, $\bar{\eta}$ is split, and each split morphism $\theta$ gives us an element in $\Psi^{-1}((V,W))$. If we fix one split morphism $\theta_0$, then the other split morphisms are all of the form $\theta_0 + \textcolor{black}{\iota \circ} f$ where $f \in \Hom_{R}(W,\Phi(X)/V)$(and this form is unique). So
 \belowdisplayskip=-12pt
 $$\Psi^{-1}((V,W)) \cong \{ \theta: \text{ split morphism} \} \cong \Hom_{R}(W,\Phi(X)/V).$$
 \end{proof}
@@ -868,7 +868,7 @@ The next lemma shows the affine paving property for representations of small ord
 \begin{proof}\belowdisplayskip=-12pt
 	For every $i \in v(Q)$, $\dim_K M_i\leqslant 2$. Since $Q$ is a tree and $M$ is indecomposable, for every $b\in a(Q)$ satisfying $\dim_K M_{s(b)}= \dim_K M_{t(b)}=2$, the map $M_{s(b)} \longrightarrow M_{t(b)}$ is an isomorphism. Therefore, when $\Grr_{\dimvec{f}}(\Phi(M)) \neq \varnothing$,\footnote{This condition imposes very strong restrictions on $\dimvec{f}$.} we get the natural embedding
 	$$\Grr_{\dimvec{f}}(\Phi(M)) \longrightarrow \prod_{\substack{i \in v(Q) \;s.t.\\ \dim_K M_i=2 \\ \dimvec{f}_{(i,r)}=1 \text{ for some }r}} \mathbb{P}^1,$$\\[0.3cm]
-	and the information of non-vertical arrows in the extended quiver (see Example \ref{eg:ext_quiver}) just reduce the number of $\mathbb{P}^1$. Precisely, one need to carefully discuss three cases of $M_i \longrightarrow M_j$:
+	and the information of non-vertical arrows in the extended quiver (see Example \ref{eg:ext_quiver}) just reduce the number of $\mathbb{P}^1$. Precisely, one needs to carefully discuss three cases of $M_i \longrightarrow M_j$:
 	% https://q.uiver.app/?q=WzAsNyxbMCwwLCJLIl0sWzMsMCwiSyJdLFsxLDAsIkteMiJdLFsyLDAsIkteMiJdLFs1LDAsIkteMiJdLFs2LDAsIkteMi4iXSxbNCwwLCJcXHRleHR7YW5kfSJdLFs0LDUsIlxcY29uZyJdLFszLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFswLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d
 	\[\begin{tikzcd}
 		K & {K^2} & {K^2} & K &[-0.5cm] {\text{and}} &[-0.5cm] {K^2} & {K^2.}
@@ -907,7 +907,7 @@ When the quiver $Q$ is of type $A$ or $D$, Theorem \ref{thm:bigorder} is trivial
 
 The idea of the proof is as follows. For any indecomposable representation $Y$ with $\ord(Y)>2$, we put $Y$ into a short exact sequence 
 $$\eta:0\longrightarrow X \longrightarrow Y \longrightarrow S \longrightarrow 0$$
-fulfilling the assumptions of Theorem \ref{thm:main2}, and then $\Gr(\Phi(Y))$ has an affine paving if $\Img \Psi$ has. If additionally the map $X \hookrightarrow Y$ is a minimal sectional mono, then $\Img \Psi_{\dimvec{f},\dimvec{g}}$ can be written as the product space, which makes $\Img \Psi$ easier to understand.
+fulfilling the assumptions of Theorem \ref{thm:main2}, and then $\Gr(\Phi(Y))$ has an affine paving if $\Img \Psi$ has. If additionally the map $X \hookrightarrow Y$ is a minimal sectional mono, then $\Img \Psi_{\dimvec{f},\dimvec{g}}$ can be written as the product space, which makes $\Img \Psi$ easier to understand, see Figure \ref{figprod}.
 
 
 
@@ -915,6 +915,7 @@ fulfilling the assumptions of Theorem \ref{thm:main2}, and then $\Gr(\Phi(Y))$ h
 \begin{figure}[ht]
     \includegraphics[scale=0.7]{figures/preferredimage.pdf}
     \caption{Image in the product space.}
+    \label{figprod}
 \end{figure}
 
 \begin{defn}[Sectional morphism]\label{def:sec_morphism}
@@ -1000,7 +1001,7 @@ generates $\Ext^1(S,X)$, and $S^X=S$. Moreover, one gets
 \end{equation*}
 \end{lemma}
 \begin{proof}
-Since every indecomposable representation of Dynkin quiver is a brick and rigid, we get $[X,X]=[Y,Y]=1$ and $[X,X]^1=[Y,Y]^1=0$. Since $Q$ is a of type $E$, By the definition of minimal sectional mono, we get $[Y,X]^1=0$. Then by Unger’s lemma \cite{irelli2019cell} one
+Since every indecomposable representation of Dynkin quiver is a brick and rigid, we get $[X,X]=[Y,Y]=1$ and $[X,X]^1=[Y,Y]^1=0$. Since $Q$ is of type $E$, by the definition of minimal sectional mono, we get $[Y,X]^1=0$. Then by Unger’s lemma \cite{irelli2019cell} one
 gets that $S$ is indecomposable and $[S,X]^1 = 1$. In particular
 $\eta$ is generating. Since $\iota$ is minimal, the pullback $j^*(\eta)$ by any
 (proper) monomorphism $j:N \hookrightarrow S$ splits; it follows that
@@ -1084,7 +1085,7 @@ as a (Zariski) locally-trivial affine bundle.
 
 %https://tex.stackexchange.com/questions/66152/pushing-qed-to-the-right-within-a-displayed-formula
 \begin{proof}
-We have two short exact sequence satisfying the conditions in \ref{thm:main2}:
+We have two short exact sequences satisfying the conditions in \ref{thm:main2}:
 \begin{center}
 % https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZARgBoAGAXVJADcBDAGwFcYkRyQBfU9TXfIRQAmCtTpNW7AGLdeIDNjwEiAZjE0GLNohAANOXyWCiAFg0Tt7PQHpZPIwJUoArBa1TdnBwv7KhJKTE4h46HIa+xs7IbsGakmHe8opOAaJxlp4gACoRKf5qQSEJ1nZ5fiYo5hmhpXoA+gDK5VEB5O4lugA6XTA49Lo++ZXI7TWdID0AHliD4jBQAObwRKAAZgBOEAC2SG4gOBBIAOw+mzsnNIdIABxnW7uIN1dHiACc8VbdXWhYAOQRc6PD4HV4ANnuF0Q6lBSFMkMeolh0M+WR6v0BDyQZGRwgRSHayOIXEoXCAA
 \begin{tikzcd}[row sep=0mm]
@@ -1112,7 +1113,7 @@ restricted to the (Zariski) locally-trivial affine bundle map
 We conclude Theorem \ref{thm:main2}, Lemma \ref{lemma:second_description_XS}, \ref{lem:value}, \ref{lem:descriptionofX_S}, \ref{lem:worst_case} in the following proposition.
 
 \begin{proposition}\label{prop:conclusion_for_combinatorics}
-Let $f:X \hookrightarrow Y$ be a minimal sectional mono and $S:=Y/X$ be the quotient. One get (Zariski) locally-trivial affine maps
+Let $f:X \hookrightarrow Y$ be a minimal sectional mono and $S:=Y/X$ be the quotient. One gets (Zariski) locally-trivial affine maps
 \begin{equation*}
 \begin{aligned}
 \Gr(Y) &\longrightarrow \Gr(X) \shorttimes \Gr(S) \oder U(X,X_S), \\
@@ -1130,7 +1131,7 @@ where
   \end{cases} \\ 
 \end{aligned}
 \end{equation*}
-Moreover, when $X_S=F \oplus T$ with $F$ and $T$ nonzero indecomposable, $F\hookrightarrow X$ irreducible and $T \hookrightarrow X/F$ sectional mono, one get a (Zariski) locally-trivial affine map
+Moreover, when $X_S=F \oplus T$ with $F$ and $T$ nonzero indecomposable, $F\hookrightarrow X$ irreducible and $T \hookrightarrow X/F$ sectional mono, one gets a (Zariski) locally-trivial affine map
 $$U(X,X_S)\longrightarrow \Gr(F) \shorttimes U(X/F,T) \oder U(F,F_{X/F}).$$
 \end{proposition}
 
@@ -1154,7 +1155,7 @@ and get (Zariski) locally-trivial affine maps
 U(X,X_S)&\longrightarrow \Gr(X') \shorttimes \Gr(S') \oder U(X',X'_{S'}).
 \end{aligned}
 \end{equation*}
-Luckily $\orde(S')$ is still smaller or equal to $2$. We can continue this process until the order of representations are small enough.
+Luckily $\orde(S')$ is still smaller or equal to $2$. We can continue this process until the order of representations is small enough.
 \end{proof}
 
 \begin{remark}
@@ -1214,7 +1215,7 @@ These maps give the variety $\Gr(Y)$ an affine paving from bottom to top.
 
 In the examples that follow, the chosen short exact sequences are omitted for clarity. As a reminder to the reader, for a short exact sequence 
 $$0\longrightarrow M \longrightarrow N \longrightarrow N/M \longrightarrow 0$$
-where $\iota: M \hookrightarrow N$ is a minimal sectional mono, Theorem \ref{thm:main2} imply the existence of (Zariski) locally-trivial affine maps 
+where $\iota: M \hookrightarrow N$ is a minimal sectional mono, Theorem \ref{thm:main2} implies the existence of (Zariski) locally-trivial affine maps 
 \begin{equation*}
 \begin{aligned}
 \Gr(N) &\longrightarrow \Gr(M) \shorttimes \Gr(N/M)\hspace{3mm} &&\oder U(M,M_{N/M})\\
@@ -1256,7 +1257,7 @@ U(M,A \oplus B)  &\longrightarrow \begin{cases}
 \end{aligned}
 \end{equation*}
 
-Since the order of $X$, $Y/X$, $A$, $X/A$, $M$, $X/M$, $M/A$ are smaller or equal to $2$ as well as $\ord(A)=\ord(M/A)=1$, the induction process stops, we get an affine paving of $\Gr(Y)$.
+Since the order of $X$, $Y/X$, $A$, $X/A$, $M$, $X/M$, $M/A$ is smaller or equal to $2$ as well as $\ord(A)=\ord(M/A)=1$, the induction process stops, we get an affine paving of $\Gr(Y)$.
 \end{eg}
 
 
@@ -1286,7 +1287,7 @@ Case 2: $M\longrightarrow X$ is injective, then
   \begin{aligned}  
   U(X,A)&=U(X,M) \bigsqcup U(M,N) \bigsqcup U(N,A)\hspace{-20mm}&&\\
   U(X,M) &\longrightarrow \Gr(M) \shorttimes \Gr(X/M) &&\hspace{-3mm} \oder U(M,N \oplus T)\\
-  U(M,N) &\longrightarrow \Gr(N) \shorttimes \Gr(M/N)&&\hspace{-3mm} \oder U(N,-),\\
+  U(M,N) &\longrightarrow \Gr(N) \shorttimes \Gr(M/N)&&\hspace{-3mm} \oder U(N,-).\\
   \end{aligned}
   \end{equation*}
   Since $M \longrightarrow X$ is injective, we get $B=0$, thus $C=0$ also, and then the sectional map $T \longrightarrow M/N$ is injective. We get 
@@ -1315,7 +1316,7 @@ $$0\longrightarrow F \longrightarrow Y \longrightarrow Y/F \longrightarrow 0,$$
 $$\Gr(Y) \longrightarrow \Gr(F) \shorttimes \Gr(Y/F) \oder U(F,-),\hspace{8mm}$$
 and then we get the result.
 
-When $Z_7 \longrightarrow Y_7$ is injective (i.e., $A=0$), we computes that $X_S = F \oplus T$, yielding the map
+When $Z_7 \longrightarrow Y_7$ is injective (i.e., $A=0$), we compute that $X_S = F \oplus T$, yielding the map
 $$\Gr(Y) \longrightarrow \Gr(X) \shorttimes \Gr(Y/X) \oder U(X,F \oplus T).$$
 Notice that
 
